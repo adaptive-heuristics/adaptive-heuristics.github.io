@@ -1,0 +1,32 @@
+# Settings for tools/oa.py. Machine-specific paths and the banned-term list live in oa.local.toml
+# (not tracked); see oa.local.example.toml.
+
+[source]
+appendix_glob = "3_appendix_*.tex"       # newest match in the source root is the appendix
+bib_files = ["master.bib", "master_add.bib"]
+bst_file = "jf.bst"
+
+[site]
+title = "Online Appendix"
+paper_title = ""                          # empty = taken from the appendix \title
+base_url = "https://ai-interview-stock.github.io/"
+pdf_name = "OA.pdf"
+note_position = "below"                   # "below": notes follow every exhibit; "paper": table notes above, as in the PDF
+noindex = true
+
+[anonymity]
+author_replacement = ""                   # \author{...} in the appendix snapshot becomes \author{<this>}
+identity_name = "Anonymous Authors"
+identity_email = "321373085+ai-interview-stock@users.noreply.github.com"
+github_user = "ai-interview-stock"
+github_user_id = 321373085
+repo = "ai-interview-stock/ai-interview-stock.github.io"
+
+[figures]
+svg_max_gzip_kb = 150
+svg_max_drawings = 5000
+webp_quality = 90
+png_dpi = 200
+
+[checks]
+note_similarity_min = 0.97

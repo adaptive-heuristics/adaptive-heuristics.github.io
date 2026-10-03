@@ -1,0 +1,19 @@
+XCharter fonts (web subsets of XCharter-Roman, -Italic, -Bold, -BoldItalic and XCharter-Math).
+
+XCharter is an extension of Bitstream Charter by Michael Sharpe; portions of the font modifications
+are Copyright (c) 2009--2012 Andrey Panov and Copyright (c) 2013--2024 Michael Sharpe. The fonts are
+licensed as Free fonts under the same terms as the original from Bitstream. The files here were
+converted to WOFF2 and subset to the characters used on this site.
+
+Original Bitstream Free font license:
+
+  (c) Copyright 1989-1992, Bitstream Inc., Cambridge, MA.
+
+  You are hereby granted permission under all Bitstream propriety rights
+  to use, copy, modify, sublicense, sell, and redistribute the 4
+  Bitstream Charter (r) Type 1 outline fonts for any purpose and without
+  restriction; provided, that this notice is left intact on all copies
+  of such fonts and that Bitstream's trademark is acknowledged as shown
+  below on all unmodified copies of the 4 Charter Type 1 fonts.
+
+    BITSTREAM CHARTER is a registered trademark of Bitstream Inc.

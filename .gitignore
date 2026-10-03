@@ -1,0 +1,16 @@
+# Local-only configuration (source paths, banned-term list)
+oa.local.toml
+
+# Build cache: source snapshots, compile trees, logs, state
+.cache/
+
+# Python / editor leftovers
+__pycache__/
+*.pyc
+.venv/
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+*.log

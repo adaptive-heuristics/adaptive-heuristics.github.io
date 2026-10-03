@@ -1,0 +1,3 @@
+#!/bin/sh
+# Run the full anonymity and integrity checks before anything leaves this machine.
+exec python "$(git rev-parse --show-toplevel)/tools/oa.py" hook pre-push

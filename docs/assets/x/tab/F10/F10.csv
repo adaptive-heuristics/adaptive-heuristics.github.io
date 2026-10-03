@@ -1,0 +1,13 @@
+﻿Dependent variable: D(Adoption),,,
+,(1),(2),(3)
+Objective importance × Historical effectiveness,+0.024***,+0.025***,+0.025***
+,(0.005),(0.005),(0.005)
+Historical effectiveness,+0.004,+0.005,
+,(0.007),(0.008),
+Objective importance,+0.001,,
+,(0.001),,
+Investor FE,✓,–,–
+Investor × Objective FE,–,✓,✓
+Country × Heuristic × Objective FE,–,–,✓
+Observations,"12,600","12,600","12,600"
+R²,0.099,0.099,0.173

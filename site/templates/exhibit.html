@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% from "_icons.html" import icon %}
+{% block title %}{{ e.kind_word }} {{ e.number }}: {{ e.title }} &middot; Online Appendix{% endblock %}
+{% block hdr_lead %}<button class="hdr-toc" type="button" data-toc-open aria-label="Contents" aria-controls="toc">{{ icon("menu") }}</button>{% endblock %}
+{% macro note(p) -%}
+{% if p.note_html %}<div class="note">{{ p.note_html|safe_html }}</div>{% endif %}
+{%- endmacro %}
+{% macro gimg(g, alt, extra="") -%}
+<img src="{{ g.src }}" width="{{ g.w|round|int }}" height="{{ g.h|round|int }}" alt="{{ alt }}" loading="lazy" decoding="async" data-zoom="{{ g.src if g.kind == 'svg' else g.png }}"{{ extra }}>
+{%- endmacro %}
+{% block main %}
+<div class="layout">
+  <aside class="toc" id="toc" aria-label="Contents" data-toc>
+    <div class="toc-head"><a href="/#contents">All exhibits</a><button class="toc-close" type="button" data-toc-close aria-label="Close contents">{{ icon("close") }}</button></div>
+    {% for s in tops %}
+    <details class="toc-sec"{% if s.id == e.section %} open{% endif %}>
+      <summary><span class="toc-letter">{{ s.id }}</span>{{ s.title_html|safe_html }}</summary>
+      <ul>
+      {% for it in s["items"] %}
+        {% if it.sec and not it.exhibits %}
+        <li class="toc-text"><a href="{{ it.sec.href }}" target="_blank" rel="noopener" title="{{ it.sec.title }} (text, in the PDF)"><span class="toc-num">{{ it.sec.id }}</span><span>{{ it.sec.title|short(40) }} {{ icon("external", "sm") }}</span></a></li>
+        {% else %}
+          {% for x in it.exhibits %}
+        <li><a href="{{ x.url }}"{% if x.id == e.id %} aria-current="page"{% endif %} title="{{ x.kind_word }} {{ x.number }}: {{ x.title }}"><span class="toc-num">{{ x.number }}</span><span class="toc-k">{{ "Fig." if x.kind == "figure" else "Tab." }}</span>{{ x.title|short(54) }}</a></li>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+      {% if not s.n_exhibits and not s["items"]|selectattr("sec")|list %}
+        <li class="toc-text"><a href="{{ s.href }}" target="_blank" rel="noopener"><span class="toc-num"></span><span>Text, in the PDF {{ icon("external", "sm") }}</span></a></li>
+      {% endif %}
+      </ul>
+    </details>
+    {% endfor %}
+  </aside>
+  <div class="toc-scrim" data-toc-close hidden></div>
+
+  <article class="ex{% if e.wide %} ex-wide{% endif %}" data-exhibit="{{ e.id }}" data-prev="{{ prev.url if prev else '' }}" data-next="{{ next.url if next else '' }}">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/#sec-{{ top.id }}">{{ top.id }} &middot; {{ top.title_html|safe_html }}</a></nav>
+    <p class="kicker">{{ e.kind_word }} {{ e.number }}</p>
+    <h1 class="ex-title">{{ e.title_html|safe_html }}</h1>
+
+    <div class="ex-body" data-ex-body>
+    {% if e.kind == "table" %}
+      {% if site.note_position == "paper" %}{% for p in e.parts %}{{ note(p) }}{% endfor %}{% endif %}
+      <div class="sheet">
+      {% for p in e.parts %}{% for t in p.tables %}
+        {% if t.heading_html %}<p class="tpanel" id="panel-{{ t.letter|lower }}">{{ t.heading_html|safe_html }}</p>{% endif %}
+        <div class="tscroll{% if t.dense %} dense{% endif %}" tabindex="0" role="region" aria-label="{{ e.kind_word }} {{ e.number }}{% if t.heading %}, {{ t.heading }}{% endif %}">{{ t.html|safe_html }}</div>
+      {% endfor %}{% endfor %}
+      </div>
+      {% if site.note_position != "paper" %}{% for p in e.parts %}{{ note(p) }}{% endfor %}{% endif %}
+    {% else %}
+    {% for p in e.parts %}
+      <div class="part" id="part-{{ p.n }}">
+        <div class="sheet">
+          {% for grp in p.panel_groups %}
+            {% if grp.name %}<p class="grp">{{ grp.name|safe_html }}</p>{% endif %}
+            <div class="grid cols-{{ grp.cols }}">
+            {% for pn in grp.panels %}
+              <figure class="panel" id="panel-{{ pn.letter }}">
+                {% for g in pn.graphics %}<div class="img-wrap" style="max-width:{{ g.width|pct }}">{{ gimg(g, e.kind_word ~ " " ~ e.number ~ ", panel (" ~ pn.letter ~ "): " ~ pn.sub_text) }}</div>{% endfor %}
+                <figcaption><span class="pl">({{ pn.letter }})</span> {{ pn.sub_html|safe_html }}</figcaption>
+              </figure>
+            {% endfor %}
+            </div>
+          {% endfor %}
+          {% for g in p.graphics %}
+            <div class="img-wrap{% if g.legend %} legend{% endif %}" style="max-width:{{ g.width|pct if g.width else ('40%' if g.legend else '100%') }}">{{ gimg(g, (e.kind_word ~ " " ~ e.number ~ (" legend" if g.legend else "") ~ ": " ~ e.title)) }}</div>
+          {% endfor %}
+        </div>
+        {{ note(p) }}
+      </div>
+    {% endfor %}
+    {% endif %}
+    </div>
+
+    <div class="actions">
+      <a href="{{ e.pdf_href }}" target="_blank" rel="noopener">{{ icon("external") }}Open in PDF, p.&nbsp;{{ e.page_labels[0] }}</a>
+      <a href="{{ e.pages_pdf }}" download>{{ icon("download") }}PDF page{% if e.pages|length > 1 %}s{% endif %}</a>
+      {% if e.kind == "figure" %}
+        {% set files = [] %}
+        {% for p in e.parts %}{% for g in p.graphics %}{% set _ = files.append(("legend" if g.legend else ("part " ~ p.n if e.parts|length > 1 else ""), g)) %}{% endfor %}{% for pn in p.panels %}{% for g in pn.graphics %}{% set _ = files.append(("(" ~ pn.letter ~ ")", g)) %}{% endfor %}{% endfor %}{% endfor %}
+        {% if files|length == 1 %}
+          <a href="{{ files[0][1].pdf }}" download>{{ icon("download") }}Figure (PDF)</a>
+          <a href="{{ files[0][1].png }}" download>{{ icon("download") }}PNG</a>
+        {% else %}
+          <details class="files"><summary>{{ icon("download") }}Figure files</summary>
+            <ul>{% for lbl, g in files %}<li><span>{{ lbl }}</span><a href="{{ g.pdf }}" download>PDF</a><a href="{{ g.png }}" download>PNG</a></li>{% endfor %}</ul>
+          </details>
+        {% endif %}
+      {% else %}
+        {% for p in e.parts %}{% for t in p.tables %}
+          <a href="{{ t.csv }}" download>{{ icon("download") }}CSV{% if t.letter %} (Panel {{ t.letter }}){% endif %}</a>
+        {% endfor %}{% endfor %}
+      {% endif %}
+      <button type="button" data-copy-link>{{ icon("copy") }}<span>Copy link</span></button>
+      <a href="/compare/?a={{ e.kind }}-{{ e.number }}{% if e.suggest %}&amp;b={{ e.suggest[0]|replace('/', '-') }}{% endif %}">{{ icon("compare") }}Compare with&hellip;</a>
+    </div>
+
+    {% if e.main_refs or e.cited_in %}
+    <section class="mp" aria-label="Links to the main paper">
+      <h2 class="mp-h">Main paper</h2>
+      <dl>
+      {% if e.cited_in %}
+        <dt>Cited in</dt>
+        <dd><ul>
+        {% for c in e.cited_in %}
+          <li>{% if c.ctx == "float" %}Notes to {{ c.float.text if c.float else "a main-paper table" }}{% if c.heading %} (Section {{ c.heading.number }}){% endif %}{% elif c.heading %}Section {{ c.heading.number }}, <span class="mp-t">{{ c.heading.title_html|safe_html }}</span>{% if c.paragraph %}, paragraph &ldquo;{{ c.paragraph }}&rdquo;{% endif %}{% if c.ctx == "footnote" %}, in a footnote{% endif %}{% endif %}{% if c.panel %} &middot; Panel {{ "(" ~ c.panel ~ ")" if c.panel.islower() else c.panel }}{% endif %}</li>
+        {% endfor %}
+        </ul></dd>
+      {% endif %}
+      {% if e.main_refs %}
+        <dt>Refers to</dt>
+        <dd><ul>
+        {% for r in e.main_refs %}
+          <li>{{ r.text }}{% if r.title %}, <span class="mp-t">{{ r.title }}</span>{% endif %}</li>
+        {% endfor %}
+        </ul></dd>
+      {% endif %}
+      </dl>
+    </section>
+    {% endif %}
+
+    <nav class="pager" aria-label="Previous and next exhibit">
+      {% if prev %}<a class="pg-prev" href="{{ prev.url }}" rel="prev"><span class="pg-k">{{ icon("left") }}{{ prev.kind_word }} {{ prev.number }}</span><span class="pg-t">{{ prev.title }}</span></a>{% else %}<span></span>{% endif %}
+      {% if next %}<a class="pg-next" href="{{ next.url }}" rel="next"><span class="pg-k">{{ next.kind_word }} {{ next.number }}{{ icon("right") }}</span><span class="pg-t">{{ next.title }}</span></a>{% endif %}
+    </nav>
+  </article>
+</div>
+<div class="zoom" data-zoom-view hidden><button class="zoom-close" type="button" aria-label="Close" data-zoom-close>{{ icon("close") }}</button><div class="zoom-in" data-zoom-in></div></div>
+{% endblock %}

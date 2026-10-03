@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% from "_icons.html" import icon %}
+{% block title %}Online Appendix &middot; {{ site.paper_title }}{% endblock %}
+{% macro row(e) -%}
+<a class="row" href="{{ e.url }}" data-kind="{{ e.kind }}" data-id="{{ e.id }}">
+  <span class="row-num"><span class="row-k">{{ "Fig." if e.kind == "figure" else "Tab." }}</span>{{ e.number }}</span>
+  <span class="row-title">{{ e.title_html|safe_html }}</span>
+  <span class="row-meta">{% if e.n_panels > 1 %}{{ e.n_panels }} panels{% endif %}</span>
+</a>
+{%- endmacro %}
+{% block main %}
+<section class="hero">
+  <h1>Online Appendix</h1>
+  <p class="hero-sub">to &ldquo;{{ site.paper_title }}&rdquo;</p>
+  <div class="hero-actions">
+    <a class="btn btn-ink" href="{{ pdf.url }}" download="Online-Appendix.pdf">{{ icon("download") }}Download PDF</a>
+    <a class="btn btn-line" href="{{ pdf.url }}" target="_blank" rel="noopener">{{ icon("external") }}Open in browser</a>
+    <span class="hero-meta">{{ pdf.pages }} pages &middot; {{ pdf.size }} &middot; updated {{ build.source_date_text }}</span>
+  </div>
+  <p class="hero-lede">Browse every figure and table of the Online Appendix, each with its note. The questionnaires and the prompts are text only and appear in the PDF.</p>
+</section>
+
+<section class="ix-wrap" id="contents" aria-label="Exhibits">
+  <div class="ix-bar">
+    <div class="chips" role="group" aria-label="Show">
+      <button class="chip on" type="button" data-kind-filter="all" aria-pressed="true">All <span>{{ counts.exhibits }}</span></button>
+      <button class="chip" type="button" data-kind-filter="figure" aria-pressed="false">Figures <span>{{ counts.figures }}</span></button>
+      <button class="chip" type="button" data-kind-filter="table" aria-pressed="false">Tables <span>{{ counts.tables }}</span></button>
+    </div>
+    <div class="seg" role="group" aria-label="Group by">
+      <span class="seg-lbl">Group by</span>
+      <button class="seg-btn on" type="button" data-group-by="section" aria-pressed="true">Appendix section</button>
+      <button class="seg-btn" type="button" data-group-by="paper" aria-pressed="false">Main-paper section</button>
+    </div>
+    <label class="ix-filter">{{ icon("search") }}<input type="search" placeholder="Filter" aria-label="Filter exhibits by number, title or keyword" data-ix-filter></label>
+  </div>
+
+  <div class="ix" data-view="section">
+  {% for s in tops %}
+    <section class="ix-sec" id="sec-{{ s.id }}" data-sec="{{ s.id }}">
+      <h2 class="ix-h"><span class="ix-letter">{{ s.id }}</span><span class="ix-title">{{ s.title_html|safe_html }}</span></h2>
+      {% for it in s["items"] %}
+        {% if it.sec and not it.exhibits %}
+        <a class="row row-text" href="{{ it.sec.href }}" target="_blank" rel="noopener" data-text-row>
+          <span class="row-num">{{ it.sec.id }}</span>
+          <span class="row-title">{{ it.sec.title_html|safe_html }}</span>
+          <span class="row-meta">Text in PDF, pp.&nbsp;{{ it.sec.page_labels[0] }}{% if it.sec.page_labels[1] != it.sec.page_labels[0] %}&ndash;{{ it.sec.page_labels[1] }}{% endif %} {{ icon("external", "sm") }}</span>
+        </a>
+        {% else %}
+          {% if it.sec %}<p class="ix-sub" data-sub><span>{{ it.sec.id }}</span> {{ it.sec.title_html|safe_html }}</p>{% endif %}
+          {% for e in it.exhibits %}{{ row(e) }}{% endfor %}
+        {% endif %}
+      {% endfor %}
+      {% if not s.n_exhibits and not s["items"]|selectattr("sec")|list %}
+        <a class="row row-text" href="{{ s.href }}" target="_blank" rel="noopener" data-text-row>
+          <span class="row-num">{{ s.id }}</span>
+          <span class="row-title">{{ s.title_html|safe_html }}</span>
+          <span class="row-meta">Text in PDF, pp.&nbsp;{{ s.page_labels[0] }}&ndash;{{ s.page_labels[1] }} {{ icon("external", "sm") }}</span>
+        </a>
+      {% endif %}
+    </section>
+  {% endfor %}
+  </div>
+
+  <div class="ix" data-view="paper" hidden>
+    <p class="ix-note">Each exhibit is placed under the main-paper section that cites it, or else under the section whose results it extends.</p>
+  {% for g in groups %}
+    <section class="ix-sec" data-group="{{ g.key }}">
+      <h2 class="ix-h">{% if g.number %}<span class="ix-letter">&sect;&thinsp;{{ g.number }}</span>{% endif %}<span class="ix-title">{{ g.title_html|safe_html }}</span></h2>
+      {% for e in g["items"] %}{{ row(e) }}{% endfor %}
+    </section>
+  {% endfor %}
+  </div>
+  <p class="ix-empty" data-ix-empty hidden>No exhibits match this filter.</p>
+</section>
+{% endblock %}

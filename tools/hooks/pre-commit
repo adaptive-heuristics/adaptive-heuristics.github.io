@@ -1,0 +1,3 @@
+#!/bin/sh
+# Refuse commits that are not by the anonymous identity in UTC, or that add banned terms.
+exec python "$(git rev-parse --show-toplevel)/tools/oa.py" hook pre-commit

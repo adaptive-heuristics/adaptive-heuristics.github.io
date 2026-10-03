@@ -1,0 +1,16 @@
+{% macro icon(name, cls="") -%}
+<svg class="ic {{ cls }}" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+{%- if name == "search" -%}<circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/>
+{%- elif name == "download" -%}<path d="M12 4v11"/><path d="M7.5 10.5L12 15l4.5-4.5"/><path d="M5 19.5h14"/>
+{%- elif name == "external" -%}<path d="M14 5h5v5"/><path d="M19 5l-8 8"/><path d="M17 14v4.5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h4.5"/>
+{%- elif name == "copy" -%}<rect x="8.5" y="8.5" width="11" height="11" rx="2"/><path d="M15.5 8.5V6a1.5 1.5 0 0 0-1.5-1.5H6A1.5 1.5 0 0 0 4.5 6v8A1.5 1.5 0 0 0 6 15.5h2.5"/>
+{%- elif name == "compare" -%}<rect x="3.5" y="5" width="7" height="14" rx="1.5"/><rect x="13.5" y="5" width="7" height="14" rx="1.5"/>
+{%- elif name == "left" -%}<path d="M14.5 6l-6 6 6 6"/>
+{%- elif name == "right" -%}<path d="M9.5 6l6 6-6 6"/>
+{%- elif name == "menu" -%}<path d="M4.5 7h15"/><path d="M4.5 12h15"/><path d="M4.5 17h15"/>
+{%- elif name == "close" -%}<path d="M6 6l12 12"/><path d="M18 6L6 18"/>
+{%- elif name == "file" -%}<path d="M7 3.5h7l4.5 4.5v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15.5a1 1 0 0 1 1-1z"/><path d="M14 3.5V8h4.5"/>
+{%- elif name == "zoom" -%}<circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/><path d="M11 8.5v5"/><path d="M8.5 11h5"/>
+{%- endif -%}
+</svg>
+{%- endmacro %}

@@ -1,0 +1,11 @@
+# Copy to oa.local.toml (gitignored) and fill in. Never commit the filled-in copy.
+
+[paths]
+source = 'C:\path\to\manuscript-git-clone'   # git clone that holds the appendix and paper .tex files
+texbin = 'C:\texlive\2026\bin\windows'        # folder with pdflatex and bibtex
+node = 'C:\Program Files\nodejs\node.exe'
+gh = 'C:\Program Files\GitHub CLI\gh.exe'
+
+[anonymity]
+# Names, affiliations, e-mail addresses, user names and anything else that must never be published.
+banned_terms = []

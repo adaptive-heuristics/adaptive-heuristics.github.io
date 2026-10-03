@@ -1,0 +1,48 @@
+{% from "_icons.html" import icon %}<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% if site.noindex %}<meta name="robots" content="noindex, nofollow, noarchive">
+{% endif %}<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>{% block title %}{{ site.title }}{% endblock %}</title>
+<meta name="description" content="Figures and tables of the Online Appendix to &ldquo;{{ site.paper_title }}&rdquo;, with the full appendix as a PDF.">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/xcharter-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css?v={{ v.css }}">
+<script src="/assets/site.js?v={{ v.js }}" defer></script>
+</head>
+<body class="pg-{{ page }}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr">
+  <div class="hdr-in">
+    {% block hdr_lead %}{% endblock %}
+    <a class="brand" href="/">Online Appendix</a>
+    <span class="brand-sub" title="{{ site.paper_title }}">{{ site.paper_title }}</span>
+    <nav class="hdr-nav" aria-label="Site">
+      <button class="hdr-search" type="button" data-open-search aria-label="Search exhibits">{{ icon("search") }}<span class="lbl">Search exhibits</span><kbd>/</kbd></button>
+      <a class="hdr-link" href="/compare/">{{ icon("compare") }}<span class="lbl">Compare</span></a>
+      <a class="btn-pdf" href="{{ pdf.url }}" target="_blank" rel="noopener" title="Open the Online Appendix PDF ({{ pdf.pages }} pages, {{ pdf.size }})">{{ icon("file") }}<span>PDF</span></a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+<footer class="ftr">
+  <div class="ftr-in">
+    <p>Online Appendix to &ldquo;{{ site.paper_title }}.&rdquo; Generated from the manuscript sources; updated {{ build.source_date_text }}.</p>
+    <p><a href="{{ pdf.url }}" target="_blank" rel="noopener">Full appendix (PDF, {{ pdf.pages }} pages)</a></p>
+  </div>
+</footer>
+<div class="pal" data-palette hidden>
+  <div class="pal-box" role="dialog" aria-modal="true" aria-label="Search exhibits">
+    <div class="pal-in">{{ icon("search") }}<input type="search" placeholder="Search by number, title, variable, or keyword" autocomplete="off" spellcheck="false" aria-label="Search exhibits" data-pal-input><kbd>Esc</kbd></div>
+    <ul class="pal-list" role="listbox" data-pal-list></ul>
+    <p class="pal-hint">Try &ldquo;F12&rdquo;, &ldquo;Momentum&rdquo;, &ldquo;out-of-sample&rdquo;. &uarr;&darr; to move, Enter to open.</p>
+  </div>
+</div>
+</body>
+</html>

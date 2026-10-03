@@ -1,0 +1,8 @@
+﻿Dependent variable: Perceived effectiveness,,,,
+,(1) All,(2) Returns,(3) Upside,(4) Stability
+Historical effectiveness,+0.137***,+0.128,+0.147**,+0.209**
+,(0.016),(0.036),(0.040),(0.035)
+Investor FE,✓,✓,✓,✓
+Objective FE,✓,–,–,–
+Observations,"2,561",871,771,919
+R²,0.140,0.355,0.404,0.429

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% from "_icons.html" import icon %}
+{% block title %}Compare exhibits &middot; Online Appendix{% endblock %}
+{% macro picker(side, label) -%}
+<label class="cmp-pick"><span class="cmp-lbl">{{ label }}</span>
+  <select data-cmp-select="{{ side }}" aria-label="{{ label }} exhibit">
+    <option value="">Choose an exhibit&hellip;</option>
+    {% for s in tops %}{% if s.n_exhibits %}
+    <optgroup label="{{ s.id }} &middot; {{ s.title }}">
+      {% for it in s["items"] %}{% for x in it.exhibits %}
+      <option value="{{ x.kind }}-{{ x.number }}">{{ x.kind_word }} {{ x.number }}: {{ x.title|short(70) }}</option>
+      {% endfor %}{% endfor %}
+    </optgroup>
+    {% endif %}{% endfor %}
+  </select>
+</label>
+{%- endmacro %}
+{% block main %}
+<section class="cmp" data-compare>
+  <div class="cmp-head">
+    <h1 class="cmp-title">Compare exhibits</h1>
+    <p class="cmp-sub">Put two figures or tables side by side, for example a result and its out-of-sample or placebo version.</p>
+  </div>
+  <div class="cmp-bar">
+    {{ picker("a", "Left") }}
+    <button class="btn btn-line cmp-swap" type="button" data-cmp-swap aria-label="Swap the two exhibits">&#8644; Swap</button>
+    {{ picker("b", "Right") }}
+    <label class="cmp-opt"><input type="checkbox" data-cmp-sync> Sync scrolling</label>
+    <label class="cmp-opt"><input type="checkbox" data-cmp-notes> Show notes</label>
+  </div>
+  <p class="cmp-suggest" data-cmp-suggest hidden></p>
+  <div class="cmp-panes">
+    <div class="cmp-pane" data-cmp-pane="a"><p class="cmp-empty">Choose an exhibit on the left.</p></div>
+    <div class="cmp-pane" data-cmp-pane="b"><p class="cmp-empty">Choose an exhibit on the right.</p></div>
+  </div>
+  <noscript><p class="cmp-empty">The comparison view needs JavaScript. Every exhibit also has its own page; see the <a href="/#contents">list of exhibits</a>.</p></noscript>
+</section>
+{% endblock %}

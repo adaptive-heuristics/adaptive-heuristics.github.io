@@ -1,0 +1,20 @@
+﻿Heuristic,Characteristic (sign),,Definition
+,Prompt A,Prompt B,
+Fundamental Strength,ni_be (+),ni_be (+),Return on equity (net income / book equity)
+,ebit_sale (+),ebit_sale (+),Operating margin (EBIT / sales)
+,ocf_at (+),ocf_at (+),Operating cash-flow profitability (operating cash flow / assets)
+Growth/Innovation,rd_me (+),rd_me (+),R&D-to-market ratio (R&D expense / market equity)
+,sale_gr3 (+),sale_gr3 (+),Sales growth (3 years)
+Blue-Chip Comfort,me (+),me (+),Market equity
+,age (+),age (+),Firm age
+,rvol_21d (−),rvol_21d (−),Return volatility (21 days)
+Buy-the-Dip,ret_1_0 (−),ret_1_0 (−),Past 1-month return
+,ret_2_0 (−),ret_2_0 (−),Past 2-month return
+,ret_3_0 (−),ret_3_0 (−),Past 3-month return
+Dividends,div12m_me (+),div12m_me (+),Dividend yield (trailing 12-month)
+Momentum,ret_6_1 (+),ret_6_1 (+),6-month momentum (return t-6 → t-1)
+,ret_9_1 (+),,9-month momentum (return t-9 → t-1)
+,ret_12_1 (+),ret_12_1 (+),12-month momentum (return t-12 → t-1)
+Valuation/Mispricing,be_me (+),be_me (+),Book-to-market ratio (book equity / market equity)
+,bev_mev (+),bev_mev (+),Book-to-market enterprise value (book enterprise value / market enterprise value)
+,,fcf_me (+),Free-cash-flow yield (free cash flow / market equity)
