@@ -1,10 +1,10 @@
 {% extends "base.html" %}
-{% from "_nav.html" import sidebar, pager %}
+{% from "_nav.html" import sidebar, pager, entry %}
 {% block title %}{{ t.number }} {{ t.title }} &middot; Online Appendix{% endblock %}
 {% block hdr_sub %}<a class="brand-sub" href="/#sec-{{ top.id }}" title="{{ top.id }} {{ top.title }}">{{ top.id }}&ensp;{{ top.title_html|safe_html }}</a>{% endblock %}
 {% block main %}
 <div class="layout">
-  {{ sidebar(tops, t.id) }}
+  {{ sidebar(tops, t.id, references) }}
 
   <article class="ex tx-page" data-exhibit="{{ t.id }}" data-prev="{{ prev.url if prev else '' }}" data-next="{{ next.url if next else '' }}">
     <button class="toc-btn" type="button" data-toc-open aria-controls="toc" aria-expanded="false" data-needs-js hidden>Contents</button>
@@ -16,6 +16,13 @@
     <h1 class="ex-title" id="sec-{{ t.number }}"><span class="ex-lbl">{{ t.number }}</span> {{ t.title_html|no_widow|safe_html }}</h1>
     {% endif %}
     <div class="tx">{{ t.html|safe_html }}</div>
+    {% if t.member_items %}
+    {% set kinds = t.member_items|map(attribute="kind")|unique|list %}
+    <section class="tx-members" aria-labelledby="members-h">
+      <h2 class="tx-h2" id="members-h">{{ "Figures" if kinds == ["figure"] else "Tables" if kinds == ["table"] else "Figures and tables" }}</h2>
+      {% for e in t.member_items %}{{ entry(e, 0) }}{% endfor %}
+    </section>
+    {% endif %}
     {% if t.footnotes %}
     <section class="tx-fns" aria-label="Footnotes">
       <ol>{% for f in t.footnotes %}<li id="fn-{{ f.n }}"><a class="tx-fn-n" href="#fnref-{{ f.n }}" aria-label="Back to the text of footnote {{ f.n }}">{{ f.n }}</a><div>{{ f.html|safe_html }}</div></li>{% endfor %}</ol>

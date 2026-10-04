@@ -1,16 +1,20 @@
 {# Navigation shared by exhibit and section pages: the contents sidebar and the previous/next pager. #}
 {% macro label(x) -%}
-{% if x.kind_word %}{{ x.kind_word }} {{ x.number }}:{% else %}{{ x.number }}{% endif %}
+{% if x.kind_word %}{{ x.kind_word }} {{ x.number }}:{% elif x.number %}{{ x.number }}{% endif %}
 {%- endmacro %}
 
-{% macro sidebar(tops, current) -%}
+{% macro sidebar(tops, current, refs=None) -%}
 <aside class="toc" id="toc" aria-label="Contents" data-toc>
   <div class="toc-head"><a href="/#contents">Contents</a><button class="toc-close" type="button" data-toc-close>Close</button></div>
   {% for s in tops %}
   <div class="toc-sec">
+    {% if s.lead %}
+    <p class="toc-sh"><a href="{{ s.lead.url }}"{% if s.lead.id == current %} aria-current="page"{% endif %}><span class="toc-letter">{{ s.id }}</span><span>{{ s.title_html|safe_html }}</span></a></p>
+    {% else %}
     <p class="toc-sh"><span class="toc-letter">{{ s.id }}</span><span>{{ s.title_html|safe_html }}</span></p>
+    {% endif %}
     <ul>
-    {% for t in s.units %}
+    {% for t in s.units if t.number != s.id %}
       <li><a href="{{ t.url }}"{% if t.id == current %} aria-current="page"{% endif %} title="{{ t.number }} {{ t.title }}"><span class="toc-num">{{ t.number }}</span><span class="toc-t">{{ t.title }}</span></a></li>
     {% endfor %}
     {% for x in s.exhibits %}
@@ -19,13 +23,27 @@
     </ul>
   </div>
   {% endfor %}
+  {% if refs %}
+  <div class="toc-sec">
+    <p class="toc-sh"><a href="{{ refs.url }}"{% if refs.id == current %} aria-current="page"{% endif %}><span class="toc-letter"></span><span>{{ refs.title_html|safe_html }}</span></a></p>
+  </div>
+  {% endif %}
 </aside>
 <div class="toc-scrim" data-toc-close hidden></div>
 {%- endmacro %}
 
+{# One contents line: the title opens the exhibit page, the page number opens the PDF at that page. #}
+{% macro entry(e, lvl) -%}
+<div class="te te-x te-l{{ lvl }}" data-id="{{ e.id }}" data-kind="{{ e.kind }}"{% if e.subsection %} data-sub="{{ e.subsection }}"{% endif %}>
+  <a class="te-a" href="{{ e.url }}"><span class="te-n"><span class="kw">{{ e.kind_word }}</span><span class="kw-s" aria-hidden="true">{{ "Fig." if e.kind == "figure" else "Tab." }}</span> {{ e.number }}</span><span class="te-t">{{ e.title_html|safe_html }}</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="{{ e.pdf_href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="{{ e.kind_word }} {{ e.number }} in the PDF, page {{ e.page_labels[0] }}">{{ e.page_labels[0] }}</a>
+</div>
+{%- endmacro %}
+
 {% macro pager(prev, next) -%}
 <nav class="pager" aria-label="Previous and next">
-  {% if prev %}<a class="pg-prev" href="{{ prev.url }}" rel="prev"><span class="pg-k">Previous</span><span class="pg-t"><span class="pg-n">{{ label(prev) }}</span> {{ prev.title }}</span></a>{% else %}<span></span>{% endif %}
-  {% if next %}<a class="pg-next" href="{{ next.url }}" rel="next"><span class="pg-k">Next</span><span class="pg-t"><span class="pg-n">{{ label(next) }}</span> {{ next.title }}</span></a>{% endif %}
+  {% if prev %}<a class="pg-prev" href="{{ prev.url }}" rel="prev"><span class="pg-k">Previous</span><span class="pg-t">{% if prev.number %}<span class="pg-n">{{ label(prev) }}</span> {% endif %}{{ prev.title }}</span></a>{% else %}<span></span>{% endif %}
+  {% if next %}<a class="pg-next" href="{{ next.url }}" rel="next"><span class="pg-k">Next</span><span class="pg-t">{% if next.number %}<span class="pg-n">{{ label(next) }}</span> {% endif %}{{ next.title }}</span></a>{% endif %}
 </nav>
 {%- endmacro %}

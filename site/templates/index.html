@@ -1,13 +1,6 @@
 {% extends "base.html" %}
+{% from "_nav.html" import entry %}
 {% block title %}Online Appendix &middot; {{ site.paper_title }}{% endblock %}
-{# One contents line: the title opens the exhibit page, the page number opens the PDF at that page. #}
-{% macro entry(e, lvl) -%}
-<div class="te te-x te-l{{ lvl }}" data-id="{{ e.id }}" data-kind="{{ e.kind }}"{% if e.subsection %} data-sub="{{ e.subsection }}"{% endif %}>
-  <a class="te-a" href="{{ e.url }}"><span class="te-n"><span class="kw">{{ e.kind_word }}</span><span class="kw-s" aria-hidden="true">{{ "Fig." if e.kind == "figure" else "Tab." }}</span> {{ e.number }}</span><span class="te-t">{{ e.title_html|safe_html }}</span></a>
-  <span class="te-dots" aria-hidden="true"></span>
-  <a class="te-p" href="{{ e.pdf_href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="{{ e.kind_word }} {{ e.number }} in the PDF, page {{ e.page_labels[0] }}">{{ e.page_labels[0] }}</a>
-</div>
-{%- endmacro %}
 {% macro unitentry(t, x, lvl) -%}
 <div class="te te-l{{ lvl }} te-unit" data-text-row>
   <a class="te-a" href="{{ t.url }}"><span class="te-n">{{ t.number }}</span><span class="te-t">{{ t.title_html|safe_html }}</span></a>
@@ -42,20 +35,35 @@
   <div class="ix" data-view="section">
   {% for s in tops %}
     <section class="ix-sec" id="sec-{{ s.id }}" data-sec="{{ s.id }}">
+      {% if s.lead %}
+      <h3 class="te te-s"><a class="te-a" href="{{ s.lead.url }}"><span class="te-n">{{ s.id }}</span><span class="te-t">{{ s.title_html|safe_html }}</span></a><a class="te-p" href="{{ s.href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="Section {{ s.id }} in the PDF, page {{ s.page_labels[0] }}">{{ s.page_labels[0] }}</a></h3>
+      {% else %}
       <h3 class="te te-s"><span class="te-n">{{ s.id }}</span><span class="te-t">{{ s.title_html|safe_html }}</span><a class="te-p" href="{{ s.href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="Section {{ s.id }} in the PDF, page {{ s.page_labels[0] }}">{{ s.page_labels[0] }}</a></h3>
+      {% endif %}
       {% for e in s.loose %}{{ entry(e, 1) }}{% endfor %}
       {% for x in s.subs %}
         {% if x.exhibits %}
         <div class="te te-l1 te-sub" data-sub-head="{{ x.id }}">
+          {% if x.unit %}
+          <a class="te-a" href="{{ x.unit.url }}"><span class="te-n">{{ x.id }}</span><span class="te-t">{{ x.title_html|safe_html }}</span></a>
+          <span class="te-dots" aria-hidden="true"></span>
+          <a class="te-p" href="{{ x.href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="Section {{ x.id }} in the PDF, page {{ x.page_labels[0] }}">{{ x.page_labels[0] }}</a>
+          {% else %}
           <span class="te-a"><span class="te-n">{{ x.id }}</span><span class="te-t">{{ x.title_html|safe_html }}</span></span>
           <span class="te-dots" aria-hidden="true"></span>
           <span class="te-p">{{ x.page_labels[0] }}</span>
+          {% endif %}
         </div>
         {% for e in x.exhibits %}{{ entry(e, 2) }}{% endfor %}
         {% elif x.unit %}{{ unitentry(x.unit, x, 1) }}{% endif %}
       {% endfor %}
     </section>
   {% endfor %}
+  {% if references %}
+    <section class="ix-sec" id="references">
+      <h3 class="te te-s"><a class="te-a" href="{{ references.url }}"><span class="te-n"></span><span class="te-t">{{ references.title_html|safe_html }}</span></a><a class="te-p" href="{{ references.pdf_href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="{{ references.title }} in the PDF, page {{ references.page_labels[0] }}">{{ references.page_labels[0] }}</a></h3>
+    </section>
+  {% endif %}
   </div>
 
   <div class="ix" data-view="paper" hidden>

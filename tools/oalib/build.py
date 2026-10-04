@@ -12,6 +12,7 @@ from pathlib import Path
 from . import latex, snapshot
 from .latexaux import parse_aux
 from .config import Config
+from .bib import link_urls, parse_bbl
 from .crossrefs import FALLBACK, KIND_WORD, Resolver, assign_groups, exhibit_url, scan_paper
 from .figures import convert as convert_figure
 from .inline import Inline
@@ -94,9 +95,13 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
     pdf = PdfIndex(stage / cfg.pdf_name)
     viewer_url = "/pdf/"  # in-site PDF viewer: opens the page in any browser instead of downloading the file
     resolver = Resolver(doc, app_aux, paper_aux, pdf, viewer_url)
-    # the text-only subsections get pages of their own; references to them (and to their questions) link there
+    # the appendix's running text gets pages of its own; references to it (and to its questions) link there
     units = find_units(doc)
     resolver.site = site_targets(doc, units)
+    # the reference list gets a page too; citations link to their entries there
+    bib = parse_bbl(comp.app_aux.with_suffix(".bbl"))
+    refs_url = "/references/"
+    resolver.bib = {b.key: f"{refs_url}#ref-{b.key}" for b in bib}
 
     def mk(where: str, link: bool = True) -> Inline:
         return Inline(resolver, math, where, link_refs=link)
@@ -256,7 +261,7 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
             if q.label:
                 q_href = resolver.site.get(q.label)
             else:
-                u = next((u for u in units if any(x and x[0] <= q.offset < x[1] for x in (u.intro, u.span))), None)
+                u = next((u for u in units if u.covers(q.offset)), None)
                 q_href = f"{u.url}#{q.key}" if u else None
             e["questions"].append({"key": q.key, "label": q.label, "source": q.source, "number": q.number,
                                    "panels": [panel] if panel else [], "html": q_html, "text": q_text,
@@ -325,7 +330,7 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
             groups_out.append({"key": k, "number": k, "title": h["title"], "title_html": h["title_html"],
                                "exhibits": members})
 
-    # ---- text-only subsections ----
+    # ---- text pages: the text-only subsections, and the running text around the exhibits ----
     fn_numbers = footnote_numbers(doc)
     sec_by_id = {s["id"]: s for s in sections_out}
     texts_out = []
@@ -343,6 +348,10 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
         body = finish(pg.body(*u.span))
         notes = [{"n": f["n"], "html": finish(f["html"])} for f in pg.footnotes()]
         mcq_seen[u.top.id] = pg.mcq
+        # a lead page lists the figures and tables of its (sub)section
+        members = [e["id"] for e in exhibits_out
+                   if (e["subsection"] if u.section.level == 2 else e["section"]) == u.section.id] \
+            if u.kind == "lead" else []
         p0 = sec_by_id[u.top.id]["pages"][0] if u.intro else sec_by_id[u.section.id]["pages"][0]
         p1 = sec_by_id[u.section.id]["pages"][1]
         texts_out.append({
@@ -351,7 +360,28 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
             "footnotes": notes, "text": plain(" ".join(pg.text + pg.fn_text)), "body_text": plain(" ".join(pg.text)),
             "fn_text": [plain(x) for x in pg.fn_text], "pages": [p0, p1],
             "page_labels": [pdf.labels[p0], pdf.labels[p1]], "pdf_href": f"{viewer_url}#page={p0 + 1}",
+            "lead": u.kind == "lead", "members": members,
         })
+
+    # ---- references ----
+    references = None
+    if bib:
+        refs_toc = [t for t in app_aux.toc if t.kind == "section" and not t.number]
+        if not refs_toc:
+            raise BuildError("the appendix has a bibliography but no contents line for it")
+        p0, p1 = _page_range(pdf, refs_toc[0].anchor, None)
+        rt = mk("references heading").inline(refs_toc[0].title)
+        items = []
+        for b in bib:
+            r = mk(f"reference {b.key}").inline(b.tex)
+            items.append({"key": b.key, "html": link_urls(r.html), "text": r.text})
+        body_text = " ".join([rt.text] + [x["text"] for x in items])
+        references = {
+            "id": "references", "kind": "references", "kind_word": "", "number": "", "url": refs_url,
+            "title": rt.text, "title_html": rt.html, "items": items, "text": body_text, "body_text": body_text,
+            "fn_text": [], "pages": [p0, p1], "page_labels": [pdf.labels[p0], pdf.labels[p1]],
+            "pdf_href": f"{viewer_url}#page={p0 + 1}",
+        }
 
     # ---- math -> MathML, then fill every HTML string ----
     math.render()
@@ -366,13 +396,21 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
     exhibits_out = fill(exhibits_out)
     sections_out = fill(sections_out)
     texts_out = fill(texts_out)
+    references = fill(references)
 
-    # prev/next in reading order: each section's text pages, then its figures and tables
+    # prev/next in reading order: a (sub)section's text page, then its figures and tables
     seq = []
     for top in [s for s in doc.sections if s.level == 1]:
-        seq += [t["id"] for t in texts_out if t["top"] == top.id]
-        seq += [e["id"] for e in exhibits_out if e["section"] == top.id]
-    nav = {x["id"]: x for x in exhibits_out + texts_out}
+        subs = [s for s in doc.sections if s.level == 2 and s.id.startswith(top.id + ".")]
+        sub_ids = {s.id for s in subs}
+        seq += [t["id"] for t in texts_out if t["number"] == top.id]
+        seq += [e["id"] for e in exhibits_out if e["section"] == top.id and e["subsection"] not in sub_ids]
+        for s in subs:
+            seq += [t["id"] for t in texts_out if t["number"] == s.id]
+            seq += [e["id"] for e in exhibits_out if e["subsection"] == s.id]
+    if references:
+        seq.append(references["id"])
+    nav = {x["id"]: x for x in exhibits_out + texts_out + ([references] if references else [])}
     if sorted(seq) != sorted(nav):
         raise BuildError("the reading order does not cover every page")
     for i, k in enumerate(seq):
@@ -392,6 +430,7 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
         "sections": sections_out,
         "exhibits": exhibits_out,
         "texts": texts_out,
+        "references": references,
         "groups": groups_out,
     }
     return BuildResult(stage, model, snap, doc, pdf, comp, set(paper_aux.labels))

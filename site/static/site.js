@@ -41,7 +41,7 @@
       dataPromise = fetch("/data/search.json", { credentials: "same-origin" })
         .then((r) => r.json())
         .then((rows) => rows.map((r) => Object.assign(r, {
-          _t: norm(r.t), _n: r.n.toLowerCase(), _all: norm([r.note, r.cells, r.fig, r.refs].join(" ")),
+          _t: norm(r.t), _n: r.n.toLowerCase(), _all: norm([r.note, r.body, r.cells, r.fig, r.refs].join(" ")),
         })));
     }
     return dataPromise;
@@ -87,7 +87,7 @@
   function snippet(r, q) {
     const toks = tokens(q).filter((t) => t.length > 1 && t !== r._n && r._t.indexOf(t) < 0);
     if (!toks.length) return "";
-    const fields = [["Note", r.note], ["Table", r.cells], ["In the figure", r.fig]];
+    const fields = [["Note", r.note], ["Text", r.body], ["Table", r.cells], ["In the figure", r.fig]];
     for (const [label, src] of fields) {
       if (!src) continue;
       const i = norm(src).indexOf(toks[0]);

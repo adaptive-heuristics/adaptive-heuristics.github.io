@@ -24,6 +24,7 @@ class Resolver:
     def __init__(self, doc: Doc, app_aux: Aux, paper_aux: Aux, pdf: PdfIndex, pdf_url: str):
         self.doc, self.app, self.paper, self.pdf, self.pdf_url = doc, app_aux, paper_aux, pdf, pdf_url
         self.site: dict[str, str] = {}   # labels that resolve to a page of this site (the text sections)
+        self.bib: dict[str, str] = {}    # citation key -> its entry on the references page
         self.by_label: dict[str, tuple[Exhibit, str | None]] = {}
         for ex in doc.exhibits:
             for p in ex.parts:
@@ -57,6 +58,9 @@ class Resolver:
         if not b:
             raise BuildError(f"\\cite{{{key}}} is not in the appendix bibliography")
         return b.short, b.year, b.long
+
+    def cite_href(self, key: str) -> str | None:
+        return self.bib.get(key)
 
 
 # ---- the main paper's structure and its citations of OA labels ----------------------------------

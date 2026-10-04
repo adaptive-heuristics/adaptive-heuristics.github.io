@@ -312,8 +312,8 @@ def check_integrity(cfg: Config, root: Path, model: dict, rep: Report) -> None:
         rep.err("exhibit numbers are not contiguous: " + "; ".join(gaps))
     else:
         rep.passed.append(f"{len(ex)} exhibits, numbered contiguously within each section")
-    # pages exist
-    texts = model.get("texts", [])
+    # pages exist (the references page is checked with the text sections)
+    texts = model.get("texts", []) + ([model["references"]] if model.get("references") else [])
     missing = []
     for e in ex + texts:
         if not (root / e["url"].strip("/") / "index.html").exists():
@@ -424,7 +424,7 @@ def check_integrity(cfg: Config, root: Path, model: dict, rep: Report) -> None:
         for b in text_low:
             rep.err(b)
     elif texts:
-        rep.passed.append(f"{len(texts)} text sections: wording matches their PDF pages (>= {thr:.2f})")
+        rep.passed.append(f"{len(texts)} text pages: wording matches their PDF pages (>= {thr:.2f})")
     if num_bad:
         for b in num_bad:
             rep.err(b)

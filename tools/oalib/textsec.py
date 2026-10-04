@@ -1,9 +1,10 @@
-"""The appendix's text-only subsections (questionnaires and prompts) as web pages.
+"""The appendix's running text as web pages, so that nothing in the PDF is out of reach of the site.
 
-A text unit is a numbered subsection without figures or tables (A.1, B.1, C.1, ...). Its page carries the
-subsection with its sub-subsections; the first unit of a section also carries the section's own introduction,
-under the section heading, as the PDF does. Everything is read from the comment-blanked source, so nothing in a
-LaTeX comment can reach a page.
+A text unit is a numbered subsection without figures or tables (A.1, B.1, C.1, ...): its page carries the
+subsection with its sub-subsections. A lead unit is the running text of a section or subsection that does have
+figures or tables (E, A.2, ...), with its floats left out; its page ends with a list of those exhibits. The first
+unit of a section also carries the section's own introduction, under the section heading, as the PDF does.
+Everything is read from the comment-blanked source, so nothing in a LaTeX comment can reach a page.
 """
 from __future__ import annotations
 
@@ -17,8 +18,10 @@ from .util import BuildError
 
 FN_OPEN, FN_CLOSE = "\ue000", "\ue001"           # footnote marker token: FN_OPEN + number + FN_CLOSE
 BLANK = "\ue002"                                 # answer field (\underline{\hspace{..}})
-_DROP = re.compile(r"\\(clearpage|newpage|begingroup|endgroup|singlespacing|onehalfspacing|doublespacing)"
-                   r"(?![A-Za-z@])")
+_DROP = re.compile(r"\\(clearpage|newpage|begingroup|endgroup|singlespacing|onehalfspacing|doublespacing"
+                   r"|FloatBarrier|centering)(?![A-Za-z@])")
+_SETUP = re.compile(r"\\(newcolumntype|addcontentsline|renewcommand|newcommand|setlength|addtolength|begin|end)\*?"
+                    r"(\s*(\{[^{}]*\}|\[[^\]]*\]))*")
 _BLOCK = re.compile(r"\\begin\s*\{(enumerate|itemize|quote)\}|\\(paragraph|subsubsection|respbox)(?![A-Za-z@])"
                     r"|\{\s*\\(small|footnotesize)(?![A-Za-z@])")
 
@@ -30,6 +33,8 @@ class Unit:
     intro: tuple[int, int] | None     # the section's own introduction, when this is its first subsection
     span: tuple[int, int]             # the subsection's body
     subs: list[Section] = field(default_factory=list)
+    kind: str = "text"                # text: a text-only subsection; lead: the running text around exhibits
+    mask: list[tuple[int, int]] = field(default_factory=list)   # floats to leave out of the span
 
     @property
     def id(self) -> str:
@@ -38,6 +43,11 @@ class Unit:
     @property
     def url(self) -> str:
         return f"/section/{self.section.id}/"
+
+    def covers(self, at: int) -> bool:
+        """Whether a source offset is on this page (in its text, not in a float left out of it)."""
+        return any(x and x[0] <= at < x[1] for x in (self.intro, self.span)) and \
+            not any(a <= at < b for a, b in self.mask)
 
 
 def heading_end(blank: str, offset: int) -> int:
@@ -56,21 +66,48 @@ def find_units(doc: Doc) -> list[Unit]:
     end_doc = blank.find("\\end{document}")
     refs = re.search(r"\\(bibliography|printbibliography)(?![A-Za-z@])", blank)
     stop = refs.start() if refs else end_doc
+    floats = []
+    for env in ("figure", "table", "landscape"):
+        pos = 0
+        while (e := find_env(blank, env, pos)):
+            floats.append((e[0], e[3]))
+            pos = e[3]
     units = []
     for i, s in enumerate(secs):
-        if s.level != 2 or s.has_exhibits:
+        has_children = any(t.level == 2 and t.id.startswith(s.id + ".") for t in secs) if s.level == 1 else True
+        if s.level == 2 and not s.has_exhibits:
+            kind = "text"
+        elif s.has_exhibits and (s.level == 2 or not has_children):
+            kind = "lead"
+        else:
             continue
-        top = next(t for t in reversed(secs[:i]) if t.level == 1)
-        nxt = next((t.offset for t in secs[i + 1:] if t.level <= 2), stop)
-        first_child = next(t for t in secs if t.level == 2 and t.id.startswith(top.id + "."))
+        top = s if s.level == 1 else next(t for t in reversed(secs[:i]) if t.level == 1)
+        nxt = next((t.offset for t in secs[i + 1:] if t.level <= s.level), stop)
+        a = heading_end(blank, s.offset)
+        mask = [(x, y) for x, y in floats if a <= x < nxt] if kind == "lead" else []
+        if kind == "lead" and not _has_words(blank, a, nxt, mask):
+            continue
         intro = None
-        if first_child is s:
-            a, b = heading_end(blank, top.offset), s.offset
-            if _DROP.sub("", blank[a:b]).strip():
-                intro = (a, b)
-        units.append(Unit(s, top, intro, (heading_end(blank, s.offset), nxt),
-                          [t for t in secs[i + 1:] if t.level == 3 and t.offset < nxt]))
+        if s.level == 2:
+            first_child = next(t for t in secs if t.level == 2 and t.id.startswith(top.id + "."))
+            if first_child is s:
+                ia, ib = heading_end(blank, top.offset), s.offset
+                if _has_words(blank, ia, ib, []):
+                    intro = (ia, ib)
+        units.append(Unit(s, top, intro, (a, nxt),
+                          [t for t in secs[i + 1:] if t.level == 3 and t.offset < nxt] if kind == "text" else [],
+                          kind, mask))
     return units
+
+
+def _has_words(blank: str, a: int, b: int, mask: list[tuple[int, int]]) -> bool:
+    s = list(blank[a:b])
+    for x, y in mask:
+        for k in range(max(x, a), min(y, b)):
+            s[k - a] = " "
+    t = _SETUP.sub(" ", _DROP.sub(" ", "".join(s)))      # set-up commands carry words that are not text
+    t = re.sub(r"\\[A-Za-z@]+\*?(\[[^\]]*\])?", " ", t)
+    return bool(re.search(r"[A-Za-z]{3,}", t))
 
 
 def site_targets(doc: Doc, units: list[Unit]) -> dict[str, str]:
@@ -86,7 +123,8 @@ def site_targets(doc: Doc, units: list[Unit]) -> dict[str, str]:
                 out[s.label] = f"{u.url}#sec-{s.id}"
         for a, b in [x for x in (u.intro, u.span) if x]:
             for m in re.finditer(r"\\item\s*\\label\s*\{(q:[^}]+)\}", doc.blank[a:b]):
-                out[m.group(1)] = f"{u.url}#q-{m.group(1).split(':', 1)[1]}"
+                if u.covers(a + m.start()):
+                    out[m.group(1)] = f"{u.url}#q-{m.group(1).split(':', 1)[1]}"
     return out
 
 
@@ -126,6 +164,13 @@ class Page:
     # source text with footnotes and answer fields replaced by tokens
     def _prepare(self, a: int, b: int) -> str:
         blank = self.doc.blank
+        if self.unit.mask:                       # leave the floats out (same length, so offsets still hold)
+            chars = list(blank)
+            for x, y in self.unit.mask:
+                for k in range(max(x, a), min(y, b)):
+                    if chars[k] != "\n":
+                        chars[k] = " "
+            blank = "".join(chars)
         out, i = [], a
         for m in re.finditer(r"\\footnote(?![A-Za-z@])", blank[a:b]):
             at = a + m.start()

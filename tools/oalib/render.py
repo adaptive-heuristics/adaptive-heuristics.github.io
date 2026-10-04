@@ -98,8 +98,9 @@ def render(cfg: Config, model: dict, stage: Path) -> None:
 
     exhibits = model["exhibits"]
     texts = model.get("texts", [])
+    refs = model.get("references")
     by_id = {e["id"]: e for e in exhibits}
-    nav = {x["id"]: x for x in exhibits + texts}   # prev/next run through text pages and exhibits alike
+    nav = {x["id"]: x for x in exhibits + texts + ([refs] if refs else [])}   # prev/next run through every page
     sug = _suggest(exhibits)
     for e in exhibits:
         e["suggest"] = sug[e["id"]]
@@ -117,14 +118,18 @@ def render(cfg: Config, model: dict, stage: Path) -> None:
         sub_ids = {x["id"] for x in s["subs"]}
         s["loose"] = [e for e in s["exhibits"] if e.get("subsection") not in sub_ids]
         s["units"] = [t for t in texts if t["top"] == s["id"]]
+        s["lead"] = next((t for t in s["units"] if t["number"] == s["id"]), None)   # a section's own text page
         for x in s["subs"]:
             x["unit"] = next((t for t in s["units"] if t["number"] == x["id"]), None)
+    for t in texts:
+        t["member_items"] = [by_id[i] for i in t.get("members", [])]
     groups = [dict(g) for g in model["groups"]]
     for g in groups:
         g["items"] = [by_id[i] for i in g["exhibits"]]
 
     ctx = {"site": model["site"], "pdf": model["pdf"], "build": model["build"], "counts": model["counts"],
-           "tops": tops, "groups": groups, "exhibits": exhibits, "texts": texts, "by_id": by_id, "v": ver}
+           "tops": tops, "groups": groups, "exhibits": exhibits, "texts": texts, "references": refs,
+           "by_id": by_id, "v": ver}
 
     write_text(stage / "index.html", env.get_template("index.html").render(**ctx, page="home"))
     for e in exhibits:
@@ -137,6 +142,10 @@ def render(cfg: Config, model: dict, stage: Path) -> None:
         html = env.get_template("section.html").render(**ctx, page="section", t=t, top=top,
                                                        prev=nav.get(t["prev"]), next=nav.get(t["next"]))
         write_text(stage / t["url"].strip("/") / "index.html", html)
+    if refs:
+        html = env.get_template("references.html").render(**ctx, page="references", r=refs,
+                                                          prev=nav.get(refs["prev"]), next=nav.get(refs["next"]))
+        write_text(stage / refs["url"].strip("/") / "index.html", html)
     write_text(stage / "compare" / "index.html", env.get_template("compare.html").render(**ctx, page="compare"))
     write_text(stage / "pdf" / "index.html", env.get_template("pdf.html").render(**ctx, page="pdf"))
     write_text(stage / "404.html", env.get_template("404.html").render(**ctx, page="404"))
@@ -156,7 +165,11 @@ def render(cfg: Config, model: dict, stage: Path) -> None:
                        "sug": e["suggest"]})
     for t in texts:
         search.append({"id": t["id"], "u": t["url"], "k": "Section", "n": t["number"], "t": t["title"],
-                       "s": t["top"], "g": "", "note": t["text"], "cells": "", "fig": "", "refs": "", "sug": []})
+                       "s": t["top"], "g": "", "note": "", "body": t["text"], "cells": "", "fig": "", "refs": "",
+                       "sug": []})
+    if refs:
+        search.append({"id": refs["id"], "u": refs["url"], "k": "", "n": "", "t": refs["title"], "s": "", "g": "",
+                       "note": "", "body": refs["text"], "cells": "", "fig": "", "refs": "", "sug": []})
     write_json(stage / "data" / "search.json", search, compact=True)
     lite = {k: v for k, v in model.items() if k != "exhibits"}
     lite["exhibits"] = [{k: v for k, v in e.items() if k not in ("search", "parts")} | {

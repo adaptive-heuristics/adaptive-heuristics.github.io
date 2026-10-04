@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% from "_nav.html" import sidebar, pager %}
+{% block title %}{{ r.title }} &middot; Online Appendix{% endblock %}
+{% block main %}
+<div class="layout">
+  {{ sidebar(tops, r.id, references) }}
+
+  <article class="ex tx-page" data-exhibit="{{ r.id }}" data-prev="{{ prev.url if prev else '' }}" data-next="{{ next.url if next else '' }}">
+    <button class="toc-btn" type="button" data-toc-open aria-controls="toc" aria-expanded="false" data-needs-js hidden>Contents</button>
+    <h1 class="ex-title">{{ r.title_html|no_widow|safe_html }}</h1>
+    <ul class="bib">
+    {% for b in r["items"] %}
+      <li id="ref-{{ b.key }}">{{ b.html|safe_html }}</li>
+    {% endfor %}
+    </ul>
+
+    <div class="actions">
+      <a href="{{ r.pdf_href }}" target="_blank" rel="noopener">Open in PDF, p.&nbsp;{{ r.page_labels[0] }}</a>
+    </div>
+
+    {{ pager(prev, next) }}
+  </article>
+</div>
+{% endblock %}

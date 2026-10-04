@@ -368,30 +368,36 @@ class Inline:
             o2, j = read_opt(s, j)
             keys, j2 = self._arg(s, j)
             pre, post = (None, o1) if o2 is None else (o1, o2)
+            base = name.rstrip("*")
             items = []
             for key in [k.strip() for k in keys.split(",") if k.strip()]:
                 short, year, _long = self.r.cite(key)
                 self.cites.append(key)
-                base = name.rstrip("*")
                 if base in ("citet", "cite"):
-                    items.append(f"{short} ({year})")
+                    item = f"{short} ({year})"
                 elif base == "citealt":
-                    items.append(f"{short} {year}")
+                    item = f"{short} {year}"
                 elif base in ("citep", "citealp"):
-                    items.append(f"{short}, {year}")
+                    item = f"{short}, {year}"
                 elif base == "citeauthor":
-                    items.append(short)
+                    item = short
                 else:
-                    items.append(year)
-            body = "; ".join(items)
-            base = name.rstrip("*")
+                    item = year
+                items.append([item, self.r.cite_href(key) if self.link_refs else None])
+            if post and base in ("citet", "cite"):
+                items[-1][0] = items[-1][0][:-1] + f", {post})"
+            def clean(x: str) -> str:
+                return re.sub(r"\\(?:&)", "&", x.replace("~", "\u00a0"))
+            # each work links to its entry on the references page
+            texts = [clean(t) for t, _ in items]
+            links = [f'<a class="cite" href="{_html.escape(h)}">{_html.escape(t)}</a>' if h else _html.escape(t)
+                     for t, (_, h) in zip(texts, items)]
+            body_t, body_h = "; ".join(texts), "; ".join(links)
             if base == "citep":
-                body = "(" + (f"{pre} " if pre else "") + body + (f", {post}" if post else "") + ")"
-            elif post and base in ("citet", "cite"):
-                body = body[:-1] + f", {post})"
-            body = body.replace("~", "\u00a0")
-            body = re.sub(r"\\(?:&)", "&", body)
-            H.append(_html.escape(body)); T.append(body)
+                a, b = clean(f"{pre} " if pre else ""), clean(f", {post}" if post else "")
+                body_t = f"({a}{body_t}{b})"
+                body_h = f"({_html.escape(a)}{body_h}{_html.escape(b)})"
+            H.append(body_h); T.append(body_t)
             return j2
         if name in ("url", "nolinkurl"):
             url, j2 = self._arg(s, j)

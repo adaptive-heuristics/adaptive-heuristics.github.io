@@ -108,6 +108,7 @@ a.te-a:hover .te-t { text-decoration: underline; text-decoration-thickness: 1px;
 .te-s { --n-w: 1.5em; grid-template-columns: var(--n-w) minmax(0, 1fr) 2.3em; column-gap: 0.55em; font-weight: 700; margin-top: 22px; }
 /* the section number sits on the first line of a wrapped title, the page number on the last, as in a LaTeX contents */
 .te-s > .te-n { align-self: start; }
+.te-s > .te-a { grid-column: 1 / 3; }
 .ix-sec:first-child > .te-s { margin-top: 10px; }
 .te-l1 { margin-left: 1.5em; }
 .te-l2 { margin-left: 3.8em; }
@@ -122,6 +123,10 @@ a.te-a:hover .te-t { text-decoration: underline; text-decoration-thickness: 1px;
 .toc-sec { margin: 0 0 10px; }
 .toc-sh { display: flex; gap: 0.5em; margin: 0; padding: 3px 0; font-weight: 700; color: var(--ink); }
 .toc-letter { min-width: 1.1em; }
+.toc-sh a { display: flex; gap: 0.5em; color: var(--ink); }
+.toc-sh a:hover { text-decoration: none; }
+.toc-sh a:hover span:last-child { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.toc-sh a[aria-current="page"] { color: var(--link); }
 .toc ul { list-style: none; margin: 2px 0 0; padding: 0 0 0 1.6em; }
 .toc li a { display: grid; grid-template-columns: 4.1em minmax(0, 1fr); column-gap: 0.4em; padding: 3px 0; color: var(--ink); }
 .toc li a:hover { text-decoration: none; }
@@ -204,6 +209,11 @@ math[display="block"] { margin: 0.4em 0; }
 .tx p { margin: 0 0 0.75em; text-align: justify; hyphens: auto; }
 .tx + .tx-h2 { margin-top: 30px; }
 .tx-h2 { max-width: var(--note); margin: 0 auto 14px; font-size: 20px; line-height: 1.3; }
+.tx-members { max-width: var(--note); margin: 34px auto 0; }
+.bib { max-width: var(--note); margin: 0 auto; padding: 0; list-style: none; font-size: 17px; line-height: 1.5; }
+.bib li { margin: 0 0 0.6em; padding-left: 1.5em; text-indent: -1.5em; overflow-wrap: anywhere; scroll-margin-top: calc(var(--hdr-h) + 20px); }
+.bib li:target { background: var(--link-wash); }
+.tx-members .tx-h2 { margin-bottom: 8px; }
 .tx h3 { font-size: 18px; font-weight: 700; line-height: 1.35; margin: 28px 0 10px; scroll-margin-top: calc(var(--hdr-h) + 20px); }
 .tx-h2, .ex-title { scroll-margin-top: calc(var(--hdr-h) + 20px); }
 .tx-num, .tx h3 .tx-num { font-weight: 700; margin-right: 0.35em; }

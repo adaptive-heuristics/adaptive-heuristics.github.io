@@ -10,7 +10,7 @@
 {% block hdr_sub %}<a class="brand-sub" href="/#sec-{{ top.id }}" title="{{ top.id }} {{ top.title }}">{{ top.id }}&ensp;{{ top.title_html|safe_html }}</a>{% endblock %}
 {% block main %}
 <div class="layout">
-  {{ sidebar(tops, e.id) }}
+  {{ sidebar(tops, e.id, references) }}
 
   <article class="ex{% if e.wide %} ex-wide{% endif %}" data-exhibit="{{ e.id }}" data-prev="{{ prev.url if prev else '' }}" data-next="{{ next.url if next else '' }}">
     <button class="toc-btn" type="button" data-toc-open aria-controls="toc" aria-expanded="false" data-needs-js hidden>Contents</button>
