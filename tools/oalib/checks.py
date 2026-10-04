@@ -313,12 +313,13 @@ def check_integrity(cfg: Config, root: Path, model: dict, rep: Report) -> None:
     else:
         rep.passed.append(f"{len(ex)} exhibits, numbered contiguously within each section")
     # pages exist
+    texts = model.get("texts", [])
     missing = []
-    for e in ex:
+    for e in ex + texts:
         if not (root / e["url"].strip("/") / "index.html").exists():
             missing.append(e["url"])
     if missing:
-        rep.err("missing exhibit pages: " + ", ".join(missing))
+        rep.err("missing pages: " + ", ".join(missing))
     # internal links + stray LaTeX
     pdf_pages = model["pdf"]["pages"]
     bad_links, stray = [], []
@@ -404,7 +405,26 @@ def check_integrity(cfg: Config, root: Path, model: dict, rep: Report) -> None:
                 ratio = matched / max(1, len(a))
                 if ratio < thr:
                     note_low.append(f"{e['kind_word']} {e['number']} part {p['n']}: note matches the PDF at {ratio:.3f}")
+    # text sections (questionnaires and prompts) against their PDF pages
+    text_low = []
+    for t in texts:
+        p0, p1 = t["pages"]
+        pdf_text = "\n".join(doc[pg].get_text() for pg in range(p0, p1 + 1))
+        b = _words(pdf_text)
+        # the body in reading order; each footnote on its own (the PDF sets them at the foot of their page)
+        for what, src in [("text", t.get("body_text", t["text"]))] + [(f"footnote {i + 1}", x)
+                                                                       for i, x in enumerate(t.get("fn_text", []))]:
+            a = _words(src)
+            sm = difflib.SequenceMatcher(a=a, b=b, autojunk=False)
+            ratio = sum(bl.size for bl in sm.get_matching_blocks()) / max(1, len(a))
+            if ratio < thr:
+                text_low.append(f"{t['number']} {t['title']}: {what} matches the PDF at {ratio:.3f}")
     doc.close()
+    if text_low:
+        for b in text_low:
+            rep.err(b)
+    elif texts:
+        rep.passed.append(f"{len(texts)} text sections: wording matches their PDF pages (>= {thr:.2f})")
     if num_bad:
         for b in num_bad:
             rep.err(b)
@@ -415,9 +435,10 @@ def check_integrity(cfg: Config, root: Path, model: dict, rep: Report) -> None:
             rep.err(b)
     else:
         rep.passed.append(f"every note's wording matches its PDF page (>= {thr:.2f})")
-    nxt = [e["next"] for e in ex if e["next"]]
-    if len(nxt) != len(ex) - 1:
-        rep.err("prev/next chain does not cover every exhibit")
+    pages = ex + texts
+    nxt = [e["next"] for e in pages if e["next"]]
+    if len(nxt) != len(pages) - 1 or len(set(nxt)) != len(nxt):
+        rep.err("prev/next chain does not cover every exhibit and text section")
 
 
 def run_checks(cfg: Config, root: Path, model: dict, *, scope: str) -> Report:

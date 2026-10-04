@@ -19,7 +19,7 @@
       <button type="button" class="pv-fit" data-pv-fit>Fit width</button>
       <button type="button" data-pv-in aria-label="Zoom in">+</button>
     </div>
-    <a class="pv-dl" href="{{ pdf.url }}" download="Online-Appendix.pdf">Download</a>
+    <a class="pv-dl" href="{{ pdf.url }}" download="{{ site.paper_title|file_slug }}-Online-Appendix.pdf">Download</a>
   </div>
   <div class="pv-wrap">
     <div class="pv-container" id="pv-container" tabindex="0"><div id="pv-viewer" class="pdfViewer"></div></div>

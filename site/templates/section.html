@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% from "_nav.html" import sidebar, pager %}
+{% block title %}{{ t.number }} {{ t.title }} &middot; Online Appendix{% endblock %}
+{% block hdr_sub %}<a class="brand-sub" href="/#sec-{{ top.id }}" title="{{ top.id }} {{ top.title }}">{{ top.id }}&ensp;{{ top.title_html|safe_html }}</a>{% endblock %}
+{% block main %}
+<div class="layout">
+  {{ sidebar(tops, t.id) }}
+
+  <article class="ex tx-page" data-exhibit="{{ t.id }}" data-prev="{{ prev.url if prev else '' }}" data-next="{{ next.url if next else '' }}">
+    <button class="toc-btn" type="button" data-toc-open aria-controls="toc" aria-expanded="false" data-needs-js hidden>Contents</button>
+    {% if t.head %}
+    <h1 class="ex-title" id="sec-{{ t.head.number }}"><span class="ex-lbl">{{ t.head.number }}</span> {{ t.head.title_html|no_widow|safe_html }}</h1>
+    <div class="tx">{{ t.head.html|safe_html }}</div>
+    <h2 class="tx-h2" id="sec-{{ t.number }}"><span class="tx-num">{{ t.number }}</span> {{ t.title_html|safe_html }}</h2>
+    {% else %}
+    <h1 class="ex-title" id="sec-{{ t.number }}"><span class="ex-lbl">{{ t.number }}</span> {{ t.title_html|no_widow|safe_html }}</h1>
+    {% endif %}
+    <div class="tx">{{ t.html|safe_html }}</div>
+    {% if t.footnotes %}
+    <section class="tx-fns" aria-label="Footnotes">
+      <ol>{% for f in t.footnotes %}<li id="fn-{{ f.n }}"><a class="tx-fn-n" href="#fnref-{{ f.n }}" aria-label="Back to the text of footnote {{ f.n }}">{{ f.n }}</a><div>{{ f.html|safe_html }}</div></li>{% endfor %}</ol>
+    </section>
+    {% endif %}
+
+    <div class="actions">
+      <a href="{{ t.pdf_href }}" target="_blank" rel="noopener">Open in PDF, p.&nbsp;{{ t.page_labels[0] }}</a>
+    </div>
+
+    {{ pager(prev, next) }}
+  </article>
+</div>
+{% endblock %}

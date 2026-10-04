@@ -23,6 +23,7 @@ def exhibit_url(ex: Exhibit) -> str:
 class Resolver:
     def __init__(self, doc: Doc, app_aux: Aux, paper_aux: Aux, pdf: PdfIndex, pdf_url: str):
         self.doc, self.app, self.paper, self.pdf, self.pdf_url = doc, app_aux, paper_aux, pdf, pdf_url
+        self.site: dict[str, str] = {}   # labels that resolve to a page of this site (the text sections)
         self.by_label: dict[str, tuple[Exhibit, str | None]] = {}
         for ex in doc.exhibits:
             for p in ex.parts:
@@ -43,6 +44,8 @@ class Resolver:
                 href = exhibit_url(ex) + (f"#panel-{letter}" if letter else "")
                 return RefTarget(lab.number, href, "oa-exhibit", label)
             kind = "oa-section" if label.startswith("app:") else "oa-question" if label.startswith("q:") else "oa-other"
+            if label in self.site:
+                return RefTarget(lab.number, self.site[label], kind, label)
             href = self.page_href(lab.anchor) if lab.anchor in self.pdf.names else None
             return RefTarget(lab.number, href, kind, label)
         if label in self.paper.labels:

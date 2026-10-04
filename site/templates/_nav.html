@@ -1,0 +1,31 @@
+{# Navigation shared by exhibit and section pages: the contents sidebar and the previous/next pager. #}
+{% macro label(x) -%}
+{% if x.kind_word %}{{ x.kind_word }} {{ x.number }}:{% else %}{{ x.number }}{% endif %}
+{%- endmacro %}
+
+{% macro sidebar(tops, current) -%}
+<aside class="toc" id="toc" aria-label="Contents" data-toc>
+  <div class="toc-head"><a href="/#contents">Contents</a><button class="toc-close" type="button" data-toc-close>Close</button></div>
+  {% for s in tops %}
+  <div class="toc-sec">
+    <p class="toc-sh"><span class="toc-letter">{{ s.id }}</span><span>{{ s.title_html|safe_html }}</span></p>
+    <ul>
+    {% for t in s.units %}
+      <li><a href="{{ t.url }}"{% if t.id == current %} aria-current="page"{% endif %} title="{{ t.number }} {{ t.title }}"><span class="toc-num">{{ t.number }}</span><span class="toc-t">{{ t.title }}</span></a></li>
+    {% endfor %}
+    {% for x in s.exhibits %}
+      <li><a href="{{ x.url }}"{% if x.id == current %} aria-current="page"{% endif %} title="{{ x.kind_word }} {{ x.number }}: {{ x.title }}"><span class="toc-num">{{ "Fig." if x.kind == "figure" else "Tab." }} {{ x.number }}</span><span class="toc-t">{{ x.title }}</span></a></li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</aside>
+<div class="toc-scrim" data-toc-close hidden></div>
+{%- endmacro %}
+
+{% macro pager(prev, next) -%}
+<nav class="pager" aria-label="Previous and next">
+  {% if prev %}<a class="pg-prev" href="{{ prev.url }}" rel="prev"><span class="pg-k">Previous</span><span class="pg-t"><span class="pg-n">{{ label(prev) }}</span> {{ prev.title }}</span></a>{% else %}<span></span>{% endif %}
+  {% if next %}<a class="pg-next" href="{{ next.url }}" rel="next"><span class="pg-k">Next</span><span class="pg-t"><span class="pg-n">{{ label(next) }}</span> {{ next.title }}</span></a>{% endif %}
+</nav>
+{%- endmacro %}

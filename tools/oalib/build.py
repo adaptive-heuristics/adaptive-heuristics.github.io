@@ -20,6 +20,7 @@ from .pdfmap import PdfIndex, postprocess
 from .questions import parse_questions, render as render_question
 from .table2html import parse_table, to_html
 from .texdoc import Doc, Exhibit, parse_appendix
+from .textsec import Page, find_units, finish, footnote_numbers, plain, site_targets
 from .util import BuildError, info, read_text, sha256_file, sha256_text, warn, write_json, write_text
 
 TOOLS = Path(__file__).resolve().parents[1]
@@ -93,6 +94,9 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
     pdf = PdfIndex(stage / cfg.pdf_name)
     viewer_url = "/pdf/"  # in-site PDF viewer: opens the page in any browser instead of downloading the file
     resolver = Resolver(doc, app_aux, paper_aux, pdf, viewer_url)
+    # the text-only subsections get pages of their own; references to them (and to their questions) link there
+    units = find_units(doc)
+    resolver.site = site_targets(doc, units)
 
     def mk(where: str, link: bool = True) -> Inline:
         return Inline(resolver, math, where, link_refs=link)
@@ -249,8 +253,14 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
                 if panel and panel not in have["panels"]:
                     have["panels"].append(panel)
                 continue
+            if q.label:
+                q_href = resolver.site.get(q.label)
+            else:
+                u = next((u for u in units if any(x and x[0] <= q.offset < x[1] for x in (u.intro, u.span))), None)
+                q_href = f"{u.url}#{q.key}" if u else None
             e["questions"].append({"key": q.key, "label": q.label, "source": q.source, "number": q.number,
-                                   "panels": [panel] if panel else [], "html": q_html, "text": q_text})
+                                   "panels": [panel] if panel else [], "html": q_html, "text": q_text,
+                                   "href": q_href})
     ref_link = re.compile(r'<a class="ref" href="[^"]*" data-ref="(q:[^"]+)"(?: target="_blank" rel="noopener")?>')
     for e in exhibits_out:
         shown = {x["label"]: x["key"] for x in e["questions"] if x["label"]}
@@ -315,6 +325,34 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
             groups_out.append({"key": k, "number": k, "title": h["title"], "title_html": h["title_html"],
                                "exhibits": members})
 
+    # ---- text-only subsections ----
+    fn_numbers = footnote_numbers(doc)
+    sec_by_id = {s["id"]: s for s in sections_out}
+    texts_out = []
+    mcq_seen: dict[str, int] = {}
+    for u in units:
+        pg = Page(doc, u, lambda w, _id=u.section.id: mk(f"section {_id}: {w}"), fn_numbers,
+                  mcq_seen.get(u.top.id, 0))
+        head = None
+        if u.intro:
+            ht = mk(f"heading {u.top.id}").inline(u.top.title)
+            pg.text.append(ht.text)
+            head = {"number": u.top.id, "title": ht.text, "title_html": ht.html, "html": finish(pg.body(*u.intro))}
+        tr = mk(f"heading {u.section.id}").inline(u.section.title)
+        pg.text.append(tr.text)
+        body = finish(pg.body(*u.span))
+        notes = [{"n": f["n"], "html": finish(f["html"])} for f in pg.footnotes()]
+        mcq_seen[u.top.id] = pg.mcq
+        p0 = sec_by_id[u.top.id]["pages"][0] if u.intro else sec_by_id[u.section.id]["pages"][0]
+        p1 = sec_by_id[u.section.id]["pages"][1]
+        texts_out.append({
+            "id": u.id, "kind": "section", "kind_word": "", "number": u.section.id, "url": u.url,
+            "title": tr.text, "title_html": tr.html, "top": u.top.id, "head": head, "html": body,
+            "footnotes": notes, "text": plain(" ".join(pg.text + pg.fn_text)), "body_text": plain(" ".join(pg.text)),
+            "fn_text": [plain(x) for x in pg.fn_text], "pages": [p0, p1],
+            "page_labels": [pdf.labels[p0], pdf.labels[p1]], "pdf_href": f"{viewer_url}#page={p0 + 1}",
+        })
+
     # ---- math -> MathML, then fill every HTML string ----
     math.render()
     def fill(obj):
@@ -327,11 +365,19 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
         return obj
     exhibits_out = fill(exhibits_out)
     sections_out = fill(sections_out)
+    texts_out = fill(texts_out)
 
-    # prev/next in document order
-    for i, e in enumerate(exhibits_out):
-        e["prev"] = exhibits_out[i - 1]["id"] if i > 0 else None
-        e["next"] = exhibits_out[i + 1]["id"] if i + 1 < len(exhibits_out) else None
+    # prev/next in reading order: each section's text pages, then its figures and tables
+    seq = []
+    for top in [s for s in doc.sections if s.level == 1]:
+        seq += [t["id"] for t in texts_out if t["top"] == top.id]
+        seq += [e["id"] for e in exhibits_out if e["section"] == top.id]
+    nav = {x["id"]: x for x in exhibits_out + texts_out}
+    if sorted(seq) != sorted(nav):
+        raise BuildError("the reading order does not cover every page")
+    for i, k in enumerate(seq):
+        nav[k]["prev"] = seq[i - 1] if i > 0 else None
+        nav[k]["next"] = seq[i + 1] if i + 1 < len(seq) else None
 
     pdf_size = (stage / cfg.pdf_name).stat().st_size
     model = {
@@ -345,6 +391,7 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
                    "tables": sum(e["kind"] == "table" for e in exhibits_out)},
         "sections": sections_out,
         "exhibits": exhibits_out,
+        "texts": texts_out,
         "groups": groups_out,
     }
     return BuildResult(stage, model, snap, doc, pdf, comp, set(paper_aux.labels))

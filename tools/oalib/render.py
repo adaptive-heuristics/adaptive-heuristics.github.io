@@ -63,6 +63,11 @@ def _no_widow(html: str) -> str:
     return "".join(parts)
 
 
+def _file_slug(title: str) -> str:
+    """'Adaptive Heuristics in Stock Selection' -> 'Adaptive-Heuristics-in-Stock-Selection' (for download names)."""
+    return re.sub(r"[^A-Za-z0-9]+", "-", title).strip("-")
+
+
 def _short(title: str, n: int = 46) -> str:
     return title if len(title) <= n else title[: n - 1].rsplit(" ", 1)[0] + "…"
 
@@ -74,6 +79,7 @@ def render(cfg: Config, model: dict, stage: Path) -> None:
                       trim_blocks=True, lstrip_blocks=True)
     env.filters["safe_html"] = lambda s: Markup(s or "")
     env.filters["short"] = _short
+    env.filters["file_slug"] = _file_slug
     env.filters["no_widow"] = _no_widow
     env.filters["month_year"] = _month_year
     env.filters["pct"] = lambda w: f"{w * 100:.0f}%" if w else "100%"
@@ -91,7 +97,9 @@ def render(cfg: Config, model: dict, stage: Path) -> None:
            "pdf": sha256_file(assets / "pdfview.js")[:10]}
 
     exhibits = model["exhibits"]
+    texts = model.get("texts", [])
     by_id = {e["id"]: e for e in exhibits}
+    nav = {x["id"]: x for x in exhibits + texts}   # prev/next run through text pages and exhibits alike
     sug = _suggest(exhibits)
     for e in exhibits:
         e["suggest"] = sug[e["id"]]
@@ -108,19 +116,27 @@ def render(cfg: Config, model: dict, stage: Path) -> None:
             x["exhibits"] = [e for e in s["exhibits"] if e.get("subsection") == x["id"]]
         sub_ids = {x["id"] for x in s["subs"]}
         s["loose"] = [e for e in s["exhibits"] if e.get("subsection") not in sub_ids]
+        s["units"] = [t for t in texts if t["top"] == s["id"]]
+        for x in s["subs"]:
+            x["unit"] = next((t for t in s["units"] if t["number"] == x["id"]), None)
     groups = [dict(g) for g in model["groups"]]
     for g in groups:
         g["items"] = [by_id[i] for i in g["exhibits"]]
 
     ctx = {"site": model["site"], "pdf": model["pdf"], "build": model["build"], "counts": model["counts"],
-           "tops": tops, "groups": groups, "exhibits": exhibits, "by_id": by_id, "v": ver}
+           "tops": tops, "groups": groups, "exhibits": exhibits, "texts": texts, "by_id": by_id, "v": ver}
 
     write_text(stage / "index.html", env.get_template("index.html").render(**ctx, page="home"))
     for e in exhibits:
         top = next(s for s in tops if s["id"] == e["section"])
         html = env.get_template("exhibit.html").render(**ctx, page="exhibit", e=e, top=top,
-                                                        prev=by_id.get(e["prev"]), next=by_id.get(e["next"]))
+                                                        prev=nav.get(e["prev"]), next=nav.get(e["next"]))
         write_text(stage / e["url"].strip("/") / "index.html", html)
+    for t in texts:
+        top = next(s for s in tops if s["id"] == t["top"])
+        html = env.get_template("section.html").render(**ctx, page="section", t=t, top=top,
+                                                       prev=nav.get(t["prev"]), next=nav.get(t["next"]))
+        write_text(stage / t["url"].strip("/") / "index.html", html)
     write_text(stage / "compare" / "index.html", env.get_template("compare.html").render(**ctx, page="compare"))
     write_text(stage / "pdf" / "index.html", env.get_template("pdf.html").render(**ctx, page="pdf"))
     write_text(stage / "404.html", env.get_template("404.html").render(**ctx, page="404"))
@@ -138,6 +154,9 @@ def render(cfg: Config, model: dict, stage: Path) -> None:
                        "s": e["section"], "g": e["group"]["key"], "note": notes, "cells": cells,
                        "fig": (subs + " " + figtext).strip(), "refs": " ".join(r["text"] for r in e["main_refs"]),
                        "sug": e["suggest"]})
+    for t in texts:
+        search.append({"id": t["id"], "u": t["url"], "k": "Section", "n": t["number"], "t": t["title"],
+                       "s": t["top"], "g": "", "note": t["text"], "cells": "", "fig": "", "refs": "", "sug": []})
     write_json(stage / "data" / "search.json", search, compact=True)
     lite = {k: v for k, v in model.items() if k != "exhibits"}
     lite["exhibits"] = [{k: v for k, v in e.items() if k not in ("search", "parts")} | {

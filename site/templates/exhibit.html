@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from "_nav.html" import sidebar, pager %}
 {% block title %}{{ e.kind_word }} {{ e.number }}: {{ e.title }} &middot; Online Appendix{% endblock %}
 {% macro note(p) -%}
 {% if p.note_html %}<div class="note">{{ p.note_html|safe_html }}</div>{% endif %}
@@ -9,24 +10,7 @@
 {% block hdr_sub %}<a class="brand-sub" href="/#sec-{{ top.id }}" title="{{ top.id }} {{ top.title }}">{{ top.id }}&ensp;{{ top.title_html|safe_html }}</a>{% endblock %}
 {% block main %}
 <div class="layout">
-  <aside class="toc" id="toc" aria-label="Contents" data-toc>
-    <div class="toc-head"><a href="/#contents">Contents</a><button class="toc-close" type="button" data-toc-close>Close</button></div>
-    {% for s in tops %}
-    {% if s.n_exhibits %}
-    <div class="toc-sec">
-      <p class="toc-sh"><span class="toc-letter">{{ s.id }}</span><span>{{ s.title_html|safe_html }}</span></p>
-      <ul>
-      {% for x in s.exhibits %}
-        <li><a href="{{ x.url }}"{% if x.id == e.id %} aria-current="page"{% endif %} title="{{ x.kind_word }} {{ x.number }}: {{ x.title }}"><span class="toc-num">{{ "Fig." if x.kind == "figure" else "Tab." }} {{ x.number }}</span><span class="toc-t">{{ x.title }}</span></a></li>
-      {% endfor %}
-      </ul>
-    </div>
-    {% else %}
-    <a class="toc-sec toc-plain" href="{{ s.href }}" target="_blank" rel="noopener"><span class="toc-letter">{{ s.id }}</span><span>{{ s.title_html|safe_html }} <em class="te-note">text only, in the PDF</em></span></a>
-    {% endif %}
-    {% endfor %}
-  </aside>
-  <div class="toc-scrim" data-toc-close hidden></div>
+  {{ sidebar(tops, e.id) }}
 
   <article class="ex{% if e.wide %} ex-wide{% endif %}" data-exhibit="{{ e.id }}" data-prev="{{ prev.url if prev else '' }}" data-next="{{ next.url if next else '' }}">
     <button class="toc-btn" type="button" data-toc-open aria-controls="toc" aria-expanded="false" data-needs-js hidden>Contents</button>
@@ -88,17 +72,14 @@
       <h2 class="qbox-h" id="qbox-h">{{ "Questions" if e.questions|length > 1 else "Question" }}</h2>
       {% for q in e.questions %}
       <div class="q" id="q-{{ q.key }}">
-        <p class="q-meta">{{ q.source }}{% if q.number %}, {{ "multiple-choice question" if q.source == "AI interviewer" else "Question" }} {{ q.number }}{% endif %}{% if q.panels %}<span class="q-panel">{{ "Panels" if q.panels|length > 1 else "Panel" }} {% for pl in q.panels %}({{ pl }}){% if not loop.last %}, {% endif %}{% endfor %}</span>{% endif %}</p>
+        <p class="q-meta">{% set qname %}{{ q.source }}{% if q.number %}, {{ "multiple-choice question" if q.source == "AI interviewer" else "Question" }} {{ q.number }}{% endif %}{% endset %}{% if q.href %}<a href="{{ q.href }}">{{ qname }}</a>{% else %}{{ qname }}{% endif %}{% if q.panels %}<span class="q-panel">{{ "Panels" if q.panels|length > 1 else "Panel" }} {% for pl in q.panels %}({{ pl }}){% if not loop.last %}, {% endif %}{% endfor %}</span>{% endif %}</p>
         <div class="q-body">{{ q.html|safe_html }}</div>
       </div>
       {% endfor %}
     </section>
     {% endif %}
 
-    <nav class="pager" aria-label="Previous and next exhibit">
-      {% if prev %}<a class="pg-prev" href="{{ prev.url }}" rel="prev"><span class="pg-k">Previous</span><span class="pg-t"><span class="pg-n">{{ prev.kind_word }} {{ prev.number }}:</span> {{ prev.title }}</span></a>{% else %}<span></span>{% endif %}
-      {% if next %}<a class="pg-next" href="{{ next.url }}" rel="next"><span class="pg-k">Next</span><span class="pg-t"><span class="pg-n">{{ next.kind_word }} {{ next.number }}:</span> {{ next.title }}</span></a>{% endif %}
-    </nav>
+    {{ pager(prev, next) }}
   </article>
 </div>
 {% endblock %}
