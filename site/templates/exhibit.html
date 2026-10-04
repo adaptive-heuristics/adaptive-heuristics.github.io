@@ -85,8 +85,8 @@
       <a href="/compare/?a={{ e.kind }}-{{ e.number }}{% if e.suggest %}&amp;b={{ e.suggest[0]|replace('/', '-') }}{% endif %}">{{ icon("compare") }}Compare with&hellip;</a>
     </div>
 
-    {% if e.kind == "figure" and e.questions %}
-    <section class="qbox" aria-label="Survey questions behind this figure">
+    {% if e.questions %}
+    <section class="qbox" aria-label="Survey questions behind this exhibit">
       <h2 class="mp-h">{{ "Questions" if e.questions|length > 1 else "Question" }}</h2>
       {% for q in e.questions %}
       <div class="q" id="q-{{ q.key }}">
@@ -94,30 +94,6 @@
         <div class="q-body">{{ q.html|safe_html }}</div>
       </div>
       {% endfor %}
-    </section>
-    {% endif %}
-
-    {% if e.kind == "table" and (e.main_refs or e.cited_in) %}
-    <section class="mp" aria-label="Links to the main paper">
-      <h2 class="mp-h">Main paper</h2>
-      <dl>
-      {% if e.cited_in %}
-        <dt>Cited in</dt>
-        <dd><ul>
-        {% for c in e.cited_in %}
-          <li>{% if c.ctx == "float" %}Notes to {{ c.float.text if c.float else "a main-paper table" }}{% if c.heading %} (Section {{ c.heading.number }}){% endif %}{% elif c.heading %}Section {{ c.heading.number }}, <span class="mp-t">{{ c.heading.title_html|safe_html }}</span>{% if c.paragraph %}, paragraph &ldquo;{{ c.paragraph }}&rdquo;{% endif %}{% if c.ctx == "footnote" %}, in a footnote{% endif %}{% endif %}{% if c.panel %} &middot; Panel {{ "(" ~ c.panel ~ ")" if c.panel.islower() else c.panel }}{% endif %}</li>
-        {% endfor %}
-        </ul></dd>
-      {% endif %}
-      {% if e.main_refs %}
-        <dt>Refers to</dt>
-        <dd><ul>
-        {% for r in e.main_refs %}
-          <li>{{ r.text }}{% if r.title %}, <span class="mp-t">{{ r.title }}</span>{% endif %}</li>
-        {% endfor %}
-        </ul></dd>
-      {% endif %}
-      </dl>
     </section>
     {% endif %}
 

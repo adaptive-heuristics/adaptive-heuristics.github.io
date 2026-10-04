@@ -58,7 +58,14 @@ def cmd_check(cfg, args) -> int:
 def cmd_preview(cfg, args) -> int:
     import http.server
     import functools
-    handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(cfg.docs))
+
+    class NoCache(http.server.SimpleHTTPRequestHandler):
+        # the preview changes on every build; make the browser re-check instead of reusing old pages
+        def end_headers(self):
+            self.send_header("Cache-Control", "no-cache")
+            super().end_headers()
+
+    handler = functools.partial(NoCache, directory=str(cfg.docs))
     srv = http.server.ThreadingHTTPServer(("127.0.0.1", args.port), handler)
     info(f"serving {cfg.docs} on http://localhost:{args.port}/ (Ctrl+C to stop)")
     try:
