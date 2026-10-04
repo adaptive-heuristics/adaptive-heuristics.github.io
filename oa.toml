@@ -9,7 +9,7 @@ bst_file = "jf.bst"
 [site]
 title = "Online Appendix"
 paper_title = ""                          # empty = taken from the appendix \title
-base_url = "https://ai-interview-stock.github.io/"
+base_url = "https://adaptive-heuristics.github.io/"
 pdf_name = "OA.pdf"
 note_position = "paper"                   # "paper": table notes above the table, as in the PDF; "below": after it
 noindex = true
@@ -20,7 +20,7 @@ identity_name = "Anonymous Authors"
 identity_email = "321373085+ai-interview-stock@users.noreply.github.com"
 github_user = "ai-interview-stock"
 github_user_id = 321373085
-repo = "ai-interview-stock/ai-interview-stock.github.io"
+repo = "adaptive-heuristics/adaptive-heuristics.github.io"     # the organization the account owns; pushes still come from github_user
 
 [figures]
 svg_max_gzip_kb = 150
