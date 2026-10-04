@@ -48,6 +48,7 @@ class Table:
     rows: list[Row]
     full_width: bool
     numbers: list[str] = field(default_factory=list)
+    heading: str | None = None   # a panel heading set as a full-width row above \toprule (LaTeX)
 
     @property
     def ncols(self) -> int:
@@ -331,8 +332,12 @@ def parse_table(src: str, path: str, coltypes: dict, conv_factory) -> Table:
     seen_mid = False
     top = bottom = False
 
+    above_top: list[int] = []     # rows set before \toprule
+
     def close_row(gap_after):
         nonlocal pending_rule, pending_gap
+        if not top:
+            above_top.append(len(rows))
         row_cells = cur + [""] if not cur else cur
         rows.append(Row([Cell("", [c]) for c in row_cells], rule_above=pending_rule, gap_before=pending_gap,
                         gap_after=_gap_class(gap_after) if gap_after else None, head=not seen_mid))
@@ -379,6 +384,15 @@ def parse_table(src: str, path: str, coltypes: dict, conv_factory) -> Table:
         raw_rows.append(cur)
     if not top or not bottom:
         raise BuildError(f"{path}: expected \\toprule and \\bottomrule")
+    # "\multicolumn{n}{l}{\small Panel A: ...} \\" above \toprule is the panel's heading, not a row of the table
+    heading = None
+    if above_top == [0] and len(raw_rows[0]) == 1:
+        m = re.match(r"\s*\\multicolumn\s*\{(\d+)\}\s*\{[^}]*\}\s*", raw_rows[0][0])
+        if m and int(m.group(1)) == len(cols):
+            inner, k = read_group(raw_rows[0][0], m.end())
+            if not raw_rows[0][0][k:].strip():
+                heading = re.sub(r"^\s*\\(small|footnotesize|normalsize)(?![A-Za-z@])\s*", "", inner).strip()
+                rows, raw_rows = rows[1:], raw_rows[1:]
 
     # convert cells
     out_rows: list[Row] = []
@@ -419,7 +433,7 @@ def parse_table(src: str, path: str, coltypes: dict, conv_factory) -> Table:
                 pos += c.colspan
         row.cells = cells
         out_rows.append(row)
-    return Table(path, cols, out_rows, full, numbers)
+    return Table(path, cols, out_rows, full, numbers, heading)
 
 
 def to_html(t: Table, *, table_id: str = "", caption_html: str = "") -> str:
