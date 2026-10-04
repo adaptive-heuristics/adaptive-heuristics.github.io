@@ -40,7 +40,8 @@
       {% else %}
       <h3 class="te te-s"><span class="te-n">{{ s.id }}</span><span class="te-t">{{ s.title_html|safe_html }}</span><a class="te-p" href="{{ s.href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="Section {{ s.id }} in the PDF, page {{ s.page_labels[0] }}">{{ s.page_labels[0] }}</a></h3>
       {% endif %}
-      {% for e in s.loose %}{{ entry(e, 1) }}{% endfor %}
+      {# every figure and table sits at one depth, whether or not its section has subsections #}
+      {% for e in s.loose %}{{ entry(e, 2) }}{% endfor %}
       {% for x in s.subs %}
         {% if x.exhibits %}
         <div class="te te-l1 te-sub" data-sub-head="{{ x.id }}">
