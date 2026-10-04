@@ -16,17 +16,26 @@ async function main() {
 
   const pageInput = document.querySelector("[data-pv-page]");
   const count = document.querySelector("[data-pv-count]");
-  let fitWidth = true;
+  // Phones and tablets open the page at the full viewer width; on a desktop that is too large, so the
+  // page opens at 60% of it. "Fit width" always fills the width; zooming by hand stops both.
+  const desktop = window.matchMedia("(pointer: fine) and (min-width: 1024px)");
+  const DESKTOP_SHARE = 0.6;
+  let mode = "start"; // "start": opening size, "fit": full width, "manual": zoomed by hand
+  const applyMode = () => {
+    if (mode === "manual") return;
+    viewer.currentScaleValue = "page-width";
+    if (mode === "start" && desktop.matches) viewer.currentScale = viewer.currentScale * DESKTOP_SHARE;
+  };
   const pageFromHash = () => {
     const m = window.location.hash.match(/page=(\d+)/);
     return m ? parseInt(m[1], 10) : 1;
   };
 
   eventBus.on("pagesinit", () => {
-    viewer.currentScaleValue = "page-width";
+    applyMode();
     const p = Math.min(pageFromHash(), viewer.pagesCount);
     msg.hidden = true;
-    // jump after the fit-width rescale has been applied, or the rescale moves the view back
+    // jump after the opening rescale has been applied, or the rescale moves the view back
     if (p > 1) requestAnimationFrame(() => setTimeout(() => {
       viewer.currentPageNumber = p;
       const el = container.querySelector('.page[data-page-number="' + p + '"]');
@@ -43,9 +52,9 @@ async function main() {
 
   document.querySelector("[data-pv-prev]").addEventListener("click", () => viewer.previousPage());
   document.querySelector("[data-pv-next]").addEventListener("click", () => viewer.nextPage());
-  document.querySelector("[data-pv-in]").addEventListener("click", () => { fitWidth = false; viewer.increaseScale(); });
-  document.querySelector("[data-pv-out]").addEventListener("click", () => { fitWidth = false; viewer.decreaseScale(); });
-  document.querySelector("[data-pv-fit]").addEventListener("click", () => { fitWidth = true; viewer.currentScaleValue = "page-width"; });
+  document.querySelector("[data-pv-in]").addEventListener("click", () => { mode = "manual"; viewer.increaseScale(); });
+  document.querySelector("[data-pv-out]").addEventListener("click", () => { mode = "manual"; viewer.decreaseScale(); });
+  document.querySelector("[data-pv-fit]").addEventListener("click", () => { mode = "fit"; applyMode(); });
   pageInput.addEventListener("change", () => {
     const n = parseInt(pageInput.value, 10);
     if (n >= 1 && n <= doc.numPages) viewer.currentPageNumber = n;
@@ -55,7 +64,7 @@ async function main() {
   let t = null;
   window.addEventListener("resize", () => {
     clearTimeout(t);
-    t = setTimeout(() => { if (fitWidth) viewer.currentScaleValue = "page-width"; }, 120);
+    t = setTimeout(applyMode, 120);
   });
   document.addEventListener("keydown", (ev) => {
     if (ev.target && /^(INPUT|TEXTAREA|SELECT)$/.test(ev.target.tagName)) return;
