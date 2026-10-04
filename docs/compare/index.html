@@ -11,19 +11,18 @@
 <meta name="color-scheme" content="light">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/assets/fonts/xcharter-regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/site.css?v=1f7b503546">
-<script src="/assets/site.js?v=3afe0d987b" defer></script>
+<link rel="stylesheet" href="/assets/site.css?v=b5d8cf5232">
+<script src="/assets/site.js?v=88fdc3f350" defer></script>
 </head>
 <body class="pg-compare">
 <a class="skip" href="#main">Skip to content</a>
 <header class="hdr">
   <div class="hdr-in">
     <a class="brand" href="/">Online Appendix</a>
-    <span class="brand-sub" title="Adaptive Heuristics in Stock Selection">Adaptive Heuristics in Stock Selection</span>
-    <nav class="hdr-nav" aria-label="Site">
-      <button class="hdr-search" type="button" data-open-search aria-label="Search exhibits"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><span class="lbl">Search exhibits</span><kbd>/</kbd></button>
-      <a class="hdr-link" href="/compare/"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="7" height="14" rx="1.5"/><rect x="13.5" y="5" width="7" height="14" rx="1.5"/></svg><span class="lbl">Compare</span></a>
-      <a class="btn-pdf" href="/pdf/" target="_blank" rel="noopener" title="Open the Online Appendix PDF in a new tab (69 pages, 3.7 MB)"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3.5h7l4.5 4.5v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15.5a1 1 0 0 1 1-1z"/><path d="M14 3.5V8h4.5"/></svg><span>PDF</span></a>
+<span class="brand-sub" title="Adaptive Heuristics in Stock Selection">Adaptive Heuristics in Stock Selection</span>    <nav class="hdr-nav" aria-label="Site">
+      <button class="hdr-link" type="button" data-open-search aria-keyshortcuts="/" data-needs-js hidden>Search</button>
+      <a class="hdr-link" href="/compare/" aria-current="page">Compare</a>
+      <a class="hdr-link" href="/pdf/" target="_blank" rel="noopener" title="Open the Online Appendix PDF in a new tab (69 pages, 3.7 MB)">PDF</a>
     </nav>
   </div>
 </header>
@@ -90,7 +89,7 @@
     </optgroup>
   </select>
 </label>
-    <button class="btn btn-line cmp-swap" type="button" data-cmp-swap aria-label="Swap the two exhibits">&#8644; Swap</button>
+    <button class="btn cmp-swap" type="button" data-cmp-swap aria-label="Swap the two exhibits">Swap</button>
     <label class="cmp-pick"><span class="cmp-lbl">Right</span>
   <select data-cmp-select="b" aria-label="Right exhibit">
     <option value="">Choose an exhibit&hellip;</option>
@@ -147,10 +146,15 @@
     </optgroup>
   </select>
 </label>
-    <label class="cmp-opt"><input type="checkbox" data-cmp-sync> Sync scrolling</label>
+    <label class="cmp-opt cmp-sync"><input type="checkbox" data-cmp-sync> Sync scrolling</label>
     <label class="cmp-opt"><input type="checkbox" data-cmp-notes> Show notes</label>
   </div>
   <p class="cmp-suggest" data-cmp-suggest hidden></p>
+  <div class="cmp-flip" role="group" aria-label="Show exhibit" data-cmp-flip hidden>
+    <button class="ix-opt on" type="button" data-cmp-show="a" aria-pressed="true">Left</button>
+    <button class="ix-opt" type="button" data-cmp-show="b" aria-pressed="false">Right</button>
+  </div>
+  <p class="sr-only" role="status" data-cmp-status></p>
   <div class="cmp-panes">
     <div class="cmp-pane" data-cmp-pane="a"><p class="cmp-empty">Choose an exhibit on the left.</p></div>
     <div class="cmp-pane" data-cmp-pane="b"><p class="cmp-empty">Choose an exhibit on the right.</p></div>
@@ -159,16 +163,14 @@
 </section>
 </main>
 <footer class="ftr">
-  <div class="ftr-in">
-    <p>Online Appendix to &ldquo;Adaptive Heuristics in Stock Selection.&rdquo; Generated from the manuscript sources; updated October 3, 2026.</p>
-    <p><a href="/pdf/" target="_blank" rel="noopener">Full appendix (PDF, 69 pages)</a></p>
-  </div>
+  <p>Online Appendix to &ldquo;Adaptive Heuristics in Stock Selection.&rdquo; Updated October 2026. <a href="/pdf/" target="_blank" rel="noopener">Full appendix (PDF, 69 pages)</a></p>
 </footer>
 <div class="pal" data-palette hidden>
   <div class="pal-box" role="dialog" aria-modal="true" aria-label="Search exhibits">
-    <div class="pal-in"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><input type="search" placeholder="Search by number, title, variable, or keyword" autocomplete="off" spellcheck="false" aria-label="Search exhibits" data-pal-input><kbd>Esc</kbd></div>
-    <ul class="pal-list" role="listbox" data-pal-list></ul>
-    <p class="pal-hint">Try &ldquo;F12&rdquo;, &ldquo;Momentum&rdquo;, &ldquo;out-of-sample&rdquo;. &uarr;&darr; to move, Enter to open.</p>
+    <div class="pal-in"><input type="search" placeholder="Number, title, variable, or keyword" autocomplete="off" spellcheck="false" aria-label="Search exhibits" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="pal-list" data-pal-input><span class="pal-esc">Esc to close</span></div>
+    <ul class="pal-list" id="pal-list" role="listbox" aria-label="Matching exhibits" data-pal-list></ul>
+    <p class="sr-only" role="status" data-pal-status></p>
+    <p class="pal-hint">Try &ldquo;F12&rdquo;, &ldquo;Momentum&rdquo;, &ldquo;out-of-sample&rdquo;. Up and down arrows move, Enter opens. Press / anywhere to search.</p>
   </div>
 </div>
 </body>

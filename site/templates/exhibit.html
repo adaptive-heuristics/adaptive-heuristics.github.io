@@ -1,38 +1,36 @@
 {% extends "base.html" %}
-{% from "_icons.html" import icon %}
 {% block title %}{{ e.kind_word }} {{ e.number }}: {{ e.title }} &middot; Online Appendix{% endblock %}
-{% block hdr_lead %}<button class="hdr-toc" type="button" data-toc-open aria-label="Contents" aria-controls="toc">{{ icon("menu") }}</button>{% endblock %}
 {% macro note(p) -%}
 {% if p.note_html %}<div class="note">{{ p.note_html|safe_html }}</div>{% endif %}
 {%- endmacro %}
 {% macro gimg(g, alt, extra="") -%}
-<img src="{{ g.src }}" width="{{ g.w|round|int }}" height="{{ g.h|round|int }}" alt="{{ alt }}" loading="lazy" decoding="async" data-zoom="{{ g.src if g.kind == 'svg' else g.png }}"{{ extra }}>
+<img src="{{ g.src }}" width="{{ g.w|round|int }}" height="{{ g.h|round|int }}" alt="{{ alt }}" loading="lazy" decoding="async"{{ extra }}>
 {%- endmacro %}
+{% block hdr_sub %}<a class="brand-sub" href="/#sec-{{ top.id }}" title="{{ top.id }} {{ top.title }}">{{ top.id }}&ensp;{{ top.title_html|safe_html }}</a>{% endblock %}
 {% block main %}
 <div class="layout">
   <aside class="toc" id="toc" aria-label="Contents" data-toc>
-    <div class="toc-head"><a href="/#contents">All exhibits</a><button class="toc-close" type="button" data-toc-close aria-label="Close contents">{{ icon("close") }}</button></div>
+    <div class="toc-head"><a href="/#contents">Contents</a><button class="toc-close" type="button" data-toc-close>Close</button></div>
     {% for s in tops %}
     {% if s.n_exhibits %}
-    <details class="toc-sec"{% if s.id == e.section %} open{% endif %}>
-      <summary><span class="toc-letter">{{ s.id }}</span>{{ s.title_html|safe_html }}</summary>
+    <div class="toc-sec">
+      <p class="toc-sh"><span class="toc-letter">{{ s.id }}</span><span>{{ s.title_html|safe_html }}</span></p>
       <ul>
       {% for x in s.exhibits %}
-        <li><a href="{{ x.url }}"{% if x.id == e.id %} aria-current="page"{% endif %} title="{{ x.kind_word }} {{ x.number }}: {{ x.title }}"><span class="toc-num">{{ x.number }}</span><span class="toc-k">{{ "Fig." if x.kind == "figure" else "Tab." }}</span>{{ x.title|short(54) }}</a></li>
+        <li><a href="{{ x.url }}"{% if x.id == e.id %} aria-current="page"{% endif %} title="{{ x.kind_word }} {{ x.number }}: {{ x.title }}"><span class="toc-num">{{ "Fig." if x.kind == "figure" else "Tab." }} {{ x.number }}</span><span class="toc-t">{{ x.title }}</span></a></li>
       {% endfor %}
       </ul>
-    </details>
+    </div>
     {% else %}
-    <a class="toc-sec toc-plain" href="{{ s.href }}" target="_blank" rel="noopener" title="Text only; opens the PDF"><span class="toc-letter">{{ s.id }}</span><span>{{ s.title_html|safe_html }} {{ icon("external", "sm") }}</span></a>
+    <a class="toc-sec toc-plain" href="{{ s.href }}" target="_blank" rel="noopener"><span class="toc-letter">{{ s.id }}</span><span>{{ s.title_html|safe_html }} <em class="te-note">text only, in the PDF</em></span></a>
     {% endif %}
     {% endfor %}
   </aside>
   <div class="toc-scrim" data-toc-close hidden></div>
 
   <article class="ex{% if e.wide %} ex-wide{% endif %}" data-exhibit="{{ e.id }}" data-prev="{{ prev.url if prev else '' }}" data-next="{{ next.url if next else '' }}">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="/#sec-{{ top.id }}">{{ top.id }} &middot; {{ top.title_html|safe_html }}</a></nav>
-    <p class="kicker">{{ e.kind_word }} {{ e.number }}</p>
-    <h1 class="ex-title">{{ e.title_html|safe_html }}</h1>
+    <button class="toc-btn" type="button" data-toc-open aria-controls="toc" aria-expanded="false" data-needs-js hidden>Contents</button>
+    <h1 class="ex-title"><span class="ex-lbl">{{ e.kind_word }} {{ e.number }}:</span> {{ e.title_html|no_widow|safe_html }}</h1>
 
     <div class="ex-body" data-ex-body>
     {% if e.kind == "table" %}
@@ -70,24 +68,24 @@
     </div>
 
     <div class="actions">
-      <a href="{{ e.pdf_href }}" target="_blank" rel="noopener">{{ icon("external") }}Open in PDF, p.&nbsp;{{ e.page_labels[0] }}</a>
+      <a href="{{ e.pdf_href }}" target="_blank" rel="noopener">Open in PDF, p.&nbsp;{{ e.page_labels[0] }}</a>
       {% if e.kind == "figure" %}
         {% set files = [] %}
         {% for p in e.parts %}{% for pn in p.panels %}{% for g in pn.graphics %}{% set _ = files.append(("(" ~ pn.letter ~ ") " ~ pn.sub_text, g)) %}{% endfor %}{% endfor %}{% for g in p.graphics %}{% set _ = files.append(("Legend" if g.legend else ("Part " ~ p.n if e.parts|length > 1 else e.kind_word ~ " " ~ e.number), g)) %}{% endfor %}{% endfor %}
         {% if files|length == 1 %}
-          <a href="{{ files[0][1].png }}" download="{{ e.kind_word }}-{{ e.number }}.png">{{ icon("download") }}PNG</a>
+          <a href="{{ files[0][1].png }}" download="{{ e.kind_word }}-{{ e.number }}.png">Download PNG</a>
         {% else %}
-          <details class="files"><summary>{{ icon("download") }}PNG</summary>
+          <details class="files"><summary>Download PNG</summary>
             <ul>{% for lbl, g in files %}<li><a href="{{ g.png }}" download="{{ e.kind_word }}-{{ e.number }}-{{ loop.index }}.png">{{ lbl }}</a></li>{% endfor %}</ul>
           </details>
         {% endif %}
       {% endif %}
-      <a href="/compare/?a={{ e.kind }}-{{ e.number }}{% if e.suggest %}&amp;b={{ e.suggest[0]|replace('/', '-') }}{% endif %}">{{ icon("compare") }}Compare with&hellip;</a>
+      <a href="/compare/?a={{ e.kind }}-{{ e.number }}{% if e.suggest %}&amp;b={{ e.suggest[0]|replace('/', '-') }}{% endif %}">Compare with&hellip;</a>
     </div>
 
     {% if e.questions %}
-    <section class="qbox" aria-label="Survey questions behind this exhibit">
-      <h2 class="mp-h">{{ "Questions" if e.questions|length > 1 else "Question" }}</h2>
+    <section class="qbox" aria-labelledby="qbox-h">
+      <h2 class="qbox-h" id="qbox-h">{{ "Questions" if e.questions|length > 1 else "Question" }}</h2>
       {% for q in e.questions %}
       <div class="q" id="q-{{ q.key }}">
         <p class="q-meta">{{ q.source }}{% if q.number %}, {{ "multiple-choice question" if q.source == "AI interviewer" else "Question" }} {{ q.number }}{% endif %}{% if q.panels %}<span class="q-panel">{{ "Panels" if q.panels|length > 1 else "Panel" }} {% for pl in q.panels %}({{ pl }}){% if not loop.last %}, {% endif %}{% endfor %}</span>{% endif %}</p>
@@ -98,10 +96,9 @@
     {% endif %}
 
     <nav class="pager" aria-label="Previous and next exhibit">
-      {% if prev %}<a class="pg-prev" href="{{ prev.url }}" rel="prev"><span class="pg-k">{{ icon("left") }}{{ prev.kind_word }} {{ prev.number }}</span><span class="pg-t">{{ prev.title }}</span></a>{% else %}<span></span>{% endif %}
-      {% if next %}<a class="pg-next" href="{{ next.url }}" rel="next"><span class="pg-k">{{ next.kind_word }} {{ next.number }}{{ icon("right") }}</span><span class="pg-t">{{ next.title }}</span></a>{% endif %}
+      {% if prev %}<a class="pg-prev" href="{{ prev.url }}" rel="prev"><span class="pg-k">Previous</span><span class="pg-t"><span class="pg-n">{{ prev.kind_word }} {{ prev.number }}:</span> {{ prev.title }}</span></a>{% else %}<span></span>{% endif %}
+      {% if next %}<a class="pg-next" href="{{ next.url }}" rel="next"><span class="pg-k">Next</span><span class="pg-t"><span class="pg-n">{{ next.kind_word }} {{ next.number }}:</span> {{ next.title }}</span></a>{% endif %}
     </nav>
   </article>
 </div>
-<div class="zoom" data-zoom-view hidden><button class="zoom-close" type="button" aria-label="Close" data-zoom-close>{{ icon("close") }}</button><div class="zoom-in" data-zoom-in></div></div>
 {% endblock %}

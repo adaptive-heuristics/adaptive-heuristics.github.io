@@ -4,6 +4,11 @@ oa.local.toml
 # Build cache: source snapshots, compile trees, logs, state
 .cache/
 
+# Local design context (Impeccable); kept out of the public repo
+PRODUCT.md
+DESIGN.md
+.impeccable/
+
 # Python / editor leftovers
 __pycache__/
 *.pyc

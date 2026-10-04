@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% from "_icons.html" import icon %}
 {% block title %}Online Appendix (PDF) &middot; {{ site.paper_title }}{% endblock %}
 {% block head %}
 <link rel="stylesheet" href="/assets/pdfjs/pdf_viewer.css">
@@ -10,17 +9,17 @@
   <div class="pv-bar">
     <span class="pv-title">Online Appendix <span class="pv-sub">PDF, {{ pdf.pages }} pages</span></span>
     <div class="pv-ctrl" role="group" aria-label="Page">
-      <button type="button" data-pv-prev aria-label="Previous page">{{ icon("left") }}</button>
+      <button type="button" data-pv-prev aria-label="Previous page">Prev</button>
       <label class="pv-page"><span class="sr-only">Page</span><input type="text" inputmode="numeric" value="1" data-pv-page aria-label="Page number"></label>
-      <span class="pv-count" data-pv-count>/ {{ pdf.pages }}</span>
-      <button type="button" data-pv-next aria-label="Next page">{{ icon("right") }}</button>
+      <span class="pv-count" data-pv-count>of {{ pdf.pages }}</span>
+      <button type="button" data-pv-next aria-label="Next page">Next</button>
     </div>
     <div class="pv-ctrl" role="group" aria-label="Zoom">
       <button type="button" data-pv-out aria-label="Zoom out">&minus;</button>
       <button type="button" class="pv-fit" data-pv-fit>Fit width</button>
       <button type="button" data-pv-in aria-label="Zoom in">+</button>
     </div>
-    <a class="btn-pdf pv-dl" href="{{ pdf.url }}" download="Online-Appendix.pdf">{{ icon("download") }}<span>Download</span></a>
+    <a class="pv-dl" href="{{ pdf.url }}" download="Online-Appendix.pdf">Download</a>
   </div>
   <div class="pv-wrap">
     <div class="pv-container" id="pv-container" tabindex="0"><div id="pv-viewer" class="pdfViewer"></div></div>

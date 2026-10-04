@@ -11,446 +11,479 @@
 <meta name="color-scheme" content="light">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/assets/fonts/xcharter-regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/site.css?v=1f7b503546">
-<script src="/assets/site.js?v=3afe0d987b" defer></script>
+<link rel="stylesheet" href="/assets/site.css?v=b5d8cf5232">
+<script src="/assets/site.js?v=88fdc3f350" defer></script>
 </head>
 <body class="pg-home">
 <a class="skip" href="#main">Skip to content</a>
 <header class="hdr">
   <div class="hdr-in">
     <a class="brand" href="/">Online Appendix</a>
-    <span class="brand-sub" title="Adaptive Heuristics in Stock Selection">Adaptive Heuristics in Stock Selection</span>
-    <nav class="hdr-nav" aria-label="Site">
-      <button class="hdr-search" type="button" data-open-search aria-label="Search exhibits"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><span class="lbl">Search exhibits</span><kbd>/</kbd></button>
-      <a class="hdr-link" href="/compare/"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="7" height="14" rx="1.5"/><rect x="13.5" y="5" width="7" height="14" rx="1.5"/></svg><span class="lbl">Compare</span></a>
-      <a class="btn-pdf" href="/pdf/" target="_blank" rel="noopener" title="Open the Online Appendix PDF in a new tab (69 pages, 3.7 MB)"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3.5h7l4.5 4.5v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15.5a1 1 0 0 1 1-1z"/><path d="M14 3.5V8h4.5"/></svg><span>PDF</span></a>
+<span class="brand-sub" title="Adaptive Heuristics in Stock Selection">Adaptive Heuristics in Stock Selection</span>    <nav class="hdr-nav" aria-label="Site">
+      <button class="hdr-link" type="button" data-open-search aria-keyshortcuts="/" data-needs-js hidden>Search</button>
+      <a class="hdr-link" href="/compare/">Compare</a>
+      <a class="hdr-link" href="/pdf/" target="_blank" rel="noopener" title="Open the Online Appendix PDF in a new tab (69 pages, 3.7 MB)">PDF</a>
     </nav>
   </div>
 </header>
 <main id="main">
-<section class="hero">
-  <h1>Online Appendix</h1>
-  <p class="hero-sub">to &ldquo;Adaptive Heuristics in Stock Selection&rdquo;</p>
-  <div class="hero-actions">
-    <a class="btn btn-ink" href="/OA.pdf" download="Online-Appendix.pdf"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v11"/><path d="M7.5 10.5L12 15l4.5-4.5"/><path d="M5 19.5h14"/></svg>Download PDF</a>
-    <a class="btn btn-line" href="/pdf/" target="_blank" rel="noopener"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 5h5v5"/><path d="M19 5l-8 8"/><path d="M17 14v4.5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h4.5"/></svg>Open in browser</a>
-    <span class="hero-meta">69 pages &middot; 3.7 MB &middot; updated October 3, 2026</span>
-  </div>
-  <p class="hero-lede">Browse every figure and table of the Online Appendix, each with its note. The questionnaires and the prompts are text only and appear in the PDF.</p>
+<section class="tb">
+  <h1 class="tb-h"><span class="tb-pre">Online Appendix to</span> <span class="tb-t">Adaptive Heuristics in Stock Selection</span></h1>
+  <p class="tb-d">October 2026</p>
+  <p class="tb-links"><a href="/OA.pdf" download="Online-Appendix.pdf">Download PDF</a><span class="sep" aria-hidden="true">&middot;</span><a href="/pdf/" target="_blank" rel="noopener">Read in browser</a></p>
 </section>
 
-<section class="ix-wrap" id="contents" aria-label="Exhibits">
-  <div class="ix-bar">
-    <div class="chips" role="group" aria-label="Show">
-      <button class="chip on" type="button" data-kind-filter="all" aria-pressed="true">All <span>41</span></button>
-      <button class="chip" type="button" data-kind-filter="figure" aria-pressed="false">Figures <span>21</span></button>
-      <button class="chip" type="button" data-kind-filter="table" aria-pressed="false">Tables <span>20</span></button>
+<section class="ct" id="contents" aria-labelledby="contents-h">
+  <h2 class="ct-h" id="contents-h">Contents</h2>
+  <div class="ix-bar" data-needs-js hidden>
+    <div class="ix-grp" role="group" aria-label="Show">
+      <span class="ix-lbl" aria-hidden="true">Show</span>
+      <span class="ix-opts"><button class="ix-opt on" type="button" data-kind-filter="all" aria-pressed="true">All</button>
+      <button class="ix-opt" type="button" data-kind-filter="figure" aria-pressed="false">Figures</button>
+      <button class="ix-opt" type="button" data-kind-filter="table" aria-pressed="false">Tables</button></span>
     </div>
-    <div class="seg" role="group" aria-label="Group by">
-      <span class="seg-lbl">Group by</span>
-      <button class="seg-btn on" type="button" data-group-by="section" aria-pressed="true">Appendix section</button>
-      <button class="seg-btn" type="button" data-group-by="paper" aria-pressed="false">Main-paper section</button>
+    <div class="ix-grp" role="group" aria-label="Arrange by">
+      <span class="ix-lbl" aria-hidden="true">Arrange by</span>
+      <span class="ix-opts"><button class="ix-opt on" type="button" data-group-by="section" aria-pressed="true">appendix section</button>
+      <button class="ix-opt" type="button" data-group-by="paper" aria-pressed="false">main-paper section</button></span>
     </div>
-    <label class="ix-filter"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><input type="search" placeholder="Filter" aria-label="Filter exhibits by number, title or keyword" data-ix-filter></label>
+    <label class="ix-filter"><span class="ix-lbl">Filter</span><input type="search" placeholder="number, title or keyword" aria-label="Filter exhibits by number, title or keyword" data-ix-filter></label>
   </div>
 
   <div class="ix" data-view="section">
     <section class="ix-sec" id="sec-A" data-sec="A">
-      <h2 class="ix-h"><span class="ix-letter">A</span><span class="ix-title">Background Survey</span></h2>
-<a class="row" href="/figure/A1/" data-kind="figure" data-id="figure/A1">
-  <span class="row-num"><span class="row-k">Fig.</span>A1</span>
-  <span class="row-title">Age, Gender, and Education of Respondents</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/A2/" data-kind="figure" data-id="figure/A2">
-  <span class="row-num"><span class="row-k">Fig.</span>A2</span>
-  <span class="row-title">Investment Holdings, Portfolio Changes, and Wealth of Respondents</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/A3/" data-kind="figure" data-id="figure/A3">
-  <span class="row-num"><span class="row-k">Fig.</span>A3</span>
-  <span class="row-title">Investment Knowledge and Risk Attitude of Respondents</span>
-  <span class="row-meta"></span>
-</a>    </section>
+      <h3 class="te te-s"><span class="te-n">A</span><span class="te-t">Background Survey</span><a class="te-p" href="/pdf/#page=3" target="_blank" rel="noopener" tabindex="-1" aria-label="Section A in the PDF, page 1">1</a></h3>
+<div class="te te-l1 te-text" data-text-row>
+  <a class="te-a" href="/pdf/#page=3" target="_blank" rel="noopener"><span class="te-n">A.1</span><span class="te-t">Questionnaire <em class="te-note">text only, in the PDF</em></span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <span class="te-p">1</span>
+</div>        <div class="te te-l1 te-sub" data-sub-head="A.2">
+          <span class="te-a"><span class="te-n">A.2</span><span class="te-t">Responses</span></span>
+          <span class="te-dots" aria-hidden="true"></span>
+          <span class="te-p">5</span>
+        </div>
+<div class="te te-x te-l2" data-id="figure/A1" data-kind="figure" data-sub="A.2">
+  <a class="te-a" href="/figure/A1/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> A1</span><span class="te-t">Age, Gender, and Education of Respondents</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=7" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure A1 in the PDF, page 5">5</a>
+</div><div class="te te-x te-l2" data-id="figure/A2" data-kind="figure" data-sub="A.2">
+  <a class="te-a" href="/figure/A2/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> A2</span><span class="te-t">Investment Holdings, Portfolio Changes, and Wealth of Respondents</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=8" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure A2 in the PDF, page 6">6</a>
+</div><div class="te te-x te-l2" data-id="figure/A3" data-kind="figure" data-sub="A.2">
+  <a class="te-a" href="/figure/A3/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> A3</span><span class="te-t">Investment Knowledge and Risk Attitude of Respondents</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=9" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure A3 in the PDF, page 7">7</a>
+</div>    </section>
     <section class="ix-sec" id="sec-B" data-sec="B">
-      <h2 class="ix-h"><span class="ix-letter">B</span><span class="ix-title">Prompting the AI Interviewer</span></h2>
-<a class="row" href="/figure/B1/" data-kind="figure" data-id="figure/B1">
-  <span class="row-num"><span class="row-k">Fig.</span>B1</span>
-  <span class="row-title">Tracking Prices After Selling</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/B2/" data-kind="figure" data-id="figure/B2">
-  <span class="row-num"><span class="row-k">Fig.</span>B2</span>
-  <span class="row-title">Responses to Summary and Evaluation Stage Questions</span>
-  <span class="row-meta"></span>
-</a>    </section>
+      <h3 class="te te-s"><span class="te-n">B</span><span class="te-t">Prompting the AI Interviewer</span><a class="te-p" href="/pdf/#page=10" target="_blank" rel="noopener" tabindex="-1" aria-label="Section B in the PDF, page 8">8</a></h3>
+<div class="te te-l1 te-text" data-text-row>
+  <a class="te-a" href="/pdf/#page=11" target="_blank" rel="noopener"><span class="te-n">B.1</span><span class="te-t">Hard-coded Questions <em class="te-note">text only, in the PDF</em></span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <span class="te-p">9</span>
+</div>        <div class="te te-l1 te-sub" data-sub-head="B.2">
+          <span class="te-a"><span class="te-n">B.2</span><span class="te-t">Responses to the Multiple-Choice Questions</span></span>
+          <span class="te-dots" aria-hidden="true"></span>
+          <span class="te-p">12</span>
+        </div>
+<div class="te te-x te-l2" data-id="figure/B1" data-kind="figure" data-sub="B.2">
+  <a class="te-a" href="/figure/B1/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> B1</span><span class="te-t">Tracking Prices After Selling</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=14" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure B1 in the PDF, page 12">12</a>
+</div><div class="te te-x te-l2" data-id="figure/B2" data-kind="figure" data-sub="B.2">
+  <a class="te-a" href="/figure/B2/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> B2</span><span class="te-t">Responses to Summary and Evaluation Stage Questions</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=15" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure B2 in the PDF, page 13">13</a>
+</div>    </section>
     <section class="ix-sec" id="sec-C" data-sec="C">
-      <h2 class="ix-h"><span class="ix-letter">C</span><span class="ix-title">Prompts for the Post-interview Analysis</span></h2>
-      <p class="ix-textonly" data-text-row><span></span><span>Text only, no figures or tables. <a href="/pdf/#page=16" target="_blank" rel="noopener">Read it in the PDF, p.&nbsp;14 <svg class="ic sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 5h5v5"/><path d="M19 5l-8 8"/><path d="M17 14v4.5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h4.5"/></svg></a></span></p>
-    </section>
+      <h3 class="te te-s te-text" data-text-row><a class="te-a" href="/pdf/#page=16" target="_blank" rel="noopener"><span class="te-n">C</span><span class="te-t">Prompts for the Post-interview Analysis <em class="te-note">text only, in the PDF</em></span></a><span class="te-p">14</span></h3>
+<div class="te te-l1 te-text" data-text-row>
+  <a class="te-a" href="/pdf/#page=16" target="_blank" rel="noopener"><span class="te-n">C.1</span><span class="te-t">Argument Map Construction <em class="te-note">text only, in the PDF</em></span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <span class="te-p">14</span>
+</div><div class="te te-l1 te-text" data-text-row>
+  <a class="te-a" href="/pdf/#page=18" target="_blank" rel="noopener"><span class="te-n">C.2</span><span class="te-t">Bottom-Up Mechanism Generation <em class="te-note">text only, in the PDF</em></span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <span class="te-p">16</span>
+</div><div class="te te-l1 te-text" data-text-row>
+  <a class="te-a" href="/pdf/#page=18" target="_blank" rel="noopener"><span class="te-n">C.3</span><span class="te-t">Validation, Refinement, and Final Scoring <em class="te-note">text only, in the PDF</em></span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <span class="te-p">16</span>
+</div>    </section>
     <section class="ix-sec" id="sec-D" data-sec="D">
-      <h2 class="ix-h"><span class="ix-letter">D</span><span class="ix-title">Follow-Up Survey</span></h2>
-<a class="row" href="/figure/D1/" data-kind="figure" data-id="figure/D1">
-  <span class="row-num"><span class="row-k">Fig.</span>D1</span>
-  <span class="row-title">Continued Use and Duration of Use of Adopted Heuristics</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/D2/" data-kind="figure" data-id="figure/D2">
-  <span class="row-num"><span class="row-k">Fig.</span>D2</span>
-  <span class="row-title">Planned Holding Periods, Sources of Beliefs About Heuristic Effectiveness, and Use of Multiple Heuristics</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/D3/" data-kind="figure" data-id="figure/D3">
-  <span class="row-num"><span class="row-k">Fig.</span>D3</span>
-  <span class="row-title">Adoption, Awareness, and Past Use of Heuristics</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/D4/" data-kind="figure" data-id="figure/D4">
-  <span class="row-num"><span class="row-k">Fig.</span>D4</span>
-  <span class="row-title">Three Longest-Used Heuristics out of Those Adopted or Previously Used</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/D5/" data-kind="figure" data-id="figure/D5">
-  <span class="row-num"><span class="row-k">Fig.</span>D5</span>
-  <span class="row-title">Perceived Work Required by Each Heuristic, Willingness to Research Stocks, and Time Available for Research</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/D6/" data-kind="figure" data-id="figure/D6">
-  <span class="row-num"><span class="row-k">Fig.</span>D6</span>
-  <span class="row-title">Personal Importance of the Four Investment Objectives</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/D7/" data-kind="figure" data-id="figure/D7">
-  <span class="row-num"><span class="row-k">Fig.</span>D7</span>
-  <span class="row-title">Distribution of Perceived Effectiveness Ratings, by Objective</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/D8/" data-kind="figure" data-id="figure/D8">
-  <span class="row-num"><span class="row-k">Fig.</span>D8</span>
-  <span class="row-title">Portfolio Shares in Individual Stocks and in Local Stocks</span>
-  <span class="row-meta"></span>
-</a>    </section>
+      <h3 class="te te-s"><span class="te-n">D</span><span class="te-t">Follow-Up Survey</span><a class="te-p" href="/pdf/#page=21" target="_blank" rel="noopener" tabindex="-1" aria-label="Section D in the PDF, page 19">19</a></h3>
+<div class="te te-l1 te-text" data-text-row>
+  <a class="te-a" href="/pdf/#page=21" target="_blank" rel="noopener"><span class="te-n">D.1</span><span class="te-t">Questionnaire <em class="te-note">text only, in the PDF</em></span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <span class="te-p">19</span>
+</div>        <div class="te te-l1 te-sub" data-sub-head="D.2">
+          <span class="te-a"><span class="te-n">D.2</span><span class="te-t">Responses</span></span>
+          <span class="te-dots" aria-hidden="true"></span>
+          <span class="te-p">24</span>
+        </div>
+<div class="te te-x te-l2" data-id="figure/D1" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D1/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D1</span><span class="te-t">Continued Use and Duration of Use of Adopted Heuristics</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=26" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D1 in the PDF, page 24">24</a>
+</div><div class="te te-x te-l2" data-id="figure/D2" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D2/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D2</span><span class="te-t">Planned Holding Periods, Sources of Beliefs About Heuristic Effectiveness, and Use of Multiple Heuristics</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=27" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D2 in the PDF, page 25">25</a>
+</div><div class="te te-x te-l2" data-id="figure/D3" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D3/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D3</span><span class="te-t">Adoption, Awareness, and Past Use of Heuristics</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=28" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D3 in the PDF, page 26">26</a>
+</div><div class="te te-x te-l2" data-id="figure/D4" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D4/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D4</span><span class="te-t">Three Longest-Used Heuristics out of Those Adopted or Previously Used</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=29" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D4 in the PDF, page 27">27</a>
+</div><div class="te te-x te-l2" data-id="figure/D5" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D5/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D5</span><span class="te-t">Perceived Work Required by Each Heuristic, Willingness to Research Stocks, and Time Available for Research</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=30" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D5 in the PDF, page 28">28</a>
+</div><div class="te te-x te-l2" data-id="figure/D6" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D6/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D6</span><span class="te-t">Personal Importance of the Four Investment Objectives</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=31" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D6 in the PDF, page 29">29</a>
+</div><div class="te te-x te-l2" data-id="figure/D7" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D7/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D7</span><span class="te-t">Distribution of Perceived Effectiveness Ratings, by Objective</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=32" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D7 in the PDF, page 30">30</a>
+</div><div class="te te-x te-l2" data-id="figure/D8" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D8/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D8</span><span class="te-t">Portfolio Shares in Individual Stocks and in Local Stocks</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=33" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D8 in the PDF, page 31">31</a>
+</div>    </section>
     <section class="ix-sec" id="sec-E" data-sec="E">
-      <h2 class="ix-h"><span class="ix-letter">E</span><span class="ix-title">Robustness to Alternative Mappings between Heuristics and Firm Characteristics</span></h2>
-<a class="row" href="/table/E1/" data-kind="table" data-id="table/E1">
-  <span class="row-num"><span class="row-k">Tab.</span>E1</span>
-  <span class="row-title">Mapping Heuristics to Firm Characteristics: LLM Consensus</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/E1/" data-kind="figure" data-id="figure/E1">
-  <span class="row-num"><span class="row-k">Fig.</span>E1</span>
-  <span class="row-title">Sensitivity of Belief Accuracy and Heuristic Delivery to Alternative Mappings</span>
-  <span class="row-meta">6 panels</span>
-</a><a class="row" href="/figure/E2/" data-kind="figure" data-id="figure/E2">
-  <span class="row-num"><span class="row-k">Fig.</span>E2</span>
-  <span class="row-title">Statistical Significance of Belief Accuracy and Heuristic Delivery across Alternative Mappings</span>
-  <span class="row-meta">6 panels</span>
-</a><a class="row" href="/table/E2/" data-kind="table" data-id="table/E2">
-  <span class="row-num"><span class="row-k">Tab.</span>E2</span>
-  <span class="row-title">Support for Main-Paper Results across Alternative Mappings</span>
-  <span class="row-meta"></span>
-</a>    </section>
+      <h3 class="te te-s"><span class="te-n">E</span><span class="te-t">Robustness to Alternative Mappings between Heuristics and Firm Characteristics</span><a class="te-p" href="/pdf/#page=34" target="_blank" rel="noopener" tabindex="-1" aria-label="Section E in the PDF, page 32">32</a></h3>
+<div class="te te-x te-l1" data-id="table/E1" data-kind="table">
+  <a class="te-a" href="/table/E1/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> E1</span><span class="te-t">Mapping Heuristics to Firm Characteristics: LLM Consensus</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=37" target="_blank" rel="noopener" tabindex="-1" aria-label="Table E1 in the PDF, page 35">35</a>
+</div><div class="te te-x te-l1" data-id="figure/E1" data-kind="figure">
+  <a class="te-a" href="/figure/E1/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> E1</span><span class="te-t">Sensitivity of Belief Accuracy and Heuristic Delivery to Alternative Mappings</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=39" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure E1 in the PDF, page 37">37</a>
+</div><div class="te te-x te-l1" data-id="figure/E2" data-kind="figure">
+  <a class="te-a" href="/figure/E2/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> E2</span><span class="te-t">Statistical Significance of Belief Accuracy and Heuristic Delivery across Alternative Mappings</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=40" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure E2 in the PDF, page 38">38</a>
+</div><div class="te te-x te-l1" data-id="table/E2" data-kind="table">
+  <a class="te-a" href="/table/E2/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> E2</span><span class="te-t">Support for Main-Paper Results across Alternative Mappings</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=41" target="_blank" rel="noopener" tabindex="-1" aria-label="Table E2 in the PDF, page 39">39</a>
+</div>    </section>
     <section class="ix-sec" id="sec-F" data-sec="F">
-      <h2 class="ix-h"><span class="ix-letter">F</span><span class="ix-title">Additional Figures and Tables</span></h2>
-<a class="row" href="/figure/F1/" data-kind="figure" data-id="figure/F1">
-  <span class="row-num"><span class="row-k">Fig.</span>F1</span>
-  <span class="row-title">Proportion of Investor Pairs with Non-Overlapping Heuristics</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/F2/" data-kind="figure" data-id="figure/F2">
-  <span class="row-num"><span class="row-k">Fig.</span>F2</span>
-  <span class="row-title">Country Similarity in Heuristic Use and Culture</span>
-  <span class="row-meta">2 panels</span>
-</a><a class="row" href="/figure/F3/" data-kind="figure" data-id="figure/F3">
-  <span class="row-num"><span class="row-k">Fig.</span>F3</span>
-  <span class="row-title">Heuristic Prevalence by Investor Demographics</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/F4/" data-kind="figure" data-id="figure/F4">
-  <span class="row-num"><span class="row-k">Fig.</span>F4</span>
-  <span class="row-title">Historical Effectiveness by Country and Heuristic</span>
-  <span class="row-meta">3 panels</span>
-</a><a class="row" href="/figure/F5/" data-kind="figure" data-id="figure/F5">
-  <span class="row-num"><span class="row-k">Fig.</span>F5</span>
-  <span class="row-title">Perceived Effectiveness of Each Heuristic</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/F6/" data-kind="figure" data-id="figure/F6">
-  <span class="row-num"><span class="row-k">Fig.</span>F6</span>
-  <span class="row-title">Heuristic Awareness and Use</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F1/" data-kind="table" data-id="table/F1">
-  <span class="row-num"><span class="row-k">Tab.</span>F1</span>
-  <span class="row-title">Interview Duration</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F2/" data-kind="table" data-id="table/F2">
-  <span class="row-num"><span class="row-k">Tab.</span>F2</span>
-  <span class="row-title">Preference for AI vs. Human Interviewer</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F3/" data-kind="table" data-id="table/F3">
-  <span class="row-num"><span class="row-k">Tab.</span>F3</span>
-  <span class="row-title">Sample Demographics of the Follow-Up Survey</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F4/" data-kind="table" data-id="table/F4">
-  <span class="row-num"><span class="row-k">Tab.</span>F4</span>
-  <span class="row-title">Objective Importance by Country</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F5/" data-kind="table" data-id="table/F5">
-  <span class="row-num"><span class="row-k">Tab.</span>F5</span>
-  <span class="row-title">Follow-Up Survey Participation</span>
-  <span class="row-meta">2 panels</span>
-</a><a class="row" href="/table/F6/" data-kind="table" data-id="table/F6">
-  <span class="row-num"><span class="row-k">Tab.</span>F6</span>
-  <span class="row-title">Determinants of Objective Priorities</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F7/" data-kind="table" data-id="table/F7">
-  <span class="row-num"><span class="row-k">Tab.</span>F7</span>
-  <span class="row-title">Relationship between Perceived and Historical Effectiveness</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F8/" data-kind="table" data-id="table/F8">
-  <span class="row-num"><span class="row-k">Tab.</span>F8</span>
-  <span class="row-title">Relationship between Perceived and Historical Effectiveness: Heterogeneity across Investor Groups</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F9/" data-kind="table" data-id="table/F9">
-  <span class="row-num"><span class="row-k">Tab.</span>F9</span>
-  <span class="row-title">Heuristic Adoption: Logit Estimates</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F10/" data-kind="table" data-id="table/F10">
-  <span class="row-num"><span class="row-k">Tab.</span>F10</span>
-  <span class="row-title">Heuristic Adoption and Historical Effectiveness: Reduced Form</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F11/" data-kind="table" data-id="table/F11">
-  <span class="row-num"><span class="row-k">Tab.</span>F11</span>
-  <span class="row-title">Heuristic Adoption and Historical Effectiveness: By Objective</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F12/" data-kind="table" data-id="table/F12">
-  <span class="row-num"><span class="row-k">Tab.</span>F12</span>
-  <span class="row-title">Do Adopted Heuristics Deliver on the Objectives Investors Do Not Prioritize?</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F13/" data-kind="table" data-id="table/F13">
-  <span class="row-num"><span class="row-k">Tab.</span>F13</span>
-  <span class="row-title">Do Adopted Heuristics Deliver on the Objectives Investors Do Not Prioritize? Out-of-Sample Evidence</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F14/" data-kind="table" data-id="table/F14">
-  <span class="row-num"><span class="row-k">Tab.</span>F14</span>
-  <span class="row-title">Do Adopted Heuristics Deliver? Average Stock and JKP-Factor Benchmarks</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F15/" data-kind="table" data-id="table/F15">
-  <span class="row-num"><span class="row-k">Tab.</span>F15</span>
-  <span class="row-title">Do Adopted Heuristics Deliver? Out-of-Sample Benchmark Comparisons</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F16/" data-kind="table" data-id="table/F16">
-  <span class="row-num"><span class="row-k">Tab.</span>F16</span>
-  <span class="row-title">Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Average Stock and JKP-Factor Benchmarks</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F17/" data-kind="table" data-id="table/F17">
-  <span class="row-num"><span class="row-k">Tab.</span>F17</span>
-  <span class="row-title">Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Out-of-Sample Benchmark Comparisons</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F18/" data-kind="table" data-id="table/F18">
-  <span class="row-num"><span class="row-k">Tab.</span>F18</span>
-  <span class="row-title">Do Adopted Heuristics Deliver? Post-Adoption Evidence</span>
-  <span class="row-meta"></span>
-</a>    </section>
+      <h3 class="te te-s"><span class="te-n">F</span><span class="te-t">Additional Figures and Tables</span><a class="te-p" href="/pdf/#page=42" target="_blank" rel="noopener" tabindex="-1" aria-label="Section F in the PDF, page 40">40</a></h3>
+<div class="te te-x te-l1" data-id="figure/F1" data-kind="figure">
+  <a class="te-a" href="/figure/F1/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> F1</span><span class="te-t">Proportion of Investor Pairs with Non-Overlapping Heuristics</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=42" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure F1 in the PDF, page 40">40</a>
+</div><div class="te te-x te-l1" data-id="figure/F2" data-kind="figure">
+  <a class="te-a" href="/figure/F2/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> F2</span><span class="te-t">Country Similarity in Heuristic Use and Culture</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=43" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure F2 in the PDF, page 41">41</a>
+</div><div class="te te-x te-l1" data-id="figure/F3" data-kind="figure">
+  <a class="te-a" href="/figure/F3/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> F3</span><span class="te-t">Heuristic Prevalence by Investor Demographics</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=44" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure F3 in the PDF, page 42">42</a>
+</div><div class="te te-x te-l1" data-id="figure/F4" data-kind="figure">
+  <a class="te-a" href="/figure/F4/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> F4</span><span class="te-t">Historical Effectiveness by Country and Heuristic</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=46" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure F4 in the PDF, page 44">44</a>
+</div><div class="te te-x te-l1" data-id="figure/F5" data-kind="figure">
+  <a class="te-a" href="/figure/F5/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> F5</span><span class="te-t">Perceived Effectiveness of Each Heuristic</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=49" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure F5 in the PDF, page 47">47</a>
+</div><div class="te te-x te-l1" data-id="figure/F6" data-kind="figure">
+  <a class="te-a" href="/figure/F6/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> F6</span><span class="te-t">Heuristic Awareness and Use</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=50" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure F6 in the PDF, page 48">48</a>
+</div><div class="te te-x te-l1" data-id="table/F1" data-kind="table">
+  <a class="te-a" href="/table/F1/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F1</span><span class="te-t">Interview Duration</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=51" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F1 in the PDF, page 49">49</a>
+</div><div class="te te-x te-l1" data-id="table/F2" data-kind="table">
+  <a class="te-a" href="/table/F2/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F2</span><span class="te-t">Preference for AI vs. Human Interviewer</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=52" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F2 in the PDF, page 50">50</a>
+</div><div class="te te-x te-l1" data-id="table/F3" data-kind="table">
+  <a class="te-a" href="/table/F3/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F3</span><span class="te-t">Sample Demographics of the Follow-Up Survey</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=53" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F3 in the PDF, page 51">51</a>
+</div><div class="te te-x te-l1" data-id="table/F4" data-kind="table">
+  <a class="te-a" href="/table/F4/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F4</span><span class="te-t">Objective Importance by Country</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=54" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F4 in the PDF, page 52">52</a>
+</div><div class="te te-x te-l1" data-id="table/F5" data-kind="table">
+  <a class="te-a" href="/table/F5/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F5</span><span class="te-t">Follow-Up Survey Participation</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=55" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F5 in the PDF, page 53">53</a>
+</div><div class="te te-x te-l1" data-id="table/F6" data-kind="table">
+  <a class="te-a" href="/table/F6/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F6</span><span class="te-t">Determinants of Objective Priorities</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=56" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F6 in the PDF, page 54">54</a>
+</div><div class="te te-x te-l1" data-id="table/F7" data-kind="table">
+  <a class="te-a" href="/table/F7/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F7</span><span class="te-t">Relationship between Perceived and Historical Effectiveness</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=57" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F7 in the PDF, page 55">55</a>
+</div><div class="te te-x te-l1" data-id="table/F8" data-kind="table">
+  <a class="te-a" href="/table/F8/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F8</span><span class="te-t">Relationship between Perceived and Historical Effectiveness: Heterogeneity across Investor Groups</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=58" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F8 in the PDF, page 56">56</a>
+</div><div class="te te-x te-l1" data-id="table/F9" data-kind="table">
+  <a class="te-a" href="/table/F9/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F9</span><span class="te-t">Heuristic Adoption: Logit Estimates</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=59" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F9 in the PDF, page 57">57</a>
+</div><div class="te te-x te-l1" data-id="table/F10" data-kind="table">
+  <a class="te-a" href="/table/F10/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F10</span><span class="te-t">Heuristic Adoption and Historical Effectiveness: Reduced Form</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=60" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F10 in the PDF, page 58">58</a>
+</div><div class="te te-x te-l1" data-id="table/F11" data-kind="table">
+  <a class="te-a" href="/table/F11/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F11</span><span class="te-t">Heuristic Adoption and Historical Effectiveness: By Objective</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=61" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F11 in the PDF, page 59">59</a>
+</div><div class="te te-x te-l1" data-id="table/F12" data-kind="table">
+  <a class="te-a" href="/table/F12/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F12</span><span class="te-t">Do Adopted Heuristics Deliver on the Objectives Investors Do Not Prioritize?</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=62" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F12 in the PDF, page 60">60</a>
+</div><div class="te te-x te-l1" data-id="table/F13" data-kind="table">
+  <a class="te-a" href="/table/F13/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F13</span><span class="te-t">Do Adopted Heuristics Deliver on the Objectives Investors Do Not Prioritize? Out-of-Sample Evidence</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=63" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F13 in the PDF, page 61">61</a>
+</div><div class="te te-x te-l1" data-id="table/F14" data-kind="table">
+  <a class="te-a" href="/table/F14/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F14</span><span class="te-t">Do Adopted Heuristics Deliver? Average Stock and JKP-Factor Benchmarks</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=64" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F14 in the PDF, page 62">62</a>
+</div><div class="te te-x te-l1" data-id="table/F15" data-kind="table">
+  <a class="te-a" href="/table/F15/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F15</span><span class="te-t">Do Adopted Heuristics Deliver? Out-of-Sample Benchmark Comparisons</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=65" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F15 in the PDF, page 63">63</a>
+</div><div class="te te-x te-l1" data-id="table/F16" data-kind="table">
+  <a class="te-a" href="/table/F16/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F16</span><span class="te-t">Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Average Stock and JKP-Factor Benchmarks</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=66" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F16 in the PDF, page 64">64</a>
+</div><div class="te te-x te-l1" data-id="table/F17" data-kind="table">
+  <a class="te-a" href="/table/F17/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F17</span><span class="te-t">Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Out-of-Sample Benchmark Comparisons</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=67" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F17 in the PDF, page 65">65</a>
+</div><div class="te te-x te-l1" data-id="table/F18" data-kind="table">
+  <a class="te-a" href="/table/F18/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F18</span><span class="te-t">Do Adopted Heuristics Deliver? Post-Adoption Evidence</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=68" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F18 in the PDF, page 66">66</a>
+</div>    </section>
   </div>
 
   <div class="ix" data-view="paper" hidden>
     <p class="ix-note">Each exhibit is placed under the main-paper section that cites it, or else under the section whose results it extends.</p>
     <section class="ix-sec" data-group="3.2">
-      <h2 class="ix-h"><span class="ix-letter">&sect;&thinsp;3.2</span><span class="ix-title">Step 1 – The Initial Background Survey and the Interview</span></h2>
-<a class="row" href="/figure/A1/" data-kind="figure" data-id="figure/A1">
-  <span class="row-num"><span class="row-k">Fig.</span>A1</span>
-  <span class="row-title">Age, Gender, and Education of Respondents</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/A2/" data-kind="figure" data-id="figure/A2">
-  <span class="row-num"><span class="row-k">Fig.</span>A2</span>
-  <span class="row-title">Investment Holdings, Portfolio Changes, and Wealth of Respondents</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/A3/" data-kind="figure" data-id="figure/A3">
-  <span class="row-num"><span class="row-k">Fig.</span>A3</span>
-  <span class="row-title">Investment Knowledge and Risk Attitude of Respondents</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/B1/" data-kind="figure" data-id="figure/B1">
-  <span class="row-num"><span class="row-k">Fig.</span>B1</span>
-  <span class="row-title">Tracking Prices After Selling</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/B2/" data-kind="figure" data-id="figure/B2">
-  <span class="row-num"><span class="row-k">Fig.</span>B2</span>
-  <span class="row-title">Responses to Summary and Evaluation Stage Questions</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F1/" data-kind="table" data-id="table/F1">
-  <span class="row-num"><span class="row-k">Tab.</span>F1</span>
-  <span class="row-title">Interview Duration</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F2/" data-kind="table" data-id="table/F2">
-  <span class="row-num"><span class="row-k">Tab.</span>F2</span>
-  <span class="row-title">Preference for AI vs. Human Interviewer</span>
-  <span class="row-meta"></span>
-</a>    </section>
+      <h3 class="te te-s"><span class="te-n">3.2</span><span class="te-t">Step 1 – The Initial Background Survey and the Interview</span></h3>
+<div class="te te-x te-l1" data-id="figure/A1" data-kind="figure" data-sub="A.2">
+  <a class="te-a" href="/figure/A1/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> A1</span><span class="te-t">Age, Gender, and Education of Respondents</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=7" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure A1 in the PDF, page 5">5</a>
+</div><div class="te te-x te-l1" data-id="figure/A2" data-kind="figure" data-sub="A.2">
+  <a class="te-a" href="/figure/A2/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> A2</span><span class="te-t">Investment Holdings, Portfolio Changes, and Wealth of Respondents</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=8" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure A2 in the PDF, page 6">6</a>
+</div><div class="te te-x te-l1" data-id="figure/A3" data-kind="figure" data-sub="A.2">
+  <a class="te-a" href="/figure/A3/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> A3</span><span class="te-t">Investment Knowledge and Risk Attitude of Respondents</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=9" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure A3 in the PDF, page 7">7</a>
+</div><div class="te te-x te-l1" data-id="figure/B1" data-kind="figure" data-sub="B.2">
+  <a class="te-a" href="/figure/B1/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> B1</span><span class="te-t">Tracking Prices After Selling</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=14" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure B1 in the PDF, page 12">12</a>
+</div><div class="te te-x te-l1" data-id="figure/B2" data-kind="figure" data-sub="B.2">
+  <a class="te-a" href="/figure/B2/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> B2</span><span class="te-t">Responses to Summary and Evaluation Stage Questions</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=15" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure B2 in the PDF, page 13">13</a>
+</div><div class="te te-x te-l1" data-id="table/F1" data-kind="table">
+  <a class="te-a" href="/table/F1/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F1</span><span class="te-t">Interview Duration</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=51" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F1 in the PDF, page 49">49</a>
+</div><div class="te te-x te-l1" data-id="table/F2" data-kind="table">
+  <a class="te-a" href="/table/F2/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F2</span><span class="te-t">Preference for AI vs. Human Interviewer</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=52" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F2 in the PDF, page 50">50</a>
+</div>    </section>
     <section class="ix-sec" data-group="3.4">
-      <h2 class="ix-h"><span class="ix-letter">&sect;&thinsp;3.4</span><span class="ix-title">Step 3 – The Follow-Up Survey</span></h2>
-<a class="row" href="/figure/D3/" data-kind="figure" data-id="figure/D3">
-  <span class="row-num"><span class="row-k">Fig.</span>D3</span>
-  <span class="row-title">Adoption, Awareness, and Past Use of Heuristics</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/D4/" data-kind="figure" data-id="figure/D4">
-  <span class="row-num"><span class="row-k">Fig.</span>D4</span>
-  <span class="row-title">Three Longest-Used Heuristics out of Those Adopted or Previously Used</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/D5/" data-kind="figure" data-id="figure/D5">
-  <span class="row-num"><span class="row-k">Fig.</span>D5</span>
-  <span class="row-title">Perceived Work Required by Each Heuristic, Willingness to Research Stocks, and Time Available for Research</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/D6/" data-kind="figure" data-id="figure/D6">
-  <span class="row-num"><span class="row-k">Fig.</span>D6</span>
-  <span class="row-title">Personal Importance of the Four Investment Objectives</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/D7/" data-kind="figure" data-id="figure/D7">
-  <span class="row-num"><span class="row-k">Fig.</span>D7</span>
-  <span class="row-title">Distribution of Perceived Effectiveness Ratings, by Objective</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/D8/" data-kind="figure" data-id="figure/D8">
-  <span class="row-num"><span class="row-k">Fig.</span>D8</span>
-  <span class="row-title">Portfolio Shares in Individual Stocks and in Local Stocks</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F3/" data-kind="table" data-id="table/F3">
-  <span class="row-num"><span class="row-k">Tab.</span>F3</span>
-  <span class="row-title">Sample Demographics of the Follow-Up Survey</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F4/" data-kind="table" data-id="table/F4">
-  <span class="row-num"><span class="row-k">Tab.</span>F4</span>
-  <span class="row-title">Objective Importance by Country</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F5/" data-kind="table" data-id="table/F5">
-  <span class="row-num"><span class="row-k">Tab.</span>F5</span>
-  <span class="row-title">Follow-Up Survey Participation</span>
-  <span class="row-meta">2 panels</span>
-</a>    </section>
+      <h3 class="te te-s"><span class="te-n">3.4</span><span class="te-t">Step 3 – The Follow-Up Survey</span></h3>
+<div class="te te-x te-l1" data-id="figure/D3" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D3/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D3</span><span class="te-t">Adoption, Awareness, and Past Use of Heuristics</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=28" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D3 in the PDF, page 26">26</a>
+</div><div class="te te-x te-l1" data-id="figure/D4" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D4/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D4</span><span class="te-t">Three Longest-Used Heuristics out of Those Adopted or Previously Used</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=29" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D4 in the PDF, page 27">27</a>
+</div><div class="te te-x te-l1" data-id="figure/D5" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D5/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D5</span><span class="te-t">Perceived Work Required by Each Heuristic, Willingness to Research Stocks, and Time Available for Research</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=30" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D5 in the PDF, page 28">28</a>
+</div><div class="te te-x te-l1" data-id="figure/D6" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D6/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D6</span><span class="te-t">Personal Importance of the Four Investment Objectives</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=31" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D6 in the PDF, page 29">29</a>
+</div><div class="te te-x te-l1" data-id="figure/D7" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D7/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D7</span><span class="te-t">Distribution of Perceived Effectiveness Ratings, by Objective</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=32" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D7 in the PDF, page 30">30</a>
+</div><div class="te te-x te-l1" data-id="figure/D8" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D8/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D8</span><span class="te-t">Portfolio Shares in Individual Stocks and in Local Stocks</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=33" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D8 in the PDF, page 31">31</a>
+</div><div class="te te-x te-l1" data-id="table/F3" data-kind="table">
+  <a class="te-a" href="/table/F3/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F3</span><span class="te-t">Sample Demographics of the Follow-Up Survey</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=53" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F3 in the PDF, page 51">51</a>
+</div><div class="te te-x te-l1" data-id="table/F4" data-kind="table">
+  <a class="te-a" href="/table/F4/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F4</span><span class="te-t">Objective Importance by Country</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=54" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F4 in the PDF, page 52">52</a>
+</div><div class="te te-x te-l1" data-id="table/F5" data-kind="table">
+  <a class="te-a" href="/table/F5/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F5</span><span class="te-t">Follow-Up Survey Participation</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=55" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F5 in the PDF, page 53">53</a>
+</div>    </section>
     <section class="ix-sec" data-group="4.2">
-      <h2 class="ix-h"><span class="ix-letter">&sect;&thinsp;4.2</span><span class="ix-title">Descriptive Evidence Across Countries</span></h2>
-<a class="row" href="/figure/F2/" data-kind="figure" data-id="figure/F2">
-  <span class="row-num"><span class="row-k">Fig.</span>F2</span>
-  <span class="row-title">Country Similarity in Heuristic Use and Culture</span>
-  <span class="row-meta">2 panels</span>
-</a>    </section>
+      <h3 class="te te-s"><span class="te-n">4.2</span><span class="te-t">Descriptive Evidence Across Countries</span></h3>
+<div class="te te-x te-l1" data-id="figure/F2" data-kind="figure">
+  <a class="te-a" href="/figure/F2/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> F2</span><span class="te-t">Country Similarity in Heuristic Use and Culture</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=43" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure F2 in the PDF, page 41">41</a>
+</div>    </section>
     <section class="ix-sec" data-group="4.3">
-      <h2 class="ix-h"><span class="ix-letter">&sect;&thinsp;4.3</span><span class="ix-title">Descriptive Evidence Across Investor Demographics</span></h2>
-<a class="row" href="/figure/F3/" data-kind="figure" data-id="figure/F3">
-  <span class="row-num"><span class="row-k">Fig.</span>F3</span>
-  <span class="row-title">Heuristic Prevalence by Investor Demographics</span>
-  <span class="row-meta"></span>
-</a>    </section>
+      <h3 class="te te-s"><span class="te-n">4.3</span><span class="te-t">Descriptive Evidence Across Investor Demographics</span></h3>
+<div class="te te-x te-l1" data-id="figure/F3" data-kind="figure">
+  <a class="te-a" href="/figure/F3/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> F3</span><span class="te-t">Heuristic Prevalence by Investor Demographics</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=44" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure F3 in the PDF, page 42">42</a>
+</div>    </section>
     <section class="ix-sec" data-group="5.3">
-      <h2 class="ix-h"><span class="ix-letter">&sect;&thinsp;5.3</span><span class="ix-title">Estimating True Effectiveness</span></h2>
-<a class="row" href="/table/E1/" data-kind="table" data-id="table/E1">
-  <span class="row-num"><span class="row-k">Tab.</span>E1</span>
-  <span class="row-title">Mapping Heuristics to Firm Characteristics: LLM Consensus</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/E1/" data-kind="figure" data-id="figure/E1">
-  <span class="row-num"><span class="row-k">Fig.</span>E1</span>
-  <span class="row-title">Sensitivity of Belief Accuracy and Heuristic Delivery to Alternative Mappings</span>
-  <span class="row-meta">6 panels</span>
-</a><a class="row" href="/figure/E2/" data-kind="figure" data-id="figure/E2">
-  <span class="row-num"><span class="row-k">Fig.</span>E2</span>
-  <span class="row-title">Statistical Significance of Belief Accuracy and Heuristic Delivery across Alternative Mappings</span>
-  <span class="row-meta">6 panels</span>
-</a><a class="row" href="/table/E2/" data-kind="table" data-id="table/E2">
-  <span class="row-num"><span class="row-k">Tab.</span>E2</span>
-  <span class="row-title">Support for Main-Paper Results across Alternative Mappings</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/F4/" data-kind="figure" data-id="figure/F4">
-  <span class="row-num"><span class="row-k">Fig.</span>F4</span>
-  <span class="row-title">Historical Effectiveness by Country and Heuristic</span>
-  <span class="row-meta">3 panels</span>
-</a>    </section>
+      <h3 class="te te-s"><span class="te-n">5.3</span><span class="te-t">Estimating True Effectiveness</span></h3>
+<div class="te te-x te-l1" data-id="table/E1" data-kind="table">
+  <a class="te-a" href="/table/E1/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> E1</span><span class="te-t">Mapping Heuristics to Firm Characteristics: LLM Consensus</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=37" target="_blank" rel="noopener" tabindex="-1" aria-label="Table E1 in the PDF, page 35">35</a>
+</div><div class="te te-x te-l1" data-id="figure/E1" data-kind="figure">
+  <a class="te-a" href="/figure/E1/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> E1</span><span class="te-t">Sensitivity of Belief Accuracy and Heuristic Delivery to Alternative Mappings</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=39" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure E1 in the PDF, page 37">37</a>
+</div><div class="te te-x te-l1" data-id="figure/E2" data-kind="figure">
+  <a class="te-a" href="/figure/E2/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> E2</span><span class="te-t">Statistical Significance of Belief Accuracy and Heuristic Delivery across Alternative Mappings</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=40" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure E2 in the PDF, page 38">38</a>
+</div><div class="te te-x te-l1" data-id="table/E2" data-kind="table">
+  <a class="te-a" href="/table/E2/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> E2</span><span class="te-t">Support for Main-Paper Results across Alternative Mappings</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=41" target="_blank" rel="noopener" tabindex="-1" aria-label="Table E2 in the PDF, page 39">39</a>
+</div><div class="te te-x te-l1" data-id="figure/F4" data-kind="figure">
+  <a class="te-a" href="/figure/F4/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> F4</span><span class="te-t">Historical Effectiveness by Country and Heuristic</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=46" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure F4 in the PDF, page 44">44</a>
+</div>    </section>
     <section class="ix-sec" data-group="5.4.1">
-      <h2 class="ix-h"><span class="ix-letter">&sect;&thinsp;5.4.1</span><span class="ix-title">Do Investors Choose Heuristics According to Their Priorities and Beliefs?</span></h2>
-<a class="row" href="/figure/F6/" data-kind="figure" data-id="figure/F6">
-  <span class="row-num"><span class="row-k">Fig.</span>F6</span>
-  <span class="row-title">Heuristic Awareness and Use</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F9/" data-kind="table" data-id="table/F9">
-  <span class="row-num"><span class="row-k">Tab.</span>F9</span>
-  <span class="row-title">Heuristic Adoption: Logit Estimates</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F10/" data-kind="table" data-id="table/F10">
-  <span class="row-num"><span class="row-k">Tab.</span>F10</span>
-  <span class="row-title">Heuristic Adoption and Historical Effectiveness: Reduced Form</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F11/" data-kind="table" data-id="table/F11">
-  <span class="row-num"><span class="row-k">Tab.</span>F11</span>
-  <span class="row-title">Heuristic Adoption and Historical Effectiveness: By Objective</span>
-  <span class="row-meta"></span>
-</a>    </section>
+      <h3 class="te te-s"><span class="te-n">5.4.1</span><span class="te-t">Do Investors Choose Heuristics According to Their Priorities and Beliefs?</span></h3>
+<div class="te te-x te-l1" data-id="figure/F6" data-kind="figure">
+  <a class="te-a" href="/figure/F6/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> F6</span><span class="te-t">Heuristic Awareness and Use</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=50" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure F6 in the PDF, page 48">48</a>
+</div><div class="te te-x te-l1" data-id="table/F9" data-kind="table">
+  <a class="te-a" href="/table/F9/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F9</span><span class="te-t">Heuristic Adoption: Logit Estimates</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=59" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F9 in the PDF, page 57">57</a>
+</div><div class="te te-x te-l1" data-id="table/F10" data-kind="table">
+  <a class="te-a" href="/table/F10/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F10</span><span class="te-t">Heuristic Adoption and Historical Effectiveness: Reduced Form</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=60" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F10 in the PDF, page 58">58</a>
+</div><div class="te te-x te-l1" data-id="table/F11" data-kind="table">
+  <a class="te-a" href="/table/F11/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F11</span><span class="te-t">Heuristic Adoption and Historical Effectiveness: By Objective</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=61" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F11 in the PDF, page 59">59</a>
+</div>    </section>
     <section class="ix-sec" data-group="5.4.2">
-      <h2 class="ix-h"><span class="ix-letter">&sect;&thinsp;5.4.2</span><span class="ix-title">Do Beliefs Track Historical Effectiveness?</span></h2>
-<a class="row" href="/figure/D2/" data-kind="figure" data-id="figure/D2">
-  <span class="row-num"><span class="row-k">Fig.</span>D2</span>
-  <span class="row-title">Planned Holding Periods, Sources of Beliefs About Heuristic Effectiveness, and Use of Multiple Heuristics</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F7/" data-kind="table" data-id="table/F7">
-  <span class="row-num"><span class="row-k">Tab.</span>F7</span>
-  <span class="row-title">Relationship between Perceived and Historical Effectiveness</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F8/" data-kind="table" data-id="table/F8">
-  <span class="row-num"><span class="row-k">Tab.</span>F8</span>
-  <span class="row-title">Relationship between Perceived and Historical Effectiveness: Heterogeneity across Investor Groups</span>
-  <span class="row-meta"></span>
-</a>    </section>
+      <h3 class="te te-s"><span class="te-n">5.4.2</span><span class="te-t">Do Beliefs Track Historical Effectiveness?</span></h3>
+<div class="te te-x te-l1" data-id="figure/D2" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D2/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D2</span><span class="te-t">Planned Holding Periods, Sources of Beliefs About Heuristic Effectiveness, and Use of Multiple Heuristics</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=27" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D2 in the PDF, page 25">25</a>
+</div><div class="te te-x te-l1" data-id="table/F7" data-kind="table">
+  <a class="te-a" href="/table/F7/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F7</span><span class="te-t">Relationship between Perceived and Historical Effectiveness</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=57" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F7 in the PDF, page 55">55</a>
+</div><div class="te te-x te-l1" data-id="table/F8" data-kind="table">
+  <a class="te-a" href="/table/F8/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F8</span><span class="te-t">Relationship between Perceived and Historical Effectiveness: Heterogeneity across Investor Groups</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=58" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F8 in the PDF, page 56">56</a>
+</div>    </section>
     <section class="ix-sec" data-group="5.4.3">
-      <h2 class="ix-h"><span class="ix-letter">&sect;&thinsp;5.4.3</span><span class="ix-title">Do Chosen Heuristics Deliver on Investors’ Priorities?</span></h2>
-<a class="row" href="/table/F12/" data-kind="table" data-id="table/F12">
-  <span class="row-num"><span class="row-k">Tab.</span>F12</span>
-  <span class="row-title">Do Adopted Heuristics Deliver on the Objectives Investors Do Not Prioritize?</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F14/" data-kind="table" data-id="table/F14">
-  <span class="row-num"><span class="row-k">Tab.</span>F14</span>
-  <span class="row-title">Do Adopted Heuristics Deliver? Average Stock and JKP-Factor Benchmarks</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F16/" data-kind="table" data-id="table/F16">
-  <span class="row-num"><span class="row-k">Tab.</span>F16</span>
-  <span class="row-title">Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Average Stock and JKP-Factor Benchmarks</span>
-  <span class="row-meta"></span>
-</a>    </section>
+      <h3 class="te te-s"><span class="te-n">5.4.3</span><span class="te-t">Do Chosen Heuristics Deliver on Investors’ Priorities?</span></h3>
+<div class="te te-x te-l1" data-id="table/F12" data-kind="table">
+  <a class="te-a" href="/table/F12/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F12</span><span class="te-t">Do Adopted Heuristics Deliver on the Objectives Investors Do Not Prioritize?</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=62" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F12 in the PDF, page 60">60</a>
+</div><div class="te te-x te-l1" data-id="table/F14" data-kind="table">
+  <a class="te-a" href="/table/F14/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F14</span><span class="te-t">Do Adopted Heuristics Deliver? Average Stock and JKP-Factor Benchmarks</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=64" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F14 in the PDF, page 62">62</a>
+</div><div class="te te-x te-l1" data-id="table/F16" data-kind="table">
+  <a class="te-a" href="/table/F16/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F16</span><span class="te-t">Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Average Stock and JKP-Factor Benchmarks</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=66" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F16 in the PDF, page 64">64</a>
+</div>    </section>
     <section class="ix-sec" data-group="5.5">
-      <h2 class="ix-h"><span class="ix-letter">&sect;&thinsp;5.5</span><span class="ix-title">Subsequent Effectiveness</span></h2>
-<a class="row" href="/figure/D1/" data-kind="figure" data-id="figure/D1">
-  <span class="row-num"><span class="row-k">Fig.</span>D1</span>
-  <span class="row-title">Continued Use and Duration of Use of Adopted Heuristics</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F13/" data-kind="table" data-id="table/F13">
-  <span class="row-num"><span class="row-k">Tab.</span>F13</span>
-  <span class="row-title">Do Adopted Heuristics Deliver on the Objectives Investors Do Not Prioritize? Out-of-Sample Evidence</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F15/" data-kind="table" data-id="table/F15">
-  <span class="row-num"><span class="row-k">Tab.</span>F15</span>
-  <span class="row-title">Do Adopted Heuristics Deliver? Out-of-Sample Benchmark Comparisons</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F17/" data-kind="table" data-id="table/F17">
-  <span class="row-num"><span class="row-k">Tab.</span>F17</span>
-  <span class="row-title">Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Out-of-Sample Benchmark Comparisons</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F18/" data-kind="table" data-id="table/F18">
-  <span class="row-num"><span class="row-k">Tab.</span>F18</span>
-  <span class="row-title">Do Adopted Heuristics Deliver? Post-Adoption Evidence</span>
-  <span class="row-meta"></span>
-</a>    </section>
+      <h3 class="te te-s"><span class="te-n">5.5</span><span class="te-t">Subsequent Effectiveness</span></h3>
+<div class="te te-x te-l1" data-id="figure/D1" data-kind="figure" data-sub="D.2">
+  <a class="te-a" href="/figure/D1/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> D1</span><span class="te-t">Continued Use and Duration of Use of Adopted Heuristics</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=26" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure D1 in the PDF, page 24">24</a>
+</div><div class="te te-x te-l1" data-id="table/F13" data-kind="table">
+  <a class="te-a" href="/table/F13/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F13</span><span class="te-t">Do Adopted Heuristics Deliver on the Objectives Investors Do Not Prioritize? Out-of-Sample Evidence</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=63" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F13 in the PDF, page 61">61</a>
+</div><div class="te te-x te-l1" data-id="table/F15" data-kind="table">
+  <a class="te-a" href="/table/F15/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F15</span><span class="te-t">Do Adopted Heuristics Deliver? Out-of-Sample Benchmark Comparisons</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=65" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F15 in the PDF, page 63">63</a>
+</div><div class="te te-x te-l1" data-id="table/F17" data-kind="table">
+  <a class="te-a" href="/table/F17/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F17</span><span class="te-t">Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Out-of-Sample Benchmark Comparisons</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=67" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F17 in the PDF, page 65">65</a>
+</div><div class="te te-x te-l1" data-id="table/F18" data-kind="table">
+  <a class="te-a" href="/table/F18/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F18</span><span class="te-t">Do Adopted Heuristics Deliver? Post-Adoption Evidence</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=68" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F18 in the PDF, page 66">66</a>
+</div>    </section>
     <section class="ix-sec" data-group="zz">
-      <h2 class="ix-h"><span class="ix-title">Additional evidence without a main-paper link</span></h2>
-<a class="row" href="/figure/F1/" data-kind="figure" data-id="figure/F1">
-  <span class="row-num"><span class="row-k">Fig.</span>F1</span>
-  <span class="row-title">Proportion of Investor Pairs with Non-Overlapping Heuristics</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/figure/F5/" data-kind="figure" data-id="figure/F5">
-  <span class="row-num"><span class="row-k">Fig.</span>F5</span>
-  <span class="row-title">Perceived Effectiveness of Each Heuristic</span>
-  <span class="row-meta"></span>
-</a><a class="row" href="/table/F6/" data-kind="table" data-id="table/F6">
-  <span class="row-num"><span class="row-k">Tab.</span>F6</span>
-  <span class="row-title">Determinants of Objective Priorities</span>
-  <span class="row-meta"></span>
-</a>    </section>
+      <h3 class="te te-s"><span class="te-n"></span><span class="te-t">Additional evidence without a main-paper link</span></h3>
+<div class="te te-x te-l1" data-id="figure/F1" data-kind="figure">
+  <a class="te-a" href="/figure/F1/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> F1</span><span class="te-t">Proportion of Investor Pairs with Non-Overlapping Heuristics</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=42" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure F1 in the PDF, page 40">40</a>
+</div><div class="te te-x te-l1" data-id="figure/F5" data-kind="figure">
+  <a class="te-a" href="/figure/F5/"><span class="te-n"><span class="kw">Figure</span><span class="kw-s" aria-hidden="true">Fig.</span> F5</span><span class="te-t">Perceived Effectiveness of Each Heuristic</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=49" target="_blank" rel="noopener" tabindex="-1" aria-label="Figure F5 in the PDF, page 47">47</a>
+</div><div class="te te-x te-l1" data-id="table/F6" data-kind="table">
+  <a class="te-a" href="/table/F6/"><span class="te-n"><span class="kw">Table</span><span class="kw-s" aria-hidden="true">Tab.</span> F6</span><span class="te-t">Determinants of Objective Priorities</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="/pdf/#page=56" target="_blank" rel="noopener" tabindex="-1" aria-label="Table F6 in the PDF, page 54">54</a>
+</div>    </section>
   </div>
   <p class="ix-empty" data-ix-empty hidden>No exhibits match this filter.</p>
+  <p class="sr-only" role="status" data-ix-status></p>
 </section>
 </main>
 <footer class="ftr">
-  <div class="ftr-in">
-    <p>Online Appendix to &ldquo;Adaptive Heuristics in Stock Selection.&rdquo; Generated from the manuscript sources; updated October 3, 2026.</p>
-    <p><a href="/pdf/" target="_blank" rel="noopener">Full appendix (PDF, 69 pages)</a></p>
-  </div>
+  <p>Online Appendix to &ldquo;Adaptive Heuristics in Stock Selection.&rdquo; Updated October 2026. <a href="/pdf/" target="_blank" rel="noopener">Full appendix (PDF, 69 pages)</a></p>
 </footer>
 <div class="pal" data-palette hidden>
   <div class="pal-box" role="dialog" aria-modal="true" aria-label="Search exhibits">
-    <div class="pal-in"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><input type="search" placeholder="Search by number, title, variable, or keyword" autocomplete="off" spellcheck="false" aria-label="Search exhibits" data-pal-input><kbd>Esc</kbd></div>
-    <ul class="pal-list" role="listbox" data-pal-list></ul>
-    <p class="pal-hint">Try &ldquo;F12&rdquo;, &ldquo;Momentum&rdquo;, &ldquo;out-of-sample&rdquo;. &uarr;&darr; to move, Enter to open.</p>
+    <div class="pal-in"><input type="search" placeholder="Number, title, variable, or keyword" autocomplete="off" spellcheck="false" aria-label="Search exhibits" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="pal-list" data-pal-input><span class="pal-esc">Esc to close</span></div>
+    <ul class="pal-list" id="pal-list" role="listbox" aria-label="Matching exhibits" data-pal-list></ul>
+    <p class="sr-only" role="status" data-pal-status></p>
+    <p class="pal-hint">Try &ldquo;F12&rdquo;, &ldquo;Momentum&rdquo;, &ldquo;out-of-sample&rdquo;. Up and down arrows move, Enter opens. Press / anywhere to search.</p>
   </div>
 </div>
 </body>

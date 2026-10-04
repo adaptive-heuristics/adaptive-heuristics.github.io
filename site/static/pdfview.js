@@ -39,7 +39,7 @@ async function main() {
   const doc = await task.promise;
   viewer.setDocument(doc);
   linkService.setDocument(doc, null);
-  count.textContent = "/ " + doc.numPages;
+  count.textContent = "of " + doc.numPages;
 
   document.querySelector("[data-pv-prev]").addEventListener("click", () => viewer.previousPage());
   document.querySelector("[data-pv-next]").addEventListener("click", () => viewer.nextPage());

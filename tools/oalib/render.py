@@ -41,6 +41,28 @@ def _panel_groups(panels: list[dict]) -> list[dict]:
     return groups
 
 
+_MONTHS = ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
+           "November", "December")
+
+
+def _month_year(iso: str) -> str:
+    """'2026-10-03' -> 'October 2026'."""
+    return f"{_MONTHS[int(iso[5:7]) - 1]} {iso[:4]}"
+
+
+def _no_widow(html: str) -> str:
+    """Bind the last two words of a title with a no-break space, so no line holds a single word."""
+    parts = re.split(r"(<[^>]+>)", html or "")
+    for i in range(len(parts) - 1, -1, -1):
+        if parts[i].startswith("<"):
+            continue
+        j = parts[i].rstrip().rfind(" ")
+        if j >= 0:
+            parts[i] = parts[i][:j] + "&nbsp;" + parts[i][j + 1:]
+            break
+    return "".join(parts)
+
+
 def _short(title: str, n: int = 46) -> str:
     return title if len(title) <= n else title[: n - 1].rsplit(" ", 1)[0] + "…"
 
@@ -52,6 +74,8 @@ def render(cfg: Config, model: dict, stage: Path) -> None:
                       trim_blocks=True, lstrip_blocks=True)
     env.filters["safe_html"] = lambda s: Markup(s or "")
     env.filters["short"] = _short
+    env.filters["no_widow"] = _no_widow
+    env.filters["month_year"] = _month_year
     env.filters["pct"] = lambda w: f"{w * 100:.0f}%" if w else "100%"
 
     # static assets
@@ -78,6 +102,12 @@ def render(cfg: Config, model: dict, stage: Path) -> None:
     for s in tops:
         s["exhibits"] = [e for e in exhibits if e["section"] == s["id"]]
         s["n_exhibits"] = len(s["exhibits"])
+        # second-level entries for the contents page, each with the exhibits typeset inside it
+        s["subs"] = [dict(x) for x in sections if x["level"] == 2 and x["id"].startswith(s["id"] + ".")]
+        for x in s["subs"]:
+            x["exhibits"] = [e for e in s["exhibits"] if e.get("subsection") == x["id"]]
+        sub_ids = {x["id"] for x in s["subs"]}
+        s["loose"] = [e for e in s["exhibits"] if e.get("subsection") not in sub_ids]
     groups = [dict(g) for g in model["groups"]]
     for g in groups:
         g["items"] = [by_id[i] for i in g["exhibits"]]

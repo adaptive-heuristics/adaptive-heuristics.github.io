@@ -1,48 +1,63 @@
 {% extends "base.html" %}
-{% from "_icons.html" import icon %}
 {% block title %}Online Appendix &middot; {{ site.paper_title }}{% endblock %}
-{% macro row(e) -%}
-<a class="row" href="{{ e.url }}" data-kind="{{ e.kind }}" data-id="{{ e.id }}">
-  <span class="row-num"><span class="row-k">{{ "Fig." if e.kind == "figure" else "Tab." }}</span>{{ e.number }}</span>
-  <span class="row-title">{{ e.title_html|safe_html }}</span>
-  <span class="row-meta">{% if e.n_panels > 1 %}{{ e.n_panels }} panels{% endif %}</span>
-</a>
+{# One contents line: the title opens the exhibit page, the page number opens the PDF at that page. #}
+{% macro entry(e, lvl) -%}
+<div class="te te-x te-l{{ lvl }}" data-id="{{ e.id }}" data-kind="{{ e.kind }}"{% if e.subsection %} data-sub="{{ e.subsection }}"{% endif %}>
+  <a class="te-a" href="{{ e.url }}"><span class="te-n"><span class="kw">{{ e.kind_word }}</span><span class="kw-s" aria-hidden="true">{{ "Fig." if e.kind == "figure" else "Tab." }}</span> {{ e.number }}</span><span class="te-t">{{ e.title_html|safe_html }}</span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <a class="te-p" href="{{ e.pdf_href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="{{ e.kind_word }} {{ e.number }} in the PDF, page {{ e.page_labels[0] }}">{{ e.page_labels[0] }}</a>
+</div>
+{%- endmacro %}
+{% macro textonly(x, lvl) -%}
+<div class="te te-l{{ lvl }} te-text" data-text-row>
+  <a class="te-a" href="{{ x.href }}" target="_blank" rel="noopener"><span class="te-n">{{ x.id }}</span><span class="te-t">{{ x.title_html|safe_html }} <em class="te-note">text only, in the PDF</em></span></a>
+  <span class="te-dots" aria-hidden="true"></span>
+  <span class="te-p">{{ x.page_labels[0] }}</span>
+</div>
 {%- endmacro %}
 {% block main %}
-<section class="hero">
-  <h1>Online Appendix</h1>
-  <p class="hero-sub">to &ldquo;{{ site.paper_title }}&rdquo;</p>
-  <div class="hero-actions">
-    <a class="btn btn-ink" href="{{ pdf.url }}" download="Online-Appendix.pdf">{{ icon("download") }}Download PDF</a>
-    <a class="btn btn-line" href="/pdf/" target="_blank" rel="noopener">{{ icon("external") }}Open in browser</a>
-    <span class="hero-meta">{{ pdf.pages }} pages &middot; {{ pdf.size }} &middot; updated {{ build.source_date_text }}</span>
-  </div>
-  <p class="hero-lede">Browse every figure and table of the Online Appendix, each with its note. The questionnaires and the prompts are text only and appear in the PDF.</p>
+<section class="tb">
+  <h1 class="tb-h"><span class="tb-pre">Online Appendix to</span> <span class="tb-t">{{ site.paper_title }}</span></h1>
+  <p class="tb-d">{{ build.source_date|month_year }}</p>
+  <p class="tb-links"><a href="{{ pdf.url }}" download="Online-Appendix.pdf">Download PDF</a><span class="sep" aria-hidden="true">&middot;</span><a href="/pdf/" target="_blank" rel="noopener">Read in browser</a></p>
 </section>
 
-<section class="ix-wrap" id="contents" aria-label="Exhibits">
-  <div class="ix-bar">
-    <div class="chips" role="group" aria-label="Show">
-      <button class="chip on" type="button" data-kind-filter="all" aria-pressed="true">All <span>{{ counts.exhibits }}</span></button>
-      <button class="chip" type="button" data-kind-filter="figure" aria-pressed="false">Figures <span>{{ counts.figures }}</span></button>
-      <button class="chip" type="button" data-kind-filter="table" aria-pressed="false">Tables <span>{{ counts.tables }}</span></button>
+<section class="ct" id="contents" aria-labelledby="contents-h">
+  <h2 class="ct-h" id="contents-h">Contents</h2>
+  <div class="ix-bar" data-needs-js hidden>
+    <div class="ix-grp" role="group" aria-label="Show">
+      <span class="ix-lbl" aria-hidden="true">Show</span>
+      <span class="ix-opts"><button class="ix-opt on" type="button" data-kind-filter="all" aria-pressed="true">All</button>
+      <button class="ix-opt" type="button" data-kind-filter="figure" aria-pressed="false">Figures</button>
+      <button class="ix-opt" type="button" data-kind-filter="table" aria-pressed="false">Tables</button></span>
     </div>
-    <div class="seg" role="group" aria-label="Group by">
-      <span class="seg-lbl">Group by</span>
-      <button class="seg-btn on" type="button" data-group-by="section" aria-pressed="true">Appendix section</button>
-      <button class="seg-btn" type="button" data-group-by="paper" aria-pressed="false">Main-paper section</button>
+    <div class="ix-grp" role="group" aria-label="Arrange by">
+      <span class="ix-lbl" aria-hidden="true">Arrange by</span>
+      <span class="ix-opts"><button class="ix-opt on" type="button" data-group-by="section" aria-pressed="true">appendix section</button>
+      <button class="ix-opt" type="button" data-group-by="paper" aria-pressed="false">main-paper section</button></span>
     </div>
-    <label class="ix-filter">{{ icon("search") }}<input type="search" placeholder="Filter" aria-label="Filter exhibits by number, title or keyword" data-ix-filter></label>
+    <label class="ix-filter"><span class="ix-lbl">Filter</span><input type="search" placeholder="number, title or keyword" aria-label="Filter exhibits by number, title or keyword" data-ix-filter></label>
   </div>
 
   <div class="ix" data-view="section">
   {% for s in tops %}
     <section class="ix-sec" id="sec-{{ s.id }}" data-sec="{{ s.id }}">
-      <h2 class="ix-h"><span class="ix-letter">{{ s.id }}</span><span class="ix-title">{{ s.title_html|safe_html }}</span></h2>
-      {% for e in s.exhibits %}{{ row(e) }}{% endfor %}
-      {% if not s.n_exhibits %}
-      <p class="ix-textonly" data-text-row><span></span><span>Text only, no figures or tables. <a href="{{ s.href }}" target="_blank" rel="noopener">Read it in the PDF, p.&nbsp;{{ s.page_labels[0] }} {{ icon("external", "sm") }}</a></span></p>
+      {% if s.n_exhibits %}
+      <h3 class="te te-s"><span class="te-n">{{ s.id }}</span><span class="te-t">{{ s.title_html|safe_html }}</span><a class="te-p" href="{{ s.href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="Section {{ s.id }} in the PDF, page {{ s.page_labels[0] }}">{{ s.page_labels[0] }}</a></h3>
+      {% else %}
+      <h3 class="te te-s te-text" data-text-row><a class="te-a" href="{{ s.href }}" target="_blank" rel="noopener"><span class="te-n">{{ s.id }}</span><span class="te-t">{{ s.title_html|safe_html }} <em class="te-note">text only, in the PDF</em></span></a><span class="te-p">{{ s.page_labels[0] }}</span></h3>
       {% endif %}
+      {% for e in s.loose %}{{ entry(e, 1) }}{% endfor %}
+      {% for x in s.subs %}
+        {% if x.exhibits %}
+        <div class="te te-l1 te-sub" data-sub-head="{{ x.id }}">
+          <span class="te-a"><span class="te-n">{{ x.id }}</span><span class="te-t">{{ x.title_html|safe_html }}</span></span>
+          <span class="te-dots" aria-hidden="true"></span>
+          <span class="te-p">{{ x.page_labels[0] }}</span>
+        </div>
+        {% for e in x.exhibits %}{{ entry(e, 2) }}{% endfor %}
+        {% else %}{{ textonly(x, 1) }}{% endif %}
+      {% endfor %}
     </section>
   {% endfor %}
   </div>
@@ -51,11 +66,12 @@
     <p class="ix-note">Each exhibit is placed under the main-paper section that cites it, or else under the section whose results it extends.</p>
   {% for g in groups %}
     <section class="ix-sec" data-group="{{ g.key }}">
-      <h2 class="ix-h">{% if g.number %}<span class="ix-letter">&sect;&thinsp;{{ g.number }}</span>{% endif %}<span class="ix-title">{{ g.title_html|safe_html }}</span></h2>
-      {% for e in g["items"] %}{{ row(e) }}{% endfor %}
+      <h3 class="te te-s"><span class="te-n">{% if g.number %}{{ g.number }}{% endif %}</span><span class="te-t">{{ g.title_html|safe_html }}</span></h3>
+      {% for e in g["items"] %}{{ entry(e, 1) }}{% endfor %}
     </section>
   {% endfor %}
   </div>
   <p class="ix-empty" data-ix-empty hidden>No exhibits match this filter.</p>
+  <p class="sr-only" role="status" data-ix-status></p>
 </section>
 {% endblock %}
