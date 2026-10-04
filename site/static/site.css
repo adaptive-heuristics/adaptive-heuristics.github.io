@@ -108,6 +108,8 @@ a.te-a:hover .te-t { text-decoration: underline; text-decoration-thickness: 1px;
 .te-note { font-size: 0.88em; color: var(--ink-2); white-space: nowrap; }
 .te-s { --n-w: 1.5em; grid-template-columns: var(--n-w) minmax(0, 1fr) 2.3em; column-gap: 0.55em; font-weight: 700; margin-top: 22px; }
 .te-s > .te-a { grid-column: 1 / 3; }
+/* the section number sits on the first line of a wrapped title, the page number on the last, as in a LaTeX contents */
+.te-s > .te-n { align-self: start; }
 .ix-sec:first-child > .te-s { margin-top: 10px; }
 .te-l1 { margin-left: 1.5em; }
 .te-l2 { margin-left: 3.8em; }
