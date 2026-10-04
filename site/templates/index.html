@@ -14,7 +14,7 @@
   <p class="hero-sub">to &ldquo;{{ site.paper_title }}&rdquo;</p>
   <div class="hero-actions">
     <a class="btn btn-ink" href="{{ pdf.url }}" download="Online-Appendix.pdf">{{ icon("download") }}Download PDF</a>
-    <a class="btn btn-line" href="{{ pdf.url }}" target="_blank" rel="noopener">{{ icon("external") }}Open in browser</a>
+    <a class="btn btn-line" href="/pdf/" target="_blank" rel="noopener">{{ icon("external") }}Open in browser</a>
     <span class="hero-meta">{{ pdf.pages }} pages &middot; {{ pdf.size }} &middot; updated {{ build.source_date_text }}</span>
   </div>
   <p class="hero-lede">Browse every figure and table of the Online Appendix, each with its note. The questionnaires and the prompts are text only and appear in the PDF.</p>
@@ -39,24 +39,9 @@
   {% for s in tops %}
     <section class="ix-sec" id="sec-{{ s.id }}" data-sec="{{ s.id }}">
       <h2 class="ix-h"><span class="ix-letter">{{ s.id }}</span><span class="ix-title">{{ s.title_html|safe_html }}</span></h2>
-      {% for it in s["items"] %}
-        {% if it.sec and not it.exhibits %}
-        <a class="row row-text" href="{{ it.sec.href }}" target="_blank" rel="noopener" data-text-row>
-          <span class="row-num">{{ it.sec.id }}</span>
-          <span class="row-title">{{ it.sec.title_html|safe_html }}</span>
-          <span class="row-meta">Text in PDF, pp.&nbsp;{{ it.sec.page_labels[0] }}{% if it.sec.page_labels[1] != it.sec.page_labels[0] %}&ndash;{{ it.sec.page_labels[1] }}{% endif %} {{ icon("external", "sm") }}</span>
-        </a>
-        {% else %}
-          {% if it.sec %}<p class="ix-sub" data-sub><span>{{ it.sec.id }}</span> {{ it.sec.title_html|safe_html }}</p>{% endif %}
-          {% for e in it.exhibits %}{{ row(e) }}{% endfor %}
-        {% endif %}
-      {% endfor %}
-      {% if not s.n_exhibits and not s["items"]|selectattr("sec")|list %}
-        <a class="row row-text" href="{{ s.href }}" target="_blank" rel="noopener" data-text-row>
-          <span class="row-num">{{ s.id }}</span>
-          <span class="row-title">{{ s.title_html|safe_html }}</span>
-          <span class="row-meta">Text in PDF, pp.&nbsp;{{ s.page_labels[0] }}&ndash;{{ s.page_labels[1] }} {{ icon("external", "sm") }}</span>
-        </a>
+      {% for e in s.exhibits %}{{ row(e) }}{% endfor %}
+      {% if not s.n_exhibits %}
+      <p class="ix-textonly" data-text-row><span></span><span>Text only, no figures or tables. <a href="{{ s.href }}" target="_blank" rel="noopener">Read it in the PDF, p.&nbsp;{{ s.page_labels[0] }} {{ icon("external", "sm") }}</a></span></p>
       {% endif %}
     </section>
   {% endfor %}

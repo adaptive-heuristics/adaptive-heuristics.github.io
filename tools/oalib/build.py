@@ -17,7 +17,8 @@ from .figures import convert as convert_figure
 from .inline import Inline
 from .mathml import MathRegistry
 from .pdfmap import PdfIndex, postprocess
-from .table2html import parse_table, to_csv, to_html
+from .questions import parse_questions, render as render_question
+from .table2html import parse_table, to_html
 from .texdoc import Doc, Exhibit, parse_appendix
 from .util import BuildError, info, read_text, sha256_file, sha256_text, warn, write_json, write_text
 
@@ -90,7 +91,8 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
     pp = postprocess(comp.pdf, stage / cfg.pdf_name, pdf_title)
     info(f"PDF: {comp.report.pages} pages, {pp['links_removed']} links to other files removed")
     pdf = PdfIndex(stage / cfg.pdf_name)
-    resolver = Resolver(doc, app_aux, paper_aux, pdf, pdf_url)
+    viewer_url = "/pdf/"  # in-site PDF viewer: opens the page in any browser instead of downloading the file
+    resolver = Resolver(doc, app_aux, paper_aux, pdf, viewer_url)
 
     def mk(where: str, link: bool = True) -> Inline:
         return Inline(resolver, math, where, link_refs=link)
@@ -116,7 +118,7 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
             "id": s.id, "level": s.level, "label": s.label, "title_html": r.html, "title": r.text,
             "has_exhibits": s.has_exhibits, "pages": [p0, p1],
             "page_labels": [pdf.labels[p0], pdf.labels[p1]],
-            "href": f"{pdf_url}#page={p0 + 1}",
+            "href": f"{viewer_url}#page={p0 + 1}",
         })
 
     # ---- exhibits ----
@@ -163,7 +165,7 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
                                     webp_quality=figcfg.get("webp_quality", 90), png_dpi=figcfg.get("png_dpi", 300))
                 searchable.append(fa.text)
                 graphics_out.append({
-                    "src": arel + fa.display, "kind": fa.kind, "png": arel + fa.png, "pdf": arel + fa.pdf,
+                    "src": arel + fa.display, "kind": fa.kind, "png": arel + fa.png,
                     "w": round(fa.w_pt, 1), "h": round(fa.h_pt, 1), "width": g.width,
                     "legend": bool(panel_count and part.panels), "src_sha": fa.src_sha, "text": fa.text,
                 })
@@ -179,7 +181,7 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
                                         webp_quality=figcfg.get("webp_quality", 90),
                                         png_dpi=figcfg.get("png_dpi", 300))
                     searchable.append(fa.text)
-                    pg.append({"src": arel + fa.display, "kind": fa.kind, "png": arel + fa.png, "pdf": arel + fa.pdf,
+                    pg.append({"src": arel + fa.display, "kind": fa.kind, "png": arel + fa.png,
                                "w": round(fa.w_pt, 1), "h": round(fa.h_pt, 1), "width": g.width,
                                "src_sha": fa.src_sha, "text": fa.text})
                 if sub:
@@ -198,14 +200,11 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
                 letter = pm.group(1) if pm else (chr(ord("A") + t_i) if len(part.tables) > 1 else "")
                 tid = f"t-{ex.number}" + (f"-{letter}" if letter else "")
                 html_table = to_html(tbl, table_id=tid)
-                csv_name = f"{ex.number}" + (f"-{letter}" if letter else "") + ".csv"
-                adir.mkdir(parents=True, exist_ok=True)
-                (adir / csv_name).write_text(to_csv(tbl), encoding="utf-8", newline="\n")
                 cell_text = " ".join(" ".join(c.text_lines) for r in tbl.rows for c in r.cells)
                 searchable.append(cell_text)
                 tables_out.append({
                     "letter": letter, "heading_html": heading.html if heading else "",
-                    "heading": heading.text if heading else "", "html": html_table, "csv": arel + csv_name,
+                    "heading": heading.text if heading else "", "html": html_table,
                     "dense": bool(ti.size) or tbl.ncols >= 8, "ncols": tbl.ncols, "numbers": tbl.numbers,
                     "src": ti.path, "src_sha": sha256_text(src_text), "cells": cell_text,
                 })
@@ -217,8 +216,6 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
                 "note_src_sha": sha256_text(part.note or ""),
             })
         pages = sorted({p["pdf_page"] for p in parts_out})
-        page_pdf = adir / f"{ex.number}-pages.pdf"
-        pdf.extract(pages, page_pdf, f"Online Appendix, {tag}")
         main_refs, oa = [], []
         for lab in refs_all:
             if lab in app_aux.labels:
@@ -232,12 +229,37 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
             "labels": ex.labels, "url": exhibit_url(ex), "title_html": _strip_period(title.html),
             "title": _strip_period(title.text), "section": ex.section, "subsection": ex.subsection,
             "parts": parts_out, "pages": pages, "page_labels": [pdf.labels[p] for p in pages],
-            "pdf_href": f"{pdf_url}#page={pages[0] + 1}", "pages_pdf": arel + page_pdf.name,
+            "pdf_href": f"{viewer_url}#page={pages[0] + 1}", "questions": [],
             "n_panels": sum(len(p["panels"]) for p in parts_out) + sum(len(p["tables"]) for p in parts_out
                                                                        if len(p["tables"]) > 1),
             "wide": any(p["landscape"] for p in parts_out),
             "search": " ".join(searchable),
         })
+
+    # ---- survey questions behind each response figure (from the appendix's \respbox pointers) ----
+    by_label_ex = {lab: e for e in exhibits_out for lab in e["labels"]}
+    for q in parse_questions(doc, app_aux):
+        q_html, q_text = render_question(q.tex, lambda w, _k=q.key: mk(f"question {_k}: {w}"))
+        for fig_label, panel in q.targets:
+            e = by_label_ex.get(fig_label)
+            if e is None:
+                raise BuildError(f"question {q.key} points to {fig_label}, which is not an exhibit")
+            have = next((x for x in e["questions"] if x["key"] == q.key), None)
+            if have:
+                if panel and panel not in have["panels"]:
+                    have["panels"].append(panel)
+                continue
+            e["questions"].append({"key": q.key, "label": q.label, "source": q.source, "number": q.number,
+                                   "panels": [panel] if panel else [], "html": q_html, "text": q_text})
+    ref_link = re.compile(r'<a class="ref" href="[^"]*" data-ref="(q:[^"]+)"(?: target="_blank" rel="noopener")?>')
+    for e in exhibits_out:
+        shown = {x["label"]: x["key"] for x in e["questions"] if x["label"]}
+        if not shown:
+            continue
+        for p in e["parts"]:
+            p["note_html"] = ref_link.sub(
+                lambda m, s=shown: (f'<a class="ref" href="#q-{s[m.group(1)]}" data-ref="{m.group(1)}">'
+                                    if m.group(1) in s else m.group(0)), p["note_html"])
 
     # ---- main-paper cross-links ----
     groups = assign_groups(doc, forward, oa_refs, pmap, paper_aux, overrides)

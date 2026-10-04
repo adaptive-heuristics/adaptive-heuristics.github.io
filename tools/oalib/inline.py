@@ -38,6 +38,7 @@ SYMBOLS = {
     "textquotedblright": "”", "textbar": "|", "textless": "&lt;", "textgreater": "&gt;", "quad": "\u2003",
     "qquad": "\u2003\u2003", "enspace": "\u2002", "thinspace": "\u202f", "nobreakspace": "\u00a0",
     "textunderscore": "_", "textperiodcentered": "·", "textbullet": "•", "slash": "/",
+    "\n": " ",  # backslash at the end of a line = control space
 }
 IGNORE0 = {
     "small", "footnotesize", "scriptsize", "tiny", "normalsize", "large", "Large", "LARGE", "huge", "Huge",
@@ -279,7 +280,7 @@ class Inline:
         return read_group(s, i, what=f"argument in {self.where}")
 
     def _command(self, s, i, end, H, T, *, block, blocks, wrap_stack) -> int:
-        m = re.match(r"\\([A-Za-z@]+\*?|.)", s[i:end])
+        m = re.match(r"\\([A-Za-z@]+\*?|.|\n)", s[i:end])
         if not m:
             self._err("stray backslash", s, i)
         name = m.group(1)
@@ -355,7 +356,9 @@ class Inline:
             html_text = _html.escape(text).replace("~", "\u00a0")
             plain = text.replace("~", " ")
             if tgt.href and self.link_refs:
-                H.append(f'<a class="ref" href="{_html.escape(tgt.href)}">{html_text}</a>')
+                newtab = ' target="_blank" rel="noopener"' if tgt.href.startswith("/pdf/") else ""
+                H.append(f'<a class="ref" href="{_html.escape(tgt.href)}" data-ref="{_html.escape(tgt.label)}"'
+                         f'{newtab}>{html_text}</a>')
             else:
                 H.append(html_text)
             T.append(plain)

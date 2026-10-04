@@ -60,9 +60,11 @@ def render(cfg: Config, model: dict, stage: Path) -> None:
     for f in (site_dir / "fonts").iterdir():
         if f.suffix in (".woff2", ".txt"):
             shutil.copy2(f, assets / "fonts" / f.name)
-    for name in ("site.css", "site.js", "favicon.svg"):
+    for name in ("site.css", "site.js", "pdfview.js", "favicon.svg"):
         shutil.copy2(site_dir / "static" / name, assets / name)
-    ver = {"css": sha256_file(assets / "site.css")[:10], "js": sha256_file(assets / "site.js")[:10]}
+    shutil.copytree(site_dir / "static" / "pdfjs", assets / "pdfjs", dirs_exist_ok=True)
+    ver = {"css": sha256_file(assets / "site.css")[:10], "js": sha256_file(assets / "site.js")[:10],
+           "pdf": sha256_file(assets / "pdfview.js")[:10]}
 
     exhibits = model["exhibits"]
     by_id = {e["id"]: e for e in exhibits}
@@ -74,20 +76,8 @@ def render(cfg: Config, model: dict, stage: Path) -> None:
     sections = model["sections"]
     tops = [dict(s) for s in sections if s["level"] == 1]
     for s in tops:
-        items = []
-        subs = [x for x in sections if x["level"] == 2 and x["id"].startswith(s["id"] + ".")]
-        sec_ex = [e for e in exhibits if e["section"] == s["id"]]
-        if subs:
-            for sub in subs:
-                ex_in = [e for e in sec_ex if e["subsection"] == sub["id"]]
-                items.append({"type": "sub", "sec": sub, "exhibits": ex_in})
-            loose = [e for e in sec_ex if not e["subsection"]]
-            if loose:
-                items.insert(0, {"type": "sub", "sec": None, "exhibits": loose})
-        else:
-            items.append({"type": "sub", "sec": None, "exhibits": sec_ex})
-        s["items"] = items
-        s["n_exhibits"] = len(sec_ex)
+        s["exhibits"] = [e for e in exhibits if e["section"] == s["id"]]
+        s["n_exhibits"] = len(s["exhibits"])
     groups = [dict(g) for g in model["groups"]]
     for g in groups:
         g["items"] = [by_id[i] for i in g["exhibits"]]
@@ -102,13 +92,14 @@ def render(cfg: Config, model: dict, stage: Path) -> None:
                                                         prev=by_id.get(e["prev"]), next=by_id.get(e["next"]))
         write_text(stage / e["url"].strip("/") / "index.html", html)
     write_text(stage / "compare" / "index.html", env.get_template("compare.html").render(**ctx, page="compare"))
+    write_text(stage / "pdf" / "index.html", env.get_template("pdf.html").render(**ctx, page="pdf"))
     write_text(stage / "404.html", env.get_template("404.html").render(**ctx, page="404"))
     write_text(stage / "robots.txt", "User-agent: *\nDisallow: /\n")
     write_text(stage / ".nojekyll", "")
 
     search = []
     for e in exhibits:
-        notes = " ".join(p["note_text"] for p in e["parts"])
+        notes = " ".join([p["note_text"] for p in e["parts"]] + [q["text"] for q in e["questions"]])
         cells = " ".join(t["cells"] for p in e["parts"] for t in p["tables"])
         figtext = " ".join(g["text"] for p in e["parts"] for g in p["graphics"]) + " " + " ".join(
             g["text"] for p in e["parts"] for pn in p["panels"] for g in pn["graphics"])

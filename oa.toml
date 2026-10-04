@@ -11,7 +11,7 @@ title = "Online Appendix"
 paper_title = ""                          # empty = taken from the appendix \title
 base_url = "https://ai-interview-stock.github.io/"
 pdf_name = "OA.pdf"
-note_position = "below"                   # "below": notes follow every exhibit; "paper": table notes above, as in the PDF
+note_position = "paper"                   # "paper": table notes above the table, as in the PDF; "below": after it
 noindex = true
 
 [anonymity]

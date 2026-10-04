@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 from datetime import datetime, timezone
 
-from .checks import Banned, Report, REPO_ALLOW, TEXT_EXT, check_repo
+from .checks import Banned, Report, REPO_ALLOW, TEXT_EXT, _vendor_pins, _vendored, check_repo
 from .config import Config
 from .manifest import commit_message, load_state, mark_published, state_dir
 from .util import BuildError, info, run
@@ -133,15 +133,20 @@ def hook_pre_commit(cfg: Config) -> int:
                             "`python tools/oa.py commit -m ...` (it sets UTC dates)")
     banned = Banned(cfg.banned_terms)
     staged = _git(cfg, "diff", "--cached", "--name-only", "--diff-filter=ACMR").stdout.splitlines()
+    pins, rep = _vendor_pins(cfg), Report()
     for p in staged:
         if not REPO_ALLOW.match(p):
             problems.append(f"{p} is outside the allowed paths")
         for t in banned.find(p):
             problems.append(f"file name {p} contains {t!r}")
         f = cfg.root / p
+        rel = p[len("docs/"):] if p.startswith("docs/") else p
+        if f.exists() and _vendored(cfg, rel, f, rep, pins):
+            continue  # third-party file, verified byte-identical to its pinned upstream hash
         if f.suffix.lower() in TEXT_EXT and f.exists() and f.stat().st_size < 5_000_000:
             for t in banned.find(f.read_text(encoding="utf-8", errors="replace")):
                 problems.append(f"{p} contains {t!r}")
+    problems += rep.errors
     if problems:
         print("pre-commit: commit refused (anonymity):\n  " + "\n  ".join(problems))
         return 1

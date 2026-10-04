@@ -1,0 +1,1 @@
+pdf.js 6.4.299 (pdfjs-dist, Apache-2.0); files copied unmodified from the npm package build/ and web/ folders.

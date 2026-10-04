@@ -1,8 +1,0 @@
-﻿Dependent variable: D(Adoption),,,
-,(1) Returns,(2) Upside,(3) Stability
-Objective importance × Historical effectiveness,+0.014***,+0.032***,+0.027***
-,(0.004),(0.007),(0.005)
-Investor FE,✓,✓,✓
-Country × Heuristic FE,✓,✓,✓
-Observations,"4,200","4,200","4,200"
-R²,0.172,0.175,0.174

@@ -5,7 +5,7 @@
   "paper_title": "Adaptive Heuristics in Stock Selection",
   "base_url": "https://ai-interview-stock.github.io/",
   "noindex": true,
-  "note_position": "below"
+  "note_position": "paper"
  },
  "build": {
   "source_date": "2026-10-03",
@@ -15,7 +15,7 @@
   "url": "/OA.pdf",
   "pages": 69,
   "size": "3.7 MB",
-  "sha256": "46bcfee38376561bf74655c37d2119d23306861d0036be67847bc9624d46f085"
+  "sha256": "0ece57af9bee2877de874a6625947c6d168564f5afc7c8721f4da6e65ccd0881"
  },
  "counts": {
   "exhibits": 41,
@@ -38,7 +38,7 @@
     "1",
     "7"
    ],
-   "href": "/OA.pdf#page=3"
+   "href": "/pdf/#page=3"
   },
   {
    "id": "A.1",
@@ -55,7 +55,7 @@
     "1",
     "4"
    ],
-   "href": "/OA.pdf#page=3"
+   "href": "/pdf/#page=3"
   },
   {
    "id": "A.2",
@@ -72,7 +72,7 @@
     "5",
     "7"
    ],
-   "href": "/OA.pdf#page=7"
+   "href": "/pdf/#page=7"
   },
   {
    "id": "B",
@@ -89,7 +89,7 @@
     "8",
     "13"
    ],
-   "href": "/OA.pdf#page=10"
+   "href": "/pdf/#page=10"
   },
   {
    "id": "B.1",
@@ -106,7 +106,7 @@
     "9",
     "11"
    ],
-   "href": "/OA.pdf#page=11"
+   "href": "/pdf/#page=11"
   },
   {
    "id": "B.2",
@@ -123,7 +123,7 @@
     "12",
     "13"
    ],
-   "href": "/OA.pdf#page=14"
+   "href": "/pdf/#page=14"
   },
   {
    "id": "C",
@@ -140,7 +140,7 @@
     "14",
     "18"
    ],
-   "href": "/OA.pdf#page=16"
+   "href": "/pdf/#page=16"
   },
   {
    "id": "C.1",
@@ -157,7 +157,7 @@
     "14",
     "16"
    ],
-   "href": "/OA.pdf#page=16"
+   "href": "/pdf/#page=16"
   },
   {
    "id": "C.1.1",
@@ -174,7 +174,7 @@
     "14",
     "15"
    ],
-   "href": "/OA.pdf#page=16"
+   "href": "/pdf/#page=16"
   },
   {
    "id": "C.1.2",
@@ -191,7 +191,7 @@
     "15",
     "15"
    ],
-   "href": "/OA.pdf#page=17"
+   "href": "/pdf/#page=17"
   },
   {
    "id": "C.1.3",
@@ -208,7 +208,7 @@
     "15",
     "16"
    ],
-   "href": "/OA.pdf#page=17"
+   "href": "/pdf/#page=17"
   },
   {
    "id": "C.2",
@@ -225,7 +225,7 @@
     "16",
     "16"
    ],
-   "href": "/OA.pdf#page=18"
+   "href": "/pdf/#page=18"
   },
   {
    "id": "C.3",
@@ -242,7 +242,7 @@
     "16",
     "18"
    ],
-   "href": "/OA.pdf#page=18"
+   "href": "/pdf/#page=18"
   },
   {
    "id": "C.3.1",
@@ -259,7 +259,7 @@
     "17",
     "17"
    ],
-   "href": "/OA.pdf#page=19"
+   "href": "/pdf/#page=19"
   },
   {
    "id": "C.3.2",
@@ -276,7 +276,7 @@
     "17",
     "18"
    ],
-   "href": "/OA.pdf#page=19"
+   "href": "/pdf/#page=19"
   },
   {
    "id": "C.3.3",
@@ -293,7 +293,7 @@
     "18",
     "18"
    ],
-   "href": "/OA.pdf#page=20"
+   "href": "/pdf/#page=20"
   },
   {
    "id": "D",
@@ -310,7 +310,7 @@
     "19",
     "31"
    ],
-   "href": "/OA.pdf#page=21"
+   "href": "/pdf/#page=21"
   },
   {
    "id": "D.1",
@@ -327,7 +327,7 @@
     "19",
     "23"
    ],
-   "href": "/OA.pdf#page=21"
+   "href": "/pdf/#page=21"
   },
   {
    "id": "D.2",
@@ -344,7 +344,7 @@
     "24",
     "31"
    ],
-   "href": "/OA.pdf#page=26"
+   "href": "/pdf/#page=26"
   },
   {
    "id": "E",
@@ -361,7 +361,7 @@
     "32",
     "39"
    ],
-   "href": "/OA.pdf#page=34"
+   "href": "/pdf/#page=34"
   },
   {
    "id": "F",
@@ -378,7 +378,7 @@
     "40",
     "66"
    ],
-   "href": "/OA.pdf#page=42"
+   "href": "/pdf/#page=42"
   }
  ],
  "groups": [
@@ -525,8 +525,42 @@
    "page_labels": [
     "5"
    ],
-   "pdf_href": "/OA.pdf#page=7",
-   "pages_pdf": "/assets/x/fig/A1/A1-pages.pdf",
+   "pdf_href": "/pdf/#page=7",
+   "questions": [
+    {
+     "key": "bg_age",
+     "label": "q:bg_age",
+     "source": "Background survey",
+     "number": "2",
+     "panels": [
+      "a"
+     ],
+     "html": "<p><strong>How old are you?</strong> <br> Choose one of the following answers <em>(shown in a drop-down list)</em>.</p>\n<ul class=\"q-opts q-radio\"><li>Under 21</li><li>21–24</li><li>25–34</li><li>35–44</li><li>45–54</li><li>55–64</li><li>65+</li></ul>",
+     "text": "How old are you? Choose one of the following answers (shown in a drop-down list). Under 21 21–24 25–34 35–44 45–54 55–64 65+"
+    },
+    {
+     "key": "bg_gender",
+     "label": "q:bg_gender",
+     "source": "Background survey",
+     "number": "3",
+     "panels": [
+      "b"
+     ],
+     "html": "<p><strong>What is your gender?</strong> <br> Choose one of the following answers.<br> If you choose “Prefer to self-describe:” please also specify your choice in the accompanying text field.</p>\n<ul class=\"q-opts q-radio\"><li>Male</li><li>Female</li><li>Prefer to self-describe: <span class=\"q-blank\" aria-label=\"text field\"></span></li></ul>",
+     "text": "What is your gender? Choose one of the following answers. If you choose “Prefer to self-describe:” please also specify your choice in the accompanying text field. Male Female Prefer to self-describe: ____"
+    },
+    {
+     "key": "bg_education",
+     "label": "q:bg_education",
+     "source": "Background survey",
+     "number": "4",
+     "panels": [
+      "c"
+     ],
+     "html": "<p><strong>What is the highest qualification you have completed?</strong> <br> If you are currently studying, please indicate the highest degree you have already received. <br> Choose one of the following answers. <br> If you choose “Other:” please also specify your choice in the accompanying text field.</p>\n<ul class=\"q-opts q-radio\"><li>No degree</li><li>School diploma / Apprenticeship</li><li>Bachelor’s degree (or equivalent)</li><li>Master’s degree (MBA, MA, MSc, or equivalent)</li><li>Doctorate (PhD or equivalent)</li><li>Other: <span class=\"q-blank\" aria-label=\"text field\"></span></li></ul>",
+     "text": "What is the highest qualification you have completed? If you are currently studying, please indicate the highest degree you have already received. Choose one of the following answers. If you choose “Other:” please also specify your choice in the accompanying text field. No degree School diploma / Apprenticeship Bachelor’s degree (or equivalent) Master’s degree (MBA, MA, MSc, or equivalent) Doctorate (PhD or equivalent) Other: ____"
+    }
+   ],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -555,7 +589,6 @@
        "src": "/assets/x/fig/A1/A1.svg",
        "kind": "svg",
        "png": "/assets/x/fig/A1/A1.png",
-       "pdf": "/assets/x/fig/A1/A1.pdf",
        "w": 713.8,
        "h": 296.2,
        "width": 1.0,
@@ -592,8 +625,53 @@
    "page_labels": [
     "6"
    ],
-   "pdf_href": "/OA.pdf#page=8",
-   "pages_pdf": "/assets/x/fig/A2/A2-pages.pdf",
+   "pdf_href": "/pdf/#page=8",
+   "questions": [
+    {
+     "key": "bg_holdings",
+     "label": "q:bg_holdings",
+     "source": "Background survey",
+     "number": "5",
+     "panels": [
+      "a"
+     ],
+     "html": "<p><strong>Which of the following investment types do you currently have money allocated to, either individually or jointly with someone else?</strong> <br> Note: Only include investments you made yourself or directly instructed a third party to make for you (e.g., a financial advisor). Select all that apply.</p>\n<ul class=\"q-opts q-check\"><li>Individual stocks (publicly traded equity)</li><li>Mutual funds or exchange-traded funds (ETFs)</li><li>Derivatives (Options, Futures, or Forwards)</li><li>Cryptocurrencies</li><li>None of the above</li></ul>",
+     "text": "Which of the following investment types do you currently have money allocated to, either individually or jointly with someone else? Note: Only include investments you made yourself or directly instructed a third party to make for you (e.g., a financial advisor). Select all that apply. Individual stocks (publicly traded equity) Mutual funds or exchange-traded funds (ETFs) Derivatives (Options, Futures, or Forwards) Cryptocurrencies None of the above"
+    },
+    {
+     "key": "bg_assets",
+     "label": "q:bg_assets",
+     "source": "Background survey",
+     "number": "6",
+     "panels": [
+      "b"
+     ],
+     "html": "<p><strong>Approximately how much is your current total investable assets, in US Dollars?</strong><br> (You may use xe.com to convert from your local currency to US dollars)<br> Please include in your approximation:</p>\n<ul class=\"q-opts q-bullet\"><li>Cash on hand and in bank accounts</li><li>Investments in stocks, mutual funds, ETFs, derivatives, and cryptocurrencies</li></ul>\n<p>Please exclude in your approximation:</p>\n<ul class=\"q-opts q-bullet\"><li>Non-investment assets (e.g. your home, vehicles, collectibles)</li></ul>\n<p>Your response will be kept completely confidential.<br> Choose one of the following answers <em>(shown in a drop-down list)</em>.</p>\n<ul class=\"q-opts q-radio\"><li>Less than $1,000</li><li>$1,000 to $9,999</li><li>$10,000 to $24,999</li><li>$25,000 to $49,999</li><li>$50,000 to $99,999</li><li>$100,000 to $249,999</li><li>$250,000 to $499,999</li><li>$500,000 to $999,999</li><li>$1m<span class=\"m\">+</span></li><li>Prefer not to answer</li></ul>",
+     "text": "Approximately how much is your current total investable assets, in US Dollars? (You may use xe.com to convert from your local currency to US dollars) Please include in your approximation: Cash on hand and in bank accounts Investments in stocks, mutual funds, ETFs, derivatives, and cryptocurrencies Please exclude in your approximation: Non-investment assets (e.g. your home, vehicles, collectibles) Your response will be kept completely confidential. Choose one of the following answers (shown in a drop-down list). Less than $1,000 $1,000 to $9,999 $10,000 to $24,999 $25,000 to $49,999 $50,000 to $99,999 $100,000 to $249,999 $250,000 to $499,999 $500,000 to $999,999 $1m+ Prefer not to answer"
+    },
+    {
+     "key": "bg_changes",
+     "label": "q:bg_changes",
+     "source": "Background survey",
+     "number": "7",
+     "panels": [
+      "c"
+     ],
+     "html": "<p><strong>Approximately how often do you make changes to any of the above investment types?</strong> <br> This could be a change to the amount invested or a change in investment type <br> Choose one of the following answers</p>\n<ul class=\"q-opts q-radio\"><li>Less often than once a year</li><li>Once a year</li><li>Once every few months/quarterly</li><li>Once a month</li><li>Once a week or more often</li></ul>",
+     "text": "Approximately how often do you make changes to any of the above investment types? This could be a change to the amount invested or a change in investment type Choose one of the following answers Less often than once a year Once a year Once every few months/quarterly Once a month Once a week or more often"
+    },
+    {
+     "key": "bg_wealth",
+     "label": "q:bg_wealth",
+     "source": "Background survey",
+     "number": "8",
+     "panels": [
+      "d"
+     ],
+     "html": "<p><strong>Please indicate the primary sources from which your current wealth has been accumulated.</strong> <br> Choose one of the following answers. <br> If you choose “Other” please also specify your choice in the accompanying text field.</p>\n<ul class=\"q-opts q-radio\"><li>Employment income (working for an employer)</li><li>Business ownership or self-employment income</li><li>Inheritance or significant financial gifts from family/other</li><li>Proceeds from selling a significant personal asset (e.g., primary residence, valuable collectibles)</li><li>Other: <span class=\"q-blank\" aria-label=\"text field\"></span></li></ul>",
+     "text": "Please indicate the primary sources from which your current wealth has been accumulated. Choose one of the following answers. If you choose “Other” please also specify your choice in the accompanying text field. Employment income (working for an employer) Business ownership or self-employment income Inheritance or significant financial gifts from family/other Proceeds from selling a significant personal asset (e.g., primary residence, valuable collectibles) Other: ____"
+    }
+   ],
    "n_panels": 0,
    "wide": false,
    "main_refs": [
@@ -627,7 +705,6 @@
        "src": "/assets/x/fig/A2/A2.svg",
        "kind": "svg",
        "png": "/assets/x/fig/A2/A2.png",
-       "pdf": "/assets/x/fig/A2/A2.pdf",
        "w": 708.3,
        "h": 641.7,
        "width": 1.0,
@@ -664,8 +741,31 @@
    "page_labels": [
     "7"
    ],
-   "pdf_href": "/OA.pdf#page=9",
-   "pages_pdf": "/assets/x/fig/A3/A3-pages.pdf",
+   "pdf_href": "/pdf/#page=9",
+   "questions": [
+    {
+     "key": "bg_knowledge",
+     "label": "q:bg_knowledge",
+     "source": "Background survey",
+     "number": "9",
+     "panels": [
+      "a"
+     ],
+     "html": "<p><strong>How would you describe your level of investment knowledge?</strong> <br> Choose one of the following answers.</p>\n<ul class=\"q-opts q-radio\"><li>Complete beginner – I have little to no knowledge of investing</li><li>Rudimentary</li><li>Intermediate</li><li>Advanced</li><li>Expert – I have professional-level knowledge or significant personal experience in investing</li></ul>",
+     "text": "How would you describe your level of investment knowledge? Choose one of the following answers. Complete beginner – I have little to no knowledge of investing Rudimentary Intermediate Advanced Expert – I have professional-level knowledge or significant personal experience in investing"
+    },
+    {
+     "key": "bg_risk",
+     "label": "q:bg_risk",
+     "source": "Background survey",
+     "number": "10",
+     "panels": [
+      "b"
+     ],
+     "html": "<p><strong>Which of the following statements comes closest to the amount of financial risk that you are willing to take when you save or make investments?</strong> <br> Choose one of the following answers.</p>\n<ul class=\"q-opts q-radio\"><li>Not willing to take any financial risks</li><li>Take average financial risks expecting to earn average returns</li><li>Take above-average financial risks expecting to earn above-average returns</li><li>Take substantial risk expecting to earn substantial returns</li></ul>",
+     "text": "Which of the following statements comes closest to the amount of financial risk that you are willing to take when you save or make investments? Choose one of the following answers. Not willing to take any financial risks Take average financial risks expecting to earn average returns Take above-average financial risks expecting to earn above-average returns Take substantial risk expecting to earn substantial returns"
+    }
+   ],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -693,7 +793,6 @@
        "src": "/assets/x/fig/A3/A3.svg",
        "kind": "svg",
        "png": "/assets/x/fig/A3/A3.png",
-       "pdf": "/assets/x/fig/A3/A3.pdf",
        "w": 706.4,
        "h": 295.9,
        "width": 1.0,
@@ -730,8 +829,18 @@
    "page_labels": [
     "12"
    ],
-   "pdf_href": "/OA.pdf#page=14",
-   "pages_pdf": "/assets/x/fig/B1/B1-pages.pdf",
+   "pdf_href": "/pdf/#page=14",
+   "questions": [
+    {
+     "key": "mcq-1",
+     "label": null,
+     "source": "AI interviewer",
+     "number": "1",
+     "panels": [],
+     "html": "<p>Just one quick follow-up question—after you <strong>sell</strong> a stock, do you continue to track its performance and how its <strong>price evolves</strong>?<br> 1 (Never)<br> 2 (Sometimes)<br> 3 (Always)<br> Please only reply with the associated number.</p>",
+     "text": "Just one quick follow-up question—after you sell a stock, do you continue to track its performance and how its price evolves? 1 (Never) 2 (Sometimes) 3 (Always) Please only reply with the associated number."
+    }
+   ],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -756,7 +865,6 @@
        "src": "/assets/x/fig/B1/B1.svg",
        "kind": "svg",
        "png": "/assets/x/fig/B1/B1.png",
-       "pdf": "/assets/x/fig/B1/B1.pdf",
        "w": 425.8,
        "h": 324.2,
        "width": 0.6,
@@ -793,8 +901,53 @@
    "page_labels": [
     "13"
    ],
-   "pdf_href": "/OA.pdf#page=15",
-   "pages_pdf": "/assets/x/fig/B2/B2-pages.pdf",
+   "pdf_href": "/pdf/#page=15",
+   "questions": [
+    {
+     "key": "mcq-2",
+     "label": null,
+     "source": "AI interviewer",
+     "number": "2",
+     "panels": [
+      "a"
+     ],
+     "html": "<p>How well does the above summarize how you approach investing in individual stocks?<br> 1 (It’s a poor summary)<br> 2 (It’s a fair summary)<br> 3 (It’s a good summary)<br> 4 (It’s a very good summary)<br> Please only reply with the associated number.</p>",
+     "text": "How well does the above summarize how you approach investing in individual stocks? 1 (It’s a poor summary) 2 (It’s a fair summary) 3 (It’s a good summary) 4 (It’s a very good summary) Please only reply with the associated number."
+    },
+    {
+     "key": "mcq-3",
+     "label": null,
+     "source": "AI interviewer",
+     "number": "3",
+     "panels": [
+      "b"
+     ],
+     "html": "<p>To wrap up, just three quick multiple-choice questions about your experience with this AI-led interview. First, how would you rate the overall quality of the interview?<br> 1 (Poor)<br> 2 (Fair)<br> 3 (Good)<br> 4 (Very good)<br> Please only reply with the associated number.</p>",
+     "text": "To wrap up, just three quick multiple-choice questions about your experience with this AI-led interview. First, how would you rate the overall quality of the interview? 1 (Poor) 2 (Fair) 3 (Good) 4 (Very good) Please only reply with the associated number."
+    },
+    {
+     "key": "mcq-4",
+     "label": null,
+     "source": "AI interviewer",
+     "number": "4",
+     "panels": [
+      "c"
+     ],
+     "html": "<p>Second, in the future, would you prefer to be interviewed by<br> 1 (an AI-led interviewer)<br> 2 (a human interviewer)<br> 3 (I am indifferent)<br> Please only reply with the associated number.</p>",
+     "text": "Second, in the future, would you prefer to be interviewed by 1 (an AI-led interviewer) 2 (a human interviewer) 3 (I am indifferent) Please only reply with the associated number."
+    },
+    {
+     "key": "mcq-5",
+     "label": null,
+     "source": "AI interviewer",
+     "number": "5",
+     "panels": [
+      "d"
+     ],
+     "html": "<p>Third, which format do you prefer? An AI-led conversation (like here) or writing out your thoughts as a “short essay” in response to an open-ended question?<br> 1 (I prefer AI-led conversations)<br> 2 (I prefer writing out my thoughts to an open-ended question)<br> 3 (I am indifferent)<br> Please only reply with the associated number.</p>",
+     "text": "Third, which format do you prefer? An AI-led conversation (like here) or writing out your thoughts as a “short essay” in response to an open-ended question? 1 (I prefer AI-led conversations) 2 (I prefer writing out my thoughts to an open-ended question) 3 (I am indifferent) Please only reply with the associated number."
+    }
+   ],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -831,7 +984,6 @@
        "src": "/assets/x/fig/B2/B2.svg",
        "kind": "svg",
        "png": "/assets/x/fig/B2/B2.png",
-       "pdf": "/assets/x/fig/B2/B2.pdf",
        "w": 713.8,
        "h": 642.0,
        "width": 1.0,
@@ -868,8 +1020,31 @@
    "page_labels": [
     "24"
    ],
-   "pdf_href": "/OA.pdf#page=26",
-   "pages_pdf": "/assets/x/fig/D1/D1-pages.pdf",
+   "pdf_href": "/pdf/#page=26",
+   "questions": [
+    {
+     "key": "fu_use",
+     "label": "q:fu_use",
+     "source": "Follow-up survey",
+     "number": "1",
+     "panels": [
+      "a"
+     ],
+     "html": "<p>In our previous interview, we discussed several approaches you use when deciding which stocks to buy. Below are the approaches we recorded for you. Please review them and answer the question that follows. <br> <em>(A table lists the respondent’s recorded approaches, each with a first-person version of its description, e.g., “Fundamental Strength: I buy companies with strong financial health, such as high profits or solid finances.”)</em> <br> <strong>Are you <u>currently</u> using these approaches, and if so, for how long?</strong> <br> <em>(Asked separately for each recorded approach, as a grid.)</em></p>\n<ul class=\"q-opts q-radio\"><li>Yes – a few months</li><li>Yes – 1–3 years</li><li>Yes – more than 3 years</li><li>No – I used these approaches in the past but no longer use them</li></ul>",
+     "text": "In our previous interview, we discussed several approaches you use when deciding which stocks to buy. Below are the approaches we recorded for you. Please review them and answer the question that follows. (A table lists the respondent’s recorded approaches, each with a first-person version of its description, e.g., “Fundamental Strength: I buy companies with strong financial health, such as high profits or solid finances.”) Are you currently using these approaches, and if so, for how long? (Asked separately for each recorded approach, as a grid.) Yes – a few months Yes – 1–3 years Yes – more than 3 years No – I used these approaches in the past but no longer use them"
+    },
+    {
+     "key": "fu_stop",
+     "label": "q:fu_stop",
+     "source": "Follow-up survey",
+     "number": "2",
+     "panels": [
+      "b"
+     ],
+     "html": "<p><em>(Shown only for approaches marked “No” in the previous question.)</em> <br> <strong>When you stopped using these approaches, approximately how long had you been using them?</strong></p>\n<ul class=\"q-opts q-radio\"><li>A few months</li><li>1–3 years</li><li>More than 3 years</li></ul>",
+     "text": "(Shown only for approaches marked “No” in the previous question.) When you stopped using these approaches, approximately how long had you been using them? A few months 1–3 years More than 3 years"
+    }
+   ],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -909,7 +1084,6 @@
        "src": "/assets/x/fig/D1/D1.svg",
        "kind": "svg",
        "png": "/assets/x/fig/D1/D1.png",
-       "pdf": "/assets/x/fig/D1/D1.pdf",
        "w": 713.1,
        "h": 432.2,
        "width": 1.0,
@@ -946,8 +1120,42 @@
    "page_labels": [
     "25"
    ],
-   "pdf_href": "/OA.pdf#page=27",
-   "pages_pdf": "/assets/x/fig/D2/D2-pages.pdf",
+   "pdf_href": "/pdf/#page=27",
+   "questions": [
+    {
+     "key": "fu_holding",
+     "label": "q:fu_holding",
+     "source": "Follow-up survey",
+     "number": "3",
+     "panels": [
+      "a"
+     ],
+     "html": "<p><strong>How long do you usually plan to hold an individual stock for?</strong> <br> Choose one of the following answers.</p>\n<ul class=\"q-opts q-radio\"><li>A few days or less</li><li>A few weeks</li><li>A few months</li><li>1–3 years</li><li>More than 3 years</li></ul>",
+     "text": "How long do you usually plan to hold an individual stock for? Choose one of the following answers. A few days or less A few weeks A few months 1–3 years More than 3 years"
+    },
+    {
+     "key": "fu_sources",
+     "label": "q:fu_sources",
+     "source": "Follow-up survey",
+     "number": "4",
+     "panels": [
+      "b"
+     ],
+     "html": "<p><strong>For the approaches you use, what is the main reason you believe they work well in your country’s stock market?</strong> <br> Please select at most 2 answers.</p>\n<ul class=\"q-opts q-check\"><li>My own investing experience</li><li>People I know personally (e.g., family, friends, colleagues)</li><li>Professional or expert sources (e.g., journalists, analysts, financial advisors, books by industry experts)</li><li>Individual creators and online communities (e.g., YouTubers, X/Twitter, Reddit, investing influencers, online forums)</li><li>Formal education (e.g., finance/economics coursework, degree programs, professional certifications)</li><li>Other, please specify: <span class=\"q-blank\" aria-label=\"text field\"></span></li></ul>",
+     "text": "For the approaches you use, what is the main reason you believe they work well in your country’s stock market? Please select at most 2 answers. My own investing experience People I know personally (e.g., family, friends, colleagues) Professional or expert sources (e.g., journalists, analysts, financial advisors, books by industry experts) Individual creators and online communities (e.g., YouTubers, X/Twitter, Reddit, investing influencers, online forums) Formal education (e.g., finance/economics coursework, degree programs, professional certifications) Other, please specify: ____"
+    },
+    {
+     "key": "fu_multi",
+     "label": "q:fu_multi",
+     "source": "Follow-up survey",
+     "number": "5",
+     "panels": [
+      "c"
+     ],
+     "html": "<p><em>(Shown only to respondents with more than one recorded approach.)</em> <br> <strong>It seems that you use more than one approach. Which of the following best describes how you use these approaches?</strong> <br> Choose one of the following answers.</p>\n<ul class=\"q-opts q-radio\"><li>I use only one approach at a time, but I switch between approaches over time depending on which one seems most appropriate.</li><li>I use multiple approaches at the same time.</li></ul>",
+     "text": "(Shown only to respondents with more than one recorded approach.) It seems that you use more than one approach. Which of the following best describes how you use these approaches? Choose one of the following answers. I use only one approach at a time, but I switch between approaches over time depending on which one seems most appropriate. I use multiple approaches at the same time."
+    }
+   ],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -984,7 +1192,6 @@
        "src": "/assets/x/fig/D2/D2.svg",
        "kind": "svg",
        "png": "/assets/x/fig/D2/D2.png",
-       "pdf": "/assets/x/fig/D2/D2.pdf",
        "w": 729.3,
        "h": 310.6,
        "width": 1.0,
@@ -1021,8 +1228,31 @@
    "page_labels": [
     "26"
    ],
-   "pdf_href": "/OA.pdf#page=28",
-   "pages_pdf": "/assets/x/fig/D3/D3-pages.pdf",
+   "pdf_href": "/pdf/#page=28",
+   "questions": [
+    {
+     "key": "fu_heard",
+     "label": "q:fu_heard",
+     "source": "Follow-up survey",
+     "number": "6",
+     "panels": [
+      "b"
+     ],
+     "html": "<p><strong>Now consider several <u>other</u> approaches investors sometimes use to decide which stocks to buy. For each approach below, please indicate whether you have heard of it before.</strong> <br> <em>(A table lists the approaches not recorded for the respondent, each with a checkbox “I have heard of this approach,” plus “None of the above.” The approach descriptions read:)</em></p>\n<ul class=\"q-opts q-check\"><li><strong>Fundamental Strength:</strong> Buying companies with strong financial health, such as high profits or solid finances.</li><li><strong>Growth Potential:</strong> Buying companies that have the potential to grow a lot because of innovative products or services.</li><li><strong>Familiarity/Brand Trust:</strong> Buying companies one knows well or trusts because of personal familiarity or brand recognition.</li><li><strong>Established Companies:</strong> Preferring large, well-established companies that feel stable and reliable.</li><li><strong>Expert Recommendations:</strong> Buying based on recommendations from trusted experts, advisors, or investment platforms.</li><li><strong>Price Momentum:</strong> Buying stocks whose prices have been rising, expecting the trend to continue.</li><li><strong>Multiple Signals Alignment:</strong> Buying only when several different sources or opinions all point in the same direction.</li><li><strong>Dividend Income:</strong> Buying stocks that provide reliable and attractive dividend income.</li><li><strong>Peer Influence:</strong> Buying stocks recommended or owned by trusted people, such as friends or family.</li><li><strong>Valuation (Undervalued Stocks):</strong> Buying stocks that look cheap compared to what one thinks they are really worth.</li><li><strong>Buying the Dip:</strong> Buying after a price drop believed to be temporary.</li><li><strong>ESG/Personal-values-based Investing:</strong> Buying companies that match one’s ethical, social, or environmental values.</li><li><strong>Technical Analysis:</strong> Buying based on technical indicators or chart patterns.</li><li>None of the above</li></ul>",
+     "text": "Now consider several other approaches investors sometimes use to decide which stocks to buy. For each approach below, please indicate whether you have heard of it before. (A table lists the approaches not recorded for the respondent, each with a checkbox “I have heard of this approach,” plus “None of the above.” The approach descriptions read:) Fundamental Strength: Buying companies with strong financial health, such as high profits or solid finances. Growth Potential: Buying companies that have the potential to grow a lot because of innovative products or services. Familiarity/Brand Trust: Buying companies one knows well or trusts because of personal familiarity or brand recognition. Established Companies: Preferring large, well-established companies that feel stable and reliable. Expert Recommendations: Buying based on recommendations from trusted experts, advisors, or investment platforms. Price Momentum: Buying stocks whose prices have been rising, expecting the trend to continue. Multiple Signals Alignment: Buying only when several different sources or opinions all point in the same direction. Dividend Income: Buying stocks that provide reliable and attractive dividend income. Peer Influence: Buying stocks recommended or owned by trusted people, such as friends or family. Valuation (Undervalued Stocks): Buying stocks that look cheap compared to what one thinks they are really worth. Buying the Dip: Buying after a price drop believed to be temporary. ESG/Personal-values-based Investing: Buying companies that match one’s ethical, social, or environmental values. Technical Analysis: Buying based on technical indicators or chart patterns. None of the above"
+    },
+    {
+     "key": "fu_past",
+     "label": "q:fu_past",
+     "source": "Follow-up survey",
+     "number": "7",
+     "panels": [
+      "c"
+     ],
+     "html": "<p><strong>For each approach you indicated you have heard of, please check the box if you have used it in the past.</strong> <br> <em>(Lists the approaches selected in the previous question, plus “None of the above.”)</em></p>",
+     "text": "For each approach you indicated you have heard of, please check the box if you have used it in the past. (Lists the approaches selected in the previous question, plus “None of the above.”)"
+    }
+   ],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -1052,7 +1282,6 @@
        "src": "/assets/x/fig/D3/D3.svg",
        "kind": "svg",
        "png": "/assets/x/fig/D3/D3.png",
-       "pdf": "/assets/x/fig/D3/D3.pdf",
        "w": 713.1,
        "h": 385.9,
        "width": 1.0,
@@ -1089,8 +1318,18 @@
    "page_labels": [
     "27"
    ],
-   "pdf_href": "/OA.pdf#page=29",
-   "pages_pdf": "/assets/x/fig/D4/D4-pages.pdf",
+   "pdf_href": "/pdf/#page=29",
+   "questions": [
+    {
+     "key": "fu_longest",
+     "label": "q:fu_longest",
+     "source": "Follow-up survey",
+     "number": "8",
+     "panels": [],
+     "html": "<p><em>(Shown only if the respondent’s recorded approaches and the approaches they report having used in the past together number more than three.)</em> <br> <strong>You indicated that you currently use or previously used several approaches. Please select the three approaches you have used for the longest period of time.</strong> <br> <em>(Lists the respondent’s recorded and previously used approaches. The three selected approaches (or, for respondents with three or fewer, all recorded and previously used approaches) constitute the respondent’s “top approaches” referenced below.)</em></p>",
+     "text": "(Shown only if the respondent’s recorded approaches and the approaches they report having used in the past together number more than three.) You indicated that you currently use or previously used several approaches. Please select the three approaches you have used for the longest period of time. (Lists the respondent’s recorded and previously used approaches. The three selected approaches (or, for respondents with three or fewer, all recorded and previously used approaches) constitute the respondent’s “top approaches” referenced below.)"
+    }
+   ],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -1118,7 +1357,6 @@
        "src": "/assets/x/fig/D4/D4.svg",
        "kind": "svg",
        "png": "/assets/x/fig/D4/D4.png",
-       "pdf": "/assets/x/fig/D4/D4.pdf",
        "w": 461.1,
        "h": 369.3,
        "width": 0.65,
@@ -1155,8 +1393,42 @@
    "page_labels": [
     "28"
    ],
-   "pdf_href": "/OA.pdf#page=30",
-   "pages_pdf": "/assets/x/fig/D5/D5-pages.pdf",
+   "pdf_href": "/pdf/#page=30",
+   "questions": [
+    {
+     "key": "fu_work",
+     "label": "q:fu_work",
+     "source": "Follow-up survey",
+     "number": "9",
+     "panels": [
+      "a"
+     ],
+     "html": "<p><strong>For each approach below, how much work do you feel each requires?</strong> <br> <em>(Asked for each of the respondent’s top approaches, in randomized order. Hovering over an approach name displays short keyword reminders.)</em> <br> Five-point slider: 1 (Very little work) to 5 (A lot of work).</p>",
+     "text": "For each approach below, how much work do you feel each requires? (Asked for each of the respondent’s top approaches, in randomized order. Hovering over an approach name displays short keyword reminders.) Five-point slider: 1 (Very little work) to 5 (A lot of work)."
+    },
+    {
+     "key": "fu_willing",
+     "label": "q:fu_willing",
+     "source": "Follow-up survey",
+     "number": "12",
+     "panels": [
+      "b"
+     ],
+     "html": "<p><strong>When it comes to investing, how willing are you to put in time and effort to research stocks before buying?</strong> <br> Five-point slider: 1 (Not at all willing) to 5 (Very willing).</p>",
+     "text": "When it comes to investing, how willing are you to put in time and effort to research stocks before buying? Five-point slider: 1 (Not at all willing) to 5 (Very willing)."
+    },
+    {
+     "key": "fu_time",
+     "label": "q:fu_time",
+     "source": "Follow-up survey",
+     "number": "13",
+     "panels": [
+      "c"
+     ],
+     "html": "<p><strong>Realistically, how much time do you currently have available for researching stocks?</strong> <br> Five-point slider: 1 (Very little time) to 5 (A lot of time).</p>",
+     "text": "Realistically, how much time do you currently have available for researching stocks? Five-point slider: 1 (Very little time) to 5 (A lot of time)."
+    }
+   ],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -1183,7 +1455,6 @@
        "src": "/assets/x/fig/D5/D5.svg",
        "kind": "svg",
        "png": "/assets/x/fig/D5/D5.png",
-       "pdf": "/assets/x/fig/D5/D5.pdf",
        "w": 713.1,
        "h": 678.1,
        "width": 1.0,
@@ -1220,8 +1491,18 @@
    "page_labels": [
     "29"
    ],
-   "pdf_href": "/OA.pdf#page=31",
-   "pages_pdf": "/assets/x/fig/D6/D6-pages.pdf",
+   "pdf_href": "/pdf/#page=31",
+   "questions": [
+    {
+     "key": "fu_goals",
+     "label": "q:fu_goals",
+     "source": "Follow-up survey",
+     "number": "10",
+     "panels": [],
+     "html": "<p><strong>Investors care about different things when picking stocks. Please indicate how important each of the following four goals is to you personally.</strong> <br> <em>(The four goals are presented in randomized order.)</em> Five-point slider: 1 (Not important at all) to 5 (Extremely important).</p>\n<ul class=\"q-opts q-bullet\"><li><strong>Consistent High Returns:</strong> I look for stocks that, in most cases, are likely to give me high total returns (from price gains or dividends). For example, if I hold five stocks, I would ideally want most or all of them to do well.</li><li><strong>High Upside Focus:</strong> I look for stocks that could become major winners and deliver very large gains. For example, if I hold five stocks, it is OK if most deliver only moderate returns, as long as at least one becomes a very big winner.</li><li><strong>Stable Performance:</strong> I look for stocks that I expect to give stable and predictable performance.</li><li><strong>Personal Values Alignment:</strong> I invest in companies that match my personal values, even if it means lower financial returns.</li></ul>",
+     "text": "Investors care about different things when picking stocks. Please indicate how important each of the following four goals is to you personally. (The four goals are presented in randomized order.) Five-point slider: 1 (Not important at all) to 5 (Extremely important). Consistent High Returns: I look for stocks that, in most cases, are likely to give me high total returns (from price gains or dividends). For example, if I hold five stocks, I would ideally want most or all of them to do well. High Upside Focus: I look for stocks that could become major winners and deliver very large gains. For example, if I hold five stocks, it is OK if most deliver only moderate returns, as long as at least one becomes a very big winner. Stable Performance: I look for stocks that I expect to give stable and predictable performance. Personal Values Alignment: I invest in companies that match my personal values, even if it means lower financial returns."
+    }
+   ],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -1250,7 +1531,6 @@
        "src": "/assets/x/fig/D6/D6.svg",
        "kind": "svg",
        "png": "/assets/x/fig/D6/D6.png",
-       "pdf": "/assets/x/fig/D6/D6.pdf",
        "w": 713.8,
        "h": 606.3,
        "width": 1.0,
@@ -1287,8 +1567,18 @@
    "page_labels": [
     "30"
    ],
-   "pdf_href": "/OA.pdf#page=32",
-   "pages_pdf": "/assets/x/fig/D7/D7-pages.pdf",
+   "pdf_href": "/pdf/#page=32",
+   "questions": [
+    {
+     "key": "fu_effect",
+     "label": "q:fu_effect",
+     "source": "Follow-up survey",
+     "number": "11",
+     "panels": [],
+     "html": "<p><strong>You are almost done. This is the final detailed question. After this, only four very short and simple questions remain. For each approach below, please indicate how good you think the approach is (in your country’s stock market) at finding stocks that match each goal.</strong> <br> <em>(Shown separately for each goal the respondent rated 4 or 5 in the previous question, e.g., “Your goal: Finding stocks that all consistently deliver strong returns (‘consistent high returns’).” Within each goal, asked for each of the respondent’s top approaches. The order of goals and approaches is randomized. Hovering over an approach name displays short keyword reminders.)</em> <br> Five-point slider: 1 (Not effective at all) to 5 (Extremely effective).</p>",
+     "text": "You are almost done. This is the final detailed question. After this, only four very short and simple questions remain. For each approach below, please indicate how good you think the approach is (in your country’s stock market) at finding stocks that match each goal. (Shown separately for each goal the respondent rated 4 or 5 in the previous question, e.g., “Your goal: Finding stocks that all consistently deliver strong returns (‘consistent high returns’).” Within each goal, asked for each of the respondent’s top approaches. The order of goals and approaches is randomized. Hovering over an approach name displays short keyword reminders.) Five-point slider: 1 (Not effective at all) to 5 (Extremely effective)."
+    }
+   ],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -1318,7 +1608,6 @@
        "src": "/assets/x/fig/D7/D7.svg",
        "kind": "svg",
        "png": "/assets/x/fig/D7/D7.png",
-       "pdf": "/assets/x/fig/D7/D7.pdf",
        "w": 713.1,
        "h": 774.9,
        "width": 1.0,
@@ -1355,8 +1644,31 @@
    "page_labels": [
     "31"
    ],
-   "pdf_href": "/OA.pdf#page=33",
-   "pages_pdf": "/assets/x/fig/D8/D8-pages.pdf",
+   "pdf_href": "/pdf/#page=33",
+   "questions": [
+    {
+     "key": "fu_individual",
+     "label": "q:fu_individual",
+     "source": "Follow-up survey",
+     "number": "14",
+     "panels": [
+      "a"
+     ],
+     "html": "<p><strong>What percentage of your overall investments is usually held in individual stocks (rather than mutual funds, ETFs, or similar)?</strong> <br> Choose one of the following answers.</p>\n<ul class=\"q-opts q-radio\"><li>0%–49% (Less than half in individual stocks)</li><li>50%–74% (Roughly half or more in individual stocks)</li><li>75%–89% (Mostly in individual stocks)</li><li>90%–100% (Almost all in individual stocks)</li><li>Not sure / Prefer not to say</li></ul>",
+     "text": "What percentage of your overall investments is usually held in individual stocks (rather than mutual funds, ETFs, or similar)? Choose one of the following answers. 0%–49% (Less than half in individual stocks) 50%–74% (Roughly half or more in individual stocks) 75%–89% (Mostly in individual stocks) 90%–100% (Almost all in individual stocks) Not sure / Prefer not to say"
+    },
+    {
+     "key": "fu_local",
+     "label": "q:fu_local",
+     "source": "Follow-up survey",
+     "number": "15",
+     "panels": [
+      "b"
+     ],
+     "html": "<p><strong>Of the money you hold in individual stocks, what percentage is in local stocks (stocks listed in the country where you live), rather than foreign stocks?</strong> <br> Example: If you live in Germany and 80% of the money you hold in individual stocks is invested in stocks listed on German stock exchanges and 20% is invested in stocks listed on foreign exchanges, your answer would be “75%–89%”. <br> Choose one of the following answers.</p>\n<ul class=\"q-opts q-radio\"><li>0%–49% (Less than half local stocks)</li><li>50%–74% (Roughly half or more local stocks)</li><li>75%–89% (Mostly local stocks)</li><li>90%–100% (Almost all local stocks)</li><li>Not sure / Prefer not to say</li></ul>",
+     "text": "Of the money you hold in individual stocks, what percentage is in local stocks (stocks listed in the country where you live), rather than foreign stocks? Example: If you live in Germany and 80% of the money you hold in individual stocks is invested in stocks listed on German stock exchanges and 20% is invested in stocks listed on foreign exchanges, your answer would be “75%–89%”. Choose one of the following answers. 0%–49% (Less than half local stocks) 50%–74% (Roughly half or more local stocks) 75%–89% (Mostly local stocks) 90%–100% (Almost all local stocks) Not sure / Prefer not to say"
+    }
+   ],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -1384,7 +1696,6 @@
        "src": "/assets/x/fig/D8/D8.svg",
        "kind": "svg",
        "png": "/assets/x/fig/D8/D8.png",
-       "pdf": "/assets/x/fig/D8/D8.pdf",
        "w": 713.8,
        "h": 311.2,
        "width": 1.0,
@@ -1423,8 +1734,8 @@
     "35",
     "36"
    ],
-   "pdf_href": "/OA.pdf#page=37",
-   "pages_pdf": "/assets/x/tab/E1/E1-pages.pdf",
+   "pdf_href": "/pdf/#page=37",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [
@@ -1458,7 +1769,6 @@
        "heading_html": "Panel A: GPT-Based Mapping",
        "heading": "Panel A: GPT-Based Mapping",
        "html": "<table class=\"tbl full\" id=\"t-E1-A\"><colgroup><col style=\"width:18%\"><col><col><col></colgroup><thead><tr><th class=\"a-j\" scope=\"col\">Heuristic</th><th class=\"a-c cmlr\" colspan=\"2\" scope=\"colgroup\">Characteristic (sign)</th><th class=\"a-l\" scope=\"col\">Definition</th></tr><tr><th class=\"a-j\" scope=\"col\"></th><th class=\"a-l\" scope=\"col\">Prompt A</th><th class=\"a-l\" scope=\"col\">Prompt B</th><th class=\"a-l\" scope=\"col\"></th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-j\" scope=\"row\">Fundamental Strength</th><td class=\"a-l\"><strong><em>ni_be</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>ni_be</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Return on equity (net income / book equity)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><strong><em>ebit_sale</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>ebit_sale</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Operating margin (EBIT / sales)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><em>ocf_at</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><em>ocf_at</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Operating cash-flow profitability (operating cash flow / assets)</td></tr><tr class=\"bg06\"><th class=\"a-j\" scope=\"row\">Growth/Innovation</th><td class=\"a-l\"><strong><em>rd_me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>rd_me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">R&amp;D-to-market ratio (R&amp;D expense / market equity)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><em>sale_gr3</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><em>sale_gr3</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Sales growth (3 years)</td></tr><tr class=\"bg06\"><th class=\"a-j\" scope=\"row\">Blue-Chip Comfort</th><td class=\"a-l\"><strong><em>me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Market equity</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><strong><em>age</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>age</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Firm age</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><strong><em>rvol_21d</em></strong> (<span class=\"m\">−</span>)</td><td class=\"a-l\"><strong><em>rvol_21d</em></strong> (<span class=\"m\">−</span>)</td><td class=\"a-l\">Return volatility (21 days)</td></tr><tr class=\"bg06\"><th class=\"a-j\" scope=\"row\">Buy-the-Dip</th><td class=\"a-l\"><strong><em>ret_1_0</em></strong> (<span class=\"m\">−</span>)</td><td class=\"a-l\"><strong><em>ret_1_0</em></strong> (<span class=\"m\">−</span>)</td><td class=\"a-l\">Past 1-month return</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><strong><em>ret_2_0</em></strong> (<span class=\"m\">−</span>)</td><td class=\"a-l\"><strong><em>ret_2_0</em></strong> (<span class=\"m\">−</span>)</td><td class=\"a-l\">Past 2-month return</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><strong><em>ret_3_0</em></strong> (<span class=\"m\">−</span>)</td><td class=\"a-l\"><strong><em>ret_3_0</em></strong> (<span class=\"m\">−</span>)</td><td class=\"a-l\">Past 3-month return</td></tr><tr class=\"bg06\"><th class=\"a-j\" scope=\"row\">Dividends</th><td class=\"a-l\"><strong><em>div12m_me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>div12m_me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Dividend yield (trailing 12-month)</td></tr><tr class=\"bg06\"><th class=\"a-j\" scope=\"row\">Momentum</th><td class=\"a-l\"><strong><em>ret_6_1</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>ret_6_1</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">6-month momentum (return <math><mrow><mi>t</mi><mo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−</mo><mn>6</mn><mo stretchy=\"false\">→</mo><mi>t</mi><mo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−</mo><mn>1</mn></mrow></math>)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><strong><em>ret_9_1</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"></td><td class=\"a-l\">9-month momentum (return <math><mrow><mi>t</mi><mo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−</mo><mn>9</mn><mo stretchy=\"false\">→</mo><mi>t</mi><mo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−</mo><mn>1</mn></mrow></math>)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><strong><em>ret_12_1</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>ret_12_1</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">12-month momentum (return <math><mrow><mi>t</mi><mo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−</mo><mn>12</mn><mo stretchy=\"false\">→</mo><mi>t</mi><mo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−</mo><mn>1</mn></mrow></math>)</td></tr><tr class=\"bg06\"><th class=\"a-j\" scope=\"row\">Valuation/Mispricing</th><td class=\"a-l\"><strong><em>be_me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>be_me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Book-to-market ratio (book equity / market equity)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><em>bev_mev</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><em>bev_mev</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Book-to-market enterprise value (book enterprise value / market enterprise value)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"></td><td class=\"a-l\"><em>fcf_me</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Free-cash-flow yield (free cash flow / market equity)</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/E1/E1-A.csv",
        "dense": false,
        "ncols": 4,
        "numbers": [
@@ -1530,7 +1840,6 @@
        "heading_html": "Panel B: Claude-Based Mapping",
        "heading": "Panel B: Claude-Based Mapping",
        "html": "<table class=\"tbl full\" id=\"t-E1-B\"><colgroup><col style=\"width:18%\"><col><col><col></colgroup><thead><tr><th class=\"a-j\" scope=\"col\">Heuristic</th><th class=\"a-c cmlr\" colspan=\"2\" scope=\"colgroup\">Characteristic (sign)</th><th class=\"a-l\" scope=\"col\">Definition</th></tr><tr><th class=\"a-j\" scope=\"col\"></th><th class=\"a-l\" scope=\"col\">Prompt A</th><th class=\"a-l\" scope=\"col\">Prompt B</th><th class=\"a-l\" scope=\"col\"></th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-j\" scope=\"row\">Fundamental Strength</th><td class=\"a-l\"></td><td class=\"a-l\"><strong><em>ni_be</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Return on equity (net income / book equity)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><em>cop_at</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><em>cop_at</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Cash-based operating profitability ((EBITDA + R&amp;D expense <span class=\"m\">−</span> operating accruals) / assets)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><em>niq_be</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\"></td><td class=\"a-l\">Quarterly return on equity (quarterly net income / lagged book equity)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><em>ocf_at</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><em>ocf_at</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Operating cash-flow profitability (operating cash flow / assets)</td></tr><tr class=\"bg06\"><th class=\"a-j\" scope=\"row\">Growth/Innovation</th><td class=\"a-l\"><strong><em>rd_me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>rd_me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">R&amp;D-to-market ratio (R&amp;D expense / market equity)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><em>capx_gr3</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><em>capx_gr3</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Capital-expenditure growth (3 years)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><em>sale_gr3</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><em>sale_gr3</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Sales growth (3 years)</td></tr><tr class=\"bg06\"><th class=\"a-j\" scope=\"row\">Blue-Chip Comfort</th><td class=\"a-l\"><strong><em>me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Market equity</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><strong><em>age</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>age</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Firm age</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"></td><td class=\"a-l\"><strong><em>rvol_21d</em></strong> (<span class=\"m\">−</span>)</td><td class=\"a-l\">Return volatility (21 days)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><em>ivol_capm_252d</em> (<span class=\"m\">−</span>)</td><td class=\"a-l\"></td><td class=\"a-l\">CAPM idiosyncratic volatility (252 trading days)</td></tr><tr class=\"bg06\"><th class=\"a-j\" scope=\"row\">Buy-the-Dip</th><td class=\"a-l\"><strong><em>ret_1_0</em></strong> (<span class=\"m\">−</span>)</td><td class=\"a-l\"><strong><em>ret_1_0</em></strong> (<span class=\"m\">−</span>)</td><td class=\"a-l\">Past 1-month return</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><strong><em>ret_2_0</em></strong> (<span class=\"m\">−</span>)</td><td class=\"a-l\"><strong><em>ret_2_0</em></strong> (<span class=\"m\">−</span>)</td><td class=\"a-l\">Past 2-month return</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><strong><em>ret_3_0</em></strong> (<span class=\"m\">−</span>)</td><td class=\"a-l\"><strong><em>ret_3_0</em></strong> (<span class=\"m\">−</span>)</td><td class=\"a-l\">Past 3-month return</td></tr><tr class=\"bg06\"><th class=\"a-j\" scope=\"row\">Dividends</th><td class=\"a-l\"><strong><em>div6m_me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>div6m_me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Dividend yield (trailing 6-month)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><strong><em>div12m_me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>div12m_me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Dividend yield (trailing 12-month)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"></td><td class=\"a-l\"><em>div3m_me</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Dividend yield (trailing 3-month)</td></tr><tr class=\"bg06\"><th class=\"a-j\" scope=\"row\">Momentum</th><td class=\"a-l\"><strong><em>ret_6_1</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>ret_6_1</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">6-month momentum (return <math><mrow><mi>t</mi><mo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−</mo><mn>6</mn><mo stretchy=\"false\">→</mo><mi>t</mi><mo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−</mo><mn>1</mn></mrow></math>)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><strong><em>ret_12_1</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>ret_12_1</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">12-month momentum (return <math><mrow><mi>t</mi><mo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−</mo><mn>12</mn><mo stretchy=\"false\">→</mo><mi>t</mi><mo form=\"prefix\" stretchy=\"false\" lspace=\"0em\" rspace=\"0em\">−</mo><mn>1</mn></mrow></math>)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><em>prc_highprc_252d</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><em>prc_highprc_252d</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Price-to-52-week-high ratio (price / highest price over 252 trading days)</td></tr><tr class=\"bg06\"><th class=\"a-j\" scope=\"row\">Valuation/Mispricing</th><td class=\"a-l\"><strong><em>be_me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><strong><em>be_me</em></strong> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Book-to-market ratio (book equity / market equity)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><em>ebitda_mev</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><em>ebitda_mev</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\">EBITDA-to-enterprise-value ratio (EBITDA / market enterprise value)</td></tr><tr><td class=\"a-j\"></td><td class=\"a-l\"><em>fcf_me</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\"><em>fcf_me</em> (<span class=\"m\">+</span>)</td><td class=\"a-l\">Free-cash-flow yield (free cash flow / market equity)</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/E1/E1-B.csv",
        "dense": false,
        "ncols": 4,
        "numbers": [
@@ -1617,8 +1926,8 @@
    "page_labels": [
     "37"
    ],
-   "pdf_href": "/OA.pdf#page=39",
-   "pages_pdf": "/assets/x/fig/E1/E1-pages.pdf",
+   "pdf_href": "/pdf/#page=39",
+   "questions": [],
    "n_panels": 6,
    "wide": true,
    "main_refs": [
@@ -1662,7 +1971,6 @@
        "src": "/assets/x/fig/E1/E1-legend.svg",
        "kind": "svg",
        "png": "/assets/x/fig/E1/E1-legend.png",
-       "pdf": "/assets/x/fig/E1/E1-legend.pdf",
        "w": 230.4,
        "h": 18.0,
        "width": null,
@@ -1682,7 +1990,6 @@
          "src": "/assets/x/fig/E1/E1a.webp",
          "kind": "webp",
          "png": "/assets/x/fig/E1/E1a.png",
-         "pdf": "/assets/x/fig/E1/E1a.pdf",
          "w": 207.4,
          "h": 136.8,
          "width": 1.0,
@@ -1703,7 +2010,6 @@
          "src": "/assets/x/fig/E1/E1b.webp",
          "kind": "webp",
          "png": "/assets/x/fig/E1/E1b.png",
-         "pdf": "/assets/x/fig/E1/E1b.pdf",
          "w": 207.4,
          "h": 136.8,
          "width": 1.0,
@@ -1724,7 +2030,6 @@
          "src": "/assets/x/fig/E1/E1c.webp",
          "kind": "webp",
          "png": "/assets/x/fig/E1/E1c.png",
-         "pdf": "/assets/x/fig/E1/E1c.pdf",
          "w": 207.4,
          "h": 136.8,
          "width": 1.0,
@@ -1745,7 +2050,6 @@
          "src": "/assets/x/fig/E1/E1d.webp",
          "kind": "webp",
          "png": "/assets/x/fig/E1/E1d.png",
-         "pdf": "/assets/x/fig/E1/E1d.pdf",
          "w": 207.4,
          "h": 136.8,
          "width": 1.0,
@@ -1766,7 +2070,6 @@
          "src": "/assets/x/fig/E1/E1e.webp",
          "kind": "webp",
          "png": "/assets/x/fig/E1/E1e.png",
-         "pdf": "/assets/x/fig/E1/E1e.pdf",
          "w": 207.4,
          "h": 136.8,
          "width": 1.0,
@@ -1787,7 +2090,6 @@
          "src": "/assets/x/fig/E1/E1f.webp",
          "kind": "webp",
          "png": "/assets/x/fig/E1/E1f.png",
-         "pdf": "/assets/x/fig/E1/E1f.pdf",
          "w": 207.4,
          "h": 136.8,
          "width": 1.0,
@@ -1826,8 +2128,8 @@
    "page_labels": [
     "38"
    ],
-   "pdf_href": "/OA.pdf#page=40",
-   "pages_pdf": "/assets/x/fig/E2/E2-pages.pdf",
+   "pdf_href": "/pdf/#page=40",
+   "questions": [],
    "n_panels": 6,
    "wide": true,
    "main_refs": [
@@ -1872,7 +2174,6 @@
        "src": "/assets/x/fig/E2/E2-legend.svg",
        "kind": "svg",
        "png": "/assets/x/fig/E2/E2-legend.png",
-       "pdf": "/assets/x/fig/E2/E2-legend.pdf",
        "w": 230.4,
        "h": 18.0,
        "width": null,
@@ -1892,7 +2193,6 @@
          "src": "/assets/x/fig/E2/E2a.webp",
          "kind": "webp",
          "png": "/assets/x/fig/E2/E2a.png",
-         "pdf": "/assets/x/fig/E2/E2a.pdf",
          "w": 207.4,
          "h": 136.8,
          "width": 1.0,
@@ -1913,7 +2213,6 @@
          "src": "/assets/x/fig/E2/E2b.webp",
          "kind": "webp",
          "png": "/assets/x/fig/E2/E2b.png",
-         "pdf": "/assets/x/fig/E2/E2b.pdf",
          "w": 207.4,
          "h": 136.8,
          "width": 1.0,
@@ -1934,7 +2233,6 @@
          "src": "/assets/x/fig/E2/E2c.webp",
          "kind": "webp",
          "png": "/assets/x/fig/E2/E2c.png",
-         "pdf": "/assets/x/fig/E2/E2c.pdf",
          "w": 207.4,
          "h": 136.8,
          "width": 1.0,
@@ -1955,7 +2253,6 @@
          "src": "/assets/x/fig/E2/E2d.webp",
          "kind": "webp",
          "png": "/assets/x/fig/E2/E2d.png",
-         "pdf": "/assets/x/fig/E2/E2d.pdf",
          "w": 207.4,
          "h": 136.8,
          "width": 1.0,
@@ -1976,7 +2273,6 @@
          "src": "/assets/x/fig/E2/E2e.webp",
          "kind": "webp",
          "png": "/assets/x/fig/E2/E2e.png",
-         "pdf": "/assets/x/fig/E2/E2e.pdf",
          "w": 207.4,
          "h": 136.8,
          "width": 1.0,
@@ -1997,7 +2293,6 @@
          "src": "/assets/x/fig/E2/E2f.webp",
          "kind": "webp",
          "png": "/assets/x/fig/E2/E2f.png",
-         "pdf": "/assets/x/fig/E2/E2f.pdf",
          "w": 207.4,
          "h": 136.8,
          "width": 1.0,
@@ -2036,8 +2331,8 @@
    "page_labels": [
     "39"
    ],
-   "pdf_href": "/OA.pdf#page=41",
-   "pages_pdf": "/assets/x/tab/E2/E2-pages.pdf",
+   "pdf_href": "/pdf/#page=41",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -2067,7 +2362,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl\" id=\"t-E2\"><thead><tr><th class=\"a-l\" scope=\"col\">Main-paper result</th><th class=\"a-l\" scope=\"col\">Analysis</th><th class=\"a-l\" scope=\"col\">Objective</th><th class=\"a-c cmlr\" colspan=\"2\" scope=\"colgroup\">GPT-based mapping</th><th class=\"a-c cmlr\" colspan=\"2\" scope=\"colgroup\">Claude-based mapping</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-l\" scope=\"col\"></th><th class=\"a-l\" scope=\"col\"></th><th class=\"a-r\" scope=\"col\">Prompt A</th><th class=\"a-r\" scope=\"col\">Prompt B</th><th class=\"a-r\" scope=\"col\">Prompt A</th><th class=\"a-r\" scope=\"col\">Prompt B</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-l\" scope=\"col\"></th><th class=\"a-l\" scope=\"col\"></th><th class=\"a-r\" scope=\"col\"><math><mrow><mi>N</mi><mo>=</mo><mn>144</mn></mrow></math></th><th class=\"a-r\" scope=\"col\"><math><mrow><mi>N</mi><mo>=</mo><mn>360</mn></mrow></math></th><th class=\"a-r\" scope=\"col\"><math><mrow><mi>N</mi><mo>=</mo><mn>2,340</mn></mrow></math></th><th class=\"a-r\" scope=\"col\"><math><mrow><mi>N</mi><mo>=</mo><mn>5,616</mn></mrow></math></th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Figure 8</th><td class=\"a-l\">Belief accuracy</td><td class=\"a-l\">Overall</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td></tr><tr><td class=\"a-l\"></td><td class=\"a-l\"></td><td class=\"a-l\">Returns</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td></tr><tr><td class=\"a-l\"></td><td class=\"a-l\"></td><td class=\"a-l\">Upside</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td></tr><tr><td class=\"a-l\"></td><td class=\"a-l\"></td><td class=\"a-l\">Stability</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td></tr><tr class=\"bg06\"><th class=\"a-l\" scope=\"row\">Table 7</th><td class=\"a-l\">Historical delivery</td><td class=\"a-l\">Overall</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td></tr><tr><td class=\"a-l\"></td><td class=\"a-l\"></td><td class=\"a-l\">Returns</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td></tr><tr><td class=\"a-l\"></td><td class=\"a-l\"></td><td class=\"a-l\">Upside</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td></tr><tr><td class=\"a-l\"></td><td class=\"a-l\"></td><td class=\"a-l\">Stability</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td></tr><tr class=\"bg06\"><th class=\"a-l\" scope=\"row\">Table 8</th><td class=\"a-l\">Out-of-sample delivery</td><td class=\"a-l\">Overall</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td></tr><tr><td class=\"a-l\"></td><td class=\"a-l\"></td><td class=\"a-l\">Returns</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">87%</td><td class=\"a-r\">83%</td></tr><tr><td class=\"a-l\"></td><td class=\"a-l\"></td><td class=\"a-l\">Upside</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td><td class=\"a-r\">100%</td></tr><tr><td class=\"a-l\"></td><td class=\"a-l\"></td><td class=\"a-l\">Stability</td><td class=\"a-r\">89%</td><td class=\"a-r\">89%</td><td class=\"a-r\">71%</td><td class=\"a-r\">58%</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/E2/E2.csv",
        "dense": false,
        "ncols": 7,
        "numbers": [
@@ -2158,8 +2452,8 @@
    "page_labels": [
     "40"
    ],
-   "pdf_href": "/OA.pdf#page=42",
-   "pages_pdf": "/assets/x/fig/F1/F1-pages.pdf",
+   "pdf_href": "/pdf/#page=42",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -2186,7 +2480,6 @@
        "src": "/assets/x/fig/F1/F1.svg",
        "kind": "svg",
        "png": "/assets/x/fig/F1/F1.png",
-       "pdf": "/assets/x/fig/F1/F1.pdf",
        "w": 314.0,
        "h": 266.3,
        "width": 0.6,
@@ -2223,8 +2516,8 @@
    "page_labels": [
     "41"
    ],
-   "pdf_href": "/OA.pdf#page=43",
-   "pages_pdf": "/assets/x/fig/F2/F2-pages.pdf",
+   "pdf_href": "/pdf/#page=43",
+   "questions": [],
    "n_panels": 2,
    "wide": false,
    "main_refs": [],
@@ -2279,7 +2572,6 @@
          "src": "/assets/x/fig/F2/F2a.svg",
          "kind": "svg",
          "png": "/assets/x/fig/F2/F2a.png",
-         "pdf": "/assets/x/fig/F2/F2a.pdf",
          "w": 598.5,
          "h": 254.6,
          "width": 1.0,
@@ -2300,7 +2592,6 @@
          "src": "/assets/x/fig/F2/F2b.svg",
          "kind": "svg",
          "png": "/assets/x/fig/F2/F2b.png",
-         "pdf": "/assets/x/fig/F2/F2b.pdf",
          "w": 602.8,
          "h": 254.6,
          "width": 1.0,
@@ -2342,8 +2633,8 @@
     "42",
     "43"
    ],
-   "pdf_href": "/OA.pdf#page=44",
-   "pages_pdf": "/assets/x/fig/F3/F3-pages.pdf",
+   "pdf_href": "/pdf/#page=44",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -2382,7 +2673,6 @@
        "src": "/assets/x/fig/F3/F3-1.svg",
        "kind": "svg",
        "png": "/assets/x/fig/F3/F3-1.png",
-       "pdf": "/assets/x/fig/F3/F3-1.pdf",
        "w": 597.9,
        "h": 926.3,
        "width": 0.68,
@@ -2409,7 +2699,6 @@
        "src": "/assets/x/fig/F3/F3-2.svg",
        "kind": "svg",
        "png": "/assets/x/fig/F3/F3-2.png",
-       "pdf": "/assets/x/fig/F3/F3-2.pdf",
        "w": 597.9,
        "h": 926.3,
        "width": 0.68,
@@ -2453,8 +2742,8 @@
     "45",
     "46"
    ],
-   "pdf_href": "/OA.pdf#page=46",
-   "pages_pdf": "/assets/x/fig/F4/F4-pages.pdf",
+   "pdf_href": "/pdf/#page=46",
+   "questions": [],
    "n_panels": 3,
    "wide": false,
    "main_refs": [
@@ -2513,7 +2802,6 @@
          "src": "/assets/x/fig/F4/F4a.svg",
          "kind": "svg",
          "png": "/assets/x/fig/F4/F4a.png",
-         "pdf": "/assets/x/fig/F4/F4a.pdf",
          "w": 554.0,
          "h": 623.6,
          "width": 0.74,
@@ -2549,7 +2837,6 @@
          "src": "/assets/x/fig/F4/F4b.svg",
          "kind": "svg",
          "png": "/assets/x/fig/F4/F4b.png",
-         "pdf": "/assets/x/fig/F4/F4b.pdf",
          "w": 554.0,
          "h": 623.7,
          "width": 0.74,
@@ -2585,7 +2872,6 @@
          "src": "/assets/x/fig/F4/F4c.svg",
          "kind": "svg",
          "png": "/assets/x/fig/F4/F4c.png",
-         "pdf": "/assets/x/fig/F4/F4c.pdf",
          "w": 554.0,
          "h": 623.7,
          "width": 0.74,
@@ -2624,8 +2910,8 @@
    "page_labels": [
     "47"
    ],
-   "pdf_href": "/OA.pdf#page=49",
-   "pages_pdf": "/assets/x/fig/F5/F5-pages.pdf",
+   "pdf_href": "/pdf/#page=49",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -2655,7 +2941,6 @@
        "src": "/assets/x/fig/F5/F5.svg",
        "kind": "svg",
        "png": "/assets/x/fig/F5/F5.png",
-       "pdf": "/assets/x/fig/F5/F5.pdf",
        "w": 615.0,
        "h": 355.0,
        "width": 0.95,
@@ -2692,8 +2977,8 @@
    "page_labels": [
     "48"
    ],
-   "pdf_href": "/OA.pdf#page=50",
-   "pages_pdf": "/assets/x/fig/F6/F6-pages.pdf",
+   "pdf_href": "/pdf/#page=50",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -2735,7 +3020,6 @@
        "src": "/assets/x/fig/F6/F6.svg",
        "kind": "svg",
        "png": "/assets/x/fig/F6/F6.png",
-       "pdf": "/assets/x/fig/F6/F6.pdf",
        "w": 616.4,
        "h": 355.0,
        "width": 0.95,
@@ -2772,8 +3056,8 @@
    "page_labels": [
     "49"
    ],
-   "pdf_href": "/OA.pdf#page=51",
-   "pages_pdf": "/assets/x/tab/F1/F1-pages.pdf",
+   "pdf_href": "/pdf/#page=51",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -2815,7 +3099,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl full\" id=\"t-F1\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"3\" scope=\"colgroup\">Dependent variable: Interview Duration (Minutes)</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th></tr></thead><tbody><tr class=\"rule bg05\"><th class=\"a-l\" scope=\"row\">Male</th><td class=\"a-c\">1.977***<br>(0.747)</td><td class=\"a-c\">1.570**<br>(0.772)</td></tr><tr><th class=\"a-l\" scope=\"row\">Older</th><td class=\"a-c\">2.557***<br>(0.829)</td><td class=\"a-c\">3.003***<br>(0.854)</td></tr><tr><th class=\"a-l\" scope=\"row\">Higher education</th><td class=\"a-c\">−1.049<br>(0.931)</td><td class=\"a-c\">−1.575<br>(0.968)</td></tr><tr><th class=\"a-l\" scope=\"row\">High wealth</th><td class=\"a-c\">0.468<br>(0.786)</td><td class=\"a-c\">0.700<br>(0.776)</td></tr><tr><th class=\"a-l\" scope=\"row\">Advanced</th><td class=\"a-c\">0.314<br>(0.930)</td><td class=\"a-c\">−0.328<br>(1.011)</td></tr><tr><th class=\"a-l\" scope=\"row\">Aggressive</th><td class=\"a-c\">0.429<br>(0.804)</td><td class=\"a-c\">0.078<br>(0.787)</td></tr><tr><th class=\"a-l\" scope=\"row\">Australia</th><td class=\"a-c\"></td><td class=\"a-c\">1.004<br>(1.586)</td></tr><tr><th class=\"a-l\" scope=\"row\">Canada</th><td class=\"a-c\"></td><td class=\"a-c\">−0.350<br>(1.420)</td></tr><tr><th class=\"a-l\" scope=\"row\">France</th><td class=\"a-c\"></td><td class=\"a-c\">−1.138<br>(1.086)</td></tr><tr><th class=\"a-l\" scope=\"row\">Germany</th><td class=\"a-c\"></td><td class=\"a-c\">1.528<br>(1.458)</td></tr><tr><th class=\"a-l\" scope=\"row\">India</th><td class=\"a-c\"></td><td class=\"a-c\">5.374***<br>(1.432)</td></tr><tr><th class=\"a-l\" scope=\"row\">Japan</th><td class=\"a-c\"></td><td class=\"a-c\">4.853***<br>(1.433)</td></tr><tr><th class=\"a-l\" scope=\"row\">Singapore</th><td class=\"a-c\"></td><td class=\"a-c\">−1.922<br>(1.545)</td></tr><tr><th class=\"a-l\" scope=\"row\">South Korea</th><td class=\"a-c\"></td><td class=\"a-c\">0.119<br>(1.215)</td></tr><tr><th class=\"a-l\" scope=\"row\">UK</th><td class=\"a-c\"></td><td class=\"a-c\">0.164<br>(1.493)</td></tr><tr><th class=\"a-l\" scope=\"row\">Intercept</th><td class=\"a-c\">18.738***<br>(0.350)</td><td class=\"a-c\">17.862***<br>(0.730)</td></tr><tr class=\"rule bg05\"><th class=\"a-l\" scope=\"row\">Observations</th><td class=\"a-c\">1,540</td><td class=\"a-c\">1,540</td></tr><tr><th class=\"a-l\" scope=\"row\"><math><msup><mi>R</mi><mn class=\"tml-med-pad\">2</mn></msup></math></th><td class=\"a-c\">0.014</td><td class=\"a-c\">0.037</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F1/F1.csv",
        "dense": false,
        "ncols": 3,
        "numbers": [
@@ -2903,8 +3186,8 @@
    "page_labels": [
     "50"
    ],
-   "pdf_href": "/OA.pdf#page=52",
-   "pages_pdf": "/assets/x/tab/F2/F2-pages.pdf",
+   "pdf_href": "/pdf/#page=52",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -2946,7 +3229,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl full\" id=\"t-F2\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"3\" scope=\"colgroup\">Dependent variable: Prefer AI Interviewer</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th></tr></thead><tbody><tr class=\"rule bg05\"><th class=\"a-l\" scope=\"row\">Male</th><td class=\"a-c\">3.813<br>(2.647)</td><td class=\"a-c\">2.524<br>(2.655)</td></tr><tr><th class=\"a-l\" scope=\"row\">Older</th><td class=\"a-c\">−11.957***<br>(2.963)</td><td class=\"a-c\">−9.952***<br>(2.969)</td></tr><tr><th class=\"a-l\" scope=\"row\">Higher education</th><td class=\"a-c\">8.475***<br>(3.018)</td><td class=\"a-c\">5.359*<br>(3.039)</td></tr><tr><th class=\"a-l\" scope=\"row\">High wealth</th><td class=\"a-c\">−1.259<br>(2.647)</td><td class=\"a-c\">−0.096<br>(2.591)</td></tr><tr><th class=\"a-l\" scope=\"row\">Advanced</th><td class=\"a-c\">4.306<br>(3.187)</td><td class=\"a-c\">1.837<br>(3.314)</td></tr><tr><th class=\"a-l\" scope=\"row\">Aggressive</th><td class=\"a-c\">4.782*<br>(2.720)</td><td class=\"a-c\">2.777<br>(2.726)</td></tr><tr><th class=\"a-l\" scope=\"row\">Australia</th><td class=\"a-c\"></td><td class=\"a-c\">−4.705<br>(4.699)</td></tr><tr><th class=\"a-l\" scope=\"row\">Canada</th><td class=\"a-c\"></td><td class=\"a-c\">4.720<br>(4.883)</td></tr><tr><th class=\"a-l\" scope=\"row\">France</th><td class=\"a-c\"></td><td class=\"a-c\">−11.704***<br>(4.443)</td></tr><tr><th class=\"a-l\" scope=\"row\">Germany</th><td class=\"a-c\"></td><td class=\"a-c\">8.828*<br>(5.078)</td></tr><tr><th class=\"a-l\" scope=\"row\">India</th><td class=\"a-c\"></td><td class=\"a-c\">28.832***<br>(5.349)</td></tr><tr><th class=\"a-l\" scope=\"row\">Japan</th><td class=\"a-c\"></td><td class=\"a-c\">11.794**<br>(5.256)</td></tr><tr><th class=\"a-l\" scope=\"row\">Singapore</th><td class=\"a-c\"></td><td class=\"a-c\">9.509*<br>(5.070)</td></tr><tr><th class=\"a-l\" scope=\"row\">South Korea</th><td class=\"a-c\"></td><td class=\"a-c\">18.263***<br>(5.171)</td></tr><tr><th class=\"a-l\" scope=\"row\">UK</th><td class=\"a-c\"></td><td class=\"a-c\">1.191<br>(4.823)</td></tr><tr><th class=\"a-l\" scope=\"row\">Intercept</th><td class=\"a-c\">38.052***<br>(1.224)</td><td class=\"a-c\">31.986***<br>(2.834)</td></tr><tr class=\"rule bg05\"><th class=\"a-l\" scope=\"row\">Observations</th><td class=\"a-c\">1,540</td><td class=\"a-c\">1,540</td></tr><tr><th class=\"a-l\" scope=\"row\"><math><msup><mi>R</mi><mn class=\"tml-med-pad\">2</mn></msup></math></th><td class=\"a-c\">0.025</td><td class=\"a-c\">0.070</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F2/F2.csv",
        "dense": false,
        "ncols": 3,
        "numbers": [
@@ -3034,8 +3316,8 @@
    "page_labels": [
     "51"
    ],
-   "pdf_href": "/OA.pdf#page=53",
-   "pages_pdf": "/assets/x/tab/F3/F3-pages.pdf",
+   "pdf_href": "/pdf/#page=53",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -3077,7 +3359,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl full\" id=\"t-F3\"><colgroup><col><col style=\"width:1.55cm\"><col style=\"width:1.55cm\"><col style=\"width:1.55cm\"><col style=\"width:1.55cm\"><col style=\"width:1.55cm\"><col style=\"width:1.55cm\"></colgroup><thead><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\"></th><th class=\"a-c cmlr\" colspan=\"4\" scope=\"colgroup\">% Owning</th></tr><tr><th class=\"a-c\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">N</th><th class=\"a-c\" scope=\"col\">% Sample</th><th class=\"a-c\" scope=\"col\">Stocks</th><th class=\"a-c\" scope=\"col\">Funds</th><th class=\"a-c\" scope=\"col\">Deriv.</th><th class=\"a-c\" scope=\"col\">Crypto</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th><th class=\"a-c\" scope=\"col\">(5)</th><th class=\"a-c\" scope=\"col\">(6)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Overall</th><td class=\"a-c\">600</td><td class=\"a-c\">100.0</td><td class=\"a-c\">100.0</td><td class=\"a-c\">66.5</td><td class=\"a-c\">14.8</td><td class=\"a-c\">35.5</td></tr><tr class=\"bg05\"><th class=\"a-l\" scope=\"row\">Gender</th><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Female</th><td class=\"a-c\">208</td><td class=\"a-c\">34.7</td><td class=\"a-c\">100.0</td><td class=\"a-c\">64.9</td><td class=\"a-c\">11.5</td><td class=\"a-c\">23.6</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Male</th><td class=\"a-c\">392</td><td class=\"a-c\">65.3</td><td class=\"a-c\">100.0</td><td class=\"a-c\">67.3</td><td class=\"a-c\">16.6</td><td class=\"a-c\">41.8</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Other</th><td class=\"a-c\">0</td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td></tr><tr class=\"bg05\"><th class=\"a-l\" scope=\"row\">Age</th><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td></tr><tr><th class=\"a-l ind1\" scope=\"row\">21–24</th><td class=\"a-c\">12</td><td class=\"a-c\">2.0</td><td class=\"a-c\">100.0</td><td class=\"a-c\">58.3</td><td class=\"a-c\">16.7</td><td class=\"a-c\">75.0</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">25–34</th><td class=\"a-c\">91</td><td class=\"a-c\">15.2</td><td class=\"a-c\">100.0</td><td class=\"a-c\">82.4</td><td class=\"a-c\">28.6</td><td class=\"a-c\">50.5</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">35–44</th><td class=\"a-c\">139</td><td class=\"a-c\">23.2</td><td class=\"a-c\">100.0</td><td class=\"a-c\">77.0</td><td class=\"a-c\">26.6</td><td class=\"a-c\">49.6</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">45–54</th><td class=\"a-c\">138</td><td class=\"a-c\">23.0</td><td class=\"a-c\">100.0</td><td class=\"a-c\">60.9</td><td class=\"a-c\">9.4</td><td class=\"a-c\">38.4</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">55–64</th><td class=\"a-c\">105</td><td class=\"a-c\">17.5</td><td class=\"a-c\">100.0</td><td class=\"a-c\">56.2</td><td class=\"a-c\">7.6</td><td class=\"a-c\">23.8</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">65+</th><td class=\"a-c\">115</td><td class=\"a-c\">19.2</td><td class=\"a-c\">100.0</td><td class=\"a-c\">58.3</td><td class=\"a-c\">2.6</td><td class=\"a-c\">9.6</td></tr><tr class=\"bg05\"><th class=\"a-l\" scope=\"row\">Education</th><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td></tr><tr><th class=\"a-l ind1\" scope=\"row\">No degree</th><td class=\"a-c\">11</td><td class=\"a-c\">1.8</td><td class=\"a-c\">100.0</td><td class=\"a-c\">54.5</td><td class=\"a-c\">27.3</td><td class=\"a-c\">18.2</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">School diploma</th><td class=\"a-c\">111</td><td class=\"a-c\">18.5</td><td class=\"a-c\">100.0</td><td class=\"a-c\">48.6</td><td class=\"a-c\">8.1</td><td class=\"a-c\">23.4</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Bachelor’s</th><td class=\"a-c\">290</td><td class=\"a-c\">48.3</td><td class=\"a-c\">100.0</td><td class=\"a-c\">65.5</td><td class=\"a-c\">12.1</td><td class=\"a-c\">39.3</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Master’s</th><td class=\"a-c\">157</td><td class=\"a-c\">26.2</td><td class=\"a-c\">100.0</td><td class=\"a-c\">79.0</td><td class=\"a-c\">22.3</td><td class=\"a-c\">36.9</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Doctorate</th><td class=\"a-c\">22</td><td class=\"a-c\">3.7</td><td class=\"a-c\">100.0</td><td class=\"a-c\">90.9</td><td class=\"a-c\">27.3</td><td class=\"a-c\">45.5</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Other</th><td class=\"a-c\">9</td><td class=\"a-c\">1.5</td><td class=\"a-c\">100.0</td><td class=\"a-c\">55.6</td><td class=\"a-c\">11.1</td><td class=\"a-c\">33.3</td></tr><tr class=\"bg05\"><th class=\"a-l\" scope=\"row\">Investable assets</th><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td></tr><tr><th class=\"a-l ind1\" scope=\"row\">1K–10K</th><td class=\"a-c\">36</td><td class=\"a-c\">6.0</td><td class=\"a-c\">100.0</td><td class=\"a-c\">41.7</td><td class=\"a-c\">16.7</td><td class=\"a-c\">36.1</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">10K–25K</th><td class=\"a-c\">33</td><td class=\"a-c\">5.5</td><td class=\"a-c\">100.0</td><td class=\"a-c\">45.5</td><td class=\"a-c\">9.1</td><td class=\"a-c\">24.2</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">25K–50K</th><td class=\"a-c\">43</td><td class=\"a-c\">7.2</td><td class=\"a-c\">100.0</td><td class=\"a-c\">58.1</td><td class=\"a-c\">9.3</td><td class=\"a-c\">37.2</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">50K–100K</th><td class=\"a-c\">42</td><td class=\"a-c\">7.0</td><td class=\"a-c\">100.0</td><td class=\"a-c\">50.0</td><td class=\"a-c\">7.1</td><td class=\"a-c\">40.5</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">100K–250K</th><td class=\"a-c\">41</td><td class=\"a-c\">6.8</td><td class=\"a-c\">100.0</td><td class=\"a-c\">63.4</td><td class=\"a-c\">17.1</td><td class=\"a-c\">43.9</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">250K–500K</th><td class=\"a-c\">28</td><td class=\"a-c\">4.7</td><td class=\"a-c\">100.0</td><td class=\"a-c\">60.7</td><td class=\"a-c\">21.4</td><td class=\"a-c\">39.3</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">500K–1M</th><td class=\"a-c\">180</td><td class=\"a-c\">30.0</td><td class=\"a-c\">100.0</td><td class=\"a-c\">66.7</td><td class=\"a-c\">15.0</td><td class=\"a-c\">40.0</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">1M+</th><td class=\"a-c\">197</td><td class=\"a-c\">32.8</td><td class=\"a-c\">100.0</td><td class=\"a-c\">81.2</td><td class=\"a-c\">16.8</td><td class=\"a-c\">29.4</td></tr><tr class=\"bg05\"><th class=\"a-l\" scope=\"row\">Investment knowledge</th><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Complete beginner</th><td class=\"a-c\">17</td><td class=\"a-c\">2.8</td><td class=\"a-c\">100.0</td><td class=\"a-c\">41.2</td><td class=\"a-c\">0.0</td><td class=\"a-c\">17.6</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Rudimentary</th><td class=\"a-c\">100</td><td class=\"a-c\">16.7</td><td class=\"a-c\">100.0</td><td class=\"a-c\">44.0</td><td class=\"a-c\">6.0</td><td class=\"a-c\">18.0</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Intermediate</th><td class=\"a-c\">318</td><td class=\"a-c\">53.0</td><td class=\"a-c\">100.0</td><td class=\"a-c\">66.4</td><td class=\"a-c\">11.6</td><td class=\"a-c\">34.3</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Advanced</th><td class=\"a-c\">143</td><td class=\"a-c\">23.8</td><td class=\"a-c\">100.0</td><td class=\"a-c\">83.2</td><td class=\"a-c\">25.2</td><td class=\"a-c\">49.7</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Expert</th><td class=\"a-c\">22</td><td class=\"a-c\">3.7</td><td class=\"a-c\">100.0</td><td class=\"a-c\">81.8</td><td class=\"a-c\">45.5</td><td class=\"a-c\">54.5</td></tr><tr class=\"bg05\"><th class=\"a-l\" scope=\"row\">Risk attitude</th><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Conservative</th><td class=\"a-c\">32</td><td class=\"a-c\">5.3</td><td class=\"a-c\">100.0</td><td class=\"a-c\">43.8</td><td class=\"a-c\">9.4</td><td class=\"a-c\">12.5</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Average</th><td class=\"a-c\">307</td><td class=\"a-c\">51.2</td><td class=\"a-c\">100.0</td><td class=\"a-c\">58.0</td><td class=\"a-c\">7.5</td><td class=\"a-c\">24.8</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Aggressive</th><td class=\"a-c\">222</td><td class=\"a-c\">37.0</td><td class=\"a-c\">100.0</td><td class=\"a-c\">77.9</td><td class=\"a-c\">22.1</td><td class=\"a-c\">49.1</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Very aggressive</th><td class=\"a-c\">39</td><td class=\"a-c\">6.5</td><td class=\"a-c\">100.0</td><td class=\"a-c\">87.2</td><td class=\"a-c\">35.9</td><td class=\"a-c\">61.5</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F3/F3.csv",
        "dense": false,
        "ncols": 7,
        "numbers": [
@@ -3338,8 +3619,8 @@
    "page_labels": [
     "52"
    ],
-   "pdf_href": "/OA.pdf#page=54",
-   "pages_pdf": "/assets/x/tab/F4/F4-pages.pdf",
+   "pdf_href": "/pdf/#page=54",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -3390,7 +3671,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl full\" id=\"t-F4\"><colgroup><col><col style=\"width:2.2cm\"><col style=\"width:2.2cm\"><col style=\"width:2.2cm\"><col style=\"width:2.2cm\"><col style=\"width:2.2cm\"></colgroup><thead><tr><th class=\"a-c\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">N</th><th class=\"a-c\" scope=\"col\">Consistent<br>High Returns</th><th class=\"a-c\" scope=\"col\">High Upside<br>Focus</th><th class=\"a-c\" scope=\"col\">Stable<br>Performance</th><th class=\"a-c\" scope=\"col\">Personal Values<br>Alignment</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th><th class=\"a-c\" scope=\"col\">(5)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Overall</th><td class=\"a-c\">600</td><td class=\"a-c\">71.2</td><td class=\"a-c\">63.0</td><td class=\"a-c\">77.0</td><td class=\"a-c\">40.2</td></tr><tr class=\"bg05\"><th class=\"a-l\" scope=\"row\">Australia</th><td class=\"a-c\">21</td><td class=\"a-c\">61.9</td><td class=\"a-c\">42.9</td><td class=\"a-c\">66.7</td><td class=\"a-c\">33.3</td></tr><tr><th class=\"a-l\" scope=\"row\">Canada</th><td class=\"a-c\">86</td><td class=\"a-c\">70.9</td><td class=\"a-c\">62.8</td><td class=\"a-c\">76.7</td><td class=\"a-c\">32.6</td></tr><tr><th class=\"a-l\" scope=\"row\">France</th><td class=\"a-c\">63</td><td class=\"a-c\">69.8</td><td class=\"a-c\">68.3</td><td class=\"a-c\">76.2</td><td class=\"a-c\">44.4</td></tr><tr><th class=\"a-l\" scope=\"row\">Germany</th><td class=\"a-c\">69</td><td class=\"a-c\">65.2</td><td class=\"a-c\">59.4</td><td class=\"a-c\">71.0</td><td class=\"a-c\">42.0</td></tr><tr><th class=\"a-l\" scope=\"row\">India</th><td class=\"a-c\">66</td><td class=\"a-c\">87.9</td><td class=\"a-c\">80.3</td><td class=\"a-c\">83.3</td><td class=\"a-c\">68.2</td></tr><tr><th class=\"a-l\" scope=\"row\">Japan</th><td class=\"a-c\">12</td><td class=\"a-c\">75.0</td><td class=\"a-c\">58.3</td><td class=\"a-c\">66.7</td><td class=\"a-c\">66.7</td></tr><tr><th class=\"a-l\" scope=\"row\">Singapore</th><td class=\"a-c\">30</td><td class=\"a-c\">73.3</td><td class=\"a-c\">76.7</td><td class=\"a-c\">83.3</td><td class=\"a-c\">63.3</td></tr><tr><th class=\"a-l\" scope=\"row\">South Korea</th><td class=\"a-c\">21</td><td class=\"a-c\">85.7</td><td class=\"a-c\">76.2</td><td class=\"a-c\">81.0</td><td class=\"a-c\">42.9</td></tr><tr><th class=\"a-l\" scope=\"row\">UK</th><td class=\"a-c\">78</td><td class=\"a-c\">60.3</td><td class=\"a-c\">51.3</td><td class=\"a-c\">70.5</td><td class=\"a-c\">29.5</td></tr><tr><th class=\"a-l\" scope=\"row\">US</th><td class=\"a-c\">154</td><td class=\"a-c\">71.4</td><td class=\"a-c\">59.7</td><td class=\"a-c\">81.2</td><td class=\"a-c\">29.2</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F4/F4.csv",
        "dense": false,
        "ncols": 6,
        "numbers": [
@@ -3486,8 +3766,8 @@
    "page_labels": [
     "53"
    ],
-   "pdf_href": "/OA.pdf#page=55",
-   "pages_pdf": "/assets/x/tab/F5/F5-pages.pdf",
+   "pdf_href": "/pdf/#page=55",
+   "questions": [],
    "n_panels": 2,
    "wide": false,
    "main_refs": [],
@@ -3540,7 +3820,6 @@
        "heading_html": "Panel A: Investor Characteristics",
        "heading": "Panel A: Investor Characteristics",
        "html": "<table class=\"tbl full\" id=\"t-F5-A\"><colgroup><col><col style=\"width:2.6cm\"><col style=\"width:2.6cm\"><col style=\"width:2.6cm\"></colgroup><thead><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c cmlr\" colspan=\"2\" scope=\"colgroup\">Follow-up survey</th><th class=\"a-c\" scope=\"col\"></th></tr><tr><th class=\"a-c\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Respondents</th><th class=\"a-c\" scope=\"col\">Non-respondents</th><th class=\"a-c\" scope=\"col\">Difference</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Number of investors</th><td class=\"a-c\">600</td><td class=\"a-c\">940</td><td class=\"a-c\"></td></tr><tr class=\"bg05\"><th class=\"a-l\" scope=\"row\">Male (%)</th><td class=\"a-c\">65.3</td><td class=\"a-c\">67.3</td><td class=\"a-c\">−2.0</td></tr><tr><th class=\"a-l\" scope=\"row\">Age 35+ (%)</th><td class=\"a-c\">82.8</td><td class=\"a-c\">69.9</td><td class=\"a-c\">12.9***</td></tr><tr><th class=\"a-l\" scope=\"row\">Bachelor’s or higher (%)</th><td class=\"a-c\">78.2</td><td class=\"a-c\">80.1</td><td class=\"a-c\">−1.9</td></tr><tr><th class=\"a-l\" scope=\"row\">High assets (%)</th><td class=\"a-c\">62.8</td><td class=\"a-c\">53.5</td><td class=\"a-c\">9.3***</td></tr><tr><th class=\"a-l\" scope=\"row\">Advanced knowledge (%)</th><td class=\"a-c\">27.5</td><td class=\"a-c\">21.1</td><td class=\"a-c\">6.4***</td></tr><tr><th class=\"a-l\" scope=\"row\">Aggressive risk (%)</th><td class=\"a-c\">43.5</td><td class=\"a-c\">40.4</td><td class=\"a-c\">3.1</td></tr><tr><th class=\"a-l\" scope=\"row\">Interview minutes</th><td class=\"a-c\">18.5</td><td class=\"a-c\">18.9</td><td class=\"a-c\">−0.3</td></tr><tr><th class=\"a-l\" scope=\"row\">Number of heuristics</th><td class=\"a-c\">2.56</td><td class=\"a-c\">2.57</td><td class=\"a-c\">0.00</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F5/F5-A.csv",
        "dense": false,
        "ncols": 4,
        "numbers": [
@@ -3584,7 +3863,6 @@
        "heading_html": "Panel B: Heuristic Adoption",
        "heading": "Panel B: Heuristic Adoption",
        "html": "<table class=\"tbl full\" id=\"t-F5-B\"><colgroup><col><col style=\"width:2.6cm\"><col style=\"width:2.6cm\"><col style=\"width:2.6cm\"></colgroup><thead><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c cmlr\" colspan=\"2\" scope=\"colgroup\">Follow-up survey</th><th class=\"a-c\" scope=\"col\"></th></tr><tr><th class=\"a-c\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Respondents</th><th class=\"a-c\" scope=\"col\">Non-respondents</th><th class=\"a-c\" scope=\"col\">Difference</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Fundamental Strength</th><td class=\"a-c\">39.3</td><td class=\"a-c\">41.2</td><td class=\"a-c\">−1.8</td></tr><tr><th class=\"a-l\" scope=\"row\">Growth/Innovation</th><td class=\"a-c\">35.5</td><td class=\"a-c\">38.9</td><td class=\"a-c\">−3.4</td></tr><tr><th class=\"a-l\" scope=\"row\">Familiarity/Brand Affect</th><td class=\"a-c\">28.7</td><td class=\"a-c\">28.3</td><td class=\"a-c\">0.4</td></tr><tr><th class=\"a-l\" scope=\"row\">Blue-Chip Comfort</th><td class=\"a-c\">27.2</td><td class=\"a-c\">28.7</td><td class=\"a-c\">−1.6</td></tr><tr><th class=\"a-l\" scope=\"row\">Authority-Follow</th><td class=\"a-c\">20.7</td><td class=\"a-c\">17.3</td><td class=\"a-c\">3.3</td></tr><tr><th class=\"a-l\" scope=\"row\">Momentum</th><td class=\"a-c\">17.0</td><td class=\"a-c\">18.5</td><td class=\"a-c\">−1.5</td></tr><tr><th class=\"a-l\" scope=\"row\">Confluence</th><td class=\"a-c\">14.0</td><td class=\"a-c\">15.0</td><td class=\"a-c\">−1.0</td></tr><tr><th class=\"a-l\" scope=\"row\">Dividends</th><td class=\"a-c\">14.2</td><td class=\"a-c\">13.9</td><td class=\"a-c\">0.2</td></tr><tr><th class=\"a-l\" scope=\"row\">Social-Copy</th><td class=\"a-c\">14.7</td><td class=\"a-c\">13.0</td><td class=\"a-c\">1.7</td></tr><tr><th class=\"a-l\" scope=\"row\">Valuation/Mispricing</th><td class=\"a-c\">15.0</td><td class=\"a-c\">12.7</td><td class=\"a-c\">2.3</td></tr><tr><th class=\"a-l\" scope=\"row\">Buy-the-Dip</th><td class=\"a-c\">13.2</td><td class=\"a-c\">12.0</td><td class=\"a-c\">1.1</td></tr><tr><th class=\"a-l\" scope=\"row\">ESG/Values</th><td class=\"a-c\">11.8</td><td class=\"a-c\">9.4</td><td class=\"a-c\">2.5</td></tr><tr><th class=\"a-l\" scope=\"row\">Technical Analysis</th><td class=\"a-c\">5.2</td><td class=\"a-c\">7.8</td><td class=\"a-c\">−2.6**</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F5/F5-B.csv",
        "dense": false,
        "ncols": 4,
        "numbers": [
@@ -3662,8 +3940,8 @@
    "page_labels": [
     "54"
    ],
-   "pdf_href": "/OA.pdf#page=56",
-   "pages_pdf": "/assets/x/tab/F6/F6-pages.pdf",
+   "pdf_href": "/pdf/#page=56",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -3691,7 +3969,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl\" id=\"t-F6\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"7\" scope=\"colgroup\">Dependent variable: D(investor prioritizes the objective)</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c cmlr\" colspan=\"2\" scope=\"colgroup\">Returns</th><th class=\"a-c cmlr\" colspan=\"2\" scope=\"colgroup\">Upside</th><th class=\"a-c cmlr\" colspan=\"2\" scope=\"colgroup\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th><th class=\"a-c\" scope=\"col\">(5)</th><th class=\"a-c\" scope=\"col\">(6)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Male</th><td class=\"a-c\">−0.080*</td><td class=\"a-c\">−0.077*</td><td class=\"a-c\">+0.077**</td><td class=\"a-c\">+0.077**</td><td class=\"a-c\">−0.071</td><td class=\"a-c\">−0.070</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.043)</td><td class=\"a-c\">(0.044)</td><td class=\"a-c\">(0.038)</td><td class=\"a-c\">(0.039)</td><td class=\"a-c\">(0.044)</td><td class=\"a-c\">(0.044)</td></tr><tr><th class=\"a-l\" scope=\"row\">Older</th><td class=\"a-c\">+0.005</td><td class=\"a-c\">−0.002</td><td class=\"a-c\">+0.015</td><td class=\"a-c\">+0.022</td><td class=\"a-c\">+0.031</td><td class=\"a-c\">+0.041</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.054)</td><td class=\"a-c\">(0.055)</td><td class=\"a-c\">(0.050)</td><td class=\"a-c\">(0.051)</td><td class=\"a-c\">(0.056)</td><td class=\"a-c\">(0.058)</td></tr><tr><th class=\"a-l\" scope=\"row\">Higher education</th><td class=\"a-c\">−0.006</td><td class=\"a-c\">−0.005</td><td class=\"a-c\">+0.111***</td><td class=\"a-c\">+0.109**</td><td class=\"a-c\">−0.078</td><td class=\"a-c\">−0.074</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.052)</td><td class=\"a-c\">(0.053)</td><td class=\"a-c\">(0.043)</td><td class=\"a-c\">(0.044)</td><td class=\"a-c\">(0.053)</td><td class=\"a-c\">(0.054)</td></tr><tr><th class=\"a-l\" scope=\"row\">High wealth</th><td class=\"a-c\">−0.053</td><td class=\"a-c\">−0.048</td><td class=\"a-c\">−0.011</td><td class=\"a-c\">−0.008</td><td class=\"a-c\">+0.045</td><td class=\"a-c\">+0.046</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.045)</td><td class=\"a-c\">(0.045)</td><td class=\"a-c\">(0.040)</td><td class=\"a-c\">(0.041)</td><td class=\"a-c\">(0.045)</td><td class=\"a-c\">(0.045)</td></tr><tr><th class=\"a-l\" scope=\"row\">Advanced knowledge</th><td class=\"a-c\">+0.075</td><td class=\"a-c\">+0.078</td><td class=\"a-c\">+0.053</td><td class=\"a-c\">+0.050</td><td class=\"a-c\">−0.022</td><td class=\"a-c\">−0.038</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.051)</td><td class=\"a-c\">(0.054)</td><td class=\"a-c\">(0.048)</td><td class=\"a-c\">(0.052)</td><td class=\"a-c\">(0.051)</td><td class=\"a-c\">(0.053)</td></tr><tr><th class=\"a-l\" scope=\"row\">Aggressive</th><td class=\"a-c\">+0.021</td><td class=\"a-c\">+0.018</td><td class=\"a-c\">+0.103**</td><td class=\"a-c\">+0.102**</td><td class=\"a-c\">−0.109**</td><td class=\"a-c\">−0.109**</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.045)</td><td class=\"a-c\">(0.046)</td><td class=\"a-c\">(0.042)</td><td class=\"a-c\">(0.043)</td><td class=\"a-c\">(0.046)</td><td class=\"a-c\">(0.047)</td></tr><tr><th class=\"a-l\" scope=\"row\">Mkt excess return</th><td class=\"a-c\">−0.018</td><td class=\"a-c\"></td><td class=\"a-c\">−0.010</td><td class=\"a-c\"></td><td class=\"a-c\">−0.041</td><td class=\"a-c\"></td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.026)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.024)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.026)</td><td class=\"a-c\"></td></tr><tr><th class=\"a-l\" scope=\"row\">Avg skewness</th><td class=\"a-c\">−0.031</td><td class=\"a-c\"></td><td class=\"a-c\">+0.002</td><td class=\"a-c\"></td><td class=\"a-c\">+0.002</td><td class=\"a-c\"></td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.031)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.029)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.032)</td><td class=\"a-c\"></td></tr><tr><th class=\"a-l\" scope=\"row\">Avg volatility</th><td class=\"a-c\">+0.029</td><td class=\"a-c\"></td><td class=\"a-c\">−0.010</td><td class=\"a-c\"></td><td class=\"a-c\">+0.021</td><td class=\"a-c\"></td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.042)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.038)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.043)</td><td class=\"a-c\"></td></tr><tr><th class=\"a-l\" scope=\"row\">Australia</th><td class=\"a-c\"></td><td class=\"a-c\">−0.094</td><td class=\"a-c\"></td><td class=\"a-c\">−0.057</td><td class=\"a-c\"></td><td class=\"a-c\">−0.048</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.108)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.098)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.120)</td></tr><tr><th class=\"a-l\" scope=\"row\">Canada</th><td class=\"a-c\"></td><td class=\"a-c\">+0.013</td><td class=\"a-c\"></td><td class=\"a-c\">+0.066</td><td class=\"a-c\"></td><td class=\"a-c\">+0.051</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.068)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.061)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.068)</td></tr><tr><th class=\"a-l\" scope=\"row\">France</th><td class=\"a-c\"></td><td class=\"a-c\">−0.053</td><td class=\"a-c\"></td><td class=\"a-c\">+0.044</td><td class=\"a-c\"></td><td class=\"a-c\">+0.004</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.073)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.071)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.075)</td></tr><tr><th class=\"a-l\" scope=\"row\">Germany</th><td class=\"a-c\"></td><td class=\"a-c\">+0.008</td><td class=\"a-c\"></td><td class=\"a-c\">+0.013</td><td class=\"a-c\"></td><td class=\"a-c\">+0.083</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.076)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.068)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.077)</td></tr><tr><th class=\"a-l\" scope=\"row\">India</th><td class=\"a-c\"></td><td class=\"a-c\">−0.092</td><td class=\"a-c\"></td><td class=\"a-c\">+0.027</td><td class=\"a-c\"></td><td class=\"a-c\">+0.056</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.081)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.077)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.083)</td></tr><tr><th class=\"a-l\" scope=\"row\">Japan</th><td class=\"a-c\"></td><td class=\"a-c\">+0.073</td><td class=\"a-c\"></td><td class=\"a-c\">+0.008</td><td class=\"a-c\"></td><td class=\"a-c\">+0.104</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.155)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.142)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.147)</td></tr><tr><th class=\"a-l\" scope=\"row\">Singapore</th><td class=\"a-c\"></td><td class=\"a-c\">−0.043</td><td class=\"a-c\"></td><td class=\"a-c\">+0.024</td><td class=\"a-c\"></td><td class=\"a-c\">+0.075</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.099)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.089)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.099)</td></tr><tr><th class=\"a-l\" scope=\"row\">South Korea</th><td class=\"a-c\"></td><td class=\"a-c\">+0.022</td><td class=\"a-c\"></td><td class=\"a-c\">−0.004</td><td class=\"a-c\"></td><td class=\"a-c\">+0.014</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.117)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.103)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.117)</td></tr><tr><th class=\"a-l\" scope=\"row\">UK</th><td class=\"a-c\"></td><td class=\"a-c\">+0.014</td><td class=\"a-c\"></td><td class=\"a-c\">+0.055</td><td class=\"a-c\"></td><td class=\"a-c\">+0.156**</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.070)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.062)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.068)</td></tr><tr><th class=\"a-l\" scope=\"row\">Constant</th><td class=\"a-c\">+0.449***</td><td class=\"a-c\">+0.464***</td><td class=\"a-c\">+0.094</td><td class=\"a-c\">+0.062</td><td class=\"a-c\">+0.614***</td><td class=\"a-c\">+0.544***</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.071)</td><td class=\"a-c\">(0.081)</td><td class=\"a-c\">(0.061)</td><td class=\"a-c\">(0.069)</td><td class=\"a-c\">(0.071)</td><td class=\"a-c\">(0.082)</td></tr><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Observations</th><td class=\"a-c\">600</td><td class=\"a-c\">600</td><td class=\"a-c\">600</td><td class=\"a-c\">600</td><td class=\"a-c\">600</td><td class=\"a-c\">600</td></tr><tr><th class=\"a-l\" scope=\"row\"><math><msup><mi>R</mi><mn class=\"tml-med-pad\">2</mn></msup></math></th><td class=\"a-c\">0.012</td><td class=\"a-c\">0.016</td><td class=\"a-c\">0.045</td><td class=\"a-c\">0.048</td><td class=\"a-c\">0.031</td><td class=\"a-c\">0.038</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F6/F6.csv",
        "dense": false,
        "ncols": 7,
        "numbers": [
@@ -3901,8 +4178,8 @@
    "page_labels": [
     "55"
    ],
-   "pdf_href": "/OA.pdf#page=57",
-   "pages_pdf": "/assets/x/tab/F7/F7-pages.pdf",
+   "pdf_href": "/pdf/#page=57",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [
@@ -3957,7 +4234,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl\" id=\"t-F7\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Dependent variable: Perceived effectiveness</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1) All</th><th class=\"a-c\" scope=\"col\">(2) Returns</th><th class=\"a-c\" scope=\"col\">(3) Upside</th><th class=\"a-c\" scope=\"col\">(4) Stability</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Historical effectiveness</th><td class=\"a-c\">+0.137***</td><td class=\"a-c\">+0.128</td><td class=\"a-c\">+0.147**</td><td class=\"a-c\">+0.209**</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.016)</td><td class=\"a-c\">(0.036)</td><td class=\"a-c\">(0.040)</td><td class=\"a-c\">(0.035)</td></tr><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Investor FE</th><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td></tr><tr><th class=\"a-l\" scope=\"row\">Objective FE</th><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\">–</td><td class=\"a-c\">–</td><td class=\"a-c\">–</td></tr><tr><th class=\"a-l\" scope=\"row\">Observations</th><td class=\"a-c\">2,561</td><td class=\"a-c\">871</td><td class=\"a-c\">771</td><td class=\"a-c\">919</td></tr><tr><th class=\"a-l\" scope=\"row\"><math><msup><mi>R</mi><mn class=\"tml-med-pad\">2</mn></msup></math></th><td class=\"a-c\">0.140</td><td class=\"a-c\">0.355</td><td class=\"a-c\">0.404</td><td class=\"a-c\">0.429</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F7/F7.csv",
        "dense": false,
        "ncols": 5,
        "numbers": [
@@ -4013,8 +4289,8 @@
    "page_labels": [
     "56"
    ],
-   "pdf_href": "/OA.pdf#page=58",
-   "pages_pdf": "/assets/x/tab/F8/F8-pages.pdf",
+   "pdf_href": "/pdf/#page=58",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -4058,7 +4334,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl\" id=\"t-F8\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"9\" scope=\"colgroup\">Dependent variable: Perceived effectiveness</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th><th class=\"a-c\" scope=\"col\">(5)</th><th class=\"a-c\" scope=\"col\">(6)</th><th class=\"a-c\" scope=\"col\">(7)</th><th class=\"a-c\" scope=\"col\">(8)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Historical effectiveness</th><td class=\"a-c\">+0.137***</td><td class=\"a-c\">+0.158***</td><td class=\"a-c\">+0.150***</td><td class=\"a-c\">+0.190**</td><td class=\"a-c\">+0.107**</td><td class=\"a-c\">+0.138**</td><td class=\"a-c\">+0.147**</td><td class=\"a-c\">+0.204**</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.016)</td><td class=\"a-c\">(0.024)</td><td class=\"a-c\">(0.022)</td><td class=\"a-c\">(0.042)</td><td class=\"a-c\">(0.037)</td><td class=\"a-c\">(0.022)</td><td class=\"a-c\">(0.022)</td><td class=\"a-c\">(0.065)</td></tr><tr><th class=\"a-l\" scope=\"row\">Historical effectiveness <span class=\"m\">×</span> Male</th><td class=\"a-c\"></td><td class=\"a-c\">−0.031</td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">−0.028</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.026)</td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.024)</td></tr><tr><th class=\"a-l\" scope=\"row\">Historical effectiveness <span class=\"m\">×</span> Older</th><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">−0.015</td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">−0.025</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.030)</td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.030)</td></tr><tr><th class=\"a-l\" scope=\"row\">Historical effectiveness <span class=\"m\">×</span> Higher education</th><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">−0.069</td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">−0.080</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.055)</td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.047)</td></tr><tr><th class=\"a-l\" scope=\"row\">Historical effectiveness <span class=\"m\">×</span> High wealth</th><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">+0.043</td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">+0.062</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.046)</td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.041)</td></tr><tr><th class=\"a-l\" scope=\"row\">Historical effectiveness <span class=\"m\">×</span> Advanced knowledge</th><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">−0.004</td><td class=\"a-c\"></td><td class=\"a-c\">+0.009</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.046)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.041)</td></tr><tr><th class=\"a-l\" scope=\"row\">Historical effectiveness <span class=\"m\">×</span> Aggressive</th><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">−0.024</td><td class=\"a-c\">−0.026</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.035)</td><td class=\"a-c\">(0.031)</td></tr><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Investor FE</th><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td></tr><tr><th class=\"a-l\" scope=\"row\">Objective FE</th><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td></tr><tr><th class=\"a-l\" scope=\"row\">Observations</th><td class=\"a-c\">2,561</td><td class=\"a-c\">2,561</td><td class=\"a-c\">2,561</td><td class=\"a-c\">2,561</td><td class=\"a-c\">2,561</td><td class=\"a-c\">2,561</td><td class=\"a-c\">2,561</td><td class=\"a-c\">2,561</td></tr><tr><th class=\"a-l\" scope=\"row\"><math><msup><mi>R</mi><mn class=\"tml-med-pad\">2</mn></msup></math></th><td class=\"a-c\">0.140</td><td class=\"a-c\">0.140</td><td class=\"a-c\">0.140</td><td class=\"a-c\">0.141</td><td class=\"a-c\">0.140</td><td class=\"a-c\">0.140</td><td class=\"a-c\">0.140</td><td class=\"a-c\">0.142</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F8/F8.csv",
        "dense": true,
        "ncols": 9,
        "numbers": [
@@ -4158,8 +4433,8 @@
    "page_labels": [
     "57"
    ],
-   "pdf_href": "/OA.pdf#page=59",
-   "pages_pdf": "/assets/x/tab/F9/F9-pages.pdf",
+   "pdf_href": "/pdf/#page=59",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [
@@ -4215,7 +4490,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl\" id=\"t-F9\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"4\" scope=\"colgroup\">Dependent variable: D(Adoption)</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Objective importance <span class=\"m\">×</span> Perceived effectiveness</th><td class=\"a-c\">+0.174**</td><td class=\"a-c\">+0.194**</td><td class=\"a-c\">+0.264**</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.078)</td><td class=\"a-c\">(0.088)</td><td class=\"a-c\">(0.122)</td></tr><tr><th class=\"a-l\" scope=\"row\">Objective importance</th><td class=\"a-c\">−0.002</td><td class=\"a-c\"></td><td class=\"a-c\"></td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.003)</td><td class=\"a-c\"></td><td class=\"a-c\"></td></tr><tr><th class=\"a-l\" scope=\"row\">Perceived effectiveness</th><td class=\"a-c\">−0.021</td><td class=\"a-c\">−0.027</td><td class=\"a-c\">−0.062</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.060)</td><td class=\"a-c\">(0.074)</td><td class=\"a-c\">(0.100)</td></tr><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Investor FE</th><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\">–</td><td class=\"a-c\">–</td></tr><tr><th class=\"a-l\" scope=\"row\">Investor <span class=\"m\">×</span> Objective FE</th><td class=\"a-c\">–</td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td></tr><tr><th class=\"a-l\" scope=\"row\">Country <span class=\"m\">×</span> Heuristic <span class=\"m\">×</span> Objective FE</th><td class=\"a-c\">–</td><td class=\"a-c\">–</td><td class=\"a-c\"><span class=\"m\">✓</span></td></tr><tr><th class=\"a-l\" scope=\"row\">Observations</th><td class=\"a-c\">3,291</td><td class=\"a-c\">3,291</td><td class=\"a-c\">3,181</td></tr><tr><th class=\"a-l\" scope=\"row\">Pseudo <math><msup><mi>R</mi><mn class=\"tml-med-pad\">2</mn></msup></math></th><td class=\"a-c\">0.151</td><td class=\"a-c\">0.151</td><td class=\"a-c\">0.323</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F9/F9.csv",
        "dense": false,
        "ncols": 4,
        "numbers": [
@@ -4274,8 +4548,8 @@
    "page_labels": [
     "58"
    ],
-   "pdf_href": "/OA.pdf#page=60",
-   "pages_pdf": "/assets/x/tab/F10/F10-pages.pdf",
+   "pdf_href": "/pdf/#page=60",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [
@@ -4319,7 +4593,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl\" id=\"t-F10\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"4\" scope=\"colgroup\">Dependent variable: D(Adoption)</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Objective importance <span class=\"m\">×</span> Historical effectiveness</th><td class=\"a-c\">+0.024***</td><td class=\"a-c\">+0.025***</td><td class=\"a-c\">+0.025***</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.005)</td><td class=\"a-c\">(0.005)</td><td class=\"a-c\">(0.005)</td></tr><tr><th class=\"a-l\" scope=\"row\">Historical effectiveness</th><td class=\"a-c\">+0.004</td><td class=\"a-c\">+0.005</td><td class=\"a-c\"></td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.007)</td><td class=\"a-c\">(0.008)</td><td class=\"a-c\"></td></tr><tr><th class=\"a-l\" scope=\"row\">Objective importance</th><td class=\"a-c\">+0.001</td><td class=\"a-c\"></td><td class=\"a-c\"></td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.001)</td><td class=\"a-c\"></td><td class=\"a-c\"></td></tr><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Investor FE</th><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\">–</td><td class=\"a-c\">–</td></tr><tr><th class=\"a-l\" scope=\"row\">Investor <span class=\"m\">×</span> Objective FE</th><td class=\"a-c\">–</td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td></tr><tr><th class=\"a-l\" scope=\"row\">Country <span class=\"m\">×</span> Heuristic <span class=\"m\">×</span> Objective FE</th><td class=\"a-c\">–</td><td class=\"a-c\">–</td><td class=\"a-c\"><span class=\"m\">✓</span></td></tr><tr><th class=\"a-l\" scope=\"row\">Observations</th><td class=\"a-c\">12,600</td><td class=\"a-c\">12,600</td><td class=\"a-c\">12,600</td></tr><tr><th class=\"a-l\" scope=\"row\"><math><msup><mi>R</mi><mn class=\"tml-med-pad\">2</mn></msup></math></th><td class=\"a-c\">0.099</td><td class=\"a-c\">0.099</td><td class=\"a-c\">0.173</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F10/F10.csv",
        "dense": false,
        "ncols": 4,
        "numbers": [
@@ -4376,8 +4649,8 @@
    "page_labels": [
     "59"
    ],
-   "pdf_href": "/OA.pdf#page=61",
-   "pages_pdf": "/assets/x/tab/F11/F11-pages.pdf",
+   "pdf_href": "/pdf/#page=61",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -4410,7 +4683,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl\" id=\"t-F11\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"4\" scope=\"colgroup\">Dependent variable: D(Adoption)</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1) Returns</th><th class=\"a-c\" scope=\"col\">(2) Upside</th><th class=\"a-c\" scope=\"col\">(3) Stability</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Objective importance <span class=\"m\">×</span> Historical effectiveness</th><td class=\"a-c\">+0.014***</td><td class=\"a-c\">+0.032***</td><td class=\"a-c\">+0.027***</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.004)</td><td class=\"a-c\">(0.007)</td><td class=\"a-c\">(0.005)</td></tr><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Investor FE</th><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td></tr><tr><th class=\"a-l\" scope=\"row\">Country <span class=\"m\">×</span> Heuristic FE</th><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td></tr><tr><th class=\"a-l\" scope=\"row\">Observations</th><td class=\"a-c\">4,200</td><td class=\"a-c\">4,200</td><td class=\"a-c\">4,200</td></tr><tr><th class=\"a-l\" scope=\"row\"><math><msup><mi>R</mi><mn class=\"tml-med-pad\">2</mn></msup></math></th><td class=\"a-c\">0.172</td><td class=\"a-c\">0.175</td><td class=\"a-c\">0.174</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F11/F11.csv",
        "dense": false,
        "ncols": 4,
        "numbers": [
@@ -4461,8 +4733,8 @@
    "page_labels": [
     "60"
    ],
-   "pdf_href": "/OA.pdf#page=62",
-   "pages_pdf": "/assets/x/tab/F12/F12-pages.pdf",
+   "pdf_href": "/pdf/#page=62",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [
@@ -4506,7 +4778,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl\" id=\"t-F12\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">−0.100</td><td class=\"a-c\">−0.078</td><td class=\"a-c\">−0.127</td><td class=\"a-c\">−0.091</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Alternative heuristics</th><td class=\"a-c\">−0.026</td><td class=\"a-c\">−0.124</td><td class=\"a-c\">+0.016</td><td class=\"a-c\">+0.017</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.029)</td><td class=\"a-c\">(0.055)</td><td class=\"a-c\">(0.044)</td><td class=\"a-c\">(0.061)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> alternative heuristics)</th><td class=\"a-c\">[0.994]</td><td class=\"a-c\">[0.195]</td><td class=\"a-c\">[0.999]</td><td class=\"a-c\">[0.962]</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected heuristics</th><td class=\"a-c\">−0.050</td><td class=\"a-c\">−0.140</td><td class=\"a-c\">−0.014</td><td class=\"a-c\">−0.007</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.032)</td><td class=\"a-c\">(0.057)</td><td class=\"a-c\">(0.047)</td><td class=\"a-c\">(0.063)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected heuristics)</th><td class=\"a-c\">[0.942]</td><td class=\"a-c\">[0.135]</td><td class=\"a-c\">[0.991]</td><td class=\"a-c\">[0.906]</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F12/F12.csv",
        "dense": false,
        "ncols": 5,
        "numbers": [
@@ -4574,8 +4845,8 @@
    "page_labels": [
     "61"
    ],
-   "pdf_href": "/OA.pdf#page=63",
-   "pages_pdf": "/assets/x/tab/F13/F13-pages.pdf",
+   "pdf_href": "/pdf/#page=63",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [
@@ -4614,7 +4885,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl\" id=\"t-F13\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">−0.033</td><td class=\"a-c\">−0.082</td><td class=\"a-c\">+0.062</td><td class=\"a-c\">−0.137</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Alternative heuristics</th><td class=\"a-c\">+0.015</td><td class=\"a-c\">−0.030</td><td class=\"a-c\">+0.050</td><td class=\"a-c\">+0.046</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.028)</td><td class=\"a-c\">(0.047)</td><td class=\"a-c\">(0.043)</td><td class=\"a-c\">(0.059)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> alternative heuristics)</th><td class=\"a-c\">[0.955]</td><td class=\"a-c\">[0.864]</td><td class=\"a-c\">[0.390]</td><td class=\"a-c\">[0.999]</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected heuristics</th><td class=\"a-c\">+0.008</td><td class=\"a-c\">−0.044</td><td class=\"a-c\">+0.055</td><td class=\"a-c\">+0.009</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.030)</td><td class=\"a-c\">(0.048)</td><td class=\"a-c\">(0.046)</td><td class=\"a-c\">(0.062)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected heuristics)</th><td class=\"a-c\">[0.919]</td><td class=\"a-c\">[0.777]</td><td class=\"a-c\">[0.446]</td><td class=\"a-c\">[0.991]</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F13/F13.csv",
        "dense": false,
        "ncols": 5,
        "numbers": [
@@ -4682,8 +4952,8 @@
    "page_labels": [
     "62"
    ],
-   "pdf_href": "/OA.pdf#page=64",
-   "pages_pdf": "/assets/x/tab/F14/F14-pages.pdf",
+   "pdf_href": "/pdf/#page=64",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [
@@ -4749,7 +5019,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl\" id=\"t-F14\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">+0.130</td><td class=\"a-c\">+0.009</td><td class=\"a-c\">+0.158</td><td class=\"a-c\">+0.179</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Average stock</th><td class=\"a-c\">−0.262</td><td class=\"a-c\">−0.617</td><td class=\"a-c\">+0.842</td><td class=\"a-c\">−0.649</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> average stock)</th><td class=\"a-c\">[0.002]***</td><td class=\"a-c\">[0.006]***</td><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.001]***</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected JKP-factor-based portfolios</th><td class=\"a-c\">−0.085</td><td class=\"a-c\">−0.233</td><td class=\"a-c\">+0.552</td><td class=\"a-c\">−0.354</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.034)</td><td class=\"a-c\">(0.058)</td><td class=\"a-c\">(0.063)</td><td class=\"a-c\">(0.047)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected JKP factors)</th><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.000]***</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F14/F14.csv",
        "dense": false,
        "ncols": 5,
        "numbers": [
@@ -4813,8 +5082,8 @@
    "page_labels": [
     "63"
    ],
-   "pdf_href": "/OA.pdf#page=65",
-   "pages_pdf": "/assets/x/tab/F15/F15-pages.pdf",
+   "pdf_href": "/pdf/#page=65",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [
@@ -4880,7 +5149,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl\" id=\"t-F15\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">+0.132</td><td class=\"a-c\">+0.058</td><td class=\"a-c\">+0.288</td><td class=\"a-c\">+0.099</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Average stock</th><td class=\"a-c\">−0.163</td><td class=\"a-c\">−0.263</td><td class=\"a-c\">+0.699</td><td class=\"a-c\">−0.600</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> average stock)</th><td class=\"a-c\">[0.001]***</td><td class=\"a-c\">[0.007]***</td><td class=\"a-c\">[0.989]</td><td class=\"a-c\">[0.001]***</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected JKP-factor-based portfolios</th><td class=\"a-c\">−0.060</td><td class=\"a-c\">−0.079</td><td class=\"a-c\">+0.546</td><td class=\"a-c\">−0.406</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.033)</td><td class=\"a-c\">(0.059)</td><td class=\"a-c\">(0.064)</td><td class=\"a-c\">(0.045)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected JKP factors)</th><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.011]**</td><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.000]***</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F15/F15.csv",
        "dense": false,
        "ncols": 5,
        "numbers": [
@@ -4944,8 +5212,8 @@
    "page_labels": [
     "64"
    ],
-   "pdf_href": "/OA.pdf#page=66",
-   "pages_pdf": "/assets/x/tab/F16/F16-pages.pdf",
+   "pdf_href": "/pdf/#page=66",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -4978,7 +5246,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl\" id=\"t-F16\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">−0.100</td><td class=\"a-c\">−0.078</td><td class=\"a-c\">−0.127</td><td class=\"a-c\">−0.091</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Average stock</th><td class=\"a-c\">+0.043</td><td class=\"a-c\">−0.617</td><td class=\"a-c\">+0.842</td><td class=\"a-c\">−0.649</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> average stock)</th><td class=\"a-c\">[0.967]</td><td class=\"a-c\">[0.015]**</td><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.000]***</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected JKP-factor-based portfolios</th><td class=\"a-c\">+0.084</td><td class=\"a-c\">−0.235</td><td class=\"a-c\">+0.526</td><td class=\"a-c\">−0.355</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.035)</td><td class=\"a-c\">(0.064)</td><td class=\"a-c\">(0.052)</td><td class=\"a-c\">(0.063)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected JKP factors)</th><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.007]***</td><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.000]***</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F16/F16.csv",
        "dense": false,
        "ncols": 5,
        "numbers": [
@@ -5042,8 +5309,8 @@
    "page_labels": [
     "65"
    ],
-   "pdf_href": "/OA.pdf#page=67",
-   "pages_pdf": "/assets/x/tab/F17/F17-pages.pdf",
+   "pdf_href": "/pdf/#page=67",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [],
@@ -5076,7 +5343,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl\" id=\"t-F17\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">−0.033</td><td class=\"a-c\">−0.082</td><td class=\"a-c\">+0.062</td><td class=\"a-c\">−0.137</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Average stock</th><td class=\"a-c\">+0.096</td><td class=\"a-c\">−0.263</td><td class=\"a-c\">+0.699</td><td class=\"a-c\">−0.600</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> average stock)</th><td class=\"a-c\">[0.969]</td><td class=\"a-c\">[0.141]</td><td class=\"a-c\">[0.999]</td><td class=\"a-c\">[0.002]***</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected JKP-factor-based portfolios</th><td class=\"a-c\">+0.119</td><td class=\"a-c\">−0.084</td><td class=\"a-c\">+0.532</td><td class=\"a-c\">−0.402</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.034)</td><td class=\"a-c\">(0.061)</td><td class=\"a-c\">(0.052)</td><td class=\"a-c\">(0.060)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected JKP factors)</th><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.494]</td><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.000]***</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F17/F17.csv",
        "dense": false,
        "ncols": 5,
        "numbers": [
@@ -5140,8 +5406,8 @@
    "page_labels": [
     "66"
    ],
-   "pdf_href": "/OA.pdf#page=68",
-   "pages_pdf": "/assets/x/tab/F18/F18-pages.pdf",
+   "pdf_href": "/pdf/#page=68",
+   "questions": [],
    "n_panels": 0,
    "wide": false,
    "main_refs": [
@@ -5192,7 +5458,6 @@
        "heading_html": "",
        "heading": "",
        "html": "<table class=\"tbl\" id=\"t-F18\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">+0.146</td><td class=\"a-c\">+0.084</td><td class=\"a-c\">+0.255</td><td class=\"a-c\">+0.117</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Alternative heuristics</th><td class=\"a-c\">−0.122</td><td class=\"a-c\">−0.224</td><td class=\"a-c\">−0.172</td><td class=\"a-c\">+0.012</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.041)</td><td class=\"a-c\">(0.081)</td><td class=\"a-c\">(0.080)</td><td class=\"a-c\">(0.051)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> alternative heuristics)</th><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.021]**</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected heuristics</th><td class=\"a-c\">−0.066</td><td class=\"a-c\">−0.151</td><td class=\"a-c\">−0.086</td><td class=\"a-c\">+0.027</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.044)</td><td class=\"a-c\">(0.085)</td><td class=\"a-c\">(0.086)</td><td class=\"a-c\">(0.056)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected heuristics)</th><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.003]***</td><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.051]*</td></tr></tbody></table>",
-       "csv": "/assets/x/tab/F18/F18.csv",
        "dense": false,
        "ncols": 5,
        "numbers": [

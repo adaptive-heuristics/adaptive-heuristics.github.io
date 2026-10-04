@@ -15,11 +15,47 @@ import fitz  # PyMuPDF
 from PIL import Image
 
 from .config import Config
-from .util import run
+from .util import run, sha256_file
 
 TEXT_EXT = {".html", ".json", ".css", ".js", ".txt", ".svg", ".csv", ".md", ".toml", ".py", ".cjs", ".mjs", ""}
-DOCS_EXT = {".html", ".json", ".css", ".js", ".txt", ".svg", ".csv", ".pdf", ".png", ".webp", ".woff2", ""}
+DOCS_EXT = {".html", ".json", ".css", ".js", ".mjs", ".txt", ".svg", ".csv", ".pdf", ".png", ".webp", ".gif",
+            ".woff2", ""}
 REPO_ALLOW = re.compile(r"^(docs/.*|site/.*|tools/.*|README\.md|\.gitignore|oa\.toml|oa\.local\.example\.toml)$")
+
+
+VENDOR_DIRS = {"assets/pdfjs/": "site/static/pdfjs/"}   # docs-relative prefix -> tracked source folder
+
+
+def _vendor_pins(cfg: Config) -> dict[str, dict[str, str]]:
+    pins = {}
+    for prefix, src in VENDOR_DIRS.items():
+        f = cfg.root / src / "SHA256SUMS"
+        table = {}
+        if f.exists():
+            for line in f.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    h, _, rel = line.partition("  ")
+                    table[rel.strip()] = h.strip()
+        pins[prefix] = table
+    return pins
+
+
+def _vendored(cfg: Config, rel: str, path: Path, rep: Report, pins: dict) -> bool:
+    """True if `rel` is a pinned third-party file whose bytes match (then it is not scanned)."""
+    for prefix, src in VENDOR_DIRS.items():
+        for base in (prefix, src):
+            if rel.startswith(base):
+                sub = rel[len(base):]
+                if sub in ("SHA256SUMS", "VERSION.txt"):
+                    return False
+                want = pins.get(prefix, {}).get(sub)
+                if want is None:
+                    rep.err(f"{rel}: not listed in the pinned third-party files")
+                    return True
+                if sha256_file(path) != want:
+                    rep.err(f"{rel}: differs from the pinned upstream file")
+                return True
+    return False
 
 
 @dataclass
@@ -137,8 +173,11 @@ def _visible_text(html: str) -> str:
 
 def check_anonymity(cfg: Config, root: Path, rep: Report, banned: Banned) -> None:
     hits = 0
+    pins = _vendor_pins(cfg)
     for f in sorted(p for p in root.rglob("*") if p.is_file()):
         rel = f.relative_to(root).as_posix()
+        if _vendored(cfg, rel, f, rep, pins):
+            continue
         for t in banned.find(rel):
             rep.err(f"file name contains banned term {t!r}: {rel}")
             hits += 1
@@ -183,7 +222,7 @@ def check_anonymity(cfg: Config, root: Path, rep: Report, banned: Banned) -> Non
             bad.append(f"{rel}: missing referrer policy")
         if "Content-Security-Policy" not in h:
             bad.append(f"{rel}: missing CSP")
-    for f in list(root.rglob("*.css")) + list(root.rglob("*.js")):
+    for f in list(root.rglob("*.css")) + list(root.rglob("*.js")) + list(root.rglob("*.mjs")):
         t = f.read_text(encoding="utf-8")
         for m in re.finditer(r"url\(\s*['\"]?(https?:)?//|@import|fetch\(\s*['\"]https?:", t):
             bad.append(f"{f.relative_to(root).as_posix()}: external reference")
@@ -232,10 +271,13 @@ def check_repo(cfg: Config, rep: Report, banned: Banned) -> None:
     if any(p.startswith(".cache/") or p == "oa.local.toml" for p in tracked):
         rep.err("oa.local.toml or .cache/ is tracked")
     hits = 0
+    pins = _vendor_pins(cfg)
     for p in tracked:
         if p.startswith("docs/"):
             continue
         f = cfg.root / p
+        if f.exists() and _vendored(cfg, p, f, rep, pins):
+            continue
         if f.suffix.lower() in TEXT_EXT and f.exists():
             for t in banned.find(f.read_text(encoding="utf-8", errors="replace")) + banned.find(p):
                 rep.err(f"tracked file {p} contains banned term {t!r}")
@@ -301,8 +343,10 @@ def check_integrity(cfg: Config, root: Path, model: dict, rep: Report) -> None:
                 if f'id="{frag}"' not in target.read_text(encoding="utf-8"):
                     bad_links.append(f"{rel} -> {url} (no #{frag})")
         vis = _visible_text(h)
-        if re.search(r"\\[A-Za-z]{2,}|\$[^$]*\$", vis):
-            mm = re.search(r".{0,30}(\\[A-Za-z]{2,}|\$[^$]*\$).{0,30}", vis)
+        # real TeX leftovers only: control words, $\..., $x_ / $x^, _{ / ^{ (literal "$1,000" is fine)
+        tex_pat = r"\\[A-Za-z]{2,}|\$\\|\$[A-Za-z][_^]|[_^]\{"
+        if re.search(tex_pat, vis):
+            mm = re.search(r".{0,30}(" + tex_pat + r").{0,30}", vis)
             stray.append(f"{rel}: {mm.group(0).strip() if mm else '?'}")
     if bad_links:
         for b in bad_links[:30]:
@@ -320,7 +364,7 @@ def check_integrity(cfg: Config, root: Path, model: dict, rep: Report) -> None:
         for p in e["parts"]:
             gs = list(p["graphics"]) + [g for pn in p["panels"] for g in pn["graphics"]]
             for g in gs:
-                for key in ("src", "png", "pdf"):
+                for key in ("src", "png"):
                     f = root / g[key].lstrip("/")
                     if not f.exists() or f.stat().st_size == 0:
                         bad_assets.append(f"{e['id']}: {g[key]} missing")

@@ -47,14 +47,13 @@ def postprocess(src: Path, dst: Path, title: str) -> dict:
     dst.parent.mkdir(parents=True, exist_ok=True)
     doc.save(dst, garbage=4, deflate=True, no_new_id=True)
     doc.close()
-    # Info: keep only /Title
+    # Info: replace the whole dictionary by << /Title ... >> (no empty or null entries left behind)
     doc = fitz.open(dst)
     info = doc.xref_get_key(-1, "Info")
     if info[0] == "xref":
         ix = int(info[1].split()[0])
-        for k in doc.xref_get_keys(ix):
-            if k != "Title":
-                doc.xref_set_key(ix, k, "null")
+        hex_title = "<FEFF" + title.encode("utf-16-be").hex().upper() + ">"
+        doc.update_object(ix, f"<</Title {hex_title}>>")
     tmp = dst.with_suffix(".tmp.pdf")
     doc.save(tmp, garbage=4, deflate=True, no_new_id=True)
     doc.close()

@@ -1,9 +1,0 @@
-﻿"Delivery, in standard deviations from the average heuristic–country pair",,,,
-,Overall,Returns,Upside,Stability
-,(1),(2),(3),(4)
-Adopted heuristics,+0.130,+0.009,+0.158,+0.179
-Average stock,-0.262,-0.617,+0.842,-0.649
-p(Adopted ≤ average stock),[0.002]***,[0.006]***,[1.000],[0.001]***
-Randomly selected JKP-factor-based portfolios,-0.085,-0.233,+0.552,-0.354
-Standard deviation across draws,(0.034),(0.058),(0.063),(0.047)
-p(Adopted ≤ randomly selected JKP factors),[0.000]***,[0.000]***,[1.000],[0.000]***

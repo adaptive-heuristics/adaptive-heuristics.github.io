@@ -13,6 +13,7 @@
 <link rel="preload" href="/assets/fonts/xcharter-regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/site.css?v={{ v.css }}">
 <script src="/assets/site.js?v={{ v.js }}" defer></script>
+{% block head %}{% endblock %}
 </head>
 <body class="pg-{{ page }}">
 <a class="skip" href="#main">Skip to content</a>
@@ -24,7 +25,7 @@
     <nav class="hdr-nav" aria-label="Site">
       <button class="hdr-search" type="button" data-open-search aria-label="Search exhibits">{{ icon("search") }}<span class="lbl">Search exhibits</span><kbd>/</kbd></button>
       <a class="hdr-link" href="/compare/">{{ icon("compare") }}<span class="lbl">Compare</span></a>
-      <a class="btn-pdf" href="{{ pdf.url }}" target="_blank" rel="noopener" title="Open the Online Appendix PDF ({{ pdf.pages }} pages, {{ pdf.size }})">{{ icon("file") }}<span>PDF</span></a>
+      <a class="btn-pdf" href="/pdf/" target="_blank" rel="noopener" title="Open the Online Appendix PDF in a new tab ({{ pdf.pages }} pages, {{ pdf.size }})">{{ icon("file") }}<span>PDF</span></a>
     </nav>
   </div>
 </header>
@@ -34,7 +35,7 @@
 <footer class="ftr">
   <div class="ftr-in">
     <p>Online Appendix to &ldquo;{{ site.paper_title }}.&rdquo; Generated from the manuscript sources; updated {{ build.source_date_text }}.</p>
-    <p><a href="{{ pdf.url }}" target="_blank" rel="noopener">Full appendix (PDF, {{ pdf.pages }} pages)</a></p>
+    <p><a href="/pdf/" target="_blank" rel="noopener">Full appendix (PDF, {{ pdf.pages }} pages)</a></p>
   </div>
 </footer>
 <div class="pal" data-palette hidden>

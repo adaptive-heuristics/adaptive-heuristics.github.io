@@ -20,7 +20,6 @@ class FigAssets:
     display: str          # path relative to docs/ (svg or webp)
     kind: str             # svg | webp
     png: str
-    pdf: str
     w_pt: float
     h_pt: float
     text: str             # text layer for search
@@ -31,23 +30,9 @@ def _round_svg(svg: str) -> str:
     return _NUM.sub(lambda m: f"{float(m.group(1)):.2f}".rstrip("0").rstrip("."), svg)
 
 
-def _clean_pdf(src: Path, dst: Path) -> None:
-    doc = fitz.open(src)
-    doc.set_metadata({"title": "", "author": "", "subject": "", "keywords": "", "creator": "", "producer": "",
-                      "creationDate": "", "modDate": "", "trapped": ""})
-    doc.del_xml_metadata()
-    info = doc.xref_get_key(-1, "Info")
-    if info[0] == "xref":
-        ix = int(info[1].split()[0])
-        for k in doc.xref_get_keys(ix):
-            doc.xref_set_key(ix, k, "null")
-    doc.save(dst, garbage=4, deflate=True, no_new_id=True)
-    doc.close()
-
-
 def convert(src: Path, out_dir: Path, stem: str, *, svg_max_gzip_kb: int = 150, svg_max_drawings: int = 5000,
             webp_quality: int = 90, png_dpi: int = 300, css_px: int = 1100) -> FigAssets:
-    """Write <stem>.svg|webp, <stem>.png and <stem>.pdf into out_dir. Paths returned relative to out_dir.parent*."""
+    """Write <stem>.svg (or .webp for raster figures) and <stem>.png into out_dir."""
     out_dir.mkdir(parents=True, exist_ok=True)
     doc = fitz.open(src)
     if doc.page_count != 1:
@@ -76,9 +61,7 @@ def convert(src: Path, out_dir: Path, stem: str, *, svg_max_gzip_kb: int = 150, 
     pix = page.get_pixmap(dpi=png_dpi, alpha=False)
     png = out_dir / f"{stem}.png"
     Image.open(io.BytesIO(pix.tobytes("png"))).save(png, "PNG", optimize=True)
-    pdf = out_dir / f"{stem}.pdf"
-    _clean_pdf(src, pdf)
     words = page.get_text("words")
     text = " ".join(dict.fromkeys(wd[4].replace("−", "-") for wd in words))
     doc.close()
-    return FigAssets(disp.name, kind, png.name, pdf.name, w, h, text, sha256_file(src))
+    return FigAssets(disp.name, kind, png.name, w, h, text, sha256_file(src))

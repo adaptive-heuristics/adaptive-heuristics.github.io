@@ -7,9 +7,9 @@
     <option value="">Choose an exhibit&hellip;</option>
     {% for s in tops %}{% if s.n_exhibits %}
     <optgroup label="{{ s.id }} &middot; {{ s.title }}">
-      {% for it in s["items"] %}{% for x in it.exhibits %}
+      {% for x in s.exhibits %}
       <option value="{{ x.kind }}-{{ x.number }}">{{ x.kind_word }} {{ x.number }}: {{ x.title|short(70) }}</option>
-      {% endfor %}{% endfor %}
+      {% endfor %}
     </optgroup>
     {% endif %}{% endfor %}
   </select>
