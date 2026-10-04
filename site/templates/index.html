@@ -12,7 +12,7 @@
 <section class="tb">
   <h1 class="tb-h"><span class="tb-pre">Online Appendix to</span> <span class="tb-t">{{ site.paper_title }}</span></h1>
   <p class="tb-d">{{ build.source_date|month_year }}</p>
-  <p class="tb-links"><a href="{{ pdf.url }}" download="{{ site.paper_title|file_slug }}-Online-Appendix.pdf">Download PDF</a><span class="sep" aria-hidden="true">&middot;</span><a href="/pdf/" target="_blank" rel="noopener">Read in browser</a></p>
+  <p class="tb-links"><span><a href="{{ pdf.url }}" download="{{ site.paper_title|file_slug }}-Online-Appendix.pdf">Download PDF</a><span class="sep" aria-hidden="true">&middot;</span><a href="/pdf/" target="_blank" rel="noopener">Read PDF</a></span><span class="tb-try"><span class="sep" aria-hidden="true">&middot;</span><a href="https://investment-ai-interview.streamlit.app/" target="_blank" rel="noopener noreferrer">Try the AI-led interview</a></span></p>
 </section>
 
 <section class="ct" id="contents" aria-labelledby="contents-h">
@@ -29,7 +29,7 @@
       <span class="ix-opts"><button class="ix-opt on" type="button" data-group-by="section" aria-pressed="true">appendix section</button>
       <button class="ix-opt" type="button" data-group-by="paper" aria-pressed="false">main-paper section</button></span>
     </div>
-    <label class="ix-filter"><span class="ix-lbl">Filter</span><input type="search" placeholder="number, title or keyword" aria-label="Filter exhibits by number, title or keyword" data-ix-filter></label>
+    <label class="ix-filter"><span class="ix-lbl">Find</span><input type="search" placeholder="number, title or keyword" aria-label="Find figures and tables by number, title or keyword" data-ix-filter></label>
   </div>
 
   <div class="ix" data-view="section">
@@ -76,7 +76,7 @@
     </section>
   {% endfor %}
   </div>
-  <p class="ix-empty" data-ix-empty hidden>No exhibits match this filter.</p>
+  <p class="ix-empty" data-ix-empty hidden>No figures or tables match.</p>
   <p class="sr-only" role="status" data-ix-status></p>
 </section>
 {% endblock %}

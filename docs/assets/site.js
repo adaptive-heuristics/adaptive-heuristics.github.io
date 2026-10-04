@@ -233,7 +233,7 @@
         sec.hidden = filtering && !$$(".te-x[data-id]", sec).some((r) => !r.hidden);
       });
       empty.hidden = shown > 0;
-      if (announce) say(status, shown ? plural(shown, "exhibit") + " shown." : "No exhibits match this filter.");
+      if (announce) say(status, shown ? plural(shown, "exhibit") + " shown." : "No figures or tables match.");
       announce = false;
     }
     $$("[data-kind-filter]", ix).forEach((b) => b.addEventListener("click", () => { kind = b.dataset.kindFilter; announce = true; apply(); }));

@@ -71,7 +71,9 @@ a.brand-sub:hover { color: var(--ink); text-decoration: underline; text-decorati
 .tb-pre { display: block; font-size: 21px; line-height: 1.35; }
 .tb-h .tb-t { display: block; margin-top: 6px; }
 .tb-d { font-size: 17px; margin: 16px 0 0; }
-.tb-links { font-size: 16px; margin: 20px 0 0; }
+.tb-links { display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; row-gap: 6px; font-size: 16px; margin: 20px 0 0; }
+/* where the three links no longer fit on one line, the interview link takes a line of its own */
+@media (max-width: 780px) { .tb-try { flex-basis: 100%; } .tb-try .sep { display: none; } }
 .tb-links .sep { margin: 0 0.7em; color: var(--ink-2); }
 .tb-links a { white-space: nowrap; }
 .tb-abs { max-width: 31em; margin: 30px auto 0; font-size: 15.5px; line-height: 1.55; text-align: justify; hyphens: auto; }
