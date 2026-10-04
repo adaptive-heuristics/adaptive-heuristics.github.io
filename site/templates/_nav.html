@@ -25,7 +25,7 @@
   {% endfor %}
   {% if refs %}
   <div class="toc-sec">
-    <p class="toc-sh"><a href="{{ refs.url }}"{% if refs.id == current %} aria-current="page"{% endif %}><span class="toc-letter"></span><span>{{ refs.title_html|safe_html }}</span></a></p>
+    <p class="toc-sh"><a href="{{ refs.url }}"{% if refs.id == current %} aria-current="page"{% endif %}><span>{{ refs.title_html|safe_html }}</span></a></p>
   </div>
   {% endif %}
 </aside>

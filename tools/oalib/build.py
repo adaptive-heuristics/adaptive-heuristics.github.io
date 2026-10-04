@@ -370,15 +370,15 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
         if not refs_toc:
             raise BuildError("the appendix has a bibliography but no contents line for it")
         p0, p1 = _page_range(pdf, refs_toc[0].anchor, None)
-        rt = mk("references heading").inline(refs_toc[0].title)
         items = []
         for b in bib:
             r = mk(f"reference {b.key}").inline(b.tex)
             items.append({"key": b.key, "html": link_urls(r.html), "text": r.text})
-        body_text = " ".join([rt.text] + [x["text"] for x in items])
+        title = "References"          # the PDF's heading reads "Online Appendix References"; on the site it is plain
+        body_text = " ".join([title] + [x["text"] for x in items])
         references = {
             "id": "references", "kind": "references", "kind_word": "", "number": "", "url": refs_url,
-            "title": rt.text, "title_html": rt.html, "items": items, "text": body_text, "body_text": body_text,
+            "title": title, "title_html": title, "items": items, "text": body_text, "body_text": body_text,
             "fn_text": [], "pages": [p0, p1], "page_labels": [pdf.labels[p0], pdf.labels[p1]],
             "pdf_href": f"{viewer_url}#page={p0 + 1}",
         }
