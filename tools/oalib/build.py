@@ -246,6 +246,13 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
             "search": " ".join(searchable),
         })
 
+    # within each (sub)section, figures come before tables, each kind in its numbered order; the contents,
+    # the sidebar and previous/next all follow this order
+    group_at: dict[tuple, int] = {}
+    for i, e in enumerate(exhibits_out):
+        group_at.setdefault((e["section"], e["subsection"]), i)
+    exhibits_out.sort(key=lambda e: (group_at[(e["section"], e["subsection"])], e["kind"] != "figure"))
+
     # ---- survey questions behind each response figure (from the appendix's \respbox pointers) ----
     by_label_ex = {lab: e for e in exhibits_out for lab in e["labels"]}
     for q in parse_questions(doc, app_aux):
