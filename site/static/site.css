@@ -11,6 +11,7 @@
   --paper: #ffffff;
   --ink: #181715;
   --ink-2: #686866;        /* secondary text; 5.6:1 on paper */
+  --hint: #8a8987;         /* the example queries in Find only; 3.5:1, lighter than the grey choices beside it */
   --rule: #b9b9b8;         /* hairlines, never text */
   --wash: #f7f5f0;         /* hover and active rows */
   --desk: #e7e6e3;         /* behind the pages in the PDF viewer */
@@ -87,12 +88,14 @@ a.brand-sub:hover { color: var(--ink); text-decoration: underline; text-decorati
 .ix-bar { position: sticky; top: var(--hdr-h); z-index: 10; background: var(--paper); display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: baseline; column-gap: 36px; padding: 10px 0 7px; border-bottom: 0.5px solid var(--ink); }
 .ix-grp { display: grid; grid-template-columns: 5.6em minmax(0, 1fr); align-items: baseline; }
 .ix-opts { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 4px; margin-left: -5px; }
-.ix-lbl { font-size: 15px; font-style: italic; color: var(--ink-2); }
+.ix-lbl { font-size: 15px; font-style: italic; color: var(--ink); }
 .ix-opt { background: none; border: 0; padding: 4px 5px; font-size: 16px; color: var(--ink-2); cursor: pointer; }
 .ix-opt:hover { color: var(--ink); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 .ix-opt.on { color: var(--ink); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 .ix-filter { grid-column: 1 / -1; display: grid; grid-template-columns: 5.6em minmax(0, 1fr) auto auto; align-items: baseline; margin: 0 0 8px; }
-.ix-filter input { width: 100%; border: 0; border-bottom: 1px solid var(--ink); border-radius: 0; background: none; padding: 3px 2px 5px; font-size: 19px; outline: 0; }
+.ix-filter input { width: 100%; border: 0; border-bottom: 1px solid var(--ink); border-radius: 0; background: none; padding: 3px 2px 5px; font-size: 16px; outline: 0; }
+.ix-filter input { text-overflow: ellipsis; }   /* a hint too long for a very narrow phone ends in an ellipsis */
+.ix-filter input::placeholder { color: var(--hint); }
 .ix-count { font-size: 15px; color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .ix-count:not(:empty) { margin-left: 14px; }
 .ix-clear { margin-left: 14px; font-size: 15px; }
@@ -385,7 +388,7 @@ math[display="block"] { margin: 0.4em 0; }
   .ct { padding: 36px 16px 64px; }
   .ix-bar { position: static; grid-template-columns: minmax(0, 1fr); }
   .ix-filter { margin: 0 0 6px; }
-  .ix-filter input { font-size: 17px; }
+  .ix-filter input::placeholder { font-size: 15px; }
   .te { font-size: 16px; grid-template-columns: minmax(0, max-content) minmax(0.9em, 1fr) 1.8em; column-gap: 0.3em; }
   .te-s { grid-template-columns: var(--n-w) minmax(0, 1fr) 1.8em; }
   .te-l1 { margin-left: 0.9em; }

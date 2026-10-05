@@ -71,6 +71,9 @@
       let all = true;
       for (const t of toks) {
         if (t === r._n) continue;
+        if (t === numQ && /^[a-f]\d*$/.test(t) && r._n.startsWith(t)) continue;
+        // a single letter is a section's number, not a word to look for ("a" finds A1, not every "a")
+        if (/^[a-z]$/.test(t)) { all = false; break; }
         const inTitle = r._t.indexOf(t);
         if (inTitle >= 0) { score += (inTitle === 0 || r._t[inTitle - 1] === " ") ? 60 : 30; continue; }
         const inAll = r._all.indexOf(t);
@@ -214,31 +217,56 @@
     const empty = $("[data-ix-empty]", ix);
     const status = $("[data-ix-status]", ix);
     let announce = false; // only kind and text filters change what is listed; say so after those
+    let query = "";
+    // Sections are found by their number and title only, never by their text. Every word of the query must
+    // be the number or appear in the title (single letters only as a number, so "a" means section A).
+    function headMatch(num, title) {
+      const toks = tokens(query);
+      if (!toks.length) return false;
+      const n = norm(num), t = norm(title);
+      return toks.every((tok) => (n && tok === n) || (tok.length > 1 && t.indexOf(tok) >= 0) ||
+        (toks.length === 1 && n && /^[a-f](\.\d+)*$/.test(tok) && n.startsWith(tok)));
+    }
     function apply() {
       views.section.hidden = groupBy !== "section";
       views.paper.hidden = groupBy !== "paper";
       $$("[data-group-by]", ix).forEach((b) => { const on = b.dataset.groupBy === groupBy; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
       $$("[data-kind-filter]", ix).forEach((b) => { const on = b.dataset.kindFilter === kind; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
       const view = views[groupBy];
-      let shown = 0;
-      $$(".te-x[data-id]", view).forEach((row) => {
-        const ok = (kind === "all" || row.dataset.kind === kind) && (!ids || ids.has(row.dataset.id));
-        row.hidden = !ok;
-        if (ok) shown++;
-      });
-      const filtering = kind !== "all" || !!ids;
-      $$("[data-text-row]", view).forEach((row) => { row.hidden = filtering; });
-      $$("[data-sub-head]", view).forEach((head) => {
-        head.hidden = filtering && !$$('.te-x[data-sub="' + head.dataset.subHead + '"]', view).some((r) => !r.hidden);
-      });
+      const kindAll = kind === "all", finding = !!ids, filtering = !kindAll || finding;
+      // a section is never a figure or a table, so Show: Figures or Tables leaves sections out
+      const hit = (el, num) => finding && kindAll && headMatch(num, el.dataset.title || "");
+      let shown = 0, total = 0;   // entries: figures, tables, and every section with a page of its own
       $$(".ix-sec", view).forEach((sec) => {
-        sec.hidden = filtering && !$$(".te-x[data-id]", sec).some((r) => !r.hidden);
+        const head = $("[data-head]", sec);
+        const secHit = !!head && hit(head, head.dataset.head);
+        // a heading that matches brings everything under it
+        const subHit = new Set($$("[data-sub-head]", sec).filter((h) => hit(h, h.dataset.subHead)).map((h) => h.dataset.subHead));
+        $$(".te-x[data-id]", sec).forEach((row) => {
+          const inKind = kindAll || row.dataset.kind === kind;
+          const ok = inKind && (!finding || ids.has(row.dataset.id) || secHit || subHit.has(row.dataset.sub));
+          row.hidden = !ok;
+          if (inKind) total++;
+          if (ok) shown++;
+        });
+        $$("[data-text-row]", sec).forEach((row) => {
+          const ok = !filtering || secHit || hit(row, row.dataset.num);
+          row.hidden = !ok;
+          if (kindAll) { total++; if (ok) shown++; }
+        });
+        $$("[data-sub-head]", sec).forEach((h) => {
+          const own = secHit || subHit.has(h.dataset.subHead);
+          h.hidden = filtering && !own && !$$('.te-x[data-sub="' + h.dataset.subHead + '"]', sec).some((r) => !r.hidden);
+          if ("entry" in h.dataset && kindAll) { total++; if (own || !filtering) shown++; }
+        });
+        if (head && "entry" in head.dataset && kindAll) { total++; if (secHit || !filtering) shown++; }
+        sec.hidden = filtering && !secHit && !$$(".te-x[data-id], [data-text-row], [data-sub-head]", sec).some((r) => !r.hidden);
       });
       empty.hidden = shown > 0;
       // a visible count while the list is narrowed; screen readers hear the status line instead
-      if (count) count.textContent = filtering ? shown + " of " + $$(".te-x[data-id]", view).length : "";
+      if (count) count.textContent = filtering ? shown + " of " + total : "";
       if (clear) clear.hidden = !filter || !filter.value;
-      if (announce) say(status, shown ? plural(shown, "exhibit") + " shown." : "No figures or tables match.");
+      if (announce) say(status, shown ? shown + (shown === 1 ? " entry" : " entries") + " shown." : "Nothing matches.");
       announce = false;
     }
     $$("[data-kind-filter]", ix).forEach((b) => b.addEventListener("click", () => { kind = b.dataset.kindFilter; announce = true; apply(); }));
@@ -250,6 +278,7 @@
     if (filter) {
       filter.addEventListener("input", () => {
         const q = filter.value;
+        query = q;
         announce = true;
         if (!q.trim()) { ids = null; apply(); return; }
         loadData().then((rows) => { ids = new Set(search(rows, q).map((r) => r.id)); announce = true; apply(); });

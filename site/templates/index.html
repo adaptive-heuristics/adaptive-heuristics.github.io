@@ -2,7 +2,7 @@
 {% from "_nav.html" import entry %}
 {% block title %}Online Appendix &middot; {{ site.paper_title }}{% endblock %}
 {% macro unitentry(t, x, lvl) -%}
-<div class="te te-l{{ lvl }} te-unit" data-text-row>
+<div class="te te-l{{ lvl }} te-unit" data-text-row data-entry data-num="{{ t.number }}" data-title="{{ t.title }}">
   <a class="te-a" href="{{ t.url }}"><span class="te-n">{{ t.number }}</span><span class="te-t">{{ t.title_html|safe_html }}</span></a>
   <span class="te-dots" aria-hidden="true"></span>
   <a class="te-p" href="{{ x.href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="Section {{ t.number }} in the PDF, page {{ x.page_labels[0] }}">{{ x.page_labels[0] }}</a>
@@ -18,7 +18,7 @@
 <section class="ct" id="contents" aria-labelledby="contents-h">
   <h2 class="ct-h" id="contents-h">Contents</h2>
   <div class="ix-bar" data-needs-js hidden>
-    <label class="ix-filter"><span class="ix-lbl">Find</span><input type="search" placeholder="e.g. F12, momentum, out-of-sample" aria-label="Find figures and tables by number, title, or any word in their notes and tables" autocomplete="off" data-ix-filter><span class="ix-count" data-ix-count aria-hidden="true"></span><button class="lnk ix-clear" type="button" data-ix-clear hidden>Clear</button></label>
+    <label class="ix-filter"><span class="ix-lbl">Find</span><input type="search" placeholder="e.g. A3, F10, awareness, out-of-sample" aria-label="Find sections by number or title, and figures and tables by number, title or any word in their notes and tables" autocomplete="off" data-ix-filter><span class="ix-count" data-ix-count aria-hidden="true"></span><button class="lnk ix-clear" type="button" data-ix-clear hidden>Clear</button></label>
     <div class="ix-grp" role="group" aria-label="Show">
       <span class="ix-lbl" aria-hidden="true">Show</span>
       <span class="ix-opts"><button class="ix-opt on" type="button" data-kind-filter="all" aria-pressed="true">All</button>
@@ -36,15 +36,15 @@
   {% for s in tops %}
     <section class="ix-sec" id="sec-{{ s.id }}" data-sec="{{ s.id }}">
       {% if s.lead %}
-      <h3 class="te te-s"><a class="te-a" href="{{ s.lead.url }}"><span class="te-n">{{ s.id }}</span><span class="te-t">{{ s.title_html|safe_html }}</span></a><a class="te-p" href="{{ s.href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="Section {{ s.id }} in the PDF, page {{ s.page_labels[0] }}">{{ s.page_labels[0] }}</a></h3>
+      <h3 class="te te-s" data-head="{{ s.id }}" data-title="{{ s.title }}" data-entry><a class="te-a" href="{{ s.lead.url }}"><span class="te-n">{{ s.id }}</span><span class="te-t">{{ s.title_html|safe_html }}</span></a><a class="te-p" href="{{ s.href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="Section {{ s.id }} in the PDF, page {{ s.page_labels[0] }}">{{ s.page_labels[0] }}</a></h3>
       {% else %}
-      <h3 class="te te-s"><span class="te-n">{{ s.id }}</span><span class="te-t">{{ s.title_html|safe_html }}</span><a class="te-p" href="{{ s.href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="Section {{ s.id }} in the PDF, page {{ s.page_labels[0] }}">{{ s.page_labels[0] }}</a></h3>
+      <h3 class="te te-s" data-head="{{ s.id }}" data-title="{{ s.title }}"><span class="te-n">{{ s.id }}</span><span class="te-t">{{ s.title_html|safe_html }}</span><a class="te-p" href="{{ s.href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="Section {{ s.id }} in the PDF, page {{ s.page_labels[0] }}">{{ s.page_labels[0] }}</a></h3>
       {% endif %}
       {# every figure and table sits at one depth, whether or not its section has subsections #}
       {% for e in s.loose %}{{ entry(e, 2) }}{% endfor %}
       {% for x in s.subs %}
         {% if x.exhibits %}
-        <div class="te te-l1 te-sub" data-sub-head="{{ x.id }}">
+        <div class="te te-l1 te-sub" data-sub-head="{{ x.id }}" data-title="{{ x.title }}"{% if x.unit %} data-entry{% endif %}>
           {% if x.unit %}
           <a class="te-a" href="{{ x.unit.url }}"><span class="te-n">{{ x.id }}</span><span class="te-t">{{ x.title_html|safe_html }}</span></a>
           <span class="te-dots" aria-hidden="true"></span>
@@ -62,7 +62,7 @@
   {% endfor %}
   {% if references %}
     <section class="ix-sec" id="references">
-      <h3 class="te te-s te-refs"><a class="te-a" href="{{ references.url }}"><span class="te-t">{{ references.title_html|safe_html }}</span></a><a class="te-p" href="{{ references.pdf_href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="{{ references.title }} in the PDF, page {{ references.page_labels[0] }}">{{ references.page_labels[0] }}</a></h3>
+      <h3 class="te te-s te-refs" data-head="" data-title="{{ references.title }}" data-entry><a class="te-a" href="{{ references.url }}"><span class="te-t">{{ references.title_html|safe_html }}</span></a><a class="te-p" href="{{ references.pdf_href }}" target="_blank" rel="noopener" tabindex="-1" aria-label="{{ references.title }} in the PDF, page {{ references.page_labels[0] }}">{{ references.page_labels[0] }}</a></h3>
     </section>
   {% endif %}
   </div>
@@ -76,7 +76,7 @@
     </section>
   {% endfor %}
   </div>
-  <p class="ix-empty" data-ix-empty hidden>No figures or tables match.</p>
+  <p class="ix-empty" data-ix-empty hidden>Nothing matches.</p>
   <p class="sr-only" role="status" data-ix-status></p>
 </section>
 {% endblock %}
