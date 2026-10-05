@@ -66,8 +66,14 @@ def _page_range(pdf: PdfIndex, anchor: str, next_anchor: str | None) -> tuple[in
         return start, pdf.page_count - 1
     nxt = pdf.page_of(next_anchor)
     y = pdf.y_of(next_anchor)
-    h = pdf.doc[nxt].rect.height
-    end = nxt - 1 if (y is not None and y >= h - 72 - 60) else nxt
+    end = nxt
+    if y is not None:
+        # the section ends on the page before only when nothing on the next heading's page sits above that
+        # heading (a guessed margin drops the last lines of a section that runs a few lines into that page)
+        page = pdf.doc[nxt]
+        top = page.rect.height - y          # PDF y runs up from the foot of the page
+        if not any(b[3] <= top + 2 and b[4].strip() for b in page.get_text("blocks")):
+            end = nxt - 1
     return start, max(start, end)
 
 
