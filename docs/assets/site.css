@@ -82,16 +82,21 @@ a.brand-sub:hover { color: var(--ink); text-decoration: underline; text-decorati
 /* ---------- contents ---------- */
 .ct { max-width: var(--col); margin: 0 auto; padding: 52px 24px 96px; }
 .ct-h { font-size: 24px; font-weight: 700; margin: 0 0 4px; }
-/* the filter block reads as a two-line form: label column, then the choices */
-.ix-bar { position: sticky; top: var(--hdr-h); z-index: 10; background: var(--paper); display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; column-gap: 20px; padding: 8px 0 7px; border-bottom: 0.5px solid var(--ink); }
-.ix-grp { grid-column: 1; display: grid; grid-template-columns: 5.6em minmax(0, 1fr); align-items: baseline; }
+/* the filter block reads as a short form: Find on a full-width ruled line, like the questionnaires' answer
+   lines, then Show and Arrange by side by side; every line keeps the same label column */
+.ix-bar { position: sticky; top: var(--hdr-h); z-index: 10; background: var(--paper); display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: baseline; column-gap: 36px; padding: 10px 0 7px; border-bottom: 0.5px solid var(--ink); }
+.ix-grp { display: grid; grid-template-columns: 5.6em minmax(0, 1fr); align-items: baseline; }
 .ix-opts { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 4px; margin-left: -5px; }
 .ix-lbl { font-size: 15px; font-style: italic; color: var(--ink-2); }
 .ix-opt { background: none; border: 0; padding: 4px 5px; font-size: 16px; color: var(--ink-2); cursor: pointer; }
 .ix-opt:hover { color: var(--ink); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 .ix-opt.on { color: var(--ink); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
-.ix-filter { grid-column: 2; grid-row: 2; display: inline-flex; align-items: baseline; gap: 10px; }
-.ix-filter input { width: 13em; border: 0; border-bottom: 1px solid var(--ink-2); border-radius: 0; background: none; padding: 2px 2px 3px; font-size: 16px; outline: 0; }
+.ix-filter { grid-column: 1 / -1; display: grid; grid-template-columns: 5.6em minmax(0, 1fr) auto auto; align-items: baseline; margin: 0 0 8px; }
+.ix-filter input { width: 100%; border: 0; border-bottom: 1px solid var(--ink); border-radius: 0; background: none; padding: 3px 2px 5px; font-size: 19px; outline: 0; }
+.ix-count { font-size: 15px; color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ix-count:not(:empty) { margin-left: 14px; }
+.ix-clear { margin-left: 14px; font-size: 15px; }
+.ix-filter input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }   /* "Clear" instead */
 .ix-filter input:focus { border-bottom-color: var(--link); box-shadow: 0 1px 0 var(--link); }
 .ix-note { font-style: italic; font-size: 15.5px; color: var(--ink-2); margin: 16px 0 0; }
 .ix-empty { font-style: italic; color: var(--ink-2); padding: 28px 0; margin: 0; }
@@ -379,8 +384,8 @@ math[display="block"] { margin: 0.4em 0; }
   .tb-abs { text-align: left; hyphens: manual; }
   .ct { padding: 36px 16px 64px; }
   .ix-bar { position: static; grid-template-columns: minmax(0, 1fr); }
-  .ix-filter { grid-column: 1; grid-row: auto; display: grid; grid-template-columns: 5.6em minmax(0, 1fr); gap: 0; margin: 4px 0 2px; }
-  .ix-filter input { width: 100%; }
+  .ix-filter { margin: 0 0 6px; }
+  .ix-filter input { font-size: 17px; }
   .te { font-size: 16px; grid-template-columns: minmax(0, max-content) minmax(0.9em, 1fr) 1.8em; column-gap: 0.3em; }
   .te-s { grid-template-columns: var(--n-w) minmax(0, 1fr) 1.8em; }
   .te-l1 { margin-left: 0.9em; }
@@ -419,6 +424,7 @@ math[display="block"] { margin: 0.4em 0; }
   .hdr-link { height: 44px; }
   .ix-opt { min-height: 44px; }
   .ix-filter input { padding: 10px 2px 8px; }
+  .ix-clear { min-height: 44px; }
   .te { padding: 6px 0; margin-top: 0; }
   .te-s { margin-top: 14px; }
   .actions a, .files summary { padding: 10px 0; }

@@ -209,6 +209,8 @@
     let groupBy = qv === "paper" || qv === "section" ? qv : (store.get("groupBy") === "paper" ? "paper" : "section");
     const views = { section: $('[data-view="section"]', ix), paper: $('[data-view="paper"]', ix) };
     const filter = $("[data-ix-filter]", ix);
+    const count = $("[data-ix-count]", ix);
+    const clear = $("[data-ix-clear]", ix);
     const empty = $("[data-ix-empty]", ix);
     const status = $("[data-ix-status]", ix);
     let announce = false; // only kind and text filters change what is listed; say so after those
@@ -233,6 +235,9 @@
         sec.hidden = filtering && !$$(".te-x[data-id]", sec).some((r) => !r.hidden);
       });
       empty.hidden = shown > 0;
+      // a visible count while the list is narrowed; screen readers hear the status line instead
+      if (count) count.textContent = filtering ? shown + " of " + $$(".te-x[data-id]", view).length : "";
+      if (clear) clear.hidden = !filter || !filter.value;
       if (announce) say(status, shown ? plural(shown, "exhibit") + " shown." : "No figures or tables match.");
       announce = false;
     }
@@ -248,6 +253,11 @@
         announce = true;
         if (!q.trim()) { ids = null; apply(); return; }
         loadData().then((rows) => { ids = new Set(search(rows, q).map((r) => r.id)); announce = true; apply(); });
+      });
+      if (clear) clear.addEventListener("click", () => {
+        filter.value = "";
+        filter.dispatchEvent(new Event("input"));
+        filter.focus();
       });
     }
     apply();
