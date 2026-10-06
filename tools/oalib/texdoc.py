@@ -46,6 +46,7 @@ class TableInput:
     size: str | None       # "scriptsize" wrapper
     coltypes: dict         # active user column types {name: (nargs, align)}
     offset: int
+    full: bool = False     # set after \fullwidthtabular, which stretches the tabular to the text width
 
 
 @dataclass
@@ -216,7 +217,8 @@ def _makeboxes(content: str) -> list[tuple[int, str]]:
     return out
 
 
-def _parse_part(kind: str, content: str, base: int, landscape: bool, coldefs, text: str) -> Part:
+def _parse_part(kind: str, content: str, base: int, landscape: bool, coldefs, text: str,
+                root: Path | None = None) -> Part:
     # subfigures first; mask them so float-level searches ignore their captions/labels/graphics
     sub_spans, panels_raw = [], []
     pos = 0
@@ -246,12 +248,15 @@ def _parse_part(kind: str, content: str, base: int, landscape: bool, coldefs, te
     label = _first_label(masked, cap_end)
     env = find_env(masked, "minipage")
     note = None
+    note_span = (0, 0)
     if env:
         _, c0, c1, _ = env
+        note_span = (env[0], env[3])
         head = masked[c0:c1]
         _, j = read_group(head, 0)  # width argument
         note = content[c0 + j:c1].strip()
         note = re.sub(r"^\\(small|footnotesize|normalsize)\b\s*", "", note).strip()
+        note = _expand_inputs(note, root, text, base)
     boxes = _makeboxes(masked)
     # group headings for subfigures
     for b0, pn in panels_raw:
@@ -261,6 +266,8 @@ def _parse_part(kind: str, content: str, base: int, landscape: bool, coldefs, te
     graphics = [g for (i, g) in _graphics(masked)]
     tables = []
     for i in find_commands(masked, "input"):
+        if note_span[0] <= i < note_span[1]:
+            continue  # the note's own text, kept in a file of its own
         arg, _ = read_group(masked, i + len("\\input"))
         rel = arg.strip()
         rel = rel if rel.endswith(".tex") else rel + ".tex"
@@ -277,11 +284,23 @@ def _parse_part(kind: str, content: str, base: int, landscape: bool, coldefs, te
             depth = sum(1 if ch == "{" else -1 if ch == "}" else 0 for ch in tail)
             if depth > 0:  # the size group is still open at the \input
                 size = sm2[-1].group(1)
+        full = bool(re.search(r"\\fullwidthtabular(?![A-Za-z@])", masked[:i]))
         tables.append(TableInput(rel, heads[-1] if heads else None, scale, size,
-                                 _active_coltypes(coldefs, base + i), base + i))
+                                 _active_coltypes(coldefs, base + i), base + i, full))
     return Part(kind=kind, continued=continued, caption=_caption_text(caption_raw), label=label, note=note,
                 graphics=graphics, panels=panels, tables=tables, landscape=landscape,
                 offset=base, line=line_of(text, base))
+
+
+def _expand_inputs(note: str, root: Path | None, text: str, base: int) -> str:
+    """A note may keep its text in a file of its own (\\input{tables/..._note.tex}): read it in, comments removed."""
+    def one(m: re.Match) -> str:
+        rel = m.group(1).strip()
+        rel = rel if rel.endswith(".tex") else rel + ".tex"
+        if root is None or not (root / rel).is_file():
+            raise BuildError(f"the note at line {line_of(text, base)} inputs {rel}, which is not in the compile tree")
+        return blank_comments(read_text(root / rel)).strip()
+    return re.sub(r"\\input\s*\{([^}]+)\}", one, note)
 
 
 def parse_appendix(path: Path, aux: Aux) -> Doc:
@@ -345,7 +364,7 @@ def parse_appendix(path: Path, aux: Aux) -> Doc:
         content = blank[c0:c1]
         opt, j = read_opt(content, 0)
         landscape = any(a < b0 < b for a, b in land_spans)
-        part = _parse_part(m.group(1), content, c0, landscape, coldefs, text)
+        part = _parse_part(m.group(1), content, c0, landscape, coldefs, text, path.parent)
         # use the original (un-blanked) note text but with comments removed
         parts.append(part)
         pos = e1

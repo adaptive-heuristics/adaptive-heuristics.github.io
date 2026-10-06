@@ -210,6 +210,8 @@ def run_build(cfg: Config, *, pull: bool = False, force_compile: bool = False) -
                 src_text = read_text(app_dir / ti.path)
                 tbl = parse_table(src_text, ti.path, ti.coltypes,
                                   lambda where, _tag=tag: mk(f"{_tag} {where}"))
+                if ti.full:                       # \fullwidthtabular: the PDF stretches it to the text width
+                    tbl.full_width = True
                 h_src = ti.heading or tbl.heading     # set above the table, or as a row above its \toprule
                 heading = mk(f"{tag} panel heading").inline(h_src) if h_src else None
                 pm = re.match(r"Panel\s+([A-Z])\b", heading.text) if heading else None
