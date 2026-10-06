@@ -290,7 +290,13 @@ def check_repo(cfg: Config, rep: Report, banned: Banned) -> None:
 
 
 def _words(s: str) -> list[str]:
+    # a math letter is not part of the word after it: the PDF may set no space there ("$k$ reports" extracts
+    # as "kreports"); runs of math letters ("P_{ihg}") and "$p$-values" stay as they are
+    s = re.sub("([\U0001D400-\U0001D7FFℎ])(?=[A-Za-z])", r"\1 ", s)
     s = unicodedata.normalize("NFKC", s)
+    # a hyphenated word reads as one word on both sides, whether the PDF breaks the line at its hyphen
+    # ("non-\noverlapping") or the hyphen is TeX's own ("re-\nports")
+    s = re.sub(r"(?<=[A-Za-z])-(?:[ \t]*\n\s*)?(?=[A-Za-z])", "", s)
     s = re.sub(r"-\s*\n\s*", "", s)
     return [w.lower() for w in re.findall(r"[A-Za-z]{3,}", s)]
 

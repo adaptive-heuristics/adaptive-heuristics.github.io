@@ -8,14 +8,14 @@
   "note_position": "paper"
  },
  "build": {
-  "source_date": "2026-10-04",
-  "source_date_text": "October 4, 2026"
+  "source_date": "2026-10-06",
+  "source_date_text": "October 6, 2026"
  },
  "pdf": {
   "url": "/OA.pdf",
-  "pages": 69,
-  "size": "3.7 MB",
-  "sha256": "76ac909fc484dfc89156cf1a64ccb3ffbe65e97151d3e06598118076e6ddf815"
+  "pages": 72,
+  "size": "3.6 MB",
+  "sha256": "062b7c160436332bfc3be8b5897528d356f015aec0666f9a014f545c1d3e763d"
  },
  "counts": {
   "exhibits": 41,
@@ -99,14 +99,14 @@
    "title": "Hard-coded Questions",
    "has_exhibits": false,
    "pages": [
-    10,
+    11,
     12
    ],
    "page_labels": [
-    "9",
+    "10",
     "11"
    ],
-   "href": "/pdf/#page=11"
+   "href": "/pdf/#page=12"
   },
   {
    "id": "B.2",
@@ -134,11 +134,11 @@
    "has_exhibits": false,
    "pages": [
     15,
-    19
+    20
    ],
    "page_labels": [
     "14",
-    "18"
+    "19"
    ],
    "href": "/pdf/#page=16"
   },
@@ -235,14 +235,14 @@
    "title": "Validation, Refinement, and Final Scoring",
    "has_exhibits": false,
    "pages": [
-    17,
-    19
+    18,
+    20
    ],
    "page_labels": [
-    "16",
-    "18"
+    "17",
+    "19"
    ],
-   "href": "/pdf/#page=18"
+   "href": "/pdf/#page=19"
   },
   {
    "id": "C.3.1",
@@ -250,23 +250,6 @@
    "label": "app:pmpt_post_scoring_a",
    "title_html": "Validation",
    "title": "Validation",
-   "has_exhibits": false,
-   "pages": [
-    17,
-    18
-   ],
-   "page_labels": [
-    "16",
-    "17"
-   ],
-   "href": "/pdf/#page=18"
-  },
-  {
-   "id": "C.3.2",
-   "level": 3,
-   "label": "app:pmpt_post_scoring_b",
-   "title_html": "Refinement",
-   "title": "Refinement",
    "has_exhibits": false,
    "pages": [
     18,
@@ -279,11 +262,11 @@
    "href": "/pdf/#page=19"
   },
   {
-   "id": "C.3.3",
+   "id": "C.3.2",
    "level": 3,
-   "label": "app:pmpt_post_scoring_c",
-   "title_html": "Final Scoring",
-   "title": "Final Scoring",
+   "label": "app:pmpt_post_scoring_b",
+   "title_html": "Refinement",
+   "title": "Refinement",
    "has_exhibits": false,
    "pages": [
     19,
@@ -296,6 +279,23 @@
    "href": "/pdf/#page=20"
   },
   {
+   "id": "C.3.3",
+   "level": 3,
+   "label": "app:pmpt_post_scoring_c",
+   "title_html": "Final Scoring",
+   "title": "Final Scoring",
+   "has_exhibits": false,
+   "pages": [
+    19,
+    20
+   ],
+   "page_labels": [
+    "18",
+    "19"
+   ],
+   "href": "/pdf/#page=20"
+  },
+  {
    "id": "D",
    "level": 1,
    "label": "app:followup_questions",
@@ -303,14 +303,14 @@
    "title": "Follow-Up Survey",
    "has_exhibits": true,
    "pages": [
-    20,
-    32
+    21,
+    33
    ],
    "page_labels": [
-    "19",
-    "31"
+    "20",
+    "32"
    ],
-   "href": "/pdf/#page=21"
+   "href": "/pdf/#page=22"
   },
   {
    "id": "D.1",
@@ -320,14 +320,14 @@
    "title": "Questionnaire",
    "has_exhibits": false,
    "pages": [
-    20,
-    24
+    21,
+    25
    ],
    "page_labels": [
-    "19",
-    "23"
+    "20",
+    "24"
    ],
-   "href": "/pdf/#page=21"
+   "href": "/pdf/#page=22"
   },
   {
    "id": "D.2",
@@ -337,14 +337,14 @@
    "title": "Responses",
    "has_exhibits": true,
    "pages": [
-    25,
-    32
+    26,
+    33
    ],
    "page_labels": [
-    "24",
-    "31"
+    "25",
+    "32"
    ],
-   "href": "/pdf/#page=26"
+   "href": "/pdf/#page=27"
   },
   {
    "id": "E",
@@ -354,14 +354,14 @@
    "title": "Robustness to Alternative Mappings between Heuristics and Firm Characteristics",
    "has_exhibits": true,
    "pages": [
-    33,
-    40
+    34,
+    42
    ],
    "page_labels": [
-    "32",
-    "39"
+    "33",
+    "41"
    ],
-   "href": "/pdf/#page=34"
+   "href": "/pdf/#page=35"
   },
   {
    "id": "F",
@@ -371,14 +371,14 @@
    "title": "Additional Figures and Tables",
    "has_exhibits": true,
    "pages": [
-    41,
-    67
+    43,
+    70
    ],
    "page_labels": [
-    "40",
-    "66"
+    "42",
+    "69"
    ],
-   "href": "/pdf/#page=42"
+   "href": "/pdf/#page=44"
   }
  ],
  "texts": [
@@ -463,7 +463,7 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "figure.caption.1",
+       "anchor": "figure.caption.14",
        "pdf_page": 6,
        "page_label": "5",
        "note_html": "<p>This figure shows the distribution of responses to Questions <a class=\"ref\" href=\"#q-bg_age\" data-ref=\"q:bg_age\">2</a> through <a class=\"ref\" href=\"#q-bg_education\" data-ref=\"q:bg_education\">4</a> of the background survey (<a class=\"ref\" href=\"/section/A.1/\" data-ref=\"app:demo_questionnaire\">Online Appendix A.1</a>). Each bar and the number above it show the share of the 1,540 interviewed investors who select the answer choice. We omit the answer choice “Under 21” because our screening excludes those under 21.</p>",
@@ -484,7 +484,7 @@
        "panels": [],
        "tables": [],
        "landscape": false,
-       "caption_src": "Age, Gender, and Education of Respondents.",
+       "caption_src": "Age, Gender, and Education of Respondents",
        "note_src_sha": "27e60ea45b845d9af0fd1883ccc19ae2644cc633d8c1dc56bb1f9adbdd73fa9b",
        "panel_groups": []
       }
@@ -569,7 +569,7 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "figure.caption.2",
+       "anchor": "figure.caption.15",
        "pdf_page": 7,
        "page_label": "6",
        "note_html": "<p>This figure shows the distribution of responses to Questions <a class=\"ref\" href=\"#q-bg_holdings\" data-ref=\"q:bg_holdings\">5</a> through <a class=\"ref\" href=\"#q-bg_wealth\" data-ref=\"q:bg_wealth\">8</a> of the background survey (<a class=\"ref\" href=\"/section/A.1/\" data-ref=\"app:demo_questionnaire\">Online Appendix A.1</a>). Each bar and the number above it show the share of the 1,540 interviewed investors who select the answer choice. In Panel (a), investors can select several investment types, so the shares sum to more than 100%. All investors hold individual stocks because our screening excludes those who do not, and we therefore omit the answer choice “None of the above.” The sample design fixes the number of investors with at least USD 1,000,000, with USD 500,000–999,999, and with USD 1,000–499,999 in investable assets (Section 3 of the main paper), so we also omit the answer choice “Less than $1,000.” No investor selects “Prefer not to answer” for investable assets or “Less often than once a year” for the frequency of investment changes.</p>",
@@ -590,7 +590,7 @@
        "panels": [],
        "tables": [],
        "landscape": false,
-       "caption_src": "Investment Holdings, Portfolio Changes, and Wealth of Respondents.",
+       "caption_src": "Investment Holdings, Portfolio Changes, and Wealth of Respondents",
        "note_src_sha": "61fd03c548775cf3a3499a1a561f424b440e64a539d30e315f484e9493d6a255",
        "panel_groups": []
       }
@@ -692,7 +692,7 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "figure.caption.3",
+       "anchor": "figure.caption.16",
        "pdf_page": 8,
        "page_label": "7",
        "note_html": "<p>This figure shows the distribution of responses to Questions <a class=\"ref\" href=\"#q-bg_knowledge\" data-ref=\"q:bg_knowledge\">9</a> and <a class=\"ref\" href=\"#q-bg_risk\" data-ref=\"q:bg_risk\">10</a> of the background survey (<a class=\"ref\" href=\"/section/A.1/\" data-ref=\"app:demo_questionnaire\">Online Appendix A.1</a>). Each bar and the number above it show the share of the 1,540 interviewed investors who select the answer choice. The x-axis labels abbreviate the answer choices of Question <a class=\"ref\" href=\"#q-bg_knowledge\" data-ref=\"q:bg_knowledge\">9</a> and <a class=\"ref\" href=\"#q-bg_risk\" data-ref=\"q:bg_risk\">10</a> in the order listed.</p>",
@@ -713,7 +713,7 @@
        "panels": [],
        "tables": [],
        "landscape": false,
-       "caption_src": "Investment Knowledge and Risk Attitude of Respondents.",
+       "caption_src": "Investment Knowledge and Risk Attitude of Respondents",
        "note_src_sha": "9ea4dbb573fda506a25fe7716cf726fea750fe7f57266bcf68129e71465f1f12",
        "panel_groups": []
       }
@@ -876,7 +876,7 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "figure.caption.4",
+       "anchor": "figure.caption.40",
        "pdf_page": 13,
        "page_label": "12",
        "note_html": "<p>This figure shows the distribution of responses to the multiple-choice question the AI agent asks at the end of the open-ended portion of the interview, “After you sell a stock, do you continue to track its performance and how its price evolves?” The three answer choices are “Never,” “Sometimes,” and “Always.” Each bar and the number above it show the share of the 1,507 investors with a valid response who select the answer choice.</p>",
@@ -897,7 +897,7 @@
        "panels": [],
        "tables": [],
        "landscape": false,
-       "caption_src": "Tracking Prices After Selling.",
+       "caption_src": "Tracking Prices After Selling",
        "note_src_sha": "6f1fde60fd800b91b50e1758865491b7e77a2df8519e0d35e4e50140cf1d7e57",
        "panel_groups": []
       }
@@ -952,7 +952,7 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "figure.caption.5",
+       "anchor": "figure.caption.41",
        "pdf_page": 14,
        "page_label": "13",
        "note_html": "<p>This figure shows the distribution of responses to the four multiple-choice questions the AI agent asks at the end of the interview. Panels (a) and (b) report investors’ ratings of the quality of the AI-generated summary of their interview and of the interview experience itself, on a four-point scale ranging from “Poor” to “Very good.” Panel (c) reports whether investors prefer an AI interviewer, prefer a human interviewer, or are indifferent. Panel (d) reports whether they prefer an AI-led conversation, prefer writing out their thoughts in response to an open-ended question, or are indifferent. Each bar and the number above it show the share of investors who select the answer choice among those with a valid response to the question (1,524, 1,533, 1,520, and 1,529 investors in the four panels, respectively).</p>",
@@ -973,7 +973,7 @@
        "panels": [],
        "tables": [],
        "landscape": false,
-       "caption_src": "Responses to Summary and Evaluation Stage Questions.",
+       "caption_src": "Responses to Summary and Evaluation Stage Questions",
        "note_src_sha": "34942f58c5f1f487bdf8adfd6b0af6b0b210428b0036e8d50816473b1058509d",
        "panel_groups": []
       }
@@ -1157,14 +1157,14 @@
     "The scores are highly consistent across runs. The mean absolute deviation of an individual run from the median score of the transcript–mechanism pair is 0.057 points on the four-point scale."
    ],
    "pages": [
-    17,
-    19
+    18,
+    20
    ],
    "page_labels": [
-    "16",
-    "18"
+    "17",
+    "19"
    ],
-   "pdf_href": "/pdf/#page=18",
+   "pdf_href": "/pdf/#page=19",
    "lead": false,
    "members": [],
    "prev": "section/C.2",
@@ -1187,14 +1187,14 @@
    "body_text": "Questionnaire After completing the transcript analysis described in Section 3.3 of the main paper, we re-contact the 1,540 investors who participated in the AI interview and administer a closed-ended follow-up survey (Section 3.4 of the main paper). We personalize the questionnaire based on the heuristics that we identify from each respondent’s interview transcript (the respondent’s “recorded approaches”). Throughout the survey, we refer to heuristics as “approaches” and, for readability, give them plain-language labels, listed below with the corresponding heuristic name in parentheses: Growth Potential (Growth/Innovation), Familiarity/Brand Trust (Familiarity/Brand Affect), Established Companies (Blue-Chip Comfort), Expert Recommendations (Authority-Follow), Price Momentum (Momentum), Multiple Signals Alignment (Confluence), Dividend Income (Dividends), Peer Influence (Social-Copy), Valuation (Undervalued Stocks) (Valuation/Mispricing), Buying the Dip (Buy-the-Dip), and ESG/Personal-values-based Investing (ESG/Values). The labels Fundamental Strength and Technical Analysis are unchanged. Each approach is accompanied by a one-sentence description. Item 6 below reproduces these descriptions in full. Respondents complete the survey in their preferred language (English, French, German, Japanese, or Korean). For brevity, we reproduce only the English version here. Some questions depend on the respondent’s recorded approaches and on answers given earlier in the survey. Display conditions and format notes are given in italics below. They are shown here for context only and do not appear in the survey itself. The shaded boxes do not appear in the survey either. They point to the figures in Online Appendix D.2 that report the responses. The full set of survey questions follows. In our previous interview, we discussed several approaches you use when deciding which stocks to buy. Below are the approaches we recorded for you. Please review them and answer the question that follows. (A table lists the respondent’s recorded approaches, each with a first-person version of its description, e.g., “Fundamental Strength: I buy companies with strong financial health, such as high profits or solid finances.”) Are you currently using these approaches, and if so, for how long? (Asked separately for each recorded approach, as a grid.) Yes – a few months Yes – 1–3 years Yes – more than 3 years No – I used these approaches in the past but no longer use them Responses: Figure D1, Panel (a) 1. (Shown only for approaches marked “No” in the previous question.) When you stopped using these approaches, approximately how long had you been using them? A few months 1–3 years More than 3 years Responses: Figure D1, Panel (b) 2. How long do you usually plan to hold an individual stock for? Choose one of the following answers. A few days or less A few weeks A few months 1–3 years More than 3 years Responses: Figure D2, Panel (a) 3. For the approaches you use, what is the main reason you believe they work well in your country’s stock market? Please select at most 2 answers. My own investing experience People I know personally (e.g., family, friends, colleagues) Professional or expert sources (e.g., journalists, analysts, financial advisors, books by industry experts) Individual creators and online communities (e.g., YouTubers, X/Twitter, Reddit, investing influencers, online forums) Formal education (e.g., finance/economics coursework, degree programs, professional certifications) Other, please specify: ____ Responses: Figure D2, Panel (b) 4. (Shown only to respondents with more than one recorded approach.) It seems that you use more than one approach. Which of the following best describes how you use these approaches? Choose one of the following answers. I use only one approach at a time, but I switch between approaches over time depending on which one seems most appropriate. I use multiple approaches at the same time. Responses: Figure D2, Panel (c) 5. Now consider several other approaches investors sometimes use to decide which stocks to buy. For each approach below, please indicate whether you have heard of it before. (A table lists the approaches not recorded for the respondent, each with a checkbox “I have heard of this approach,” plus “None of the above.” The approach descriptions read:) Fundamental Strength: Buying companies with strong financial health, such as high profits or solid finances. Growth Potential: Buying companies that have the potential to grow a lot because of innovative products or services. Familiarity/Brand Trust: Buying companies one knows well or trusts because of personal familiarity or brand recognition. Established Companies: Preferring large, well-established companies that feel stable and reliable. Expert Recommendations: Buying based on recommendations from trusted experts, advisors, or investment platforms. Price Momentum: Buying stocks whose prices have been rising, expecting the trend to continue. Multiple Signals Alignment: Buying only when several different sources or opinions all point in the same direction. Dividend Income: Buying stocks that provide reliable and attractive dividend income. Peer Influence: Buying stocks recommended or owned by trusted people, such as friends or family. Valuation (Undervalued Stocks): Buying stocks that look cheap compared to what one thinks they are really worth. Buying the Dip: Buying after a price drop believed to be temporary. ESG/Personal-values-based Investing: Buying companies that match one’s ethical, social, or environmental values. Technical Analysis: Buying based on technical indicators or chart patterns. None of the above Responses: Figure D3, Panel (b) 6. For each approach you indicated you have heard of, please check the box if you have used it in the past. (Lists the approaches selected in the previous question, plus “None of the above.”) Responses: Figure D3, Panel (c) 7. (Shown only if the respondent’s recorded approaches and the approaches they report having used in the past together number more than three.) You indicated that you currently use or previously used several approaches. Please select the three approaches you have used for the longest period of time. (Lists the respondent’s recorded and previously used approaches. The three selected approaches (or, for respondents with three or fewer, all recorded and previously used approaches) constitute the respondent’s “top approaches” referenced below.) Responses: Figure D4 8. For each approach below, how much work do you feel each requires? (Asked for each of the respondent’s top approaches, in randomized order. Hovering over an approach name displays short keyword reminders.) Five-point slider: 1 (Very little work) to 5 (A lot of work). Responses: Figure D5, Panel (a) 9. Investors care about different things when picking stocks. Please indicate how important each of the following four goals is to you personally. (The four goals are presented in randomized order.) Five-point slider: 1 (Not important at all) to 5 (Extremely important). Consistent High Returns: I look for stocks that, in most cases, are likely to give me high total returns (from price gains or dividends). For example, if I hold five stocks, I would ideally want most or all of them to do well. High Upside Focus: I look for stocks that could become major winners and deliver very large gains. For example, if I hold five stocks, it is OK if most deliver only moderate returns, as long as at least one becomes a very big winner. Stable Performance: I look for stocks that I expect to give stable and predictable performance. Personal Values Alignment: I invest in companies that match my personal values, even if it means lower financial returns. Responses: Figure D6 10. You are almost done. This is the final detailed question. After this, only four very short and simple questions remain. For each approach below, please indicate how good you think the approach is (in your country’s stock market) at finding stocks that match each goal. (Shown separately for each goal the respondent rated 4 or 5 in the previous question, e.g., “Your goal: Finding stocks that all consistently deliver strong returns (‘consistent high returns’).” Within each goal, asked for each of the respondent’s top approaches. The order of goals and approaches is randomized. Hovering over an approach name displays short keyword reminders.) Five-point slider: 1 (Not effective at all) to 5 (Extremely effective). Responses: Figure D7 11. When it comes to investing, how willing are you to put in time and effort to research stocks before buying? Five-point slider: 1 (Not at all willing) to 5 (Very willing). Responses: Figure D5, Panel (b) 12. Realistically, how much time do you currently have available for researching stocks? Five-point slider: 1 (Very little time) to 5 (A lot of time). Responses: Figure D5, Panel (c) 13. What percentage of your overall investments is usually held in individual stocks (rather than mutual funds, ETFs, or similar)? Choose one of the following answers. 0%–49% (Less than half in individual stocks) 50%–74% (Roughly half or more in individual stocks) 75%–89% (Mostly in individual stocks) 90%–100% (Almost all in individual stocks) Not sure / Prefer not to say Responses: Figure D8, Panel (a) 14. Of the money you hold in individual stocks, what percentage is in local stocks (stocks listed in the country where you live), rather than foreign stocks? Example: If you live in Germany and 80% of the money you hold in individual stocks is invested in stocks listed on German stock exchanges and 20% is invested in stocks listed on foreign exchanges, your answer would be “75%–89%”. Choose one of the following answers. 0%–49% (Less than half local stocks) 50%–74% (Roughly half or more local stocks) 75%–89% (Mostly local stocks) 90%–100% (Almost all local stocks) Not sure / Prefer not to say Responses: Figure D8, Panel (b) 15.",
    "fn_text": [],
    "pages": [
-    20,
-    24
+    21,
+    25
    ],
    "page_labels": [
-    "19",
-    "23"
+    "20",
+    "24"
    ],
-   "pdf_href": "/pdf/#page=21",
+   "pdf_href": "/pdf/#page=22",
    "lead": false,
    "members": [],
    "prev": "section/C.3",
@@ -1217,14 +1217,14 @@
    "body_text": "Responses This section shows the responses of the 600 follow-up survey respondents to the questions in Online Appendix D.1. The figures label heuristics with the names we use in the main paper, and their axis labels abbreviate the answer choices. Figures F6 and F4 summarize the responses to Questions 1, 6, 7, and 11.",
    "fn_text": [],
    "pages": [
-    25,
-    32
+    26,
+    33
    ],
    "page_labels": [
-    "24",
-    "31"
+    "25",
+    "32"
    ],
-   "pdf_href": "/pdf/#page=26",
+   "pdf_href": "/pdf/#page=27",
    "lead": true,
    "members": [
     "figure/D1",
@@ -1257,9 +1257,9 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "figure.caption.6",
-       "pdf_page": 25,
-       "page_label": "24",
+       "anchor": "figure.caption.101",
+       "pdf_page": 26,
+       "page_label": "25",
        "note_html": "<p>This figure shows the distribution of responses to Questions <a class=\"ref\" href=\"#q-fu_use\" data-ref=\"q:fu_use\">1</a> and <a class=\"ref\" href=\"#q-fu_stop\" data-ref=\"q:fu_stop\">2</a> of the follow-up survey (<a class=\"ref\" href=\"/section/D.1/\" data-ref=\"app:followup_questionnaire\">Online Appendix D.1</a>). Panel (a) covers the heuristics identified in each respondent’s interview and shows whether the respondent still uses the heuristic and, if so, for how long (1,538 respondent–heuristic pairs). Panel (b) covers the heuristics that respondents no longer use and shows how long they had used them before stopping (166 pairs). In both panels, the <em>Overall</em> bar at the top pools all heuristics, and the column to the right of the bars reports the number of respondents behind each bar (for the <em>Overall</em> bar, the number of pairs). We order heuristics from top to bottom by their prevalence in the full interview sample. We print shares inside the bars when they are at least 10%. Because we round these shares to whole percentages, they may not sum to 100%.</p>",
        "note_text": "This figure shows the distribution of responses to Questions 1 and 2 of the follow-up survey (Online Appendix D.1). Panel (a) covers the heuristics identified in each respondent’s interview and shows whether the respondent still uses the heuristic and, if so, for how long (1,538 respondent–heuristic pairs). Panel (b) covers the heuristics that respondents no longer use and shows how long they had used them before stopping (166 pairs). In both panels, the Overall bar at the top pools all heuristics, and the column to the right of the bars reports the number of respondents behind each bar (for the Overall bar, the number of pairs). We order heuristics from top to bottom by their prevalence in the full interview sample. We print shares inside the bars when they are at least 10%. Because we round these shares to whole percentages, they may not sum to 100%.",
        "graphics": [
@@ -1278,18 +1278,18 @@
        "panels": [],
        "tables": [],
        "landscape": false,
-       "caption_src": "Continued Use and Duration of Use of Adopted Heuristics.",
+       "caption_src": "Continued Use and Duration of Use of Adopted Heuristics",
        "note_src_sha": "5f293a57a05fe8eb255fab9c03c41ee7dfe3282d7d642c4281b11807c3fc6e2c",
        "panel_groups": []
       }
      ],
      "pages": [
-      25
+      26
      ],
      "page_labels": [
-      "24"
+      "25"
      ],
-     "pdf_href": "/pdf/#page=26",
+     "pdf_href": "/pdf/#page=27",
      "questions": [
       {
        "key": "fu_use",
@@ -1361,9 +1361,9 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "figure.caption.7",
-       "pdf_page": 26,
-       "page_label": "25",
+       "anchor": "figure.caption.102",
+       "pdf_page": 27,
+       "page_label": "26",
        "note_html": "<p>This figure shows the distribution of responses to Questions <a class=\"ref\" href=\"#q-fu_holding\" data-ref=\"q:fu_holding\">3</a> through <a class=\"ref\" href=\"#q-fu_multi\" data-ref=\"q:fu_multi\">5</a> of the follow-up survey (<a class=\"ref\" href=\"/section/D.1/\" data-ref=\"app:followup_questionnaire\">Online Appendix D.1</a>). Each bar and the number above it show the share of respondents who select the answer choice. Panels (a) and (b) cover all 600 respondents. In Panel (b), respondents select up to two sources of their belief that their approaches work in their country’s stock market, so the shares sum to more than 100%, and we order sources by their share. Panel (c) covers the 529 respondents with more than one heuristic identified in the interview. The other respondents do not receive this question.</p>",
        "note_text": "This figure shows the distribution of responses to Questions 3 through 5 of the follow-up survey (Online Appendix D.1). Each bar and the number above it show the share of respondents who select the answer choice. Panels (a) and (b) cover all 600 respondents. In Panel (b), respondents select up to two sources of their belief that their approaches work in their country’s stock market, so the shares sum to more than 100%, and we order sources by their share. Panel (c) covers the 529 respondents with more than one heuristic identified in the interview. The other respondents do not receive this question.",
        "graphics": [
@@ -1382,18 +1382,18 @@
        "panels": [],
        "tables": [],
        "landscape": false,
-       "caption_src": "Planned Holding Periods, Sources of Beliefs About Heuristic Effectiveness, and Use of Multiple Heuristics.",
+       "caption_src": "Planned Holding Periods, Sources of Beliefs About Heuristic Effectiveness, and Use of Multiple Heuristics",
        "note_src_sha": "ff0da6fc77ef7894aeaf6c9ca08a381df2efb4217afc678b611aa31dc6e1f15b",
        "panel_groups": []
       }
      ],
      "pages": [
-      26
+      27
      ],
      "page_labels": [
-      "25"
+      "26"
      ],
-     "pdf_href": "/pdf/#page=27",
+     "pdf_href": "/pdf/#page=28",
      "questions": [
       {
        "key": "fu_holding",
@@ -1475,9 +1475,9 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "figure.caption.8",
-       "pdf_page": 27,
-       "page_label": "26",
+       "anchor": "figure.caption.103",
+       "pdf_page": 28,
+       "page_label": "27",
        "note_html": "<p>This figure shows the responses to Questions <a class=\"ref\" href=\"#q-fu_heard\" data-ref=\"q:fu_heard\">6</a> and <a class=\"ref\" href=\"#q-fu_past\" data-ref=\"q:fu_past\">7</a> of the follow-up survey (<a class=\"ref\" href=\"/section/D.1/\" data-ref=\"app:followup_questionnaire\">Online Appendix D.1</a>), together with the heuristics each respondent adopts. Panel (a) shows, among the 600 follow-up survey respondents, the share who adopt each heuristic, that is, for whom it is among the heuristics we identify in their interview. Panel (b) covers the heuristics a respondent has not adopted and shows the share of respondents who have heard of the heuristic (6,262 respondent–heuristic pairs). Panel (c) shows, among respondents who have heard of a heuristic, the share who have used it in the past (3,285 pairs). In each panel, the column to the right of the bars reports the number of respondents behind each bar. Eleven of the 600 respondents select “None of the above” in Question <a class=\"ref\" href=\"#q-fu_heard\" data-ref=\"q:fu_heard\">6</a>, and 13 of the remaining 589 do so in Question <a class=\"ref\" href=\"#q-fu_past\" data-ref=\"q:fu_past\">7</a>. We order heuristics from top to bottom by their prevalence in the full interview sample.</p>",
        "note_text": "This figure shows the responses to Questions 6 and 7 of the follow-up survey (Online Appendix D.1), together with the heuristics each respondent adopts. Panel (a) shows, among the 600 follow-up survey respondents, the share who adopt each heuristic, that is, for whom it is among the heuristics we identify in their interview. Panel (b) covers the heuristics a respondent has not adopted and shows the share of respondents who have heard of the heuristic (6,262 respondent–heuristic pairs). Panel (c) shows, among respondents who have heard of a heuristic, the share who have used it in the past (3,285 pairs). In each panel, the column to the right of the bars reports the number of respondents behind each bar. Eleven of the 600 respondents select “None of the above” in Question 6, and 13 of the remaining 589 do so in Question 7. We order heuristics from top to bottom by their prevalence in the full interview sample.",
        "graphics": [
@@ -1496,18 +1496,18 @@
        "panels": [],
        "tables": [],
        "landscape": false,
-       "caption_src": "Adoption, Awareness, and Past Use of Heuristics.",
+       "caption_src": "Adoption, Awareness, and Past Use of Heuristics",
        "note_src_sha": "6ea8176b0b7f1b5154b01302a7c04f1f5d5b499a123d0e909f6279c1fd319d83",
        "panel_groups": []
       }
      ],
      "pages": [
-      27
+      28
      ],
      "page_labels": [
-      "26"
+      "27"
      ],
-     "pdf_href": "/pdf/#page=28",
+     "pdf_href": "/pdf/#page=29",
      "questions": [
       {
        "key": "fu_heard",
@@ -1570,9 +1570,9 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "figure.caption.9",
-       "pdf_page": 28,
-       "page_label": "27",
+       "anchor": "figure.caption.104",
+       "pdf_page": 29,
+       "page_label": "28",
        "note_html": "<p>This figure shows the responses to Question <a class=\"ref\" href=\"#q-fu_longest\" data-ref=\"q:fu_longest\">8</a> of the follow-up survey (<a class=\"ref\" href=\"/section/D.1/\" data-ref=\"app:followup_questionnaire\">Online Appendix D.1</a>). Only the 512 respondents whose adopted and previously used heuristics number more than three receive the question. Each of them selects the three used the longest, and the figure shows the share of respondents selecting a heuristic when it is among their options (3,351 respondent–heuristic pairs). The column to the right of the bars reports the number of respondents behind each bar. We order heuristics from top to bottom by their prevalence in the full interview sample.</p>",
        "note_text": "This figure shows the responses to Question 8 of the follow-up survey (Online Appendix D.1). Only the 512 respondents whose adopted and previously used heuristics number more than three receive the question. Each of them selects the three used the longest, and the figure shows the share of respondents selecting a heuristic when it is among their options (3,351 respondent–heuristic pairs). The column to the right of the bars reports the number of respondents behind each bar. We order heuristics from top to bottom by their prevalence in the full interview sample.",
        "graphics": [
@@ -1591,18 +1591,18 @@
        "panels": [],
        "tables": [],
        "landscape": false,
-       "caption_src": "Three Longest-Used Heuristics out of Those Adopted or Previously Used.",
+       "caption_src": "Three Longest-Used Heuristics out of Those Adopted or Previously Used",
        "note_src_sha": "67cdc1ecde0db879f4359726afa224a5a78713ab04cadf5e968e7c382230151e",
        "panel_groups": []
       }
      ],
      "pages": [
-      28
+      29
      ],
      "page_labels": [
-      "27"
+      "28"
      ],
-     "pdf_href": "/pdf/#page=29",
+     "pdf_href": "/pdf/#page=30",
      "questions": [
       {
        "key": "fu_longest",
@@ -1649,9 +1649,9 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "figure.caption.10",
-       "pdf_page": 29,
-       "page_label": "28",
+       "anchor": "figure.caption.105",
+       "pdf_page": 30,
+       "page_label": "29",
        "note_html": "<p>This figure shows the distribution of responses to Questions <a class=\"ref\" href=\"#q-fu_work\" data-ref=\"q:fu_work\">9</a>, <a class=\"ref\" href=\"#q-fu_willing\" data-ref=\"q:fu_willing\">12</a>, and <a class=\"ref\" href=\"#q-fu_time\" data-ref=\"q:fu_time\">13</a> of the follow-up survey (<a class=\"ref\" href=\"/section/D.1/\" data-ref=\"app:followup_questionnaire\">Online Appendix D.1</a>). Panel (a) shows how much work respondents believe each heuristic requires, on a five-point scale from 1 (very little work) to 5 (a lot of work). Respondents rate only the heuristics they have used the longest (at most three), which yields 1,773 respondent–heuristic pairs. The column to the right of the bars reports the number of respondents behind each bar. We print shares inside the bars when they are at least 10%. Because we round these shares to whole percentages, they may not sum to 100%. We order heuristics from top to bottom by their prevalence in the full interview sample. Panels (b) and (c) cover all 600 respondents and show their willingness to research stocks before buying and the time they have available for such research, each on a five-point scale.</p>",
        "note_text": "This figure shows the distribution of responses to Questions 9, 12, and 13 of the follow-up survey (Online Appendix D.1). Panel (a) shows how much work respondents believe each heuristic requires, on a five-point scale from 1 (very little work) to 5 (a lot of work). Respondents rate only the heuristics they have used the longest (at most three), which yields 1,773 respondent–heuristic pairs. The column to the right of the bars reports the number of respondents behind each bar. We print shares inside the bars when they are at least 10%. Because we round these shares to whole percentages, they may not sum to 100%. We order heuristics from top to bottom by their prevalence in the full interview sample. Panels (b) and (c) cover all 600 respondents and show their willingness to research stocks before buying and the time they have available for such research, each on a five-point scale.",
        "graphics": [
@@ -1670,18 +1670,18 @@
        "panels": [],
        "tables": [],
        "landscape": false,
-       "caption_src": "Perceived Work Required by Each Heuristic, Willingness to Research Stocks, and Time Available for Research.",
+       "caption_src": "Perceived Work Required by Each Heuristic, Willingness to Research Stocks, and Time Available for Research",
        "note_src_sha": "3e821ef8113add3ff463dd4cecafcf4b96cc81a2191550c8967c87feb9a26348",
        "panel_groups": []
       }
      ],
      "pages": [
-      29
+      30
      ],
      "page_labels": [
-      "28"
+      "29"
      ],
-     "pdf_href": "/pdf/#page=30",
+     "pdf_href": "/pdf/#page=31",
      "questions": [
       {
        "key": "fu_work",
@@ -1753,9 +1753,9 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "figure.caption.11",
-       "pdf_page": 30,
-       "page_label": "29",
+       "anchor": "figure.caption.106",
+       "pdf_page": 31,
+       "page_label": "30",
        "note_html": "<p>This figure shows the distribution of responses to Question <a class=\"ref\" href=\"#q-fu_goals\" data-ref=\"q:fu_goals\">10</a> of the follow-up survey (<a class=\"ref\" href=\"/section/D.1/\" data-ref=\"app:followup_questionnaire\">Online Appendix D.1</a>). All 600 respondents rate the importance of each of four investment objectives on a five-point scale from 1 (not important at all) to 5 (extremely important). Each panel shows one objective, and each bar and the number above it show the share of respondents who give the rating.</p>",
        "note_text": "This figure shows the distribution of responses to Question 10 of the follow-up survey (Online Appendix D.1). All 600 respondents rate the importance of each of four investment objectives on a five-point scale from 1 (not important at all) to 5 (extremely important). Each panel shows one objective, and each bar and the number above it show the share of respondents who give the rating.",
        "graphics": [
@@ -1774,18 +1774,18 @@
        "panels": [],
        "tables": [],
        "landscape": false,
-       "caption_src": "Personal Importance of the Four Investment Objectives.",
+       "caption_src": "Personal Importance of the Four Investment Objectives",
        "note_src_sha": "c258e10c47fca5a054e9d23da1788ce6c9c21e418a36137bb15bed0045298bc8",
        "panel_groups": []
       }
      ],
      "pages": [
-      30
+      31
      ],
      "page_labels": [
-      "29"
+      "30"
      ],
-     "pdf_href": "/pdf/#page=31",
+     "pdf_href": "/pdf/#page=32",
      "questions": [
       {
        "key": "fu_goals",
@@ -1832,9 +1832,9 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "figure.caption.12",
-       "pdf_page": 31,
-       "page_label": "30",
+       "anchor": "figure.caption.107",
+       "pdf_page": 32,
+       "page_label": "31",
        "note_html": "<p>This figure shows the distribution of responses to Question <a class=\"ref\" href=\"#q-fu_effect\" data-ref=\"q:fu_effect\">11</a> of the follow-up survey (<a class=\"ref\" href=\"/section/D.1/\" data-ref=\"app:followup_questionnaire\">Online Appendix D.1</a>). Respondents rate how good a heuristic is at finding stocks that match an objective in their country’s stock market, on a five-point scale from 1 (not effective at all) to 5 (extremely effective). They rate only the heuristics they have used the longest (at most three) and only for the objectives they rate 4 or 5 in importance. The panels for consistent high returns, high upside focus, stable performance, and personal values alignment cover 1,261, 1,117, 1,366, and 709 respondent–heuristic pairs, respectively, and the column to the right of the bars reports the number of respondents behind each bar. We print shares inside the bars when they are at least 10%. Because we round these shares to whole percentages, they may not sum to 100%. We order heuristics from top to bottom by their prevalence in the full interview sample.</p>",
        "note_text": "This figure shows the distribution of responses to Question 11 of the follow-up survey (Online Appendix D.1). Respondents rate how good a heuristic is at finding stocks that match an objective in their country’s stock market, on a five-point scale from 1 (not effective at all) to 5 (extremely effective). They rate only the heuristics they have used the longest (at most three) and only for the objectives they rate 4 or 5 in importance. The panels for consistent high returns, high upside focus, stable performance, and personal values alignment cover 1,261, 1,117, 1,366, and 709 respondent–heuristic pairs, respectively, and the column to the right of the bars reports the number of respondents behind each bar. We print shares inside the bars when they are at least 10%. Because we round these shares to whole percentages, they may not sum to 100%. We order heuristics from top to bottom by their prevalence in the full interview sample.",
        "graphics": [
@@ -1853,18 +1853,18 @@
        "panels": [],
        "tables": [],
        "landscape": false,
-       "caption_src": "Distribution of Perceived Effectiveness Ratings, by Objective.",
+       "caption_src": "Distribution of Perceived Effectiveness Ratings, by Objective",
        "note_src_sha": "74ba862d6e01d339aeb94b6aff1df0430fe4ece10ddfc0b7d0432a77bbf993e8",
        "panel_groups": []
       }
      ],
      "pages": [
-      31
+      32
      ],
      "page_labels": [
-      "30"
+      "31"
      ],
-     "pdf_href": "/pdf/#page=32",
+     "pdf_href": "/pdf/#page=33",
      "questions": [
       {
        "key": "fu_effect",
@@ -1912,9 +1912,9 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "figure.caption.13",
-       "pdf_page": 32,
-       "page_label": "31",
+       "anchor": "figure.caption.108",
+       "pdf_page": 33,
+       "page_label": "32",
        "note_html": "<p>This figure shows the distribution of responses to Questions <a class=\"ref\" href=\"#q-fu_individual\" data-ref=\"q:fu_individual\">14</a> and <a class=\"ref\" href=\"#q-fu_local\" data-ref=\"q:fu_local\">15</a> of the follow-up survey (<a class=\"ref\" href=\"/section/D.1/\" data-ref=\"app:followup_questionnaire\">Online Appendix D.1</a>). Panel (a) shows the share of respondents’ overall investments held in individual stocks, and Panel (b) shows the share of their individual stockholdings invested in locally listed stocks. Each bar and the number above it show the share of the 600 respondents who select the answer choice.</p>",
        "note_text": "This figure shows the distribution of responses to Questions 14 and 15 of the follow-up survey (Online Appendix D.1). Panel (a) shows the share of respondents’ overall investments held in individual stocks, and Panel (b) shows the share of their individual stockholdings invested in locally listed stocks. Each bar and the number above it show the share of the 600 respondents who select the answer choice.",
        "graphics": [
@@ -1933,18 +1933,18 @@
        "panels": [],
        "tables": [],
        "landscape": false,
-       "caption_src": "Portfolio Shares in Individual Stocks and in Local Stocks.",
+       "caption_src": "Portfolio Shares in Individual Stocks and in Local Stocks",
        "note_src_sha": "6b3f56f6d2f6591a56d6f247ff22e83ea804ca2c04483f62f57579c21ea9acdb",
        "panel_groups": []
       }
      ],
      "pages": [
-      32
+      33
      ],
      "page_labels": [
-      "31"
+      "32"
      ],
-     "pdf_href": "/pdf/#page=33",
+     "pdf_href": "/pdf/#page=34",
      "questions": [
       {
        "key": "fu_individual",
@@ -2017,14 +2017,14 @@
     "The numbers of adopters are 623 for Fundamental Strength, 579 for Growth/Innovation, 433 for Blue-Chip Comfort, 276 for Momentum, 192 for Buy-the-Dip, 216 for Dividends, and 209 for Valuation/Mispricing. These counts correspond to the prevalence of each heuristic in Table 3 of the main paper."
    ],
    "pages": [
-    33,
-    40
+    34,
+    42
    ],
    "page_labels": [
-    "32",
-    "39"
+    "33",
+    "41"
    ],
-   "pdf_href": "/pdf/#page=34",
+   "pdf_href": "/pdf/#page=35",
    "lead": true,
    "members": [
     "figure/E1",
@@ -2053,9 +2053,9 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "figure.caption.16",
-       "pdf_page": 38,
-       "page_label": "37",
+       "anchor": "figure.caption.118",
+       "pdf_page": 40,
+       "page_label": "39",
        "note_html": "<p>This figure compares the estimates under every possible map with those under our mapping. Panels (a) through (c) use GPT-6.1 Sol and Panels (d) through (f) use Claude Sonnet 5.5. Panels (a) and (d) show the belief-accuracy slope of Figure 8 of the main paper. The other panels show the delivery gap, which is the <em>Adopted heuristics</em> row minus the <em>Alternative heuristics</em> row of Table 7 (historical) and Table 8 (out-of-sample). As in the main paper, we standardize effectiveness within each objective, here separately for each map. Each small symbol is one possible distinct map, the large symbols are the consensus maps, and stars mark our mapping. Prompt A (dark circles) supplies no investor background, and Prompt B (light diamonds) adds the background of an investor who adopts the heuristic. Vertical offsets within each row only separate the symbols, and the dashed line marks zero.</p>",
        "note_text": "This figure compares the estimates under every possible map with those under our mapping. Panels (a) through (c) use GPT-6.1 Sol and Panels (d) through (f) use Claude Sonnet 5.5. Panels (a) and (d) show the belief-accuracy slope of Figure 8 of the main paper. The other panels show the delivery gap, which is the Adopted heuristics row minus the Alternative heuristics row of Table 7 (historical) and Table 8 (out-of-sample). As in the main paper, we standardize effectiveness within each objective, here separately for each map. Each small symbol is one possible distinct map, the large symbols are the consensus maps, and stars mark our mapping. Prompt A (dark circles) supplies no investor background, and Prompt B (light diamonds) adds the background of an investor who adopts the heuristic. Vertical offsets within each row only separate the symbols, and the dashed line marks zero.",
        "graphics": [
@@ -2195,7 +2195,7 @@
        ],
        "tables": [],
        "landscape": true,
-       "caption_src": "Sensitivity of Belief Accuracy and Heuristic Delivery to Alternative Mappings.",
+       "caption_src": "Sensitivity of Belief Accuracy and Heuristic Delivery to Alternative Mappings",
        "note_src_sha": "43d3a2e6f16c7523d6eface33bc010f57a25dfcd23a1d6473d3524ced16678a7",
        "panel_groups": [
         {
@@ -2334,12 +2334,12 @@
       }
      ],
      "pages": [
-      38
+      40
      ],
      "page_labels": [
-      "37"
+      "39"
      ],
-     "pdf_href": "/pdf/#page=39",
+     "pdf_href": "/pdf/#page=41",
      "questions": [],
      "n_panels": 6,
      "wide": true,
@@ -2391,9 +2391,9 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "figure.caption.17",
-       "pdf_page": 39,
-       "page_label": "38",
+       "anchor": "figure.caption.119",
+       "pdf_page": 41,
+       "page_label": "40",
        "note_html": "<p>This figure shows the <math><mi>p</mi></math>-values of the estimates in Figure <a class=\"ref\" href=\"/figure/E1/\" data-ref=\"fig:mapping_robustness_estimates\">E1</a>. Panels (a) through (c) use GPT-6.1 Sol and Panels (d) through (f) use Claude Sonnet 5.5. As in the main paper, belief accuracy uses the two-sided wild-cluster bootstrap <math><mi>p</mi></math>-value by country, and delivery uses the one-sided <math><mi>p</mi></math>-value against equally sized random draws from the alternative heuristics. The horizontal axis is logarithmic, the shaded area marks <math><mi>p</mi></math>-values below 0.10, and the dashed and dotted lines mark 0.05 and 0.10. We show <math><mi>p</mi></math>-values below 0.0001, including zero, at 0.0001. Each small symbol is one possible distinct map, the large symbols are the consensus maps, and stars mark our mapping. Prompt A (dark circles) supplies no investor background, and Prompt B (light diamonds) adds the background of an investor who adopts the heuristic. Vertical offsets within each row only separate the symbols.</p>",
        "note_text": "This figure shows the p-values of the estimates in Figure E1. Panels (a) through (c) use GPT-6.1 Sol and Panels (d) through (f) use Claude Sonnet 5.5. As in the main paper, belief accuracy uses the two-sided wild-cluster bootstrap p-value by country, and delivery uses the one-sided p-value against equally sized random draws from the alternative heuristics. The horizontal axis is logarithmic, the shaded area marks p-values below 0.10, and the dashed and dotted lines mark 0.05 and 0.10. We show p-values below 0.0001, including zero, at 0.0001. Each small symbol is one possible distinct map, the large symbols are the consensus maps, and stars mark our mapping. Prompt A (dark circles) supplies no investor background, and Prompt B (light diamonds) adds the background of an investor who adopts the heuristic. Vertical offsets within each row only separate the symbols.",
        "graphics": [
@@ -2533,7 +2533,7 @@
        ],
        "tables": [],
        "landscape": true,
-       "caption_src": "Statistical Significance of Belief Accuracy and Heuristic Delivery across Alternative Mappings.",
+       "caption_src": "Statistical Significance of Belief Accuracy and Heuristic Delivery across Alternative Mappings",
        "note_src_sha": "a33ca09eea863bb467b8a0af966f2095978da71eb4ee6b90ae7e4c65adff5bed",
        "panel_groups": [
         {
@@ -2672,12 +2672,12 @@
       }
      ],
      "pages": [
-      39
+      41
      ],
      "page_labels": [
-      "38"
+      "40"
      ],
-     "pdf_href": "/pdf/#page=40",
+     "pdf_href": "/pdf/#page=42",
      "questions": [],
      "n_panels": 6,
      "wide": true,
@@ -2730,9 +2730,9 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "table.caption.14",
-       "pdf_page": 36,
-       "page_label": "35",
+       "anchor": "table.caption.116",
+       "pdf_page": 38,
+       "page_label": "37",
        "note_html": "<p>This table reports the consensus mapping of each model–prompt setup. For each heuristic, the consensus keeps the characteristics that the responses select most often, and the number it keeps is the most common number of characteristics per response. Panel A uses GPT-6.1 Sol and Panel B uses Claude Sonnet 5.5. Prompt A supplies no investor background, and Prompt B adds the background of an interviewed investor who adopts the heuristic. Bold variable names mark characteristics that our mapping assigns to the same heuristic, and a blank cell means that the consensus for that prompt does not include the characteristic. As in Table 5 of the main paper, a positive (negative) sign means that we take the heuristic to favor stocks with high (low) values of the characteristic. Within each heuristic, the bold characteristics come first, in the order of that table, and the others follow in alphabetical order of their variable names. We give the models definitions based on the JKP documentation of factors, so their wording can differ from that in this table, which is polished for readability.</p>",
        "note_text": "This table reports the consensus mapping of each model–prompt setup. For each heuristic, the consensus keeps the characteristics that the responses select most often, and the number it keeps is the most common number of characteristics per response. Panel A uses GPT-6.1 Sol and Panel B uses Claude Sonnet 5.5. Prompt A supplies no investor background, and Prompt B adds the background of an interviewed investor who adopts the heuristic. Bold variable names mark characteristics that our mapping assigns to the same heuristic, and a blank cell means that the consensus for that prompt does not include the characteristic. As in Table 5 of the main paper, a positive (negative) sign means that we take the heuristic to favor stocks with high (low) values of the characteristic. Within each heuristic, the bold characteristics come first, in the order of that table, and the others follow in alphabetical order of their variable names. We give the models definitions based on the JKP documentation of factors, so their wording can differ from that in this table, which is polished for readability.",
        "graphics": [],
@@ -2796,16 +2796,16 @@
         }
        ],
        "landscape": false,
-       "caption_src": "Mapping Heuristics to Firm Characteristics: LLM Consensus.",
+       "caption_src": "Mapping Heuristics to Firm Characteristics: LLM Consensus",
        "note_src_sha": "ef85dc5a643810b1c62a253cf7e2d51290d3e45974b46e77b5a74aafba1a044e",
        "panel_groups": []
       },
       {
        "n": 2,
        "continued": true,
-       "anchor": "table.caption.15",
-       "pdf_page": 37,
-       "page_label": "36",
+       "anchor": "table.caption.117",
+       "pdf_page": 39,
+       "page_label": "38",
        "note_html": "",
        "note_text": "",
        "graphics": [],
@@ -2877,20 +2877,20 @@
         }
        ],
        "landscape": false,
-       "caption_src": "Mapping Heuristics to Firm Characteristics: LLM Consensus (continued).",
+       "caption_src": "Mapping Heuristics to Firm Characteristics: LLM Consensus (continued)",
        "note_src_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
        "panel_groups": []
       }
      ],
      "pages": [
-      36,
-      37
+      38,
+      39
      ],
      "page_labels": [
-      "35",
-      "36"
+      "37",
+      "38"
      ],
-     "pdf_href": "/pdf/#page=37",
+     "pdf_href": "/pdf/#page=39",
      "questions": [],
      "n_panels": 0,
      "wide": false,
@@ -2929,9 +2929,9 @@
       {
        "n": 1,
        "continued": false,
-       "anchor": "table.caption.18",
-       "pdf_page": 40,
-       "page_label": "39",
+       "anchor": "table.caption.120",
+       "pdf_page": 42,
+       "page_label": "41",
        "note_html": "<p>This table reports, for each model–prompt setup, the percentage of the <math><mi>N</mi></math> possible distinct maps that support each main-paper result. We count each distinct map once. A map supports a result if its estimate matches the corresponding main-paper estimate in sign and in whether it is significant at the 10% level, or favors our hypothesis more strongly. GPT-based mapping uses GPT-6.1 Sol and Claude-based mapping uses Claude Sonnet 5.5. Prompt A supplies no investor background, and Prompt B adds the background of an investor who adopts the heuristic. As in the main paper, belief accuracy uses the two-sided wild-cluster bootstrap <math><mi>p</mi></math>-value by country, and delivery uses the one-sided <math><mi>p</mi></math>-value against equally sized random draws from the alternative heuristics.</p>",
        "note_text": "This table reports, for each model–prompt setup, the percentage of the N possible distinct maps that support each main-paper result. We count each distinct map once. A map supports a result if its estimate matches the corresponding main-paper estimate in sign and in whether it is significant at the 10% level, or favors our hypothesis more strongly. GPT-based mapping uses GPT-6.1 Sol and Claude-based mapping uses Claude Sonnet 5.5. Prompt A supplies no investor background, and Prompt B adds the background of an investor who adopts the heuristic. As in the main paper, belief accuracy uses the two-sided wild-cluster bootstrap p-value by country, and delivery uses the one-sided p-value against equally sized random draws from the alternative heuristics.",
        "graphics": [],
@@ -3007,18 +3007,18 @@
         }
        ],
        "landscape": false,
-       "caption_src": "Support for Main-Paper Results across Alternative Mappings.",
+       "caption_src": "Support for Main-Paper Results across Alternative Mappings",
        "note_src_sha": "39612cf182963e4394a5cec22f2ceeae142b3d8bdeb0fc3b3195ee5f0e127468",
        "panel_groups": []
       }
      ],
      "pages": [
-      40
+      42
      ],
      "page_labels": [
-      "39"
+      "41"
      ],
-     "pdf_href": "/pdf/#page=41",
+     "pdf_href": "/pdf/#page=43",
      "questions": [],
      "n_panels": 0,
      "wide": false,
@@ -3127,14 +3127,14 @@
   "body_text": "References Argyle, Lisa P., Ethan C. Busby, Nancy Fulda, Joshua R. Gubler, Christopher Rytting, and David Wingate, 2023, Out of one, many: Using language models to simulate human samples, Political Analysis 31, 337–351. Barberis, Nicholas, 2018, Psychology-Based Models of Asset Prices and Trading Volume, in B. Douglas Bernheim, Stefano DellaVigna, and David Laibson, ed.: Handbook of Behavioral Economics: Applications and Foundations 1, vol. 1 of Handbook of Behavioral Economics - Foundations and Applications 1 . pp. 79–175 (North-Holland). Brown, Tom, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al., 2020, Language models are few-shot learners, Advances in Neural Information Processing Systems 33, 1877–1901. Campbell, John Y., and Luis M. Viceira, 1999, Consumption and Portfolio Decisions when Expected Returns are Time Varying, The Quarterly Journal of Economics 114, 433–495. Google, 2024, Prompting Guide 101, https://services.google.com/fh/files/misc/gemini_for_workspace_prompt_guide_october_2024_digital_final.pdf. Han, Bing, David Hirshleifer, and Johan Walden, 2022, Social Transmission Bias and Investor Behavior, Journal of Financial and Quantitative Analysis 57, 390–412. Hofstede, G., G.J. Hofstede, and M. Minkov, 2010, Cultures and Organizations: Software of the Mind, Third Edition (McGraw Hill LLC). Jensen, Theis Ingerslev, Bryan Kelly, and Lasse Heje Pedersen, 2023, Is There a Replication Crisis in Finance?, The Journal of Finance 78, 2465–2518. Kong, Aobo, Shiwan Zhao, Hao Chen, Qicheng Li, Yong Qin, Ruiqi Sun, Xin Zhou, Enzhi Wang, and Xiaohang Dong, 2023, Better zero-shot reasoning with role-play prompting, arXiv preprint arXiv:2308.07702. MacCallum, Noah, and Julian Lee, 2025, GPT-4.1 Prompting Guide, https://cookbook.openai.com/examples/gpt4-1_prompting_guide. Minkov, Michael, and Anneli Kaasa, 2022, Do dimensions of culture exist objectively? a validation of the revised Minkov-Hofstede model of culture with World Values Survey items and scores for 102 countries, Journal of International Management 28, 100971. Shanahan, Murray, Kyle McDonell, and Laria Reynolds, 2023, Role play with large language models, Nature 623, 493–498. Wang, Xuezhi, Jason Wei, Dale Schuurmans, Quoc Le, Ed Chi, Sharan Narang, Aakanksha Chowdhery, and Denny Zhou, 2022, Self-consistency improves chain of thought reasoning in language models, arXiv preprint arXiv:2203.11171. Wei, Jason, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Fei Xia, Ed Chi, Quoc V Le, Denny Zhou, et al., 2022, Chain-of-thought prompting elicits reasoning in large language models, Advances in Neural Information Processing Systems 35, 24824–24837. Yao, Shunyu, Dian Yu, Jeffrey Zhao, Izhak Shafran, Tom Griffiths, Yuan Cao, and Karthik Narasimhan, 2023, Tree of thoughts: Deliberate problem solving with large language models, Advances in Neural Information Processing Systems 36, 11809–11822.",
   "fn_text": [],
   "pages": [
-   68,
-   68
+   71,
+   71
   ],
   "page_labels": [
-   "67",
-   "67"
+   "70",
+   "70"
   ],
-  "pdf_href": "/pdf/#page=69",
+  "pdf_href": "/pdf/#page=72",
   "prev": "table/F18",
   "next": null
  },
@@ -3340,7 +3340,7 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.1",
+     "anchor": "figure.caption.14",
      "pdf_page": 6,
      "page_label": "5",
      "note_text": "This figure shows the distribution of responses to Questions 2 through 4 of the background survey (Online Appendix A.1). Each bar and the number above it show the share of the 1,540 interviewed investors who select the answer choice. We omit the answer choice “Under 21” because our screening excludes those under 21.",
@@ -3360,7 +3360,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Age, Gender, and Education of Respondents.",
+     "caption_src": "Age, Gender, and Education of Respondents",
      "note_src_sha": "27e60ea45b845d9af0fd1883ccc19ae2644cc633d8c1dc56bb1f9adbdd73fa9b"
     }
    ]
@@ -3460,7 +3460,7 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.2",
+     "anchor": "figure.caption.15",
      "pdf_page": 7,
      "page_label": "6",
      "note_text": "This figure shows the distribution of responses to Questions 5 through 8 of the background survey (Online Appendix A.1). Each bar and the number above it show the share of the 1,540 interviewed investors who select the answer choice. In Panel (a), investors can select several investment types, so the shares sum to more than 100%. All investors hold individual stocks because our screening excludes those who do not, and we therefore omit the answer choice “None of the above.” The sample design fixes the number of investors with at least USD 1,000,000, with USD 500,000–999,999, and with USD 1,000–499,999 in investable assets (Section 3 of the main paper), so we also omit the answer choice “Less than $1,000.” No investor selects “Prefer not to answer” for investable assets or “Less often than once a year” for the frequency of investment changes.",
@@ -3480,7 +3480,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Investment Holdings, Portfolio Changes, and Wealth of Respondents.",
+     "caption_src": "Investment Holdings, Portfolio Changes, and Wealth of Respondents",
      "note_src_sha": "61fd03c548775cf3a3499a1a561f424b440e64a539d30e315f484e9493d6a255"
     }
    ]
@@ -3550,7 +3550,7 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.3",
+     "anchor": "figure.caption.16",
      "pdf_page": 8,
      "page_label": "7",
      "note_text": "This figure shows the distribution of responses to Questions 9 and 10 of the background survey (Online Appendix A.1). Each bar and the number above it show the share of the 1,540 interviewed investors who select the answer choice. The x-axis labels abbreviate the answer choices of Question 9 and 10 in the order listed.",
@@ -3570,7 +3570,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Investment Knowledge and Risk Attitude of Respondents.",
+     "caption_src": "Investment Knowledge and Risk Attitude of Respondents",
      "note_src_sha": "9ea4dbb573fda506a25fe7716cf726fea750fe7f57266bcf68129e71465f1f12"
     }
    ]
@@ -3623,7 +3623,7 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.4",
+     "anchor": "figure.caption.40",
      "pdf_page": 13,
      "page_label": "12",
      "note_text": "This figure shows the distribution of responses to the multiple-choice question the AI agent asks at the end of the open-ended portion of the interview, “After you sell a stock, do you continue to track its performance and how its price evolves?” The three answer choices are “Never,” “Sometimes,” and “Always.” Each bar and the number above it show the share of the 1,507 investors with a valid response who select the answer choice.",
@@ -3643,7 +3643,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Tracking Prices After Selling.",
+     "caption_src": "Tracking Prices After Selling",
      "note_src_sha": "6f1fde60fd800b91b50e1758865491b7e77a2df8519e0d35e4e50140cf1d7e57"
     }
    ]
@@ -3746,7 +3746,7 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.5",
+     "anchor": "figure.caption.41",
      "pdf_page": 14,
      "page_label": "13",
      "note_text": "This figure shows the distribution of responses to the four multiple-choice questions the AI agent asks at the end of the interview. Panels (a) and (b) report investors’ ratings of the quality of the AI-generated summary of their interview and of the interview experience itself, on a four-point scale ranging from “Poor” to “Very good.” Panel (c) reports whether investors prefer an AI interviewer, prefer a human interviewer, or are indifferent. Panel (d) reports whether they prefer an AI-led conversation, prefer writing out their thoughts in response to an open-ended question, or are indifferent. Each bar and the number above it show the share of investors who select the answer choice among those with a valid response to the question (1,524, 1,533, 1,520, and 1,529 investors in the four panels, respectively).",
@@ -3766,7 +3766,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Responses to Summary and Evaluation Stage Questions.",
+     "caption_src": "Responses to Summary and Evaluation Stage Questions",
      "note_src_sha": "34942f58c5f1f487bdf8adfd6b0af6b0b210428b0036e8d50816473b1058509d"
     }
    ]
@@ -3786,12 +3786,12 @@
    "section": "D",
    "subsection": "D.2",
    "pages": [
-    25
+    26
    ],
    "page_labels": [
-    "24"
+    "25"
    ],
-   "pdf_href": "/pdf/#page=26",
+   "pdf_href": "/pdf/#page=27",
    "questions": [
     {
      "key": "fu_use",
@@ -3847,9 +3847,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.6",
-     "pdf_page": 25,
-     "page_label": "24",
+     "anchor": "figure.caption.101",
+     "pdf_page": 26,
+     "page_label": "25",
      "note_text": "This figure shows the distribution of responses to Questions 1 and 2 of the follow-up survey (Online Appendix D.1). Panel (a) covers the heuristics identified in each respondent’s interview and shows whether the respondent still uses the heuristic and, if so, for how long (1,538 respondent–heuristic pairs). Panel (b) covers the heuristics that respondents no longer use and shows how long they had used them before stopping (166 pairs). In both panels, the Overall bar at the top pools all heuristics, and the column to the right of the bars reports the number of respondents behind each bar (for the Overall bar, the number of pairs). We order heuristics from top to bottom by their prevalence in the full interview sample. We print shares inside the bars when they are at least 10%. Because we round these shares to whole percentages, they may not sum to 100%.",
      "graphics": [
       {
@@ -3867,7 +3867,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Continued Use and Duration of Use of Adopted Heuristics.",
+     "caption_src": "Continued Use and Duration of Use of Adopted Heuristics",
      "note_src_sha": "5f293a57a05fe8eb255fab9c03c41ee7dfe3282d7d642c4281b11807c3fc6e2c"
     }
    ]
@@ -3887,12 +3887,12 @@
    "section": "D",
    "subsection": "D.2",
    "pages": [
-    26
+    27
    ],
    "page_labels": [
-    "25"
+    "26"
    ],
-   "pdf_href": "/pdf/#page=27",
+   "pdf_href": "/pdf/#page=28",
    "questions": [
     {
      "key": "fu_holding",
@@ -3958,9 +3958,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.7",
-     "pdf_page": 26,
-     "page_label": "25",
+     "anchor": "figure.caption.102",
+     "pdf_page": 27,
+     "page_label": "26",
      "note_text": "This figure shows the distribution of responses to Questions 3 through 5 of the follow-up survey (Online Appendix D.1). Each bar and the number above it show the share of respondents who select the answer choice. Panels (a) and (b) cover all 600 respondents. In Panel (b), respondents select up to two sources of their belief that their approaches work in their country’s stock market, so the shares sum to more than 100%, and we order sources by their share. Panel (c) covers the 529 respondents with more than one heuristic identified in the interview. The other respondents do not receive this question.",
      "graphics": [
       {
@@ -3978,7 +3978,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Planned Holding Periods, Sources of Beliefs About Heuristic Effectiveness, and Use of Multiple Heuristics.",
+     "caption_src": "Planned Holding Periods, Sources of Beliefs About Heuristic Effectiveness, and Use of Multiple Heuristics",
      "note_src_sha": "ff0da6fc77ef7894aeaf6c9ca08a381df2efb4217afc678b611aa31dc6e1f15b"
     }
    ]
@@ -3998,12 +3998,12 @@
    "section": "D",
    "subsection": "D.2",
    "pages": [
-    27
+    28
    ],
    "page_labels": [
-    "26"
+    "27"
    ],
-   "pdf_href": "/pdf/#page=28",
+   "pdf_href": "/pdf/#page=29",
    "questions": [
     {
      "key": "fu_heard",
@@ -4050,9 +4050,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.8",
-     "pdf_page": 27,
-     "page_label": "26",
+     "anchor": "figure.caption.103",
+     "pdf_page": 28,
+     "page_label": "27",
      "note_text": "This figure shows the responses to Questions 6 and 7 of the follow-up survey (Online Appendix D.1), together with the heuristics each respondent adopts. Panel (a) shows, among the 600 follow-up survey respondents, the share who adopt each heuristic, that is, for whom it is among the heuristics we identify in their interview. Panel (b) covers the heuristics a respondent has not adopted and shows the share of respondents who have heard of the heuristic (6,262 respondent–heuristic pairs). Panel (c) shows, among respondents who have heard of a heuristic, the share who have used it in the past (3,285 pairs). In each panel, the column to the right of the bars reports the number of respondents behind each bar. Eleven of the 600 respondents select “None of the above” in Question 6, and 13 of the remaining 589 do so in Question 7. We order heuristics from top to bottom by their prevalence in the full interview sample.",
      "graphics": [
       {
@@ -4070,7 +4070,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Adoption, Awareness, and Past Use of Heuristics.",
+     "caption_src": "Adoption, Awareness, and Past Use of Heuristics",
      "note_src_sha": "6ea8176b0b7f1b5154b01302a7c04f1f5d5b499a123d0e909f6279c1fd319d83"
     }
    ]
@@ -4090,12 +4090,12 @@
    "section": "D",
    "subsection": "D.2",
    "pages": [
-    28
+    29
    ],
    "page_labels": [
-    "27"
+    "28"
    ],
-   "pdf_href": "/pdf/#page=29",
+   "pdf_href": "/pdf/#page=30",
    "questions": [
     {
      "key": "fu_longest",
@@ -4126,9 +4126,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.9",
-     "pdf_page": 28,
-     "page_label": "27",
+     "anchor": "figure.caption.104",
+     "pdf_page": 29,
+     "page_label": "28",
      "note_text": "This figure shows the responses to Question 8 of the follow-up survey (Online Appendix D.1). Only the 512 respondents whose adopted and previously used heuristics number more than three receive the question. Each of them selects the three used the longest, and the figure shows the share of respondents selecting a heuristic when it is among their options (3,351 respondent–heuristic pairs). The column to the right of the bars reports the number of respondents behind each bar. We order heuristics from top to bottom by their prevalence in the full interview sample.",
      "graphics": [
       {
@@ -4146,7 +4146,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Three Longest-Used Heuristics out of Those Adopted or Previously Used.",
+     "caption_src": "Three Longest-Used Heuristics out of Those Adopted or Previously Used",
      "note_src_sha": "67cdc1ecde0db879f4359726afa224a5a78713ab04cadf5e968e7c382230151e"
     }
    ]
@@ -4166,12 +4166,12 @@
    "section": "D",
    "subsection": "D.2",
    "pages": [
-    29
+    30
    ],
    "page_labels": [
-    "28"
+    "29"
    ],
-   "pdf_href": "/pdf/#page=30",
+   "pdf_href": "/pdf/#page=31",
    "questions": [
     {
      "key": "fu_work",
@@ -4227,9 +4227,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.10",
-     "pdf_page": 29,
-     "page_label": "28",
+     "anchor": "figure.caption.105",
+     "pdf_page": 30,
+     "page_label": "29",
      "note_text": "This figure shows the distribution of responses to Questions 9, 12, and 13 of the follow-up survey (Online Appendix D.1). Panel (a) shows how much work respondents believe each heuristic requires, on a five-point scale from 1 (very little work) to 5 (a lot of work). Respondents rate only the heuristics they have used the longest (at most three), which yields 1,773 respondent–heuristic pairs. The column to the right of the bars reports the number of respondents behind each bar. We print shares inside the bars when they are at least 10%. Because we round these shares to whole percentages, they may not sum to 100%. We order heuristics from top to bottom by their prevalence in the full interview sample. Panels (b) and (c) cover all 600 respondents and show their willingness to research stocks before buying and the time they have available for such research, each on a five-point scale.",
      "graphics": [
       {
@@ -4247,7 +4247,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Perceived Work Required by Each Heuristic, Willingness to Research Stocks, and Time Available for Research.",
+     "caption_src": "Perceived Work Required by Each Heuristic, Willingness to Research Stocks, and Time Available for Research",
      "note_src_sha": "3e821ef8113add3ff463dd4cecafcf4b96cc81a2191550c8967c87feb9a26348"
     }
    ]
@@ -4267,12 +4267,12 @@
    "section": "D",
    "subsection": "D.2",
    "pages": [
-    30
+    31
    ],
    "page_labels": [
-    "29"
+    "30"
    ],
-   "pdf_href": "/pdf/#page=31",
+   "pdf_href": "/pdf/#page=32",
    "questions": [
     {
      "key": "fu_goals",
@@ -4303,9 +4303,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.11",
-     "pdf_page": 30,
-     "page_label": "29",
+     "anchor": "figure.caption.106",
+     "pdf_page": 31,
+     "page_label": "30",
      "note_text": "This figure shows the distribution of responses to Question 10 of the follow-up survey (Online Appendix D.1). All 600 respondents rate the importance of each of four investment objectives on a five-point scale from 1 (not important at all) to 5 (extremely important). Each panel shows one objective, and each bar and the number above it show the share of respondents who give the rating.",
      "graphics": [
       {
@@ -4323,7 +4323,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Personal Importance of the Four Investment Objectives.",
+     "caption_src": "Personal Importance of the Four Investment Objectives",
      "note_src_sha": "c258e10c47fca5a054e9d23da1788ce6c9c21e418a36137bb15bed0045298bc8"
     }
    ]
@@ -4343,12 +4343,12 @@
    "section": "D",
    "subsection": "D.2",
    "pages": [
-    31
+    32
    ],
    "page_labels": [
-    "30"
+    "31"
    ],
-   "pdf_href": "/pdf/#page=32",
+   "pdf_href": "/pdf/#page=33",
    "questions": [
     {
      "key": "fu_effect",
@@ -4380,9 +4380,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.12",
-     "pdf_page": 31,
-     "page_label": "30",
+     "anchor": "figure.caption.107",
+     "pdf_page": 32,
+     "page_label": "31",
      "note_text": "This figure shows the distribution of responses to Question 11 of the follow-up survey (Online Appendix D.1). Respondents rate how good a heuristic is at finding stocks that match an objective in their country’s stock market, on a five-point scale from 1 (not effective at all) to 5 (extremely effective). They rate only the heuristics they have used the longest (at most three) and only for the objectives they rate 4 or 5 in importance. The panels for consistent high returns, high upside focus, stable performance, and personal values alignment cover 1,261, 1,117, 1,366, and 709 respondent–heuristic pairs, respectively, and the column to the right of the bars reports the number of respondents behind each bar. We print shares inside the bars when they are at least 10%. Because we round these shares to whole percentages, they may not sum to 100%. We order heuristics from top to bottom by their prevalence in the full interview sample.",
      "graphics": [
       {
@@ -4400,7 +4400,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Distribution of Perceived Effectiveness Ratings, by Objective.",
+     "caption_src": "Distribution of Perceived Effectiveness Ratings, by Objective",
      "note_src_sha": "74ba862d6e01d339aeb94b6aff1df0430fe4ece10ddfc0b7d0432a77bbf993e8"
     }
    ]
@@ -4420,12 +4420,12 @@
    "section": "D",
    "subsection": "D.2",
    "pages": [
-    32
+    33
    ],
    "page_labels": [
-    "31"
+    "32"
    ],
-   "pdf_href": "/pdf/#page=33",
+   "pdf_href": "/pdf/#page=34",
    "questions": [
     {
      "key": "fu_individual",
@@ -4470,9 +4470,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.13",
-     "pdf_page": 32,
-     "page_label": "31",
+     "anchor": "figure.caption.108",
+     "pdf_page": 33,
+     "page_label": "32",
      "note_text": "This figure shows the distribution of responses to Questions 14 and 15 of the follow-up survey (Online Appendix D.1). Panel (a) shows the share of respondents’ overall investments held in individual stocks, and Panel (b) shows the share of their individual stockholdings invested in locally listed stocks. Each bar and the number above it show the share of the 600 respondents who select the answer choice.",
      "graphics": [
       {
@@ -4490,7 +4490,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Portfolio Shares in Individual Stocks and in Local Stocks.",
+     "caption_src": "Portfolio Shares in Individual Stocks and in Local Stocks",
      "note_src_sha": "6b3f56f6d2f6591a56d6f247ff22e83ea804ca2c04483f62f57579c21ea9acdb"
     }
    ]
@@ -4510,12 +4510,12 @@
    "section": "E",
    "subsection": null,
    "pages": [
-    38
+    40
    ],
    "page_labels": [
-    "37"
+    "39"
    ],
-   "pdf_href": "/pdf/#page=39",
+   "pdf_href": "/pdf/#page=41",
    "questions": [],
    "n_panels": 6,
    "wide": true,
@@ -4551,9 +4551,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.16",
-     "pdf_page": 38,
-     "page_label": "37",
+     "anchor": "figure.caption.118",
+     "pdf_page": 40,
+     "page_label": "39",
      "note_text": "This figure compares the estimates under every possible map with those under our mapping. Panels (a) through (c) use GPT-6.1 Sol and Panels (d) through (f) use Claude Sonnet 5.5. Panels (a) and (d) show the belief-accuracy slope of Figure 8 of the main paper. The other panels show the delivery gap, which is the Adopted heuristics row minus the Alternative heuristics row of Table 7 (historical) and Table 8 (out-of-sample). As in the main paper, we standardize effectiveness within each objective, here separately for each map. Each small symbol is one possible distinct map, the large symbols are the consensus maps, and stars mark our mapping. Prompt A (dark circles) supplies no investor background, and Prompt B (light diamonds) adds the background of an investor who adopts the heuristic. Vertical offsets within each row only separate the symbols, and the dashed line marks zero.",
      "graphics": [
       {
@@ -4692,7 +4692,7 @@
      ],
      "tables": [],
      "landscape": true,
-     "caption_src": "Sensitivity of Belief Accuracy and Heuristic Delivery to Alternative Mappings.",
+     "caption_src": "Sensitivity of Belief Accuracy and Heuristic Delivery to Alternative Mappings",
      "note_src_sha": "43d3a2e6f16c7523d6eface33bc010f57a25dfcd23a1d6473d3524ced16678a7"
     }
    ]
@@ -4712,12 +4712,12 @@
    "section": "E",
    "subsection": null,
    "pages": [
-    39
+    41
    ],
    "page_labels": [
-    "38"
+    "40"
    ],
-   "pdf_href": "/pdf/#page=40",
+   "pdf_href": "/pdf/#page=42",
    "questions": [],
    "n_panels": 6,
    "wide": true,
@@ -4754,9 +4754,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.17",
-     "pdf_page": 39,
-     "page_label": "38",
+     "anchor": "figure.caption.119",
+     "pdf_page": 41,
+     "page_label": "40",
      "note_text": "This figure shows the p-values of the estimates in Figure E1. Panels (a) through (c) use GPT-6.1 Sol and Panels (d) through (f) use Claude Sonnet 5.5. As in the main paper, belief accuracy uses the two-sided wild-cluster bootstrap p-value by country, and delivery uses the one-sided p-value against equally sized random draws from the alternative heuristics. The horizontal axis is logarithmic, the shaded area marks p-values below 0.10, and the dashed and dotted lines mark 0.05 and 0.10. We show p-values below 0.0001, including zero, at 0.0001. Each small symbol is one possible distinct map, the large symbols are the consensus maps, and stars mark our mapping. Prompt A (dark circles) supplies no investor background, and Prompt B (light diamonds) adds the background of an investor who adopts the heuristic. Vertical offsets within each row only separate the symbols.",
      "graphics": [
       {
@@ -4895,7 +4895,7 @@
      ],
      "tables": [],
      "landscape": true,
-     "caption_src": "Statistical Significance of Belief Accuracy and Heuristic Delivery across Alternative Mappings.",
+     "caption_src": "Statistical Significance of Belief Accuracy and Heuristic Delivery across Alternative Mappings",
      "note_src_sha": "a33ca09eea863bb467b8a0af966f2095978da71eb4ee6b90ae7e4c65adff5bed"
     }
    ]
@@ -4915,14 +4915,14 @@
    "section": "E",
    "subsection": null,
    "pages": [
-    36,
-    37
+    38,
+    39
    ],
    "page_labels": [
-    "35",
-    "36"
+    "37",
+    "38"
    ],
-   "pdf_href": "/pdf/#page=37",
+   "pdf_href": "/pdf/#page=39",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -4945,9 +4945,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.14",
-     "pdf_page": 36,
-     "page_label": "35",
+     "anchor": "table.caption.116",
+     "pdf_page": 38,
+     "page_label": "37",
      "note_text": "This table reports the consensus mapping of each model–prompt setup. For each heuristic, the consensus keeps the characteristics that the responses select most often, and the number it keeps is the most common number of characteristics per response. Panel A uses GPT-6.1 Sol and Panel B uses Claude Sonnet 5.5. Prompt A supplies no investor background, and Prompt B adds the background of an interviewed investor who adopts the heuristic. Bold variable names mark characteristics that our mapping assigns to the same heuristic, and a blank cell means that the consensus for that prompt does not include the characteristic. As in Table 5 of the main paper, a positive (negative) sign means that we take the heuristic to favor stocks with high (low) values of the characteristic. Within each heuristic, the bold characteristics come first, in the order of that table, and the others follow in alphabetical order of their variable names. We give the models definitions based on the JKP documentation of factors, so their wording can differ from that in this table, which is polished for readability.",
      "graphics": [],
      "panels": [],
@@ -5010,15 +5010,15 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Mapping Heuristics to Firm Characteristics: LLM Consensus.",
+     "caption_src": "Mapping Heuristics to Firm Characteristics: LLM Consensus",
      "note_src_sha": "ef85dc5a643810b1c62a253cf7e2d51290d3e45974b46e77b5a74aafba1a044e"
     },
     {
      "n": 2,
      "continued": true,
-     "anchor": "table.caption.15",
-     "pdf_page": 37,
-     "page_label": "36",
+     "anchor": "table.caption.117",
+     "pdf_page": 39,
+     "page_label": "38",
      "note_text": "",
      "graphics": [],
      "panels": [],
@@ -5089,7 +5089,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Mapping Heuristics to Firm Characteristics: LLM Consensus (continued).",
+     "caption_src": "Mapping Heuristics to Firm Characteristics: LLM Consensus (continued)",
      "note_src_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     }
    ]
@@ -5109,12 +5109,12 @@
    "section": "E",
    "subsection": null,
    "pages": [
-    40
+    42
    ],
    "page_labels": [
-    "39"
+    "41"
    ],
-   "pdf_href": "/pdf/#page=41",
+   "pdf_href": "/pdf/#page=43",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -5133,9 +5133,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.18",
-     "pdf_page": 40,
-     "page_label": "39",
+     "anchor": "table.caption.120",
+     "pdf_page": 42,
+     "page_label": "41",
      "note_text": "This table reports, for each model–prompt setup, the percentage of the N possible distinct maps that support each main-paper result. We count each distinct map once. A map supports a result if its estimate matches the corresponding main-paper estimate in sign and in whether it is significant at the 10% level, or favors our hypothesis more strongly. GPT-based mapping uses GPT-6.1 Sol and Claude-based mapping uses Claude Sonnet 5.5. Prompt A supplies no investor background, and Prompt B adds the background of an investor who adopts the heuristic. As in the main paper, belief accuracy uses the two-sided wild-cluster bootstrap p-value by country, and delivery uses the one-sided p-value against equally sized random draws from the alternative heuristics.",
      "graphics": [],
      "panels": [],
@@ -5210,7 +5210,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Support for Main-Paper Results across Alternative Mappings.",
+     "caption_src": "Support for Main-Paper Results across Alternative Mappings",
      "note_src_sha": "39612cf182963e4394a5cec22f2ceeae142b3d8bdeb0fc3b3195ee5f0e127468"
     }
    ]
@@ -5230,12 +5230,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    41
+    44
    ],
    "page_labels": [
-    "40"
+    "43"
    ],
-   "pdf_href": "/pdf/#page=42",
+   "pdf_href": "/pdf/#page=45",
    "questions": [],
    "n_panels": 2,
    "wide": false,
@@ -5275,9 +5275,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.19",
-     "pdf_page": 41,
-     "page_label": "40",
+     "anchor": "figure.caption.122",
+     "pdf_page": 44,
+     "page_label": "43",
      "note_text": "This figure shows hierarchical clustering dendrograms that group the ten countries in our sample under two measures of similarity. In Panel (a), we represent each country by the proportions of its investors who invoke each of the thirteen heuristics. An investor invokes a heuristic if its score is at least three (“meaningful contributor”). In Panel (b), we represent each country by its six Hofstede culture scores (power distance, individualism, masculinity, uncertainty avoidance, long-term orientation, and indulgence). The six-dimension framework is from Hofstede, Hofstede, and Minkov (2010), and we obtain the country scores from The Culture Factor Group (https://www.theculturefactor.com/country-comparison-tool), whose individualism and long-term-orientation scores are the revisions of Minkov and Kaasa (2022) rather than the values published in Hofstede, Hofstede, and Minkov (2010). In both panels, we standardize each element of the vector across the ten countries and cluster the countries agglomeratively using complete linkage with Euclidean distance. The vertical axis reports the height at which two clusters merge, that is, the largest Euclidean distance between any pair of countries in the two merged clusters. Greater height indicates greater dissimilarity. The dashed horizontal line marks the threshold that defines the clusters, 6.0 in Panel (a) and 4.5 in Panel (b). We draw branches that merge below the threshold in cluster-specific shades and branches above it in black.",
      "graphics": [],
      "panels": [
@@ -5324,7 +5324,7 @@
      ],
      "tables": [],
      "landscape": false,
-     "caption_src": "Country Similarity in Heuristic Prevalence and Culture.",
+     "caption_src": "Country Similarity in Heuristic Prevalence and Culture",
      "note_src_sha": "dd1a31abb965ed9ccb35856aa76e9e59d41bc94fb366be93a4dd62db0430848c"
     }
    ]
@@ -5345,14 +5345,14 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    42,
-    43
+    45,
+    46
    ],
    "page_labels": [
-    "41",
-    "42"
+    "44",
+    "45"
    ],
-   "pdf_href": "/pdf/#page=43",
+   "pdf_href": "/pdf/#page=46",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -5383,9 +5383,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.20",
-     "pdf_page": 42,
-     "page_label": "41",
+     "anchor": "figure.caption.123",
+     "pdf_page": 45,
+     "page_label": "44",
      "note_text": "This figure shows, separately by investor demographic group, the proportion of investors who invoke each of the thirteen identified recurrent heuristics. We split the investors into two groups along each demographic dimension. This page reports the splits by gender (Female and Male), age (Older, age ≥ 35, and Younger), and education (Higher education, bachelor’s degree or above, and No higher education). The gender split omits the single investor who reports another gender. The next page reports the splits by wealth, knowledge, and risk attitude. Within each panel we arrange the thirteen heuristics radially, with the distance from the center representing the proportion of investors in that group who invoke the heuristic. The dark region marks the proportion for whom the heuristic scores four (“primary driver”), the light region the proportion for whom it scores at least three (“meaningful contributor”). The dark region is therefore nested within the light one. The radial axis runs from 0% at the center to 60% at the outer circle, with concentric circles at 10-percentage-point intervals.",
      "graphics": [
       {
@@ -5403,15 +5403,15 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Heuristic Prevalence by Investor Demographics.",
+     "caption_src": "Heuristic Prevalence by Investor Demographics",
      "note_src_sha": "7beec050b5743c5c090a4dee4390937d9c6e0bc339e75312504f44e7d6f00c51"
     },
     {
      "n": 2,
      "continued": true,
-     "anchor": "figure.caption.21",
-     "pdf_page": 43,
-     "page_label": "42",
+     "anchor": "figure.caption.124",
+     "pdf_page": 46,
+     "page_label": "45",
      "note_text": "This figure continues Figure F2, reporting the splits by wealth (High wealth, investable assets ≥ USD 500,000, and Low/medium wealth), knowledge (Advanced, self-reported advanced or expert investment knowledge, and Beginner, complete beginner through intermediate), and risk attitude (Aggressive, self-reported willingness to take above-average or substantial financial risks, and Conservative, willingness to take no or average financial risks).",
      "graphics": [
       {
@@ -5429,7 +5429,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Heuristic Prevalence by Investor Demographics (continued).",
+     "caption_src": "Heuristic Prevalence by Investor Demographics (continued)",
      "note_src_sha": "8279ab3b1578228ab6280a6e6e515b0290b301e3c85933dc970bc5d67edbb340"
     }
    ]
@@ -5452,16 +5452,16 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    44,
-    45,
-    46
+    47,
+    48,
+    49
    ],
    "page_labels": [
-    "43",
-    "44",
-    "45"
+    "46",
+    "47",
+    "48"
    ],
-   "pdf_href": "/pdf/#page=45",
+   "pdf_href": "/pdf/#page=48",
    "questions": [],
    "n_panels": 3,
    "wide": false,
@@ -5505,9 +5505,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.22",
-     "pdf_page": 44,
-     "page_label": "43",
+     "anchor": "figure.caption.125",
+     "pdf_page": 47,
+     "page_label": "46",
      "note_text": "This figure shows the delivery of each of the seven heuristics covered by archival data on each of the three financial objectives, separately for each of the ten countries. We report delivery in native units, that is, before the within-objective standardization that turns delivery into historical effectiveness ηHhgc (Section 5.3 of the main paper). As in Table 5 of the main paper, the delivery of a heuristic averages the outcome across the long–short portfolios formed on its three characteristics. Panel (a) reports returns delivery, the CAPM alpha of the value-weighted long–short portfolio (percent per month). Panel (b) reports upside delivery, the long-minus-short difference in the equally weighted fraction of stocks whose returns over the following month fall in the top 1% of the country-month cross-section (percentage points). Panel (c) reports stability delivery, the long-minus-short difference in the value-weighted average total return volatility over the following month (percent), with the sign reversed so that higher values indicate greater stability. All three panels use the same characteristic sorts over July 2015 through June 2025, the ten years preceding our interviews, and further right means better delivery. We draw each observation as the two- or three-letter code of its heuristic, namely FS (Fundamental Strength), GRW (Growth/Innovation), BC (Blue-Chip Comfort), MOM (Momentum), VAL (Valuation/Mispricing), DIV (Dividends), and BTD (Buy-the-Dip). The dashed vertical line marks zero delivery. Chip color and vertical position within each country band vary by heuristic for legibility and carry no information beyond the code. The All countries row reports the simple mean for each heuristic and objective across the ten countries.",
      "graphics": [],
      "panels": [
@@ -5534,15 +5534,15 @@
      ],
      "tables": [],
      "landscape": false,
-     "caption_src": "Historical Heuristic Delivery by Country and Objective.",
+     "caption_src": "Historical Heuristic Delivery by Country and Objective",
      "note_src_sha": "d8a51049231a37e43a1bdf3c3c6d2d0a643effe7d48f372dea63b88143ab2bba"
     },
     {
      "n": 2,
      "continued": true,
-     "anchor": "figure.caption.23",
-     "pdf_page": 45,
-     "page_label": "44",
+     "anchor": "figure.caption.126",
+     "pdf_page": 48,
+     "page_label": "47",
      "note_text": "This figure continues Figure F3, reporting upside delivery. See the notes to that figure for definitions.",
      "graphics": [],
      "panels": [
@@ -5569,15 +5569,15 @@
      ],
      "tables": [],
      "landscape": false,
-     "caption_src": "Historical Heuristic Delivery by Country and Objective (continued).",
+     "caption_src": "Historical Heuristic Delivery by Country and Objective (continued)",
      "note_src_sha": "5823532aa47c1db2fee84a765bd9f67ab6ed349ebeea00b2d495f12466054edf"
     },
     {
      "n": 3,
      "continued": true,
-     "anchor": "figure.caption.24",
-     "pdf_page": 46,
-     "page_label": "45",
+     "anchor": "figure.caption.127",
+     "pdf_page": 49,
+     "page_label": "48",
      "note_text": "This figure continues Figure F3, reporting stability delivery. See the notes to that figure for definitions.",
      "graphics": [],
      "panels": [
@@ -5604,7 +5604,7 @@
      ],
      "tables": [],
      "landscape": false,
-     "caption_src": "Historical Heuristic Delivery by Country and Objective (continued).",
+     "caption_src": "Historical Heuristic Delivery by Country and Objective (continued)",
      "note_src_sha": "a186a940b4fce46c2462d2fab7b0cd3e583e7ed475cd88d678b4840b59b507dd"
     }
    ]
@@ -5624,12 +5624,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    47
+    50
    ],
    "page_labels": [
-    "46"
+    "49"
    ],
-   "pdf_href": "/pdf/#page=48",
+   "pdf_href": "/pdf/#page=51",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -5663,9 +5663,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.25",
-     "pdf_page": 47,
-     "page_label": "46",
+     "anchor": "figure.caption.128",
+     "pdf_page": 50,
+     "page_label": "49",
      "note_text": "This figure shows, for each of the thirteen heuristics, the proportions of follow-up survey respondents who use it, used it in the past, or have heard of it. The diamond marks the proportion of respondents in whose interview we identify the heuristic. The dark shading marks respondents in whose interview we identify the heuristic and who still use it at the time of the follow-up survey. The medium shading marks respondents who used the heuristic in the past but no longer do, and the light shading respondents who have heard of it but have never used it. The right end of each bar therefore marks the proportion of respondents aware of the heuristic. We order heuristics from top to bottom by their prevalence in the full interview sample.",
      "graphics": [
       {
@@ -5683,7 +5683,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Heuristic Awareness and Use.",
+     "caption_src": "Heuristic Awareness and Use",
      "note_src_sha": "fabc2162ff9f33bc23173b4da5bb3468c05a7954cfbf55d73fa301371bdc1247"
     }
    ]
@@ -5703,12 +5703,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    48
+    51
    ],
    "page_labels": [
-    "47"
+    "50"
    ],
-   "pdf_href": "/pdf/#page=49",
+   "pdf_href": "/pdf/#page=52",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -5725,9 +5725,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.26",
-     "pdf_page": 48,
-     "page_label": "47",
+     "anchor": "figure.caption.129",
+     "pdf_page": 51,
+     "page_label": "50",
      "note_text": "This figure shows the proportion of investor pairs whose two members share no heuristic. An investor invokes a heuristic if its score is at least three (“meaningful contributor”). We form all 1,185,030 unordered pairs of the 1,540 investors we interviewed and classify a pair as non-overlapping if its two members invoke no heuristic in common. Each bar conditions on the number of heuristics a focal investor invokes. The bar labeled k reports the proportion of non-overlapping pairs among all pairs in which at least one member invokes exactly k heuristics, and “4+” denotes four or more. A pair can enter more than one bar.",
      "graphics": [
       {
@@ -5745,7 +5745,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Proportion of Investor Pairs with Non-Overlapping Heuristics.",
+     "caption_src": "Proportion of Investor Pairs with Non-Overlapping Heuristics",
      "note_src_sha": "a900018db6f45da0c31fb70be6398f27b6478bae6bb6aeb84db6da4092945c84"
     }
    ]
@@ -5765,12 +5765,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    49
+    52
    ],
    "page_labels": [
-    "48"
+    "51"
    ],
-   "pdf_href": "/pdf/#page=50",
+   "pdf_href": "/pdf/#page=53",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -5790,9 +5790,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "figure.caption.27",
-     "pdf_page": 49,
-     "page_label": "48",
+     "anchor": "figure.caption.130",
+     "pdf_page": 52,
+     "page_label": "51",
      "note_text": "This figure shows how effective the follow-up survey respondents believe each of the thirteen heuristics to be. On a five-point scale from 1 (“not effective at all”) to 5 (“extremely effective”), respondents rate how effective a heuristic is at finding stocks that match an investment objective in their own local stock market. The rated heuristics are those we identify in the interview of the respondent plus any others the respondent reports having used in the past. When these exceed three, the respondent rates only the three longest-used. We elicit ratings only for the objectives the respondent rates 4 or 5 in importance, so every rating comes from a respondent who has used the heuristic and considers the objective important. Twenty-one respondents rate no objective that highly and therefore rate no heuristic. The figure pools the four objectives. Because a respondent rates between one and four objectives, we first average the ratings of each respondent for a heuristic across the objectives she rates and then average across respondents, so that each respondent counts equally. Markers report these means and horizontal bars the associated 95% confidence intervals, and we truncate the horizontal axis to the range of the estimates. All thirteen means lie above the midpoint of the scale. The number of respondents behind a heuristic ranges from 25 to 263. We order heuristics from top to bottom by their prevalence in the full interview sample.",
      "graphics": [
       {
@@ -5810,7 +5810,7 @@
      "panels": [],
      "tables": [],
      "landscape": false,
-     "caption_src": "Perceived Heuristic Effectiveness.",
+     "caption_src": "Perceived Heuristic Effectiveness",
      "note_src_sha": "076c25188f23b318c6f475dae060d28aa9f8463ee8fb737d815d28b572b09b81"
     }
    ]
@@ -5830,12 +5830,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    50
+    53
    ],
    "page_labels": [
-    "49"
+    "52"
    ],
-   "pdf_href": "/pdf/#page=51",
+   "pdf_href": "/pdf/#page=54",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -5864,9 +5864,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.28",
-     "pdf_page": 50,
-     "page_label": "49",
+     "anchor": "table.caption.131",
+     "pdf_page": 53,
+     "page_label": "52",
      "note_text": "This table examines whether the duration of the interview varies across investor demographics and countries. The dependent variable is the interview duration in minutes, the elapsed time between the first and the last message of the interview transcript, without winsorization. We estimate ordinary least squares regressions. Column (1) includes the six demographic indicators as independent variables, and Column (2) adds country indicators, with the US as the omitted category. The six demographic indicators are Male, Older (age ≥ 35), Higher education (bachelor’s degree or above), High wealth (investable assets ≥ USD 500,000), Advanced (self-reported advanced or expert investment knowledge), and Aggressive (self-reported willingness to take above-average or substantial financial risks). We demean them so that the intercept in Column (1) represents the unconditional sample average. We do not demean the country indicators, so the intercept in Column (2) is the fitted duration for a US investor with sample-average demographics. The sample comprises the 1,540 investors we interviewed. We report heteroskedasticity-robust standard errors in parentheses. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
      "graphics": [],
      "panels": [],
@@ -5875,35 +5875,35 @@
        "letter": "",
        "heading_html": "",
        "heading": "",
-       "html": "<table class=\"tbl\" id=\"t-F1\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"3\" scope=\"colgroup\">Dependent variable: Interview Duration (Minutes)</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th></tr></thead><tbody><tr class=\"rule bg05\"><th class=\"a-l\" scope=\"row\">Male</th><td class=\"a-c\">1.977***<br>(0.747)</td><td class=\"a-c\">1.570**<br>(0.772)</td></tr><tr><th class=\"a-l\" scope=\"row\">Older</th><td class=\"a-c\">2.557***<br>(0.829)</td><td class=\"a-c\">3.003***<br>(0.854)</td></tr><tr><th class=\"a-l\" scope=\"row\">Higher education</th><td class=\"a-c\">−1.049<br>(0.931)</td><td class=\"a-c\">−1.575<br>(0.968)</td></tr><tr><th class=\"a-l\" scope=\"row\">High wealth</th><td class=\"a-c\">0.468<br>(0.786)</td><td class=\"a-c\">0.700<br>(0.776)</td></tr><tr><th class=\"a-l\" scope=\"row\">Advanced</th><td class=\"a-c\">0.314<br>(0.930)</td><td class=\"a-c\">−0.328<br>(1.011)</td></tr><tr><th class=\"a-l\" scope=\"row\">Aggressive</th><td class=\"a-c\">0.429<br>(0.804)</td><td class=\"a-c\">0.078<br>(0.787)</td></tr><tr><th class=\"a-l\" scope=\"row\">Australia</th><td class=\"a-c\"></td><td class=\"a-c\">1.004<br>(1.586)</td></tr><tr><th class=\"a-l\" scope=\"row\">Canada</th><td class=\"a-c\"></td><td class=\"a-c\">−0.350<br>(1.420)</td></tr><tr><th class=\"a-l\" scope=\"row\">France</th><td class=\"a-c\"></td><td class=\"a-c\">−1.138<br>(1.086)</td></tr><tr><th class=\"a-l\" scope=\"row\">Germany</th><td class=\"a-c\"></td><td class=\"a-c\">1.528<br>(1.458)</td></tr><tr><th class=\"a-l\" scope=\"row\">India</th><td class=\"a-c\"></td><td class=\"a-c\">5.374***<br>(1.432)</td></tr><tr><th class=\"a-l\" scope=\"row\">Japan</th><td class=\"a-c\"></td><td class=\"a-c\">4.853***<br>(1.433)</td></tr><tr><th class=\"a-l\" scope=\"row\">Singapore</th><td class=\"a-c\"></td><td class=\"a-c\">−1.922<br>(1.545)</td></tr><tr><th class=\"a-l\" scope=\"row\">South Korea</th><td class=\"a-c\"></td><td class=\"a-c\">0.119<br>(1.215)</td></tr><tr><th class=\"a-l\" scope=\"row\">UK</th><td class=\"a-c\"></td><td class=\"a-c\">0.164<br>(1.493)</td></tr><tr><th class=\"a-l\" scope=\"row\">Intercept</th><td class=\"a-c\">18.738***<br>(0.350)</td><td class=\"a-c\">17.862***<br>(0.730)</td></tr><tr class=\"rule bg05\"><th class=\"a-l\" scope=\"row\">Observations</th><td class=\"a-c\">1,540</td><td class=\"a-c\">1,540</td></tr><tr><th class=\"a-l\" scope=\"row\"><math><msup><mi>R</mi><mn class=\"tml-med-pad\">2</mn></msup></math></th><td class=\"a-c\">0.014</td><td class=\"a-c\">0.037</td></tr></tbody></table>",
+       "html": "<table class=\"tbl\" id=\"t-F1\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"3\" scope=\"colgroup\">Dependent variable: Interview Duration (Minutes)</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Male</th><td class=\"a-c\">+1.977***</td><td class=\"a-c\">+1.570**</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.747)</td><td class=\"a-c\">(0.772)</td></tr><tr><th class=\"a-l\" scope=\"row\">Older</th><td class=\"a-c\">+2.557***</td><td class=\"a-c\">+3.003***</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.829)</td><td class=\"a-c\">(0.854)</td></tr><tr><th class=\"a-l\" scope=\"row\">Higher education</th><td class=\"a-c\">−1.049</td><td class=\"a-c\">−1.575</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.931)</td><td class=\"a-c\">(0.968)</td></tr><tr><th class=\"a-l\" scope=\"row\">High wealth</th><td class=\"a-c\">+0.468</td><td class=\"a-c\">+0.700</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.786)</td><td class=\"a-c\">(0.776)</td></tr><tr><th class=\"a-l\" scope=\"row\">Advanced</th><td class=\"a-c\">+0.314</td><td class=\"a-c\">−0.328</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.930)</td><td class=\"a-c\">(1.011)</td></tr><tr><th class=\"a-l\" scope=\"row\">Aggressive</th><td class=\"a-c\">+0.429</td><td class=\"a-c\">+0.078</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.804)</td><td class=\"a-c\">(0.787)</td></tr><tr><th class=\"a-l\" scope=\"row\">Australia</th><td class=\"a-c\"></td><td class=\"a-c\">+1.004</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(1.586)</td></tr><tr><th class=\"a-l\" scope=\"row\">Canada</th><td class=\"a-c\"></td><td class=\"a-c\">−0.350</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(1.420)</td></tr><tr><th class=\"a-l\" scope=\"row\">France</th><td class=\"a-c\"></td><td class=\"a-c\">−1.138</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(1.086)</td></tr><tr><th class=\"a-l\" scope=\"row\">Germany</th><td class=\"a-c\"></td><td class=\"a-c\">+1.528</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(1.458)</td></tr><tr><th class=\"a-l\" scope=\"row\">India</th><td class=\"a-c\"></td><td class=\"a-c\">+5.374***</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(1.432)</td></tr><tr><th class=\"a-l\" scope=\"row\">Japan</th><td class=\"a-c\"></td><td class=\"a-c\">+4.853***</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(1.433)</td></tr><tr><th class=\"a-l\" scope=\"row\">Singapore</th><td class=\"a-c\"></td><td class=\"a-c\">−1.922</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(1.545)</td></tr><tr><th class=\"a-l\" scope=\"row\">South Korea</th><td class=\"a-c\"></td><td class=\"a-c\">+0.119</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(1.215)</td></tr><tr><th class=\"a-l\" scope=\"row\">UK</th><td class=\"a-c\"></td><td class=\"a-c\">+0.164</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(1.493)</td></tr><tr><th class=\"a-l\" scope=\"row\">Intercept</th><td class=\"a-c\">+18.738***</td><td class=\"a-c\">+17.862***</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.350)</td><td class=\"a-c\">(0.730)</td></tr><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Observations</th><td class=\"a-c\">1,540</td><td class=\"a-c\">1,540</td></tr><tr><th class=\"a-l\" scope=\"row\"><math><msup><mi>R</mi><mn class=\"tml-med-pad\">2</mn></msup></math></th><td class=\"a-c\">0.014</td><td class=\"a-c\">0.037</td></tr></tbody></table>",
        "dense": false,
        "ncols": 3,
        "numbers": [
         "1",
         "2",
         "1.977",
-        "0.747",
         "1.570",
+        "0.747",
         "0.772",
         "2.557",
-        "0.829",
         "3.003",
+        "0.829",
         "0.854",
         "-1.049",
-        "0.931",
         "-1.575",
+        "0.931",
         "0.968",
         "0.468",
-        "0.786",
         "0.700",
+        "0.786",
         "0.776",
         "0.314",
-        "0.930",
         "-0.328",
+        "0.930",
         "1.011",
         "0.429",
-        "0.804",
         "0.078",
+        "0.804",
         "0.787",
         "1.004",
         "1.586",
@@ -5924,8 +5924,8 @@
         "0.164",
         "1.493",
         "18.738",
-        "0.350",
         "17.862",
+        "0.350",
         "0.730",
         "1,540",
         "1,540",
@@ -5933,12 +5933,12 @@
         "0.037"
        ],
        "src": "tables/reg_interview_duration.tex",
-       "src_sha": "a5b53e883fc1c31c81c1012066236246e5714bed5ddb08a051ff6108ec3325bc",
-       "cells": "Dependent variable: Interview Duration (Minutes)  (1) (2) Male 1.977*** (0.747) 1.570** (0.772) Older 2.557*** (0.829) 3.003*** (0.854) Higher education -1.049 (0.931) -1.575 (0.968) High wealth 0.468 (0.786) 0.700 (0.776) Advanced 0.314 (0.930) -0.328 (1.011) Aggressive 0.429 (0.804) 0.078 (0.787) Australia  1.004 (1.586) Canada  -0.350 (1.420) France  -1.138 (1.086) Germany  1.528 (1.458) India  5.374*** (1.432) Japan  4.853*** (1.433) Singapore  -1.922 (1.545) South Korea  0.119 (1.215) UK  0.164 (1.493) Intercept 18.738*** (0.350) 17.862*** (0.730) Observations 1,540 1,540 R² 0.014 0.037"
+       "src_sha": "0c423c460bd047510d844e565d9c87fa67f465c436a9594ddb8c21e1dd85ccca",
+       "cells": "Dependent variable: Interview Duration (Minutes)  (1) (2) Male +1.977*** +1.570**  (0.747) (0.772) Older +2.557*** +3.003***  (0.829) (0.854) Higher education -1.049 -1.575  (0.931) (0.968) High wealth +0.468 +0.700  (0.786) (0.776) Advanced +0.314 -0.328  (0.930) (1.011) Aggressive +0.429 +0.078  (0.804) (0.787) Australia  +1.004   (1.586) Canada  -0.350   (1.420) France  -1.138   (1.086) Germany  +1.528   (1.458) India  +5.374***   (1.432) Japan  +4.853***   (1.433) Singapore  -1.922   (1.545) South Korea  +0.119   (1.215) UK  +0.164   (1.493) Intercept +18.738*** +17.862***  (0.350) (0.730) Observations 1,540 1,540 R² 0.014 0.037"
       }
      ],
      "landscape": false,
-     "caption_src": "Interview Duration.",
+     "caption_src": "Interview Duration",
      "note_src_sha": "806f79399ad4ada0a161bc9b960d51d4324c03e69f9cd16fb6412242494018cf"
     }
    ]
@@ -5958,12 +5958,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    51
+    54
    ],
    "page_labels": [
-    "50"
+    "53"
    ],
-   "pdf_href": "/pdf/#page=52",
+   "pdf_href": "/pdf/#page=55",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -5992,9 +5992,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.30",
-     "pdf_page": 51,
-     "page_label": "50",
+     "anchor": "table.caption.132",
+     "pdf_page": 54,
+     "page_label": "53",
      "note_text": "This table examines whether the preference for an AI over a human interviewer varies across investor demographics and countries. The dependent variable equals 100 if the investor answers that she would prefer to be interviewed by an AI interviewer in the future, and zero if she prefers a human interviewer, is indifferent, or gives no usable answer (168, 766, and 20 investors, respectively). We therefore drop no investor, and the coefficients are in percentage points. We estimate linear probability models. Column (1) includes the six demographic indicators as independent variables, and Column (2) adds country indicators, with the US as the omitted category. The six demographic indicators are Male, Older (age ≥ 35), Higher education (bachelor’s degree or above), High wealth (investable assets ≥ USD 500,000), Advanced (self-reported advanced or expert investment knowledge), and Aggressive (self-reported willingness to take above-average or substantial financial risks). We demean them so that the intercept in Column (1) represents the unconditional sample average. We do not demean the country indicators, so the intercept in Column (2) is the fitted value for a US investor with sample-average demographics. The sample comprises the 1,540 investors we interviewed. We report heteroskedasticity-robust standard errors in parentheses. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
      "graphics": [],
      "panels": [],
@@ -6003,35 +6003,35 @@
        "letter": "",
        "heading_html": "",
        "heading": "",
-       "html": "<table class=\"tbl\" id=\"t-F2\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"3\" scope=\"colgroup\">Dependent variable: Prefer AI Interviewer</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th></tr></thead><tbody><tr class=\"rule bg05\"><th class=\"a-l\" scope=\"row\">Male</th><td class=\"a-c\">3.813<br>(2.647)</td><td class=\"a-c\">2.524<br>(2.655)</td></tr><tr><th class=\"a-l\" scope=\"row\">Older</th><td class=\"a-c\">−11.957***<br>(2.963)</td><td class=\"a-c\">−9.952***<br>(2.969)</td></tr><tr><th class=\"a-l\" scope=\"row\">Higher education</th><td class=\"a-c\">8.475***<br>(3.018)</td><td class=\"a-c\">5.359*<br>(3.039)</td></tr><tr><th class=\"a-l\" scope=\"row\">High wealth</th><td class=\"a-c\">−1.259<br>(2.647)</td><td class=\"a-c\">−0.096<br>(2.591)</td></tr><tr><th class=\"a-l\" scope=\"row\">Advanced</th><td class=\"a-c\">4.306<br>(3.187)</td><td class=\"a-c\">1.837<br>(3.314)</td></tr><tr><th class=\"a-l\" scope=\"row\">Aggressive</th><td class=\"a-c\">4.782*<br>(2.720)</td><td class=\"a-c\">2.777<br>(2.726)</td></tr><tr><th class=\"a-l\" scope=\"row\">Australia</th><td class=\"a-c\"></td><td class=\"a-c\">−4.705<br>(4.699)</td></tr><tr><th class=\"a-l\" scope=\"row\">Canada</th><td class=\"a-c\"></td><td class=\"a-c\">4.720<br>(4.883)</td></tr><tr><th class=\"a-l\" scope=\"row\">France</th><td class=\"a-c\"></td><td class=\"a-c\">−11.704***<br>(4.443)</td></tr><tr><th class=\"a-l\" scope=\"row\">Germany</th><td class=\"a-c\"></td><td class=\"a-c\">8.828*<br>(5.078)</td></tr><tr><th class=\"a-l\" scope=\"row\">India</th><td class=\"a-c\"></td><td class=\"a-c\">28.832***<br>(5.349)</td></tr><tr><th class=\"a-l\" scope=\"row\">Japan</th><td class=\"a-c\"></td><td class=\"a-c\">11.794**<br>(5.256)</td></tr><tr><th class=\"a-l\" scope=\"row\">Singapore</th><td class=\"a-c\"></td><td class=\"a-c\">9.509*<br>(5.070)</td></tr><tr><th class=\"a-l\" scope=\"row\">South Korea</th><td class=\"a-c\"></td><td class=\"a-c\">18.263***<br>(5.171)</td></tr><tr><th class=\"a-l\" scope=\"row\">UK</th><td class=\"a-c\"></td><td class=\"a-c\">1.191<br>(4.823)</td></tr><tr><th class=\"a-l\" scope=\"row\">Intercept</th><td class=\"a-c\">38.052***<br>(1.224)</td><td class=\"a-c\">31.986***<br>(2.834)</td></tr><tr class=\"rule bg05\"><th class=\"a-l\" scope=\"row\">Observations</th><td class=\"a-c\">1,540</td><td class=\"a-c\">1,540</td></tr><tr><th class=\"a-l\" scope=\"row\"><math><msup><mi>R</mi><mn class=\"tml-med-pad\">2</mn></msup></math></th><td class=\"a-c\">0.025</td><td class=\"a-c\">0.070</td></tr></tbody></table>",
+       "html": "<table class=\"tbl\" id=\"t-F2\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"3\" scope=\"colgroup\">Dependent variable: Prefer AI Interviewer</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Male</th><td class=\"a-c\">+3.813</td><td class=\"a-c\">+2.524</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(2.647)</td><td class=\"a-c\">(2.655)</td></tr><tr><th class=\"a-l\" scope=\"row\">Older</th><td class=\"a-c\">−11.957***</td><td class=\"a-c\">−9.952***</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(2.963)</td><td class=\"a-c\">(2.969)</td></tr><tr><th class=\"a-l\" scope=\"row\">Higher education</th><td class=\"a-c\">+8.475***</td><td class=\"a-c\">+5.359*</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(3.018)</td><td class=\"a-c\">(3.039)</td></tr><tr><th class=\"a-l\" scope=\"row\">High wealth</th><td class=\"a-c\">−1.259</td><td class=\"a-c\">−0.096</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(2.647)</td><td class=\"a-c\">(2.591)</td></tr><tr><th class=\"a-l\" scope=\"row\">Advanced</th><td class=\"a-c\">+4.306</td><td class=\"a-c\">+1.837</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(3.187)</td><td class=\"a-c\">(3.314)</td></tr><tr><th class=\"a-l\" scope=\"row\">Aggressive</th><td class=\"a-c\">+4.782*</td><td class=\"a-c\">+2.777</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(2.720)</td><td class=\"a-c\">(2.726)</td></tr><tr><th class=\"a-l\" scope=\"row\">Australia</th><td class=\"a-c\"></td><td class=\"a-c\">−4.705</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(4.699)</td></tr><tr><th class=\"a-l\" scope=\"row\">Canada</th><td class=\"a-c\"></td><td class=\"a-c\">+4.720</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(4.883)</td></tr><tr><th class=\"a-l\" scope=\"row\">France</th><td class=\"a-c\"></td><td class=\"a-c\">−11.704***</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(4.443)</td></tr><tr><th class=\"a-l\" scope=\"row\">Germany</th><td class=\"a-c\"></td><td class=\"a-c\">+8.828*</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(5.078)</td></tr><tr><th class=\"a-l\" scope=\"row\">India</th><td class=\"a-c\"></td><td class=\"a-c\">+28.832***</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(5.349)</td></tr><tr><th class=\"a-l\" scope=\"row\">Japan</th><td class=\"a-c\"></td><td class=\"a-c\">+11.794**</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(5.256)</td></tr><tr><th class=\"a-l\" scope=\"row\">Singapore</th><td class=\"a-c\"></td><td class=\"a-c\">+9.509*</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(5.070)</td></tr><tr><th class=\"a-l\" scope=\"row\">South Korea</th><td class=\"a-c\"></td><td class=\"a-c\">+18.263***</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(5.171)</td></tr><tr><th class=\"a-l\" scope=\"row\">UK</th><td class=\"a-c\"></td><td class=\"a-c\">+1.191</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(4.823)</td></tr><tr><th class=\"a-l\" scope=\"row\">Intercept</th><td class=\"a-c\">+38.052***</td><td class=\"a-c\">+31.986***</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(1.224)</td><td class=\"a-c\">(2.834)</td></tr><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Observations</th><td class=\"a-c\">1,540</td><td class=\"a-c\">1,540</td></tr><tr><th class=\"a-l\" scope=\"row\"><math><msup><mi>R</mi><mn class=\"tml-med-pad\">2</mn></msup></math></th><td class=\"a-c\">0.025</td><td class=\"a-c\">0.070</td></tr></tbody></table>",
        "dense": false,
        "ncols": 3,
        "numbers": [
         "1",
         "2",
         "3.813",
-        "2.647",
         "2.524",
+        "2.647",
         "2.655",
         "-11.957",
-        "2.963",
         "-9.952",
+        "2.963",
         "2.969",
         "8.475",
-        "3.018",
         "5.359",
+        "3.018",
         "3.039",
         "-1.259",
-        "2.647",
         "-0.096",
+        "2.647",
         "2.591",
         "4.306",
-        "3.187",
         "1.837",
+        "3.187",
         "3.314",
         "4.782",
-        "2.720",
         "2.777",
+        "2.720",
         "2.726",
         "-4.705",
         "4.699",
@@ -6052,8 +6052,8 @@
         "1.191",
         "4.823",
         "38.052",
-        "1.224",
         "31.986",
+        "1.224",
         "2.834",
         "1,540",
         "1,540",
@@ -6061,12 +6061,12 @@
         "0.070"
        ],
        "src": "tables/reg_prefer_ai.tex",
-       "src_sha": "d43178e5e692e5feefd5292621278c2da32b4dc4905c678b3ab85df91db60516",
-       "cells": "Dependent variable: Prefer AI Interviewer  (1) (2) Male 3.813 (2.647) 2.524 (2.655) Older -11.957*** (2.963) -9.952*** (2.969) Higher education 8.475*** (3.018) 5.359* (3.039) High wealth -1.259 (2.647) -0.096 (2.591) Advanced 4.306 (3.187) 1.837 (3.314) Aggressive 4.782* (2.720) 2.777 (2.726) Australia  -4.705 (4.699) Canada  4.720 (4.883) France  -11.704*** (4.443) Germany  8.828* (5.078) India  28.832*** (5.349) Japan  11.794** (5.256) Singapore  9.509* (5.070) South Korea  18.263*** (5.171) UK  1.191 (4.823) Intercept 38.052*** (1.224) 31.986*** (2.834) Observations 1,540 1,540 R² 0.025 0.070"
+       "src_sha": "ceb5feb1776b9a4c6a51767d01bf2fafe90c481a7145b8041968a0f3bb44011c",
+       "cells": "Dependent variable: Prefer AI Interviewer  (1) (2) Male +3.813 +2.524  (2.647) (2.655) Older -11.957*** -9.952***  (2.963) (2.969) Higher education +8.475*** +5.359*  (3.018) (3.039) High wealth -1.259 -0.096  (2.647) (2.591) Advanced +4.306 +1.837  (3.187) (3.314) Aggressive +4.782* +2.777  (2.720) (2.726) Australia  -4.705   (4.699) Canada  +4.720   (4.883) France  -11.704***   (4.443) Germany  +8.828*   (5.078) India  +28.832***   (5.349) Japan  +11.794**   (5.256) Singapore  +9.509*   (5.070) South Korea  +18.263***   (5.171) UK  +1.191   (4.823) Intercept +38.052*** +31.986***  (1.224) (2.834) Observations 1,540 1,540 R² 0.025 0.070"
       }
      ],
      "landscape": false,
-     "caption_src": "Preference for an AI versus a Human Interviewer.",
+     "caption_src": "Preference for an AI versus a Human Interviewer",
      "note_src_sha": "fd5d10ee475c13a3bee4f4eee94db09679b6dd9dba91692ab67416c5a2a5cf35"
     }
    ]
@@ -6086,12 +6086,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    52
+    55
    ],
    "page_labels": [
-    "51"
+    "54"
    ],
-   "pdf_href": "/pdf/#page=53",
+   "pdf_href": "/pdf/#page=56",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -6122,9 +6122,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.32",
-     "pdf_page": 52,
-     "page_label": "51",
+     "anchor": "table.caption.133",
+     "pdf_page": 55,
+     "page_label": "54",
      "note_text": "This table shows descriptive statistics for the 600 investors who completed the follow-up survey. The first row covers the full follow-up survey sample. The remaining rows group these investors by gender, age, education, investable assets, self-reported investment knowledge, and self-reported risk attitude, each of which we elicit in the background survey. We leave the percentage columns blank for groups with no investors. Columns (1) and (2) report the number of investors in each group and that number as a percentage of the sample. Columns (3) through (6) report the percentage of investors within each group who report owning individual stocks, mutual funds or exchange-traded funds, derivatives, and cryptocurrencies, respectively. Column (3) equals 100% by construction, because we filter out investors who do not own any individual stocks before the interview stage.",
      "graphics": [],
      "panels": [],
@@ -6369,7 +6369,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Follow-Up Survey Demographics.",
+     "caption_src": "Follow-Up Survey Demographics",
      "note_src_sha": "76fd5c3ee839153e5a03bbc62d7d06307ed13b3e31f02a4e36cd42e30db57217"
     }
    ]
@@ -6389,12 +6389,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    53
+    56
    ],
    "page_labels": [
-    "52"
+    "55"
    ],
-   "pdf_href": "/pdf/#page=54",
+   "pdf_href": "/pdf/#page=57",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -6434,9 +6434,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.33",
-     "pdf_page": 53,
-     "page_label": "52",
+     "anchor": "table.caption.134",
+     "pdf_page": 56,
+     "page_label": "55",
      "note_text": "This table shows, separately by country, the percentage of follow-up survey respondents who consider each of four investment objectives important. On a five-point scale from 1 (“not important at all”) to 5 (“extremely important”), respondents rate how important each objective is to them personally when picking stocks (consistent high returns, high upside focus, stable performance, and personal values alignment). The first row, Overall, pools all 600 respondents. Each of the remaining ten rows corresponds to one country of residence. Column (1) reports the number of respondents in the country, and Columns (2) through (5) report the percentage of those respondents assigning a rating of 4 or 5 to the objective in the column header.",
      "graphics": [],
      "panels": [],
@@ -6516,7 +6516,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Objective Importance by Country.",
+     "caption_src": "Objective Importance by Country",
      "note_src_sha": "9a38c4c111edd703b79ce9431bd633855876e55b7bb53b90b904318f0712bb9c"
     }
    ]
@@ -6536,12 +6536,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    54
+    57
    ],
    "page_labels": [
-    "53"
+    "56"
    ],
-   "pdf_href": "/pdf/#page=55",
+   "pdf_href": "/pdf/#page=58",
    "questions": [],
    "n_panels": 2,
    "wide": false,
@@ -6583,9 +6583,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.34",
-     "pdf_page": 54,
-     "page_label": "53",
+     "anchor": "table.caption.135",
+     "pdf_page": 57,
+     "page_label": "56",
      "note_text": "This table compares the 600 investors who participated in the follow-up survey (Respondents) with the 940 investors who did not (Non-respondents). In each panel, Columns (1) and (2) report the group means, and Column (3) reports the difference between respondents and non-respondents. Panel A covers characteristics we measure at the interview stage. Its first row reports the number of investors in each group, and the next six rows report the percentage of investors in each group who are male (Male), are aged 35 or above (Age 35+), hold a bachelor’s degree or above (Bachelor’s or higher), report investable assets of at least USD 500,000 (High assets), report advanced or expert investment knowledge (Advanced knowledge), and report willingness to take above-average or substantial financial risks (Aggressive risk). Interview minutes is the elapsed duration of the interview in minutes, and Number of heuristics is the number of the thirteen heuristics the investor invokes. An investor invokes a heuristic if its score is at least three (“meaningful contributor”). Panel B reports, for each of the thirteen heuristics, the percentage of investors in each group who invoke it, and we order heuristics by their prevalence in the full interview sample. We test each difference with a two-sided two-sample t-test that allows unequal variances. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
      "graphics": [],
      "panels": [],
@@ -6690,7 +6690,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Follow-Up Survey Participation.",
+     "caption_src": "Follow-Up Survey Participation",
      "note_src_sha": "06ea843e383014c5aaafde8f923fee6157c0256167b5d85919cbed899a02bfed"
     }
    ]
@@ -6710,12 +6710,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    55
+    58
    ],
    "page_labels": [
-    "54"
+    "57"
    ],
-   "pdf_href": "/pdf/#page=56",
+   "pdf_href": "/pdf/#page=59",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -6760,9 +6760,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.35",
-     "pdf_page": 55,
-     "page_label": "54",
+     "anchor": "table.caption.136",
+     "pdf_page": 58,
+     "page_label": "57",
      "note_text": "This table examines whether investors adopt the heuristics they perceive as effective for the objectives they consider important, re-estimating the linear probability models of Table 6 of the main paper as fixed-effects logit models. We estimate the following logit counterpart of equation (1) of the main paper:\n\nPr (D(Adoption)ih = 1) = Λ (β1 (θig × ηPihg) + β2 ηPihg + β3 θig + αi),\n\nin which Λ(·) denotes the logistic function, and the dependent variable, D(Adoption)ih, equals one if heuristic h is among those we identify in the interview of investor i. The key independent variable is the interaction θig × ηPihg, printed as Objective importance × Perceived effectiveness, in which θig is the five-point importance rating investor i gives to objective g, and ηPihg is the five-point rating she gives to how effective heuristic h is at finding stocks that match the objective in her own local stock market. We standardize both variables within investor, as in Table 6 of the main paper. The starting sample is that of Table 6 of the main paper, 3,744 investor–heuristic–objective observations from 572 investors. The logit estimation drops fixed-effect groups without variation in the outcome, because the group effect fits their observations perfectly, which leaves 3,291, 3,291, and 3,181 observations in Columns (1) through (3), respectively. Coefficients are in log-odds and are therefore not directly comparable in scale to the linear probability estimates. The row Pseudo R² reports McFadden’s pseudo-R², computed against an intercept-only logit on the estimation sample of each column. Investor FE, Investor × Objective FE, and Country × Heuristic × Objective FE refer to the corresponding fixed effects. We cluster standard errors at the investor level and report them in parentheses. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
      "graphics": [],
      "panels": [],
@@ -6805,7 +6805,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Heuristic Adoption: Logit Estimates.",
+     "caption_src": "Heuristic Adoption: Logit Estimates",
      "note_src_sha": "57b09865b9dec4d566c0bc6cbb5998cd8d72023a0e36cf3fb6ac73bf10f6b71f"
     }
    ]
@@ -6825,12 +6825,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    56
+    59
    ],
    "page_labels": [
-    "55"
+    "58"
    ],
-   "pdf_href": "/pdf/#page=57",
+   "pdf_href": "/pdf/#page=60",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -6875,9 +6875,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.36",
-     "pdf_page": 56,
-     "page_label": "55",
+     "anchor": "table.caption.137",
+     "pdf_page": 59,
+     "page_label": "58",
      "note_text": "This table examines the relationship between perceived and historical heuristic effectiveness. We estimate the following regression, equation (2) of the main paper:\n\nηPihg = β ηHhgc + αi + λg + εihg,\n\nin which the dependent variable ηPihg, Perceived effectiveness, is the five-point rating investor i gives to how effective heuristic h is at finding stocks that match objective g in her own local stock market, standardized within investor across all her ratings for the three financial objectives. The key independent variable ηHhgc, Historical effectiveness, is the delivery of the heuristic on the objective in country c of the investor, estimated for the period running from July 2015 through June 2025, the ten years preceding our interviews (Section 5.3 of the main paper), and standardized within objective across the seventy heuristic–country pairs. The pooled sample comprises the 2,561 investor–heuristic–objective observations from 560 investors for which the follow-up survey elicits an effectiveness rating, restricted to the seven heuristics covered by archival data. Column (1) pools the three financial objectives and includes objective fixed effects λg, and Columns (2) through (4) estimate the relation separately for the returns, upside, and stability objectives. All columns include investor fixed effects αi. We cluster standard errors at the country level and report them in parentheses. Given the small number of clusters (ten), we base inference on wild-cluster bootstrap p-values (Webb six-point weights, 9,999 replications), which are 0.001, 0.102, 0.026, and 0.012 in Columns (1) through (4). Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
      "graphics": [],
      "panels": [],
@@ -6917,7 +6917,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Perceived and Historical Heuristic Effectiveness.",
+     "caption_src": "Perceived and Historical Heuristic Effectiveness",
      "note_src_sha": "169ebe89ed67c196ba34ad61cbec7d9426075dd519c32450862f18bd13cc9626"
     }
    ]
@@ -6937,15 +6937,15 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    57
+    60
    ],
    "page_labels": [
-    "56"
+    "59"
    ],
-   "pdf_href": "/pdf/#page=58",
+   "pdf_href": "/pdf/#page=61",
    "questions": [],
    "n_panels": 0,
-   "wide": false,
+   "wide": true,
    "main_refs": [],
    "cited_in": [
     {
@@ -6975,9 +6975,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.37",
-     "pdf_page": 57,
-     "page_label": "56",
+     "anchor": "table.caption.138",
+     "pdf_page": 60,
+     "page_label": "59",
      "note_text": "This table examines whether the relationship between perceived and historical heuristic effectiveness varies with investor characteristics. The dependent variable, Perceived effectiveness, and the key independent variable, Historical effectiveness, are as in Table F7. Column (1) reproduces Column (1) of Table F7, which pools the three financial objectives with investor and objective fixed effects. Columns (2) through (7) each add one interaction between historical effectiveness and an investor characteristic, and Column (8) includes all six interactions jointly. The six characteristics are the indicators Male, Older (age ≥ 35), Higher education (bachelor’s degree or above), High wealth (investable assets ≥ USD 500,000), Advanced knowledge (self-reported advanced or expert investment knowledge), and Aggressive (self-reported willingness to take above-average or substantial financial risks). The investor fixed effects absorb their main effects. The sample comprises the 2,561 investor–heuristic–objective observations from 560 investors in Column (1) of Table F7. We cluster standard errors at the country level and report them in parentheses. Given the small number of clusters (ten), we base inference on wild-cluster bootstrap p-values (Webb six-point weights, 9,999 replications). Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
      "graphics": [],
      "panels": [],
@@ -7060,8 +7060,8 @@
        "cells": "Dependent variable: Perceived effectiveness  (1) (2) (3) (4) (5) (6) (7) (8) Historical effectiveness +0.137*** +0.158*** +0.150*** +0.190** +0.107** +0.138** +0.147** +0.204**  (0.016) (0.024) (0.022) (0.042) (0.037) (0.022) (0.022) (0.065) Historical effectiveness × Male  -0.031      -0.028   (0.026)      (0.024) Historical effectiveness × Older   -0.015     -0.025    (0.030)     (0.030) Historical effectiveness × Higher education    -0.069    -0.080     (0.055)    (0.047) Historical effectiveness × High wealth     +0.043   +0.062      (0.046)   (0.041) Historical effectiveness × Advanced knowledge      -0.004  +0.009       (0.046)  (0.041) Historical effectiveness × Aggressive       -0.024 -0.026        (0.035) (0.031) Investor FE ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ Objective FE ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ Observations 2,561 2,561 2,561 2,561 2,561 2,561 2,561 2,561 R² 0.140 0.140 0.140 0.141 0.140 0.140 0.140 0.142"
       }
      ],
-     "landscape": false,
-     "caption_src": "Perceived and Historical Heuristic Effectiveness: Heterogeneity across Investor Groups.",
+     "landscape": true,
+     "caption_src": "Perceived and Historical Heuristic Effectiveness: Heterogeneity across Investor Groups",
      "note_src_sha": "51e6163aa0f4386a1d2e9ca6c776b7be49bdf2cf5d8afe8c83469f26d4973ab1"
     }
    ]
@@ -7081,12 +7081,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    58
+    61
    ],
    "page_labels": [
-    "57"
+    "60"
    ],
-   "pdf_href": "/pdf/#page=59",
+   "pdf_href": "/pdf/#page=62",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -7108,21 +7108,6 @@
       "title_html": "Do Chosen Heuristics Deliver on Investors’ Priorities?"
      },
      "float": null
-    },
-    {
-     "ctx": "float",
-     "panel": null,
-     "paragraph": "",
-     "heading": {
-      "number": "5.4.3",
-      "title": "Do Chosen Heuristics Deliver on Investors’ Priorities?",
-      "title_html": "Do Chosen Heuristics Deliver on Investors’ Priorities?"
-     },
-     "float": {
-      "label": "tab:choice_performance",
-      "text": "Table 7",
-      "title": "Do Adopted Heuristics Deliver on the Objectives Investors Prioritize?"
-     }
     }
    ],
    "group": {
@@ -7141,9 +7126,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.38",
-     "pdf_page": 58,
-     "page_label": "57",
+     "anchor": "table.caption.139",
+     "pdf_page": 61,
+     "page_label": "60",
      "note_text": "This table reports two additional benchmarks for Table 7 of the main paper, using historical effectiveness over July 2015 through June 2025, the ten years preceding our interviews. The row Adopted heuristics repeats that of Table 7, with the same sample, prioritized objectives, adopted heuristics, aggregation, and standardization. The row Average stock reports the delivery of random stock sorting. Its long–short performance is zero in expectation before standardization, and we standardize it with the same within-objective means and standard deviations as heuristic effectiveness. This benchmark is a constant, so it has no standard deviation. Its one-sided p-value tests whether the adopted heuristics deliver more, using a wild-cluster bootstrap by country (Webb six-point weights, 9,999 replications). The row Randomly selected JKP-factor-based portfolios replaces the adopted set of each investor with an equally sized random draw from the 153 factors of Jensen, Kelly, and Pedersen (2023) that are computable in her country, each in its published long–short direction and standardized with the same within-objective means and standard deviations as heuristic effectiveness. This row reports the mean across 10,000 draws, with the standard deviation across draws in parentheses, and its p-value is the one-sided fraction of draws that deliver at least as much as the adopted set. The sample comprises the 427 follow-up respondents of Table 7, and the columns Returns, Upside, and Stability use 210, 158, and 256 of them, respectively. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively, referring to the p-values in the brackets.",
      "graphics": [],
      "panels": [],
@@ -7191,7 +7176,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Do Adopted Heuristics Deliver? Average Stock and JKP-Factor Benchmarks.",
+     "caption_src": "Do Adopted Heuristics Deliver? Average Stock and JKP-Factor Benchmarks",
      "note_src_sha": "980c730e39f32f4389b3576ca88a928af44b4b0490f064f04a72369b402d2698"
     }
    ]
@@ -7211,12 +7196,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    59
+    62
    ],
    "page_labels": [
-    "58"
+    "61"
    ],
-   "pdf_href": "/pdf/#page=60",
+   "pdf_href": "/pdf/#page=63",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -7238,21 +7223,6 @@
       "title_html": "Subsequent Effectiveness"
      },
      "float": null
-    },
-    {
-     "ctx": "float",
-     "panel": null,
-     "paragraph": "",
-     "heading": {
-      "number": "5.5",
-      "title": "Subsequent Effectiveness",
-      "title_html": "Subsequent Effectiveness"
-     },
-     "float": {
-      "label": "tab:choice_performance_oos",
-      "text": "Table 8",
-      "title": "Do Adopted Heuristics Deliver? Out-of-Sample Evidence"
-     }
     }
    ],
    "group": {
@@ -7271,9 +7241,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.39",
-     "pdf_page": 59,
-     "page_label": "58",
+     "anchor": "table.caption.140",
+     "pdf_page": 62,
+     "page_label": "61",
      "note_text": "This table reports two additional benchmarks for Table 8 of the main paper, using out-of-sample delivery. The out-of-sample period covers portfolio sorts from September through November 2025, and we measure delivery over the month following each sort, so that all outcomes fall between October and December 2025. We calculate the CAPM alpha for the returns objective with the market beta fixed at its estimate from September 2015 through August 2025. The row Adopted heuristics repeats that of Table 8, with the same sample, prioritized objectives, adopted heuristics, aggregation, and standardization. The row Average stock reports the delivery of random stock sorting. Its long–short performance is zero in expectation before standardization, and we standardize it with the same within-objective means and standard deviations as heuristic effectiveness. This benchmark is a constant, so it has no standard deviation. Its one-sided p-value tests whether the adopted heuristics deliver more, using a wild-cluster bootstrap by country (Webb six-point weights, 9,999 replications). The row Randomly selected JKP-factor-based portfolios replaces the adopted set of each investor with an equally sized random draw from the 153 factors of Jensen, Kelly, and Pedersen (2023) that are computable in her country, each in its published long–short direction and standardized with the same within-objective means and standard deviations as heuristic effectiveness. This row reports the mean across 10,000 draws, with the standard deviation across draws in parentheses, and its p-value is the one-sided fraction of draws that deliver at least as much as the adopted set. The sample comprises the 427 follow-up respondents of Table 8, and the columns Returns, Upside, and Stability use 210, 158, and 256 of them, respectively. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively, referring to the p-values in the brackets.",
      "graphics": [],
      "panels": [],
@@ -7321,7 +7291,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Do Adopted Heuristics Deliver? Average Stock and JKP-Factor Benchmarks: Out-of-Sample Evidence.",
+     "caption_src": "Do Adopted Heuristics Deliver? Average Stock and JKP-Factor Benchmarks: Out-of-Sample Evidence",
      "note_src_sha": "9e53fbca3fa120b7e6a0fa6baf810284201c4e31a569de73e2d77f54aadb7f79"
     }
    ]
@@ -7341,12 +7311,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    60
+    63
    ],
    "page_labels": [
-    "59"
+    "62"
    ],
-   "pdf_href": "/pdf/#page=61",
+   "pdf_href": "/pdf/#page=64",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -7386,9 +7356,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.40",
-     "pdf_page": 60,
-     "page_label": "59",
+     "anchor": "table.caption.141",
+     "pdf_page": 63,
+     "page_label": "62",
      "note_text": "This table repeats the analysis of Table 8 of the main paper over post-adoption periods based on reported use durations. For each adopted heuristic, we use the duration of current use or, if the investor has stopped using it, the duration before stopping. We exclude investor–heuristic pairs that report a few months or an unknown duration. Taking June 30, 2026 as the common reference date, we use minimum durations of one and three years for reports of one to three years and more than three years, respectively. Monthly portfolio sorts therefore begin in July 2025 or July 2023, and we measure delivery over the month following each sort. Outcomes cover August through December 2025 (five months) or August 2023 through December 2025 (29 months, the longest period). The average period is approximately 20 months per investor, with retained heuristics weighted equally within each investor. We evaluate the choices recorded in the interviews through December 2025, including heuristics no longer used. For returns, we calculate the CAPM alpha with market betas fixed at their heuristic–country estimates from July 2013 through June 2023 portfolio sorts. For upside and stability, we use the top-1% hit-rate spread and the sign-reversed total return volatility spread. We standardize outcomes in both periods using the within-objective means and sample standard deviations across the seventy heuristic–country pairs in the 29-month window. Prioritized objectives and aggregation are otherwise as in Table 8 of the main paper. The two benchmark rows replace the retained adopted set of each investor with an equally sized random draw without replacement from (i) the covered heuristics she did not adopt in the interview (Alternative heuristics) and (ii) all seven covered heuristics (Randomly selected heuristics). The first pool also excludes adopted heuristics dropped by the duration filter. We randomly assign the drawn heuristics to the periods of the adopted heuristics and evaluate them in the same country on the same prioritized objectives. These two rows report means across 10,000 draws, with standard deviations across draws in parentheses, and their p-values are the one-sided fraction of draws that deliver at least as much as the adopted set. The sample comprises 371 investors and 621 retained investor–heuristic pairs. The columns Returns, Upside, and Stability use 180, 137, and 224 of these investors, respectively. Interpreting these results as post-adoption delivery assumes that the reported durations identify the start of use and that the reported priorities apply during the evaluation period. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively, referring to the p-values in the brackets.",
      "graphics": [],
      "panels": [],
@@ -7440,7 +7410,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Do Adopted Heuristics Deliver? Post-Adoption Evidence.",
+     "caption_src": "Do Adopted Heuristics Deliver? Post-Adoption Evidence",
      "note_src_sha": "c515f331abc2460ac5d50d8f5425c1a9d31ae5530fcb3285cb7966e9a3c15160"
     }
    ]
@@ -7460,12 +7430,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    61
+    64
    ],
    "page_labels": [
-    "60"
+    "63"
    ],
-   "pdf_href": "/pdf/#page=62",
+   "pdf_href": "/pdf/#page=65",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -7482,9 +7452,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.41",
-     "pdf_page": 61,
-     "page_label": "60",
+     "anchor": "table.caption.142",
+     "pdf_page": 64,
+     "page_label": "63",
      "note_text": "This table examines which financial objectives investors prioritize. We estimate linear probability models for each objective. The dependent variable, D(investor prioritizes the objective), is a dummy variable equal to one if the investor rates the objective strictly above her own average importance rating across the three financial objectives. The six demographic indicators are Male, Older (age ≥ 35), Higher education (bachelor’s degree or above), High wealth (investable assets ≥ USD 500,000), Advanced knowledge (self-reported advanced or expert investment knowledge), and Aggressive (self-reported willingness to take above-average or substantial financial risks). Mkt excess return, Avg skewness, and Avg volatility are country-level averages over July 2015 through June 2025, the ten years preceding our interviews, of the annualized value-weighted market excess return and the value-weighted means of the 21-day realized skewness and volatility of individual stocks. We compute all three from the data of Jensen, Kelly, and Pedersen (2023) and standardize them across the ten countries. For each objective, the first column includes the three market characteristics, and the second replaces them with country indicators, with the US as the omitted category. All six columns include the six demographic indicators and a constant. We report heteroskedasticity-robust standard errors in parentheses. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
      "graphics": [],
      "panels": [],
@@ -7678,7 +7648,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Determinants of Objective Priorities.",
+     "caption_src": "Determinants of Objective Priorities",
      "note_src_sha": "b39bbe5105389695c64fff27216ad1d844b0c359f6e9d026181f51356af179a3"
     }
    ]
@@ -7698,12 +7668,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    62
+    65
    ],
    "page_labels": [
-    "61"
+    "64"
    ],
-   "pdf_href": "/pdf/#page=63",
+   "pdf_href": "/pdf/#page=66",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -7736,9 +7706,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.42",
-     "pdf_page": 62,
-     "page_label": "61",
+     "anchor": "table.caption.143",
+     "pdf_page": 65,
+     "page_label": "64",
      "note_text": "This table examines whether investors are more likely to adopt heuristics that are historically more effective, in their own country, for the objectives they consider important. It re-estimates the adoption regression of Table 6 of the main paper in reduced form, replacing perceived effectiveness ηPihg with historical effectiveness ηHhgc. Because we estimate historical effectiveness from archival data alone (Section 5.3 of the main paper), survey answers cannot affect it, and the estimates are immune to ex-post rationalization of one’s own choices. The dependent variable, D(Adoption), is a dummy variable equal to one if the heuristic is among those we identify in the interview of the investor. The key independent variable is the interaction Objective importance × Historical effectiveness, in which Objective importance is the five-point importance rating the investor gives to the objective, standardized within investor across the three financial objectives, and Historical effectiveness is the delivery of the heuristic on the objective in the country of the investor, estimated for the period running from July 2015 through June 2025, the ten years preceding our interviews, and standardized within objective across the seventy heuristic–country pairs. Because the analysis requires no effectiveness rating, the sample is the full grid of the 600 follow-up respondents, the seven heuristics covered by archival data, and the three financial objectives (12,600 observations), without any conditioning on which heuristics an investor rates. Investor FE, Investor × Objective FE, and Country × Heuristic × Objective FE refer to the corresponding fixed effects. We cluster standard errors at the country level and report them in parentheses. Given the small number of clusters (ten), we base the stars in Columns (1) and (2) on wild-cluster bootstrap p-values (Webb six-point weights, 9,999 replications). In Column (3), the bootstrap is not computable under the high-dimensional fixed effects, so we base the stars on the country-clustered standard errors. The interaction remains significant at the 1% level when we instead cluster standard errors at the investor level. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
      "graphics": [],
      "panels": [],
@@ -7779,7 +7749,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Heuristic Adoption and Historical Effectiveness: Reduced Form.",
+     "caption_src": "Heuristic Adoption and Historical Effectiveness: Reduced Form",
      "note_src_sha": "7b9825491a2da57b8d1a9b5899a2150ba4bdb65cafb3614554af328f55ab0daf"
     }
    ]
@@ -7799,12 +7769,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    63
+    66
    ],
    "page_labels": [
-    "62"
+    "65"
    ],
-   "pdf_href": "/pdf/#page=64",
+   "pdf_href": "/pdf/#page=67",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -7826,9 +7796,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.43",
-     "pdf_page": 63,
-     "page_label": "62",
+     "anchor": "table.caption.144",
+     "pdf_page": 66,
+     "page_label": "65",
      "note_text": "This table repeats the reduced-form adoption analysis of Table F13 separately for each financial objective. In each column, we regress D(Adoption) on the interaction between the importance rating of the objective, standardized within investor across the three financial objectives, and the historical effectiveness of the heuristic for that objective in the country of the investor. Each column uses the full grid of the 600 follow-up respondents and the seven covered heuristics for the corresponding objective (4,200 observations). Investor FE and Country × Heuristic FE refer to the corresponding fixed effects. We cluster standard errors at the country level and report them in parentheses. The wild-cluster bootstrap is not computable under these fixed effects, so we base the stars on the country-clustered standard errors. The interactions for upside and stability remain significant at the 10% level when we instead cluster standard errors at the investor level. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
      "graphics": [],
      "panels": [],
@@ -7863,7 +7833,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Heuristic Adoption and Historical Effectiveness: Reduced Form by Objective.",
+     "caption_src": "Heuristic Adoption and Historical Effectiveness: Reduced Form by Objective",
      "note_src_sha": "d6caabccbf15b77859187c4623730b2beb9daeb92fc3d1da2d7a45f1fe3f0e51"
     }
    ]
@@ -7883,12 +7853,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    64
+    67
    ],
    "page_labels": [
-    "63"
+    "66"
    ],
-   "pdf_href": "/pdf/#page=65",
+   "pdf_href": "/pdf/#page=68",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -7921,9 +7891,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.44",
-     "pdf_page": 64,
-     "page_label": "63",
+     "anchor": "table.caption.145",
+     "pdf_page": 67,
+     "page_label": "66",
      "note_text": "This table repeats the analysis of Table 7 of the main paper on the objectives investors do not prioritize. An objective counts as non-prioritized if the investor rates it strictly below her own average across the three financial objectives. The adopted heuristics of each investor are those we identify in her interview among the seven covered by archival data (Table 5 of the main paper). The row Adopted heuristics reports the delivery of these heuristics on the non-prioritized objectives in the country of the investor. It averages over investors, in the column Overall after first averaging the non-prioritized objectives of each investor so that each investor enters once, and in the other columns over the investors for whom that objective is non-prioritized. The design is otherwise identical to Table 7 of the main paper. The two benchmark rows replace the adopted rule set of each investor with an equally sized random draw from (i) the covered heuristics she does not adopt (Alternative heuristics) and (ii) all seven covered heuristics (Randomly selected heuristics). These two rows report means across 10,000 draws, with standard deviations across draws in parentheses, and their p-values are the one-sided fraction of draws that deliver at least as much as the adopted set. The sample comprises the 427 follow-up respondents who adopt at least one covered heuristic and have at least one non-prioritized financial objective, excluding adopters of four or more of the seven. The columns Returns, Upside, and Stability use 184, 255, and 146 of them, respectively. Table F16 reports the average-stock and JKP-factor-based portfolio benchmarks, with the same adopted-heuristics row. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively, referring to the p-values in the brackets.",
      "graphics": [],
      "panels": [],
@@ -7995,12 +7965,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    65
+    68
    ],
    "page_labels": [
-    "64"
+    "67"
    ],
-   "pdf_href": "/pdf/#page=66",
+   "pdf_href": "/pdf/#page=69",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -8022,9 +7992,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.45",
-     "pdf_page": 65,
-     "page_label": "64",
+     "anchor": "table.caption.146",
+     "pdf_page": 68,
+     "page_label": "67",
      "note_text": "This table reports two additional benchmarks for Table F15, using historical effectiveness over July 2015 through June 2025, the ten years preceding our interviews. An objective counts as non-prioritized if the investor rates it strictly below her own average across the three financial objectives. The row Adopted heuristics repeats that of Table F15, with the same sample, non-prioritized objectives, adopted heuristics, aggregation, and standardization. The row Average stock reports the delivery of random stock sorting. Its long–short performance is zero in expectation before standardization, and we standardize it with the same within-objective means and standard deviations as heuristic effectiveness. This benchmark is a constant, so it has no standard deviation. Its one-sided p-value tests whether the adopted heuristics deliver more, using a wild-cluster bootstrap by country (Webb six-point weights, 9,999 replications). The row Randomly selected JKP-factor-based portfolios replaces the adopted set of each investor with an equally sized random draw from the 153 factors of Jensen, Kelly, and Pedersen (2023) that are computable in her country, each in its published long–short direction and standardized with the same within-objective means and standard deviations as heuristic effectiveness. This row reports the mean across 10,000 draws, with the standard deviation across draws in parentheses, and its p-value is the one-sided fraction of draws that deliver at least as much as the adopted set. The sample comprises the 427 follow-up respondents of Table F15, and the columns Returns, Upside, and Stability use 184, 255, and 146 of them, respectively. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively, referring to the p-values in the brackets.",
      "graphics": [],
      "panels": [],
@@ -8072,7 +8042,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Average Stock and JKP-Factor Benchmarks.",
+     "caption_src": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Average Stock and JKP-Factor Benchmarks",
      "note_src_sha": "f632d8194d94ec2e20ea8706edfa763df38c9cb14077a565f50cf6c1f56ea816"
     }
    ]
@@ -8092,12 +8062,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    66
+    69
    ],
    "page_labels": [
-    "65"
+    "68"
    ],
-   "pdf_href": "/pdf/#page=67",
+   "pdf_href": "/pdf/#page=70",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -8125,9 +8095,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.46",
-     "pdf_page": 66,
-     "page_label": "65",
+     "anchor": "table.caption.147",
+     "pdf_page": 69,
+     "page_label": "68",
      "note_text": "This table repeats the out-of-sample analysis of Table 8 of the main paper on the objectives investors do not prioritize. We recompute delivery on outcomes realized after our interviews. The out-of-sample period covers portfolio sorts from September through November 2025, and we measure delivery over the month following each sort, so that all outcomes fall between October and December 2025. Because that period is too short to estimate a market beta, we calculate the CAPM alpha for the returns objective with the market beta fixed at its estimate from the preceding ten years (September 2015 through August 2025). We standardize each outcome within objective across the seventy heuristic–country pairs, recomputed on the out-of-sample window. An objective counts as non-prioritized if the investor rates it strictly below her own average across the three financial objectives. The adopted heuristics, the aggregation, and the samples are identical to Table F15. The two benchmark rows replace the adopted rule set of each investor with an equally sized random draw from (i) the covered heuristics she does not adopt (Alternative heuristics) and (ii) all seven covered heuristics (Randomly selected heuristics). These two rows report means across 10,000 draws, with standard deviations across draws in parentheses, and their p-values are the one-sided fraction of draws that deliver at least as much as the adopted set. Table F18 reports the average-stock and JKP-factor-based portfolio benchmarks, with the same adopted-heuristics row. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively, referring to the p-values in the brackets.",
      "graphics": [],
      "panels": [],
@@ -8179,7 +8149,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Out-of-Sample Evidence.",
+     "caption_src": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Out-of-Sample Evidence",
      "note_src_sha": "3095383dd79ef9ec356a05cafc8b33764eedd94321f44136fa2c60444e864b53"
     }
    ]
@@ -8199,12 +8169,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    67
+    70
    ],
    "page_labels": [
-    "66"
+    "69"
    ],
-   "pdf_href": "/pdf/#page=68",
+   "pdf_href": "/pdf/#page=71",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -8226,9 +8196,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.47",
-     "pdf_page": 67,
-     "page_label": "66",
+     "anchor": "table.caption.148",
+     "pdf_page": 70,
+     "page_label": "69",
      "note_text": "This table reports two additional benchmarks for Table F17, using out-of-sample delivery. The out-of-sample period covers portfolio sorts from September through November 2025, and we measure delivery over the month following each sort, so that all outcomes fall between October and December 2025. We calculate the CAPM alpha for the returns objective with the market beta fixed at its estimate from September 2015 through August 2025. An objective counts as non-prioritized if the investor rates it strictly below her own average across the three financial objectives. The row Adopted heuristics repeats that of Table F17, with the same sample, non-prioritized objectives, adopted heuristics, aggregation, and standardization. The row Average stock reports the delivery of random stock sorting. Its long–short performance is zero in expectation before standardization, and we standardize it with the same within-objective means and standard deviations as heuristic effectiveness. This benchmark is a constant, so it has no standard deviation. Its one-sided p-value tests whether the adopted heuristics deliver more, using a wild-cluster bootstrap by country (Webb six-point weights, 9,999 replications). The row Randomly selected JKP-factor-based portfolios replaces the adopted set of each investor with an equally sized random draw from the 153 factors of Jensen, Kelly, and Pedersen (2023) that are computable in her country, each in its published long–short direction and standardized with the same within-objective means and standard deviations as heuristic effectiveness. This row reports the mean across 10,000 draws, with the standard deviation across draws in parentheses, and its p-value is the one-sided fraction of draws that deliver at least as much as the adopted set. The sample comprises the 427 follow-up respondents of Table F17, and the columns Returns, Upside, and Stability use 184, 255, and 146 of them, respectively. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively, referring to the p-values in the brackets.",
      "graphics": [],
      "panels": [],
@@ -8276,7 +8246,7 @@
       }
      ],
      "landscape": false,
-     "caption_src": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Average Stock and JKP-Factor Benchmarks: Out-of-Sample Evidence.",
+     "caption_src": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Average Stock and JKP-Factor Benchmarks: Out-of-Sample Evidence",
      "note_src_sha": "bfb2017702d7b3997e8fec59c31d3e3c4feae8133c2015082dd7b7ab389ffc72"
     }
    ]

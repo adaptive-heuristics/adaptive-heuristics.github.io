@@ -166,5 +166,9 @@ def build_trees(cfg: Config, snap: Snapshot) -> tuple[Path, Path, str]:
         dst = app_dir / rel
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dst)
+    # the manuscript's own packages and classes (e.g. a preamble shared with the paper as paper.sty); without
+    # them LaTeX would load a TeX Live package of the same name
+    for p in sorted(snap.root.glob("*.sty")) + sorted(snap.root.glob("*.cls")):
+        shutil.copy2(p, app_dir / p.name)
     (base / ".trees").write_text("ok")
     return app_dir, paper_dir, key
