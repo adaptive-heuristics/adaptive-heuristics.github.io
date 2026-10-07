@@ -8,19 +8,19 @@
   "note_position": "paper"
  },
  "build": {
-  "source_date": "2026-10-06",
-  "source_date_text": "October 6, 2026"
+  "source_date": "2026-10-07",
+  "source_date_text": "October 7, 2026"
  },
  "pdf": {
   "url": "/OA.pdf",
-  "pages": 73,
-  "size": "3.6 MB",
-  "sha256": "2c7474b545b8b68439a6f46e6ccd248ad2f84c5f25df8bba7fb592f7e64d1b92"
+  "pages": 63,
+  "size": "3.5 MB",
+  "sha256": "b1492ae23b786ed31a614720d2fd60daf47d78871cbd960dfd24d97fac34461c"
  },
  "counts": {
-  "exhibits": 42,
-  "figures": 21,
-  "tables": 21
+  "exhibits": 32,
+  "figures": 19,
+  "tables": 13
  },
  "sections": [
   {
@@ -372,11 +372,11 @@
    "has_exhibits": true,
    "pages": [
     43,
-    71
+    61
    ],
    "page_labels": [
     "42",
-    "70"
+    "60"
    ],
    "href": "/pdf/#page=44"
   }
@@ -1211,10 +1211,10 @@
    "title_html": "Responses",
    "top": "D",
    "head": null,
-   "html": "<p>This section shows the responses of the 600 follow-up survey respondents to the questions in <a class=\"ref\" href=\"/section/D.1/\" data-ref=\"app:followup_questionnaire\">Online Appendix D.1</a>. The figures label heuristics with the names we use in the main paper, and their axis labels abbreviate the answer choices. Figures <a class=\"ref\" href=\"/figure/F6/\" data-ref=\"fig:perceived_effectiveness\">F6</a> and <a class=\"ref\" href=\"/figure/F4/\" data-ref=\"fig:consideration_funnel\">F4</a> summarize the responses to Questions <a class=\"ref\" href=\"/section/D.1/#q-fu_use\" data-ref=\"q:fu_use\">1</a>, <a class=\"ref\" href=\"/section/D.1/#q-fu_heard\" data-ref=\"q:fu_heard\">6</a>, <a class=\"ref\" href=\"/section/D.1/#q-fu_past\" data-ref=\"q:fu_past\">7</a>, and <a class=\"ref\" href=\"/section/D.1/#q-fu_effect\" data-ref=\"q:fu_effect\">11</a>.</p>",
+   "html": "<p>This section shows the responses of the 600 follow-up survey respondents to the questions in <a class=\"ref\" href=\"/section/D.1/\" data-ref=\"app:followup_questionnaire\">Online Appendix D.1</a>. The figures label heuristics with the names we use in the main paper, and their axis labels abbreviate the answer choices. Figures <a class=\"ref\" href=\"/figure/D7/\" data-ref=\"fig:fu_resp_perceived\">D7</a> and <a class=\"ref\" href=\"/figure/F4/\" data-ref=\"fig:consideration_funnel\">F4</a> summarize the responses to Questions <a class=\"ref\" href=\"/section/D.1/#q-fu_use\" data-ref=\"q:fu_use\">1</a>, <a class=\"ref\" href=\"/section/D.1/#q-fu_heard\" data-ref=\"q:fu_heard\">6</a>, <a class=\"ref\" href=\"/section/D.1/#q-fu_past\" data-ref=\"q:fu_past\">7</a>, and <a class=\"ref\" href=\"/section/D.1/#q-fu_effect\" data-ref=\"q:fu_effect\">11</a>.</p>",
    "footnotes": [],
-   "text": "Responses This section shows the responses of the 600 follow-up survey respondents to the questions in Online Appendix D.1. The figures label heuristics with the names we use in the main paper, and their axis labels abbreviate the answer choices. Figures F6 and F4 summarize the responses to Questions 1, 6, 7, and 11.",
-   "body_text": "Responses This section shows the responses of the 600 follow-up survey respondents to the questions in Online Appendix D.1. The figures label heuristics with the names we use in the main paper, and their axis labels abbreviate the answer choices. Figures F6 and F4 summarize the responses to Questions 1, 6, 7, and 11.",
+   "text": "Responses This section shows the responses of the 600 follow-up survey respondents to the questions in Online Appendix D.1. The figures label heuristics with the names we use in the main paper, and their axis labels abbreviate the answer choices. Figures D7 and F4 summarize the responses to Questions 1, 6, 7, and 11.",
+   "body_text": "Responses This section shows the responses of the 600 follow-up survey respondents to the questions in Online Appendix D.1. The figures label heuristics with the names we use in the main paper, and their axis labels abbreviate the answer choices. Figures D7 and F4 summarize the responses to Questions 1, 6, 7, and 11.",
    "fn_text": [],
    "pages": [
     26,
@@ -1890,8 +1890,7 @@
      "next": "figure/D8",
      "suggest": [
       "figure/D6",
-      "figure/D5",
-      "table/F14"
+      "figure/D5"
      ]
     },
     {
@@ -3083,11 +3082,6 @@
     "text": "Hofstede, G., G.J. Hofstede, and M. Minkov, 2010, Cultures and Organizations: Software of the Mind, Third Edition (McGraw Hill LLC)."
    },
    {
-    "key": "jensen_etal_2023_there",
-    "html": "Jensen, Theis Ingerslev, Bryan Kelly, and Lasse Heje Pedersen, 2023, Is There a Replication Crisis in Finance?, <em>The Journal of Finance</em> 78, 2465–2518.",
-    "text": "Jensen, Theis Ingerslev, Bryan Kelly, and Lasse Heje Pedersen, 2023, Is There a Replication Crisis in Finance?, The Journal of Finance 78, 2465–2518."
-   },
-   {
     "key": "kong2023better",
     "html": "Kong, Aobo, Shiwan Zhao, Hao Chen, Qicheng Li, Yong Qin, Ruiqi Sun, Xin Zhou, Enzhi Wang, and Xiaohang Dong, 2023, Better zero-shot reasoning with role-play prompting, <em>arXiv preprint arXiv:2308.07702</em>.",
     "text": "Kong, Aobo, Shiwan Zhao, Hao Chen, Qicheng Li, Yong Qin, Ruiqi Sun, Xin Zhou, Enzhi Wang, and Xiaohang Dong, 2023, Better zero-shot reasoning with role-play prompting, arXiv preprint arXiv:2308.07702."
@@ -3123,19 +3117,19 @@
     "text": "Yao, Shunyu, Dian Yu, Jeffrey Zhao, Izhak Shafran, Tom Griffiths, Yuan Cao, and Karthik Narasimhan, 2023, Tree of thoughts: Deliberate problem solving with large language models, Advances in Neural Information Processing Systems 36, 11809–11822."
    }
   ],
-  "text": "References Argyle, Lisa P., Ethan C. Busby, Nancy Fulda, Joshua R. Gubler, Christopher Rytting, and David Wingate, 2023, Out of one, many: Using language models to simulate human samples, Political Analysis 31, 337–351. Barberis, Nicholas, 2018, Psychology-Based Models of Asset Prices and Trading Volume, in B. Douglas Bernheim, Stefano DellaVigna, and David Laibson, ed.: Handbook of Behavioral Economics: Applications and Foundations 1, vol. 1 of Handbook of Behavioral Economics - Foundations and Applications 1 . pp. 79–175 (North-Holland). Brown, Tom, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al., 2020, Language models are few-shot learners, Advances in Neural Information Processing Systems 33, 1877–1901. Campbell, John Y., and Luis M. Viceira, 1999, Consumption and Portfolio Decisions when Expected Returns are Time Varying, The Quarterly Journal of Economics 114, 433–495. Google, 2024, Prompting Guide 101, https://services.google.com/fh/files/misc/gemini_for_workspace_prompt_guide_october_2024_digital_final.pdf. Han, Bing, David Hirshleifer, and Johan Walden, 2022, Social Transmission Bias and Investor Behavior, Journal of Financial and Quantitative Analysis 57, 390–412. Hofstede, G., G.J. Hofstede, and M. Minkov, 2010, Cultures and Organizations: Software of the Mind, Third Edition (McGraw Hill LLC). Jensen, Theis Ingerslev, Bryan Kelly, and Lasse Heje Pedersen, 2023, Is There a Replication Crisis in Finance?, The Journal of Finance 78, 2465–2518. Kong, Aobo, Shiwan Zhao, Hao Chen, Qicheng Li, Yong Qin, Ruiqi Sun, Xin Zhou, Enzhi Wang, and Xiaohang Dong, 2023, Better zero-shot reasoning with role-play prompting, arXiv preprint arXiv:2308.07702. MacCallum, Noah, and Julian Lee, 2025, GPT-4.1 Prompting Guide, https://cookbook.openai.com/examples/gpt4-1_prompting_guide. Minkov, Michael, and Anneli Kaasa, 2022, Do dimensions of culture exist objectively? a validation of the revised Minkov-Hofstede model of culture with World Values Survey items and scores for 102 countries, Journal of International Management 28, 100971. Shanahan, Murray, Kyle McDonell, and Laria Reynolds, 2023, Role play with large language models, Nature 623, 493–498. Wang, Xuezhi, Jason Wei, Dale Schuurmans, Quoc Le, Ed Chi, Sharan Narang, Aakanksha Chowdhery, and Denny Zhou, 2022, Self-consistency improves chain of thought reasoning in language models, arXiv preprint arXiv:2203.11171. Wei, Jason, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Fei Xia, Ed Chi, Quoc V Le, Denny Zhou, et al., 2022, Chain-of-thought prompting elicits reasoning in large language models, Advances in Neural Information Processing Systems 35, 24824–24837. Yao, Shunyu, Dian Yu, Jeffrey Zhao, Izhak Shafran, Tom Griffiths, Yuan Cao, and Karthik Narasimhan, 2023, Tree of thoughts: Deliberate problem solving with large language models, Advances in Neural Information Processing Systems 36, 11809–11822.",
-  "body_text": "References Argyle, Lisa P., Ethan C. Busby, Nancy Fulda, Joshua R. Gubler, Christopher Rytting, and David Wingate, 2023, Out of one, many: Using language models to simulate human samples, Political Analysis 31, 337–351. Barberis, Nicholas, 2018, Psychology-Based Models of Asset Prices and Trading Volume, in B. Douglas Bernheim, Stefano DellaVigna, and David Laibson, ed.: Handbook of Behavioral Economics: Applications and Foundations 1, vol. 1 of Handbook of Behavioral Economics - Foundations and Applications 1 . pp. 79–175 (North-Holland). Brown, Tom, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al., 2020, Language models are few-shot learners, Advances in Neural Information Processing Systems 33, 1877–1901. Campbell, John Y., and Luis M. Viceira, 1999, Consumption and Portfolio Decisions when Expected Returns are Time Varying, The Quarterly Journal of Economics 114, 433–495. Google, 2024, Prompting Guide 101, https://services.google.com/fh/files/misc/gemini_for_workspace_prompt_guide_october_2024_digital_final.pdf. Han, Bing, David Hirshleifer, and Johan Walden, 2022, Social Transmission Bias and Investor Behavior, Journal of Financial and Quantitative Analysis 57, 390–412. Hofstede, G., G.J. Hofstede, and M. Minkov, 2010, Cultures and Organizations: Software of the Mind, Third Edition (McGraw Hill LLC). Jensen, Theis Ingerslev, Bryan Kelly, and Lasse Heje Pedersen, 2023, Is There a Replication Crisis in Finance?, The Journal of Finance 78, 2465–2518. Kong, Aobo, Shiwan Zhao, Hao Chen, Qicheng Li, Yong Qin, Ruiqi Sun, Xin Zhou, Enzhi Wang, and Xiaohang Dong, 2023, Better zero-shot reasoning with role-play prompting, arXiv preprint arXiv:2308.07702. MacCallum, Noah, and Julian Lee, 2025, GPT-4.1 Prompting Guide, https://cookbook.openai.com/examples/gpt4-1_prompting_guide. Minkov, Michael, and Anneli Kaasa, 2022, Do dimensions of culture exist objectively? a validation of the revised Minkov-Hofstede model of culture with World Values Survey items and scores for 102 countries, Journal of International Management 28, 100971. Shanahan, Murray, Kyle McDonell, and Laria Reynolds, 2023, Role play with large language models, Nature 623, 493–498. Wang, Xuezhi, Jason Wei, Dale Schuurmans, Quoc Le, Ed Chi, Sharan Narang, Aakanksha Chowdhery, and Denny Zhou, 2022, Self-consistency improves chain of thought reasoning in language models, arXiv preprint arXiv:2203.11171. Wei, Jason, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Fei Xia, Ed Chi, Quoc V Le, Denny Zhou, et al., 2022, Chain-of-thought prompting elicits reasoning in large language models, Advances in Neural Information Processing Systems 35, 24824–24837. Yao, Shunyu, Dian Yu, Jeffrey Zhao, Izhak Shafran, Tom Griffiths, Yuan Cao, and Karthik Narasimhan, 2023, Tree of thoughts: Deliberate problem solving with large language models, Advances in Neural Information Processing Systems 36, 11809–11822.",
+  "text": "References Argyle, Lisa P., Ethan C. Busby, Nancy Fulda, Joshua R. Gubler, Christopher Rytting, and David Wingate, 2023, Out of one, many: Using language models to simulate human samples, Political Analysis 31, 337–351. Barberis, Nicholas, 2018, Psychology-Based Models of Asset Prices and Trading Volume, in B. Douglas Bernheim, Stefano DellaVigna, and David Laibson, ed.: Handbook of Behavioral Economics: Applications and Foundations 1, vol. 1 of Handbook of Behavioral Economics - Foundations and Applications 1 . pp. 79–175 (North-Holland). Brown, Tom, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al., 2020, Language models are few-shot learners, Advances in Neural Information Processing Systems 33, 1877–1901. Campbell, John Y., and Luis M. Viceira, 1999, Consumption and Portfolio Decisions when Expected Returns are Time Varying, The Quarterly Journal of Economics 114, 433–495. Google, 2024, Prompting Guide 101, https://services.google.com/fh/files/misc/gemini_for_workspace_prompt_guide_october_2024_digital_final.pdf. Han, Bing, David Hirshleifer, and Johan Walden, 2022, Social Transmission Bias and Investor Behavior, Journal of Financial and Quantitative Analysis 57, 390–412. Hofstede, G., G.J. Hofstede, and M. Minkov, 2010, Cultures and Organizations: Software of the Mind, Third Edition (McGraw Hill LLC). Kong, Aobo, Shiwan Zhao, Hao Chen, Qicheng Li, Yong Qin, Ruiqi Sun, Xin Zhou, Enzhi Wang, and Xiaohang Dong, 2023, Better zero-shot reasoning with role-play prompting, arXiv preprint arXiv:2308.07702. MacCallum, Noah, and Julian Lee, 2025, GPT-4.1 Prompting Guide, https://cookbook.openai.com/examples/gpt4-1_prompting_guide. Minkov, Michael, and Anneli Kaasa, 2022, Do dimensions of culture exist objectively? a validation of the revised Minkov-Hofstede model of culture with World Values Survey items and scores for 102 countries, Journal of International Management 28, 100971. Shanahan, Murray, Kyle McDonell, and Laria Reynolds, 2023, Role play with large language models, Nature 623, 493–498. Wang, Xuezhi, Jason Wei, Dale Schuurmans, Quoc Le, Ed Chi, Sharan Narang, Aakanksha Chowdhery, and Denny Zhou, 2022, Self-consistency improves chain of thought reasoning in language models, arXiv preprint arXiv:2203.11171. Wei, Jason, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Fei Xia, Ed Chi, Quoc V Le, Denny Zhou, et al., 2022, Chain-of-thought prompting elicits reasoning in large language models, Advances in Neural Information Processing Systems 35, 24824–24837. Yao, Shunyu, Dian Yu, Jeffrey Zhao, Izhak Shafran, Tom Griffiths, Yuan Cao, and Karthik Narasimhan, 2023, Tree of thoughts: Deliberate problem solving with large language models, Advances in Neural Information Processing Systems 36, 11809–11822.",
+  "body_text": "References Argyle, Lisa P., Ethan C. Busby, Nancy Fulda, Joshua R. Gubler, Christopher Rytting, and David Wingate, 2023, Out of one, many: Using language models to simulate human samples, Political Analysis 31, 337–351. Barberis, Nicholas, 2018, Psychology-Based Models of Asset Prices and Trading Volume, in B. Douglas Bernheim, Stefano DellaVigna, and David Laibson, ed.: Handbook of Behavioral Economics: Applications and Foundations 1, vol. 1 of Handbook of Behavioral Economics - Foundations and Applications 1 . pp. 79–175 (North-Holland). Brown, Tom, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al., 2020, Language models are few-shot learners, Advances in Neural Information Processing Systems 33, 1877–1901. Campbell, John Y., and Luis M. Viceira, 1999, Consumption and Portfolio Decisions when Expected Returns are Time Varying, The Quarterly Journal of Economics 114, 433–495. Google, 2024, Prompting Guide 101, https://services.google.com/fh/files/misc/gemini_for_workspace_prompt_guide_october_2024_digital_final.pdf. Han, Bing, David Hirshleifer, and Johan Walden, 2022, Social Transmission Bias and Investor Behavior, Journal of Financial and Quantitative Analysis 57, 390–412. Hofstede, G., G.J. Hofstede, and M. Minkov, 2010, Cultures and Organizations: Software of the Mind, Third Edition (McGraw Hill LLC). Kong, Aobo, Shiwan Zhao, Hao Chen, Qicheng Li, Yong Qin, Ruiqi Sun, Xin Zhou, Enzhi Wang, and Xiaohang Dong, 2023, Better zero-shot reasoning with role-play prompting, arXiv preprint arXiv:2308.07702. MacCallum, Noah, and Julian Lee, 2025, GPT-4.1 Prompting Guide, https://cookbook.openai.com/examples/gpt4-1_prompting_guide. Minkov, Michael, and Anneli Kaasa, 2022, Do dimensions of culture exist objectively? a validation of the revised Minkov-Hofstede model of culture with World Values Survey items and scores for 102 countries, Journal of International Management 28, 100971. Shanahan, Murray, Kyle McDonell, and Laria Reynolds, 2023, Role play with large language models, Nature 623, 493–498. Wang, Xuezhi, Jason Wei, Dale Schuurmans, Quoc Le, Ed Chi, Sharan Narang, Aakanksha Chowdhery, and Denny Zhou, 2022, Self-consistency improves chain of thought reasoning in language models, arXiv preprint arXiv:2203.11171. Wei, Jason, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Fei Xia, Ed Chi, Quoc V Le, Denny Zhou, et al., 2022, Chain-of-thought prompting elicits reasoning in large language models, Advances in Neural Information Processing Systems 35, 24824–24837. Yao, Shunyu, Dian Yu, Jeffrey Zhao, Izhak Shafran, Tom Griffiths, Yuan Cao, and Karthik Narasimhan, 2023, Tree of thoughts: Deliberate problem solving with large language models, Advances in Neural Information Processing Systems 36, 11809–11822.",
   "fn_text": [],
   "pages": [
-   72,
-   72
+   62,
+   62
   ],
   "page_labels": [
-   "71",
-   "71"
+   "61",
+   "61"
   ],
-  "pdf_href": "/pdf/#page=73",
-  "prev": "table/F19",
+  "pdf_href": "/pdf/#page=63",
+  "prev": "table/F11",
   "next": null
  },
  "groups": [
@@ -3209,9 +3203,7 @@
    "title_html": "Do Investors Choose Heuristics According to Their Priorities and Beliefs?",
    "exhibits": [
     "figure/F4",
-    "table/F6",
-    "table/F13",
-    "table/F14"
+    "table/F6"
    ]
   },
   {
@@ -3231,9 +3223,8 @@
    "title": "Do Chosen Heuristics Deliver on Investors’ Priorities?",
    "title_html": "Do Chosen Heuristics Deliver on Investors’ Priorities?",
    "exhibits": [
-    "table/F9",
-    "table/F15",
-    "table/F16"
+    "table/F10",
+    "table/F11"
    ]
   },
   {
@@ -3243,22 +3234,7 @@
    "title_html": "Subsequent Effectiveness",
    "exhibits": [
     "figure/D1",
-    "table/F10",
-    "table/F11",
-    "table/F17",
-    "table/F18"
-   ]
-  },
-  {
-   "key": "zz",
-   "number": "",
-   "title": "Additional evidence without a main-paper link",
-   "title_html": "Additional evidence without a main-paper link",
-   "exhibits": [
-    "figure/F5",
-    "figure/F6",
-    "table/F12",
-    "table/F19"
+    "table/F9"
    ]
   }
  ],
@@ -4374,8 +4350,7 @@
    "next": "figure/D8",
    "suggest": [
     "figure/D6",
-    "figure/D5",
-    "table/F14"
+    "figure/D5"
    ],
    "parts": [
     {
@@ -5500,7 +5475,7 @@
    "suggest": [
     "figure/E1",
     "figure/E2",
-    "table/F15"
+    "table/F10"
    ],
    "parts": [
     {
@@ -5653,11 +5628,10 @@
     "rule": "cited (body)"
    },
    "prev": "figure/F3",
-   "next": "figure/F5",
+   "next": "table/F1",
    "suggest": [
     "figure/D3",
     "table/F6",
-    "table/F13",
     "figure/F1"
    ],
    "parts": [
@@ -5690,134 +5664,6 @@
    ]
   },
   {
-   "id": "figure/F5",
-   "kind": "figure",
-   "kind_word": "Figure",
-   "number": "F5",
-   "label": "fig:fraction_of_no_overlap",
-   "labels": [
-    "fig:fraction_of_no_overlap"
-   ],
-   "url": "/figure/F5/",
-   "title_html": "Proportion of Investor Pairs with Non-Overlapping Heuristics",
-   "title": "Proportion of Investor Pairs with Non-Overlapping Heuristics",
-   "section": "F",
-   "subsection": null,
-   "pages": [
-    51
-   ],
-   "page_labels": [
-    "50"
-   ],
-   "pdf_href": "/pdf/#page=52",
-   "questions": [],
-   "n_panels": 0,
-   "wide": false,
-   "main_refs": [],
-   "cited_in": [],
-   "group": {
-    "key": "zz",
-    "rule": "no main-paper link"
-   },
-   "prev": "figure/F4",
-   "next": "figure/F6",
-   "suggest": [],
-   "parts": [
-    {
-     "n": 1,
-     "continued": false,
-     "anchor": "figure.caption.129",
-     "pdf_page": 51,
-     "page_label": "50",
-     "note_text": "This figure shows the proportion of investor pairs whose two members share no heuristic. An investor invokes a heuristic if its score is at least three (“meaningful contributor”). We form all 1,185,030 unordered pairs of the 1,540 investors we interviewed and classify a pair as non-overlapping if its two members invoke no heuristic in common. Each bar conditions on the number of heuristics a focal investor invokes. The bar labeled k reports the proportion of non-overlapping pairs among all pairs in which at least one member invokes exactly k heuristics, and “4+” denotes four or more. A pair can enter more than one bar.",
-     "graphics": [
-      {
-       "src": "/assets/x/fig/F5/F5.svg",
-       "kind": "svg",
-       "png": "/assets/x/fig/F5/F5.png",
-       "w": 314.0,
-       "h": 266.3,
-       "width": 0.6,
-       "legend": false,
-       "src_sha": "834dbd4de096bfa5ccac3ce23d3a6ae067275b2c9822e5163ad5190f9c6ea4f8",
-       "text": "1 2 3 4+ Number of Heuristics Focal Investor 0 10 20 30 40 50 60 70 80 Proportion Pairs with No Overlap (%) 76.3% 54.1% 43.0% 31.1%"
-      }
-     ],
-     "panels": [],
-     "tables": [],
-     "landscape": false,
-     "caption_src": "Proportion of Investor Pairs with Non-Overlapping Heuristics",
-     "note_src_sha": "a900018db6f45da0c31fb70be6398f27b6478bae6bb6aeb84db6da4092945c84"
-    }
-   ]
-  },
-  {
-   "id": "figure/F6",
-   "kind": "figure",
-   "kind_word": "Figure",
-   "number": "F6",
-   "label": "fig:perceived_effectiveness",
-   "labels": [
-    "fig:perceived_effectiveness"
-   ],
-   "url": "/figure/F6/",
-   "title_html": "Perceived Heuristic Effectiveness",
-   "title": "Perceived Heuristic Effectiveness",
-   "section": "F",
-   "subsection": null,
-   "pages": [
-    52
-   ],
-   "page_labels": [
-    "51"
-   ],
-   "pdf_href": "/pdf/#page=53",
-   "questions": [],
-   "n_panels": 0,
-   "wide": false,
-   "main_refs": [],
-   "cited_in": [],
-   "group": {
-    "key": "zz",
-    "rule": "no main-paper link"
-   },
-   "prev": "figure/F5",
-   "next": "table/F1",
-   "suggest": [
-    "table/F7",
-    "table/F19",
-    "figure/F4"
-   ],
-   "parts": [
-    {
-     "n": 1,
-     "continued": false,
-     "anchor": "figure.caption.130",
-     "pdf_page": 52,
-     "page_label": "51",
-     "note_text": "This figure shows how effective the follow-up survey respondents believe each of the thirteen heuristics to be. On a five-point scale from 1 (“not effective at all”) to 5 (“extremely effective”), respondents rate how effective a heuristic is at finding stocks that match an investment objective in their own local stock market. The rated heuristics are those we identify in the interview of the respondent plus any others the respondent reports having used in the past. When these exceed three, the respondent rates only the three longest-used. We elicit ratings only for the objectives the respondent rates 4 or 5 in importance, so every rating comes from a respondent who has used the heuristic and considers the objective important. Twenty-one respondents rate no objective that highly and therefore rate no heuristic. The figure pools the four objectives. Because a respondent rates between one and four objectives, we first average the ratings of each respondent for a heuristic across the objectives she rates and then average across respondents, so that each respondent counts equally. Markers report these means and horizontal bars the associated 95% confidence intervals, and we truncate the horizontal axis to the range of the estimates. All thirteen means lie above the midpoint of the scale. The number of respondents behind a heuristic ranges from 25 to 263. We order heuristics from top to bottom by their prevalence in the full interview sample.",
-     "graphics": [
-      {
-       "src": "/assets/x/fig/F6/F6.svg",
-       "kind": "svg",
-       "png": "/assets/x/fig/F6/F6.png",
-       "w": 615.0,
-       "h": 355.0,
-       "width": 0.95,
-       "legend": false,
-       "src_sha": "9cad7e23157bcd2bd62f69084e2f690115b706b548173f0319053bc9f6fdfa99",
-       "text": "3.0 3.2 3.4 3.6 3.8 4.0 4.2 4.4 Mean perceived effectiveness (1–5) Technical Analysis ESG/Values Buy-the-Dip Valuation/Mispricing Social-Copy Dividends Confluence Momentum Authority-Follow Blue-Chip Comfort Familiarity/Brand Affect Growth/Innovation Fundamental Strength"
-      }
-     ],
-     "panels": [],
-     "tables": [],
-     "landscape": false,
-     "caption_src": "Perceived Heuristic Effectiveness",
-     "note_src_sha": "076c25188f23b318c6f475dae060d28aa9f8463ee8fb737d815d28b572b09b81"
-    }
-   ]
-  },
-  {
    "id": "table/F1",
    "kind": "table",
    "kind_word": "Table",
@@ -5832,12 +5678,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    53
+    51
    ],
    "page_labels": [
-    "52"
+    "50"
    ],
-   "pdf_href": "/pdf/#page=54",
+   "pdf_href": "/pdf/#page=52",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -5859,16 +5705,16 @@
     "key": "3.2",
     "rule": "cited (body)"
    },
-   "prev": "figure/F6",
+   "prev": "figure/F4",
    "next": "table/F2",
    "suggest": [],
    "parts": [
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.131",
-     "pdf_page": 53,
-     "page_label": "52",
+     "anchor": "table.caption.129",
+     "pdf_page": 51,
+     "page_label": "50",
      "note_text": "This table examines whether the duration of the interview varies across investor demographics and countries. The dependent variable is the interview duration in minutes, the elapsed time between the first and the last message of the interview transcript, without winsorization. We estimate ordinary least squares regressions. Column (1) includes the six demographic indicators as independent variables, and Column (2) adds country indicators, with the US as the omitted category. The six demographic indicators are Male, Older (age ≥ 35), Higher education (bachelor’s degree or above), High wealth (investable assets ≥ USD 500,000), Advanced (self-reported advanced or expert investment knowledge), and Aggressive (self-reported willingness to take above-average or substantial financial risks). We demean them so that the intercept in Column (1) represents the unconditional sample average. We do not demean the country indicators, so the intercept in Column (2) is the fitted duration for a US investor with sample-average demographics. The sample comprises the 1,540 investors we interviewed. We report heteroskedasticity-robust standard errors in parentheses. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
      "graphics": [],
      "panels": [],
@@ -5960,12 +5806,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    54
+    52
    ],
    "page_labels": [
-    "53"
+    "51"
    ],
-   "pdf_href": "/pdf/#page=55",
+   "pdf_href": "/pdf/#page=53",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -5994,9 +5840,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.132",
-     "pdf_page": 54,
-     "page_label": "53",
+     "anchor": "table.caption.130",
+     "pdf_page": 52,
+     "page_label": "51",
      "note_text": "This table examines whether the preference for an AI over a human interviewer varies across investor demographics and countries. The dependent variable equals 100 if the investor answers that she would prefer to be interviewed by an AI interviewer in the future, and zero if she prefers a human interviewer, is indifferent, or gives no usable answer (168, 766, and 20 investors, respectively). We therefore drop no investor, and the coefficients are in percentage points. We estimate linear probability models. Column (1) includes the six demographic indicators as independent variables, and Column (2) adds country indicators, with the US as the omitted category. The six demographic indicators are Male, Older (age ≥ 35), Higher education (bachelor’s degree or above), High wealth (investable assets ≥ USD 500,000), Advanced (self-reported advanced or expert investment knowledge), and Aggressive (self-reported willingness to take above-average or substantial financial risks). We demean them so that the intercept in Column (1) represents the unconditional sample average. We do not demean the country indicators, so the intercept in Column (2) is the fitted value for a US investor with sample-average demographics. The sample comprises the 1,540 investors we interviewed. We report heteroskedasticity-robust standard errors in parentheses. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
      "graphics": [],
      "panels": [],
@@ -6088,12 +5934,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    55
+    53
    ],
    "page_labels": [
-    "54"
+    "52"
    ],
-   "pdf_href": "/pdf/#page=56",
+   "pdf_href": "/pdf/#page=54",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -6124,9 +5970,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.133",
-     "pdf_page": 55,
-     "page_label": "54",
+     "anchor": "table.caption.131",
+     "pdf_page": 53,
+     "page_label": "52",
      "note_text": "This table shows descriptive statistics for the 600 investors who completed the follow-up survey. The first row covers the full follow-up survey sample. The remaining rows group these investors by gender, age, education, investable assets, self-reported investment knowledge, and self-reported risk attitude, each of which we elicit in the background survey. We leave the percentage columns blank for groups with no investors. Columns (1) and (2) report the number of investors in each group and that number as a percentage of the sample. Columns (3) through (6) report the percentage of investors within each group who report owning individual stocks, mutual funds or exchange-traded funds, derivatives, and cryptocurrencies, respectively. Column (3) equals 100% by construction, because we filter out investors who do not own any individual stocks before the interview stage.",
      "graphics": [],
      "panels": [],
@@ -6391,12 +6237,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    56
+    54
    ],
    "page_labels": [
-    "55"
+    "53"
    ],
-   "pdf_href": "/pdf/#page=57",
+   "pdf_href": "/pdf/#page=55",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -6436,9 +6282,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.134",
-     "pdf_page": 56,
-     "page_label": "55",
+     "anchor": "table.caption.132",
+     "pdf_page": 54,
+     "page_label": "53",
      "note_text": "This table shows, separately by country, the percentage of follow-up survey respondents who consider each of four investment objectives important. On a five-point scale from 1 (“not important at all”) to 5 (“extremely important”), respondents rate how important each objective is to them personally when picking stocks (consistent high returns, high upside focus, stable performance, and personal values alignment). The first row, Overall, pools all 600 respondents. Each of the remaining ten rows corresponds to one country of residence. Column (1) reports the number of respondents in the country, and Columns (2) through (5) report the percentage of those respondents assigning a rating of 4 or 5 to the objective in the column header.",
      "graphics": [],
      "panels": [],
@@ -6538,12 +6384,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    57
+    55
    ],
    "page_labels": [
-    "56"
+    "54"
    ],
-   "pdf_href": "/pdf/#page=58",
+   "pdf_href": "/pdf/#page=56",
    "questions": [],
    "n_panels": 2,
    "wide": false,
@@ -6585,9 +6431,9 @@
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.135",
-     "pdf_page": 57,
-     "page_label": "56",
+     "anchor": "table.caption.133",
+     "pdf_page": 55,
+     "page_label": "54",
      "note_text": "This table compares the 600 investors who participated in the follow-up survey (Respondents) with the 940 investors who did not (Non-respondents). In each panel, Columns (1) and (2) report the group means, and Column (3) reports the difference between respondents and non-respondents. Panel A covers characteristics we measure at the interview stage. Its first row reports the number of investors in each group, and the next six rows report the percentage of investors in each group who are male (Male), are aged 35 or above (Age 35+), hold a bachelor’s degree or above (Bachelor’s or higher), report investable assets of at least USD 500,000 (High assets), report advanced or expert investment knowledge (Advanced knowledge), and report willingness to take above-average or substantial financial risks (Aggressive risk). Interview minutes is the elapsed duration of the interview in minutes, and Number of heuristics is the number of the thirteen heuristics the investor invokes. An investor invokes a heuristic if its score is at least three (“meaningful contributor”). Panel B reports, for each of the thirteen heuristics, the percentage of investors in each group who invoke it, and we order heuristics by their prevalence in the full interview sample. We test each difference with a two-sided two-sample t-test that allows unequal variances. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
      "graphics": [],
      "panels": [],
@@ -6712,12 +6558,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    58
+    56
    ],
    "page_labels": [
-    "57"
+    "55"
    ],
-   "pdf_href": "/pdf/#page=59",
+   "pdf_href": "/pdf/#page=57",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -6753,18 +6599,16 @@
    "prev": "table/F5",
    "next": "table/F7",
    "suggest": [
-    "table/F14",
-    "table/F13",
     "figure/F4",
-    "table/F11"
+    "table/F9"
    ],
    "parts": [
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.136",
-     "pdf_page": 58,
-     "page_label": "57",
+     "anchor": "table.caption.134",
+     "pdf_page": 56,
+     "page_label": "55",
      "note_text": "This table examines whether investors adopt the heuristics they perceive as effective for the objectives they consider important, re-estimating the linear probability models of Table 6 of the main paper as fixed-effects logit models. We estimate the following logit counterpart of equation (1) of the main paper:\n\nPr (D(Adoption)ih = 1) = Λ (β1 (θig × ηPihg) + β2 ηPihg + β3 θig + αi),\n\nin which Λ(·) denotes the logistic function, and the dependent variable, D(Adoption)ih, equals one if heuristic h is among those we identify in the interview of investor i. The key independent variable is the interaction θig × ηPihg, printed as Objective importance × Perceived effectiveness, in which θig is the five-point importance rating investor i gives to objective g, and ηPihg is the five-point rating she gives to how effective heuristic h is at finding stocks that match the objective in her own local stock market. We standardize both variables within investor, as in Table 6 of the main paper. The starting sample is that of Table 6 of the main paper, 3,744 investor–heuristic–objective observations from 572 investors. The logit estimation drops fixed-effect groups without variation in the outcome, because the group effect fits their observations perfectly, which leaves 3,291, 3,291, and 3,181 observations in Columns (1) through (3), respectively. Coefficients are in log-odds and are therefore not directly comparable in scale to the linear probability estimates. The row Pseudo R² reports McFadden’s pseudo-R², computed against an intercept-only logit on the estimation sample of each column. Investor FE, Investor × Objective FE, and Country × Heuristic × Objective FE refer to the corresponding fixed effects. We cluster standard errors at the investor level and report them in parentheses. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
      "graphics": [],
      "panels": [],
@@ -6827,12 +6671,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    59
+    57
    ],
    "page_labels": [
-    "58"
+    "56"
    ],
-   "pdf_href": "/pdf/#page=60",
+   "pdf_href": "/pdf/#page=58",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -6868,18 +6712,15 @@
    "prev": "table/F6",
    "next": "table/F8",
    "suggest": [
-    "table/F8",
-    "figure/F6",
-    "table/F13",
-    "table/F14"
+    "table/F8"
    ],
    "parts": [
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.137",
-     "pdf_page": 59,
-     "page_label": "58",
+     "anchor": "table.caption.135",
+     "pdf_page": 57,
+     "page_label": "56",
      "note_text": "This table examines the relationship between perceived and historical heuristic effectiveness. We estimate the following regression, equation (2) of the main paper:\n\nηPihg = β ηHhgc + αi + λg + εihg,\n\nin which the dependent variable ηPihg, Perceived effectiveness, is the five-point rating investor i gives to how effective heuristic h is at finding stocks that match objective g in her own local stock market, standardized within investor across all her ratings for the three financial objectives. The key independent variable ηHhgc, Historical effectiveness, is the delivery of the heuristic on the objective in country c of the investor, estimated for the period running from July 2015 through June 2025, the ten years preceding our interviews (Section 5.3 of the main paper), and standardized within objective across the seventy heuristic–country pairs. The pooled sample comprises the 2,561 investor–heuristic–objective observations from 560 investors for which the follow-up survey elicits an effectiveness rating, restricted to the seven heuristics covered by archival data. Column (1) pools the three financial objectives and includes objective fixed effects λg, and Columns (2) through (4) estimate the relation separately for the returns, upside, and stability objectives. All columns include investor fixed effects αi. We cluster standard errors at the country level and report them in parentheses. Given the small number of clusters (ten), we base inference on wild-cluster bootstrap p-values (Webb six-point weights, 9,999 replications), which are 0.001, 0.102, 0.026, and 0.012 in Columns (1) through (4). Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
      "graphics": [],
      "panels": [],
@@ -6939,12 +6780,12 @@
    "section": "F",
    "subsection": null,
    "pages": [
-    60
+    58
    ],
    "page_labels": [
-    "59"
+    "57"
    ],
-   "pdf_href": "/pdf/#page=61",
+   "pdf_href": "/pdf/#page=59",
    "questions": [],
    "n_panels": 0,
    "wide": true,
@@ -6969,17 +6810,15 @@
    "prev": "table/F7",
    "next": "table/F9",
    "suggest": [
-    "table/F7",
-    "table/F14",
-    "table/F13"
+    "table/F7"
    ],
    "parts": [
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.138",
-     "pdf_page": 60,
-     "page_label": "59",
+     "anchor": "table.caption.136",
+     "pdf_page": 58,
+     "page_label": "57",
      "note_text": "This table examines whether the relationship between perceived and historical heuristic effectiveness varies with investor characteristics. The dependent variable, Perceived effectiveness, and the key independent variable, Historical effectiveness, are as in Table F7. Column (1) reproduces Column (1) of Table F7, which pools the three financial objectives with investor and objective fixed effects. Columns (2) through (7) each add one interaction between historical effectiveness and an investor characteristic, and Column (8) includes all six interactions jointly. The six characteristics are the indicators Male, Older (age ≥ 35), Higher education (bachelor’s degree or above), High wealth (investable assets ≥ USD 500,000), Advanced knowledge (self-reported advanced or expert investment knowledge), and Aggressive (self-reported willingness to take above-average or substantial financial risks). The investor fixed effects absorb their main effects. The sample comprises the 2,561 investor–heuristic–objective observations from 560 investors in Column (1) of Table F7. We cluster standard errors at the country level and report them in parentheses. Given the small number of clusters (ten), we base inference on wild-cluster bootstrap p-values (Webb six-point weights, 9,999 replications). Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
      "graphics": [],
      "panels": [],
@@ -7073,252 +6912,22 @@
    "kind": "table",
    "kind_word": "Table",
    "number": "F9",
-   "label": "tab:choice_performance_extra",
-   "labels": [
-    "tab:choice_performance_extra"
-   ],
-   "url": "/table/F9/",
-   "title_html": "Do Adopted Heuristics Deliver? Average Stock and JKP-Factor Benchmarks",
-   "title": "Do Adopted Heuristics Deliver? Average Stock and JKP-Factor Benchmarks",
-   "section": "F",
-   "subsection": null,
-   "pages": [
-    61
-   ],
-   "page_labels": [
-    "60"
-   ],
-   "pdf_href": "/pdf/#page=62",
-   "questions": [],
-   "n_panels": 0,
-   "wide": false,
-   "main_refs": [
-    {
-     "label": "tab:choice_performance",
-     "text": "Table 7",
-     "title": "Do Adopted Heuristics Deliver on the Objectives Investors Prioritize?"
-    }
-   ],
-   "cited_in": [
-    {
-     "ctx": "body",
-     "panel": null,
-     "paragraph": "Results",
-     "heading": {
-      "number": "5.4.3",
-      "title": "Do Chosen Heuristics Deliver on Investors’ Priorities?",
-      "title_html": "Do Chosen Heuristics Deliver on Investors’ Priorities?"
-     },
-     "float": null
-    }
-   ],
-   "group": {
-    "key": "5.4.3",
-    "rule": "cited (body)"
-   },
-   "prev": "table/F8",
-   "next": "table/F10",
-   "suggest": [
-    "table/F16",
-    "table/F10",
-    "table/F18",
-    "table/F15"
-   ],
-   "parts": [
-    {
-     "n": 1,
-     "continued": false,
-     "anchor": "table.caption.139",
-     "pdf_page": 61,
-     "page_label": "60",
-     "note_text": "This table reports two additional benchmarks for Table 7 of the main paper, using historical effectiveness over July 2015 through June 2025, the ten years preceding our interviews. The row Adopted heuristics repeats that of Table 7, with the same sample, prioritized objectives, adopted heuristics, aggregation, and standardization. The row Average stock reports the delivery of random stock sorting. Its long–short performance is zero in expectation before standardization, and we standardize it with the same within-objective means and standard deviations as heuristic effectiveness. This benchmark is a constant, so it has no standard deviation. Its one-sided p-value tests whether the adopted heuristics deliver more, using a wild-cluster bootstrap by country (Webb six-point weights, 9,999 replications). The row Randomly selected JKP-factor-based portfolios replaces the adopted set of each investor with an equally sized random draw from the 153 factors of Jensen, Kelly, and Pedersen (2023) that are computable in her country, each in its published long–short direction and standardized with the same within-objective means and standard deviations as heuristic effectiveness. This row reports the mean across 10,000 draws, with the standard deviation across draws in parentheses, and its p-value is the one-sided fraction of draws that deliver at least as much as the adopted set. The sample comprises the 427 follow-up respondents of Table 7, and the columns Returns, Upside, and Stability use 210, 158, and 256 of them, respectively. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively, referring to the p-values in the brackets.",
-     "graphics": [],
-     "panels": [],
-     "tables": [
-      {
-       "letter": "",
-       "heading_html": "",
-       "heading": "",
-       "html": "<table class=\"tbl full\" id=\"t-F9\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">+0.130</td><td class=\"a-c\">+0.009</td><td class=\"a-c\">+0.158</td><td class=\"a-c\">+0.179</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Average stock</th><td class=\"a-c\">−0.262</td><td class=\"a-c\">−0.617</td><td class=\"a-c\">+0.842</td><td class=\"a-c\">−0.649</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> average stock)</th><td class=\"a-c\">[0.002]***</td><td class=\"a-c\">[0.006]***</td><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.001]***</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected JKP-factor-based portfolios</th><td class=\"a-c\">−0.085</td><td class=\"a-c\">−0.233</td><td class=\"a-c\">+0.552</td><td class=\"a-c\">−0.354</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.034)</td><td class=\"a-c\">(0.058)</td><td class=\"a-c\">(0.063)</td><td class=\"a-c\">(0.047)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected JKP factors)</th><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.000]***</td></tr></tbody></table>",
-       "dense": false,
-       "ncols": 5,
-       "numbers": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "0.130",
-        "0.009",
-        "0.158",
-        "0.179",
-        "-0.262",
-        "-0.617",
-        "0.842",
-        "-0.649",
-        "0.002",
-        "0.006",
-        "1.000",
-        "0.001",
-        "-0.085",
-        "-0.233",
-        "0.552",
-        "-0.354",
-        "0.034",
-        "0.058",
-        "0.063",
-        "0.047",
-        "0.000",
-        "0.000",
-        "1.000",
-        "0.000"
-       ],
-       "src": "tables/h1m_h2_choice_performance_additional_benchmarks.tex",
-       "src_sha": "f9a8aa6c35c440fff4316c3dace90afbdccb5409e31e478afcff08e4b71a930d",
-       "cells": "Delivery, in standard deviations from the average heuristic–country pair  Overall Returns Upside Stability  (1) (2) (3) (4) Adopted heuristics +0.130 +0.009 +0.158 +0.179 Average stock -0.262 -0.617 +0.842 -0.649 p(Adopted ≤ average stock) [0.002]*** [0.006]*** [1.000] [0.001]*** Randomly selected JKP-factor-based portfolios -0.085 -0.233 +0.552 -0.354 Standard deviation across draws (0.034) (0.058) (0.063) (0.047) p(Adopted ≤ randomly selected JKP factors) [0.000]*** [0.000]*** [1.000] [0.000]***"
-      }
-     ],
-     "landscape": false,
-     "caption_src": "Do Adopted Heuristics Deliver? Average Stock and JKP-Factor Benchmarks",
-     "note_src_sha": "980c730e39f32f4389b3576ca88a928af44b4b0490f064f04a72369b402d2698"
-    }
-   ]
-  },
-  {
-   "id": "table/F10",
-   "kind": "table",
-   "kind_word": "Table",
-   "number": "F10",
-   "label": "tab:choice_performance_oos_extra",
-   "labels": [
-    "tab:choice_performance_oos_extra"
-   ],
-   "url": "/table/F10/",
-   "title_html": "Do Adopted Heuristics Deliver? Average Stock and JKP-Factor Benchmarks: Out-of-Sample Evidence",
-   "title": "Do Adopted Heuristics Deliver? Average Stock and JKP-Factor Benchmarks: Out-of-Sample Evidence",
-   "section": "F",
-   "subsection": null,
-   "pages": [
-    62
-   ],
-   "page_labels": [
-    "61"
-   ],
-   "pdf_href": "/pdf/#page=63",
-   "questions": [],
-   "n_panels": 0,
-   "wide": false,
-   "main_refs": [
-    {
-     "label": "tab:choice_performance_oos",
-     "text": "Table 8",
-     "title": "Do Adopted Heuristics Deliver? Out-of-Sample Evidence"
-    }
-   ],
-   "cited_in": [
-    {
-     "ctx": "body",
-     "panel": null,
-     "paragraph": "",
-     "heading": {
-      "number": "5.5",
-      "title": "Subsequent Effectiveness",
-      "title_html": "Subsequent Effectiveness"
-     },
-     "float": null
-    }
-   ],
-   "group": {
-    "key": "5.5",
-    "rule": "cited (body)"
-   },
-   "prev": "table/F9",
-   "next": "table/F11",
-   "suggest": [
-    "table/F18",
-    "table/F9",
-    "table/F17",
-    "table/F11"
-   ],
-   "parts": [
-    {
-     "n": 1,
-     "continued": false,
-     "anchor": "table.caption.140",
-     "pdf_page": 62,
-     "page_label": "61",
-     "note_text": "This table reports two additional benchmarks for Table 8 of the main paper, using out-of-sample delivery. The out-of-sample period covers portfolio sorts from September through November 2025, and we measure delivery over the month following each sort, so that all outcomes fall between October and December 2025. We calculate the CAPM alpha for the returns objective with the market beta fixed at its estimate from September 2015 through August 2025. The row Adopted heuristics repeats that of Table 8, with the same sample, prioritized objectives, adopted heuristics, aggregation, and standardization. The row Average stock reports the delivery of random stock sorting. Its long–short performance is zero in expectation before standardization, and we standardize it with the same within-objective means and standard deviations as heuristic effectiveness. This benchmark is a constant, so it has no standard deviation. Its one-sided p-value tests whether the adopted heuristics deliver more, using a wild-cluster bootstrap by country (Webb six-point weights, 9,999 replications). The row Randomly selected JKP-factor-based portfolios replaces the adopted set of each investor with an equally sized random draw from the 153 factors of Jensen, Kelly, and Pedersen (2023) that are computable in her country, each in its published long–short direction and standardized with the same within-objective means and standard deviations as heuristic effectiveness. This row reports the mean across 10,000 draws, with the standard deviation across draws in parentheses, and its p-value is the one-sided fraction of draws that deliver at least as much as the adopted set. The sample comprises the 427 follow-up respondents of Table 8, and the columns Returns, Upside, and Stability use 210, 158, and 256 of them, respectively. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively, referring to the p-values in the brackets.",
-     "graphics": [],
-     "panels": [],
-     "tables": [
-      {
-       "letter": "",
-       "heading_html": "",
-       "heading": "",
-       "html": "<table class=\"tbl full\" id=\"t-F10\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">+0.132</td><td class=\"a-c\">+0.058</td><td class=\"a-c\">+0.288</td><td class=\"a-c\">+0.099</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Average stock</th><td class=\"a-c\">−0.163</td><td class=\"a-c\">−0.263</td><td class=\"a-c\">+0.699</td><td class=\"a-c\">−0.600</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> average stock)</th><td class=\"a-c\">[0.001]***</td><td class=\"a-c\">[0.007]***</td><td class=\"a-c\">[0.989]</td><td class=\"a-c\">[0.001]***</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected JKP-factor-based portfolios</th><td class=\"a-c\">−0.060</td><td class=\"a-c\">−0.079</td><td class=\"a-c\">+0.546</td><td class=\"a-c\">−0.406</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.033)</td><td class=\"a-c\">(0.059)</td><td class=\"a-c\">(0.064)</td><td class=\"a-c\">(0.045)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected JKP factors)</th><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.011]**</td><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.000]***</td></tr></tbody></table>",
-       "dense": false,
-       "ncols": 5,
-       "numbers": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "0.132",
-        "0.058",
-        "0.288",
-        "0.099",
-        "-0.163",
-        "-0.263",
-        "0.699",
-        "-0.600",
-        "0.001",
-        "0.007",
-        "0.989",
-        "0.001",
-        "-0.060",
-        "-0.079",
-        "0.546",
-        "-0.406",
-        "0.033",
-        "0.059",
-        "0.064",
-        "0.045",
-        "0.000",
-        "0.011",
-        "1.000",
-        "0.000"
-       ],
-       "src": "tables/h1m_h2_choice_performance_oos_additional_benchmarks.tex",
-       "src_sha": "48ef2eb955238d8208340c0375cac7d003a8fd69bc18fa3401613d91f1463acd",
-       "cells": "Delivery, in standard deviations from the average heuristic–country pair  Overall Returns Upside Stability  (1) (2) (3) (4) Adopted heuristics +0.132 +0.058 +0.288 +0.099 Average stock -0.163 -0.263 +0.699 -0.600 p(Adopted ≤ average stock) [0.001]*** [0.007]*** [0.989] [0.001]*** Randomly selected JKP-factor-based portfolios -0.060 -0.079 +0.546 -0.406 Standard deviation across draws (0.033) (0.059) (0.064) (0.045) p(Adopted ≤ randomly selected JKP factors) [0.000]*** [0.011]** [1.000] [0.000]***"
-      }
-     ],
-     "landscape": false,
-     "caption_src": "Do Adopted Heuristics Deliver? Average Stock and JKP-Factor Benchmarks: Out-of-Sample Evidence",
-     "note_src_sha": "9e53fbca3fa120b7e6a0fa6baf810284201c4e31a569de73e2d77f54aadb7f79"
-    }
-   ]
-  },
-  {
-   "id": "table/F11",
-   "kind": "table",
-   "kind_word": "Table",
-   "number": "F11",
    "label": "tab:choice_performance_post_adoption",
    "labels": [
     "tab:choice_performance_post_adoption"
    ],
-   "url": "/table/F11/",
+   "url": "/table/F9/",
    "title_html": "Do Adopted Heuristics Deliver? Post-Adoption Evidence",
    "title": "Do Adopted Heuristics Deliver? Post-Adoption Evidence",
    "section": "F",
    "subsection": null,
    "pages": [
-    63
+    59
    ],
    "page_labels": [
-    "62"
+    "58"
    ],
-   "pdf_href": "/pdf/#page=64",
+   "pdf_href": "/pdf/#page=60",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -7346,21 +6955,20 @@
     "key": "5.5",
     "rule": "cited (body)"
    },
-   "prev": "table/F10",
-   "next": "table/F12",
+   "prev": "table/F8",
+   "next": "table/F10",
    "suggest": [
-    "table/F17",
     "table/F10",
-    "table/F18",
-    "table/F9"
+    "table/F11",
+    "table/F6"
    ],
    "parts": [
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.141",
-     "pdf_page": 63,
-     "page_label": "62",
+     "anchor": "table.caption.137",
+     "pdf_page": 59,
+     "page_label": "58",
      "note_text": "This table repeats the analysis of Table 8 of the main paper over post-adoption periods based on reported use durations. For each adopted heuristic, we use the duration of current use or, if the investor has stopped using it, the duration before stopping. We exclude investor–heuristic pairs that report a few months or an unknown duration. Taking June 30, 2026 as the common reference date, we use minimum durations of one and three years for reports of one to three years and more than three years, respectively. Monthly portfolio sorts therefore begin in July 2025 or July 2023, and we measure delivery over the month following each sort. Outcomes cover August through December 2025 (five months) or August 2023 through December 2025 (29 months, the longest period). The average period is approximately 20 months per investor, with retained heuristics weighted equally within each investor. We evaluate the choices recorded in the interviews through December 2025, including heuristics no longer used. For returns, we calculate the CAPM alpha with market betas fixed at their heuristic–country estimates from July 2013 through June 2023 portfolio sorts. For upside and stability, we use the top-1% hit-rate spread and the sign-reversed total return volatility spread. We standardize outcomes in both periods using the within-objective means and sample standard deviations across the seventy heuristic–country pairs in the 29-month window. Prioritized objectives and aggregation are otherwise as in Table 8 of the main paper. The two benchmark rows replace the retained adopted set of each investor with an equally sized random draw without replacement from (i) the covered heuristics she did not adopt in the interview (Alternative heuristics) and (ii) all seven covered heuristics (Randomly selected heuristics). The first pool also excludes adopted heuristics dropped by the duration filter. We randomly assign the drawn heuristics to the periods of the adopted heuristics and evaluate them in the same country on the same prioritized objectives. These two rows report means across 10,000 draws, with standard deviations across draws in parentheses, and their p-values are the one-sided fraction of draws that deliver at least as much as the adopted set. The sample comprises 371 investors and 621 retained investor–heuristic pairs. The columns Returns, Upside, and Stability use 180, 137, and 224 of these investors, respectively. Interpreting these results as post-adoption delivery assumes that the reported durations identify the start of use and that the reported priorities apply during the evaluation period. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively, referring to the p-values in the brackets.",
      "graphics": [],
      "panels": [],
@@ -7369,7 +6977,7 @@
        "letter": "",
        "heading_html": "",
        "heading": "",
-       "html": "<table class=\"tbl full\" id=\"t-F11\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">+0.146</td><td class=\"a-c\">+0.084</td><td class=\"a-c\">+0.255</td><td class=\"a-c\">+0.117</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Alternative heuristics</th><td class=\"a-c\">−0.122</td><td class=\"a-c\">−0.224</td><td class=\"a-c\">−0.172</td><td class=\"a-c\">+0.012</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.041)</td><td class=\"a-c\">(0.081)</td><td class=\"a-c\">(0.080)</td><td class=\"a-c\">(0.051)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> alternative heuristics)</th><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.021]**</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected heuristics</th><td class=\"a-c\">−0.066</td><td class=\"a-c\">−0.151</td><td class=\"a-c\">−0.086</td><td class=\"a-c\">+0.027</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.044)</td><td class=\"a-c\">(0.085)</td><td class=\"a-c\">(0.086)</td><td class=\"a-c\">(0.056)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected heuristics)</th><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.003]***</td><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.051]*</td></tr></tbody></table>",
+       "html": "<table class=\"tbl full\" id=\"t-F9\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">+0.146</td><td class=\"a-c\">+0.084</td><td class=\"a-c\">+0.255</td><td class=\"a-c\">+0.117</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Alternative heuristics</th><td class=\"a-c\">−0.122</td><td class=\"a-c\">−0.224</td><td class=\"a-c\">−0.172</td><td class=\"a-c\">+0.012</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.041)</td><td class=\"a-c\">(0.081)</td><td class=\"a-c\">(0.080)</td><td class=\"a-c\">(0.051)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> alternative heuristics)</th><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.021]**</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected heuristics</th><td class=\"a-c\">−0.066</td><td class=\"a-c\">−0.151</td><td class=\"a-c\">−0.086</td><td class=\"a-c\">+0.027</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.044)</td><td class=\"a-c\">(0.085)</td><td class=\"a-c\">(0.086)</td><td class=\"a-c\">(0.056)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected heuristics)</th><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.003]***</td><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.051]*</td></tr></tbody></table>",
        "dense": false,
        "ncols": 5,
        "numbers": [
@@ -7418,449 +7026,26 @@
    ]
   },
   {
-   "id": "table/F12",
+   "id": "table/F10",
    "kind": "table",
    "kind_word": "Table",
-   "number": "F12",
-   "label": "tab:det_objective_priority",
-   "labels": [
-    "tab:det_objective_priority"
-   ],
-   "url": "/table/F12/",
-   "title_html": "Determinants of Objective Priorities",
-   "title": "Determinants of Objective Priorities",
-   "section": "F",
-   "subsection": null,
-   "pages": [
-    64
-   ],
-   "page_labels": [
-    "63"
-   ],
-   "pdf_href": "/pdf/#page=65",
-   "questions": [],
-   "n_panels": 0,
-   "wide": false,
-   "main_refs": [],
-   "cited_in": [],
-   "group": {
-    "key": "zz",
-    "rule": "no main-paper link"
-   },
-   "prev": "table/F11",
-   "next": "table/F13",
-   "suggest": [],
-   "parts": [
-    {
-     "n": 1,
-     "continued": false,
-     "anchor": "table.caption.142",
-     "pdf_page": 64,
-     "page_label": "63",
-     "note_text": "This table examines which financial objectives investors prioritize. We estimate linear probability models for each objective. The dependent variable, D(investor prioritizes the objective), is a dummy variable equal to one if the investor rates the objective strictly above her own average importance rating across the three financial objectives. The six demographic indicators are Male, Older (age ≥ 35), Higher education (bachelor’s degree or above), High wealth (investable assets ≥ USD 500,000), Advanced knowledge (self-reported advanced or expert investment knowledge), and Aggressive (self-reported willingness to take above-average or substantial financial risks). Mkt excess return, Avg skewness, and Avg volatility are country-level averages over July 2015 through June 2025, the ten years preceding our interviews, of the annualized value-weighted market excess return and the value-weighted means of the 21-day realized skewness and volatility of individual stocks. We compute all three from the data of Jensen, Kelly, and Pedersen (2023) and standardize them across the ten countries. For each objective, the first column includes the three market characteristics, and the second replaces them with country indicators, with the US as the omitted category. All six columns include the six demographic indicators and a constant. We report heteroskedasticity-robust standard errors in parentheses. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
-     "graphics": [],
-     "panels": [],
-     "tables": [
-      {
-       "letter": "",
-       "heading_html": "",
-       "heading": "",
-       "html": "<table class=\"tbl full\" id=\"t-F12\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"7\" scope=\"colgroup\">Dependent variable: D(investor prioritizes the objective)</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c cmlr\" colspan=\"2\" scope=\"colgroup\">Returns</th><th class=\"a-c cmlr\" colspan=\"2\" scope=\"colgroup\">Upside</th><th class=\"a-c cmlr\" colspan=\"2\" scope=\"colgroup\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th><th class=\"a-c\" scope=\"col\">(5)</th><th class=\"a-c\" scope=\"col\">(6)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Male</th><td class=\"a-c\">−0.080*</td><td class=\"a-c\">−0.077*</td><td class=\"a-c\">+0.077**</td><td class=\"a-c\">+0.077**</td><td class=\"a-c\">−0.071</td><td class=\"a-c\">−0.070</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.043)</td><td class=\"a-c\">(0.044)</td><td class=\"a-c\">(0.038)</td><td class=\"a-c\">(0.039)</td><td class=\"a-c\">(0.044)</td><td class=\"a-c\">(0.044)</td></tr><tr><th class=\"a-l\" scope=\"row\">Older</th><td class=\"a-c\">+0.005</td><td class=\"a-c\">−0.002</td><td class=\"a-c\">+0.015</td><td class=\"a-c\">+0.022</td><td class=\"a-c\">+0.031</td><td class=\"a-c\">+0.041</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.054)</td><td class=\"a-c\">(0.055)</td><td class=\"a-c\">(0.050)</td><td class=\"a-c\">(0.051)</td><td class=\"a-c\">(0.056)</td><td class=\"a-c\">(0.058)</td></tr><tr><th class=\"a-l\" scope=\"row\">Higher education</th><td class=\"a-c\">−0.006</td><td class=\"a-c\">−0.005</td><td class=\"a-c\">+0.111***</td><td class=\"a-c\">+0.109**</td><td class=\"a-c\">−0.078</td><td class=\"a-c\">−0.074</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.052)</td><td class=\"a-c\">(0.053)</td><td class=\"a-c\">(0.043)</td><td class=\"a-c\">(0.044)</td><td class=\"a-c\">(0.053)</td><td class=\"a-c\">(0.054)</td></tr><tr><th class=\"a-l\" scope=\"row\">High wealth</th><td class=\"a-c\">−0.053</td><td class=\"a-c\">−0.048</td><td class=\"a-c\">−0.011</td><td class=\"a-c\">−0.008</td><td class=\"a-c\">+0.045</td><td class=\"a-c\">+0.046</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.045)</td><td class=\"a-c\">(0.045)</td><td class=\"a-c\">(0.040)</td><td class=\"a-c\">(0.041)</td><td class=\"a-c\">(0.045)</td><td class=\"a-c\">(0.045)</td></tr><tr><th class=\"a-l\" scope=\"row\">Advanced knowledge</th><td class=\"a-c\">+0.075</td><td class=\"a-c\">+0.078</td><td class=\"a-c\">+0.053</td><td class=\"a-c\">+0.050</td><td class=\"a-c\">−0.022</td><td class=\"a-c\">−0.038</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.051)</td><td class=\"a-c\">(0.054)</td><td class=\"a-c\">(0.048)</td><td class=\"a-c\">(0.052)</td><td class=\"a-c\">(0.051)</td><td class=\"a-c\">(0.053)</td></tr><tr><th class=\"a-l\" scope=\"row\">Aggressive</th><td class=\"a-c\">+0.021</td><td class=\"a-c\">+0.018</td><td class=\"a-c\">+0.103**</td><td class=\"a-c\">+0.102**</td><td class=\"a-c\">−0.109**</td><td class=\"a-c\">−0.109**</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.045)</td><td class=\"a-c\">(0.046)</td><td class=\"a-c\">(0.042)</td><td class=\"a-c\">(0.043)</td><td class=\"a-c\">(0.046)</td><td class=\"a-c\">(0.047)</td></tr><tr><th class=\"a-l\" scope=\"row\">Mkt excess return</th><td class=\"a-c\">−0.018</td><td class=\"a-c\"></td><td class=\"a-c\">−0.010</td><td class=\"a-c\"></td><td class=\"a-c\">−0.041</td><td class=\"a-c\"></td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.026)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.024)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.026)</td><td class=\"a-c\"></td></tr><tr><th class=\"a-l\" scope=\"row\">Avg skewness</th><td class=\"a-c\">−0.031</td><td class=\"a-c\"></td><td class=\"a-c\">+0.002</td><td class=\"a-c\"></td><td class=\"a-c\">+0.002</td><td class=\"a-c\"></td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.031)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.029)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.032)</td><td class=\"a-c\"></td></tr><tr><th class=\"a-l\" scope=\"row\">Avg volatility</th><td class=\"a-c\">+0.029</td><td class=\"a-c\"></td><td class=\"a-c\">−0.010</td><td class=\"a-c\"></td><td class=\"a-c\">+0.021</td><td class=\"a-c\"></td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.042)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.038)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.043)</td><td class=\"a-c\"></td></tr><tr><th class=\"a-l\" scope=\"row\">Australia</th><td class=\"a-c\"></td><td class=\"a-c\">−0.094</td><td class=\"a-c\"></td><td class=\"a-c\">−0.057</td><td class=\"a-c\"></td><td class=\"a-c\">−0.048</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.108)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.098)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.120)</td></tr><tr><th class=\"a-l\" scope=\"row\">Canada</th><td class=\"a-c\"></td><td class=\"a-c\">+0.013</td><td class=\"a-c\"></td><td class=\"a-c\">+0.066</td><td class=\"a-c\"></td><td class=\"a-c\">+0.051</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.068)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.061)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.068)</td></tr><tr><th class=\"a-l\" scope=\"row\">France</th><td class=\"a-c\"></td><td class=\"a-c\">−0.053</td><td class=\"a-c\"></td><td class=\"a-c\">+0.044</td><td class=\"a-c\"></td><td class=\"a-c\">+0.004</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.073)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.071)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.075)</td></tr><tr><th class=\"a-l\" scope=\"row\">Germany</th><td class=\"a-c\"></td><td class=\"a-c\">+0.008</td><td class=\"a-c\"></td><td class=\"a-c\">+0.013</td><td class=\"a-c\"></td><td class=\"a-c\">+0.083</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.076)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.068)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.077)</td></tr><tr><th class=\"a-l\" scope=\"row\">India</th><td class=\"a-c\"></td><td class=\"a-c\">−0.092</td><td class=\"a-c\"></td><td class=\"a-c\">+0.027</td><td class=\"a-c\"></td><td class=\"a-c\">+0.056</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.081)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.077)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.083)</td></tr><tr><th class=\"a-l\" scope=\"row\">Japan</th><td class=\"a-c\"></td><td class=\"a-c\">+0.073</td><td class=\"a-c\"></td><td class=\"a-c\">+0.008</td><td class=\"a-c\"></td><td class=\"a-c\">+0.104</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.155)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.142)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.147)</td></tr><tr><th class=\"a-l\" scope=\"row\">Singapore</th><td class=\"a-c\"></td><td class=\"a-c\">−0.043</td><td class=\"a-c\"></td><td class=\"a-c\">+0.024</td><td class=\"a-c\"></td><td class=\"a-c\">+0.075</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.099)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.089)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.099)</td></tr><tr><th class=\"a-l\" scope=\"row\">South Korea</th><td class=\"a-c\"></td><td class=\"a-c\">+0.022</td><td class=\"a-c\"></td><td class=\"a-c\">−0.004</td><td class=\"a-c\"></td><td class=\"a-c\">+0.014</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.117)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.103)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.117)</td></tr><tr><th class=\"a-l\" scope=\"row\">UK</th><td class=\"a-c\"></td><td class=\"a-c\">+0.014</td><td class=\"a-c\"></td><td class=\"a-c\">+0.055</td><td class=\"a-c\"></td><td class=\"a-c\">+0.156**</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\"></td><td class=\"a-c\">(0.070)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.062)</td><td class=\"a-c\"></td><td class=\"a-c\">(0.068)</td></tr><tr><th class=\"a-l\" scope=\"row\">Constant</th><td class=\"a-c\">+0.449***</td><td class=\"a-c\">+0.464***</td><td class=\"a-c\">+0.094</td><td class=\"a-c\">+0.062</td><td class=\"a-c\">+0.614***</td><td class=\"a-c\">+0.544***</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.071)</td><td class=\"a-c\">(0.081)</td><td class=\"a-c\">(0.061)</td><td class=\"a-c\">(0.069)</td><td class=\"a-c\">(0.071)</td><td class=\"a-c\">(0.082)</td></tr><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Observations</th><td class=\"a-c\">600</td><td class=\"a-c\">600</td><td class=\"a-c\">600</td><td class=\"a-c\">600</td><td class=\"a-c\">600</td><td class=\"a-c\">600</td></tr><tr><th class=\"a-l\" scope=\"row\"><math><msup><mi>R</mi><mn class=\"tml-med-pad\">2</mn></msup></math></th><td class=\"a-c\">0.012</td><td class=\"a-c\">0.016</td><td class=\"a-c\">0.045</td><td class=\"a-c\">0.048</td><td class=\"a-c\">0.031</td><td class=\"a-c\">0.038</td></tr></tbody></table>",
-       "dense": false,
-       "ncols": 7,
-       "numbers": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "-0.080",
-        "-0.077",
-        "0.077",
-        "0.077",
-        "-0.071",
-        "-0.070",
-        "0.043",
-        "0.044",
-        "0.038",
-        "0.039",
-        "0.044",
-        "0.044",
-        "0.005",
-        "-0.002",
-        "0.015",
-        "0.022",
-        "0.031",
-        "0.041",
-        "0.054",
-        "0.055",
-        "0.050",
-        "0.051",
-        "0.056",
-        "0.058",
-        "-0.006",
-        "-0.005",
-        "0.111",
-        "0.109",
-        "-0.078",
-        "-0.074",
-        "0.052",
-        "0.053",
-        "0.043",
-        "0.044",
-        "0.053",
-        "0.054",
-        "-0.053",
-        "-0.048",
-        "-0.011",
-        "-0.008",
-        "0.045",
-        "0.046",
-        "0.045",
-        "0.045",
-        "0.040",
-        "0.041",
-        "0.045",
-        "0.045",
-        "0.075",
-        "0.078",
-        "0.053",
-        "0.050",
-        "-0.022",
-        "-0.038",
-        "0.051",
-        "0.054",
-        "0.048",
-        "0.052",
-        "0.051",
-        "0.053",
-        "0.021",
-        "0.018",
-        "0.103",
-        "0.102",
-        "-0.109",
-        "-0.109",
-        "0.045",
-        "0.046",
-        "0.042",
-        "0.043",
-        "0.046",
-        "0.047",
-        "-0.018",
-        "-0.010",
-        "-0.041",
-        "0.026",
-        "0.024",
-        "0.026",
-        "-0.031",
-        "0.002",
-        "0.002",
-        "0.031",
-        "0.029",
-        "0.032",
-        "0.029",
-        "-0.010",
-        "0.021",
-        "0.042",
-        "0.038",
-        "0.043",
-        "-0.094",
-        "-0.057",
-        "-0.048",
-        "0.108",
-        "0.098",
-        "0.120",
-        "0.013",
-        "0.066",
-        "0.051",
-        "0.068",
-        "0.061",
-        "0.068",
-        "-0.053",
-        "0.044",
-        "0.004",
-        "0.073",
-        "0.071",
-        "0.075",
-        "0.008",
-        "0.013",
-        "0.083",
-        "0.076",
-        "0.068",
-        "0.077",
-        "-0.092",
-        "0.027",
-        "0.056",
-        "0.081",
-        "0.077",
-        "0.083",
-        "0.073",
-        "0.008",
-        "0.104",
-        "0.155",
-        "0.142",
-        "0.147",
-        "-0.043",
-        "0.024",
-        "0.075",
-        "0.099",
-        "0.089",
-        "0.099",
-        "0.022",
-        "-0.004",
-        "0.014",
-        "0.117",
-        "0.103",
-        "0.117",
-        "0.014",
-        "0.055",
-        "0.156",
-        "0.070",
-        "0.062",
-        "0.068",
-        "0.449",
-        "0.464",
-        "0.094",
-        "0.062",
-        "0.614",
-        "0.544",
-        "0.071",
-        "0.081",
-        "0.061",
-        "0.069",
-        "0.071",
-        "0.082",
-        "600",
-        "600",
-        "600",
-        "600",
-        "600",
-        "600",
-        "0.012",
-        "0.016",
-        "0.045",
-        "0.048",
-        "0.031",
-        "0.038"
-       ],
-       "src": "tables/h1m_det_objective_priority.tex",
-       "src_sha": "f30440d5265d51af32ed0fda3a323cb3f6a994ce6cf386ebc747bd0a8653857f",
-       "cells": "Dependent variable: D(investor prioritizes the objective)  Returns Upside Stability  (1) (2) (3) (4) (5) (6) Male -0.080* -0.077* +0.077** +0.077** -0.071 -0.070  (0.043) (0.044) (0.038) (0.039) (0.044) (0.044) Older +0.005 -0.002 +0.015 +0.022 +0.031 +0.041  (0.054) (0.055) (0.050) (0.051) (0.056) (0.058) Higher education -0.006 -0.005 +0.111*** +0.109** -0.078 -0.074  (0.052) (0.053) (0.043) (0.044) (0.053) (0.054) High wealth -0.053 -0.048 -0.011 -0.008 +0.045 +0.046  (0.045) (0.045) (0.040) (0.041) (0.045) (0.045) Advanced knowledge +0.075 +0.078 +0.053 +0.050 -0.022 -0.038  (0.051) (0.054) (0.048) (0.052) (0.051) (0.053) Aggressive +0.021 +0.018 +0.103** +0.102** -0.109** -0.109**  (0.045) (0.046) (0.042) (0.043) (0.046) (0.047) Mkt excess return -0.018  -0.010  -0.041   (0.026)  (0.024)  (0.026)  Avg skewness -0.031  +0.002  +0.002   (0.031)  (0.029)  (0.032)  Avg volatility +0.029  -0.010  +0.021   (0.042)  (0.038)  (0.043)  Australia  -0.094  -0.057  -0.048   (0.108)  (0.098)  (0.120) Canada  +0.013  +0.066  +0.051   (0.068)  (0.061)  (0.068) France  -0.053  +0.044  +0.004   (0.073)  (0.071)  (0.075) Germany  +0.008  +0.013  +0.083   (0.076)  (0.068)  (0.077) India  -0.092  +0.027  +0.056   (0.081)  (0.077)  (0.083) Japan  +0.073  +0.008  +0.104   (0.155)  (0.142)  (0.147) Singapore  -0.043  +0.024  +0.075   (0.099)  (0.089)  (0.099) South Korea  +0.022  -0.004  +0.014   (0.117)  (0.103)  (0.117) UK  +0.014  +0.055  +0.156**   (0.070)  (0.062)  (0.068) Constant +0.449*** +0.464*** +0.094 +0.062 +0.614*** +0.544***  (0.071) (0.081) (0.061) (0.069) (0.071) (0.082) Observations 600 600 600 600 600 600 R² 0.012 0.016 0.045 0.048 0.031 0.038"
-      }
-     ],
-     "landscape": false,
-     "caption_src": "Determinants of Objective Priorities",
-     "note_src_sha": "b39bbe5105389695c64fff27216ad1d844b0c359f6e9d026181f51356af179a3"
-    }
-   ]
-  },
-  {
-   "id": "table/F13",
-   "kind": "table",
-   "kind_word": "Table",
-   "number": "F13",
-   "label": "tab:adoption_ecological",
-   "labels": [
-    "tab:adoption_ecological"
-   ],
-   "url": "/table/F13/",
-   "title_html": "Heuristic Adoption and Historical Effectiveness: Reduced Form",
-   "title": "Heuristic Adoption and Historical Effectiveness: Reduced Form",
-   "section": "F",
-   "subsection": null,
-   "pages": [
-    65
-   ],
-   "page_labels": [
-    "64"
-   ],
-   "pdf_href": "/pdf/#page=66",
-   "questions": [],
-   "n_panels": 0,
-   "wide": false,
-   "main_refs": [
-    {
-     "label": "tab:adoption",
-     "text": "Table 6",
-     "title": "Heuristic Adoption: Objective Importance and Perceived Effectiveness"
-    },
-    {
-     "label": "subsec:effectiveness",
-     "text": "Section 5.3",
-     "title": "Estimating True Effectiveness"
-    }
-   ],
-   "cited_in": [],
-   "group": {
-    "key": "5.4.1",
-    "rule": "refers to tab:adoption"
-   },
-   "prev": "table/F12",
-   "next": "table/F14",
-   "suggest": [
-    "table/F14",
-    "table/F6",
-    "table/F7",
-    "table/F8"
-   ],
-   "parts": [
-    {
-     "n": 1,
-     "continued": false,
-     "anchor": "table.caption.143",
-     "pdf_page": 65,
-     "page_label": "64",
-     "note_text": "This table examines whether investors are more likely to adopt heuristics that are historically more effective, in their own country, for the objectives they consider important. It re-estimates the adoption regression of Table 6 of the main paper in reduced form, replacing perceived effectiveness ηPihg with historical effectiveness ηHhgc. Because we estimate historical effectiveness from archival data alone (Section 5.3 of the main paper), survey answers cannot affect it, and the estimates are immune to ex-post rationalization of one’s own choices. The dependent variable, D(Adoption), is a dummy variable equal to one if the heuristic is among those we identify in the interview of the investor. The key independent variable is the interaction Objective importance × Historical effectiveness, in which Objective importance is the five-point importance rating the investor gives to the objective, standardized within investor across the three financial objectives, and Historical effectiveness is the delivery of the heuristic on the objective in the country of the investor, estimated for the period running from July 2015 through June 2025, the ten years preceding our interviews, and standardized within objective across the seventy heuristic–country pairs. Because the analysis requires no effectiveness rating, the sample is the full grid of the 600 follow-up respondents, the seven heuristics covered by archival data, and the three financial objectives (12,600 observations), without any conditioning on which heuristics an investor rates. Investor FE, Investor × Objective FE, and Country × Heuristic × Objective FE refer to the corresponding fixed effects. We cluster standard errors at the country level and report them in parentheses. Given the small number of clusters (ten), we base the stars in Columns (1) and (2) on wild-cluster bootstrap p-values (Webb six-point weights, 9,999 replications). In Column (3), the bootstrap is not computable under the high-dimensional fixed effects, so we base the stars on the country-clustered standard errors. The interaction remains significant at the 1% level when we instead cluster standard errors at the investor level. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
-     "graphics": [],
-     "panels": [],
-     "tables": [
-      {
-       "letter": "",
-       "heading_html": "",
-       "heading": "",
-       "html": "<table class=\"tbl full\" id=\"t-F13\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"4\" scope=\"colgroup\">Dependent variable: D(Adoption)</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Objective importance <span class=\"m\">×</span> Historical effectiveness</th><td class=\"a-c\">+0.024***</td><td class=\"a-c\">+0.025***</td><td class=\"a-c\">+0.025***</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.005)</td><td class=\"a-c\">(0.005)</td><td class=\"a-c\">(0.005)</td></tr><tr><th class=\"a-l\" scope=\"row\">Historical effectiveness</th><td class=\"a-c\">+0.004</td><td class=\"a-c\">+0.005</td><td class=\"a-c\"></td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.007)</td><td class=\"a-c\">(0.008)</td><td class=\"a-c\"></td></tr><tr><th class=\"a-l\" scope=\"row\">Objective importance</th><td class=\"a-c\">+0.001</td><td class=\"a-c\"></td><td class=\"a-c\"></td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.001)</td><td class=\"a-c\"></td><td class=\"a-c\"></td></tr><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Investor FE</th><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\">–</td><td class=\"a-c\">–</td></tr><tr><th class=\"a-l\" scope=\"row\">Investor <span class=\"m\">×</span> Objective FE</th><td class=\"a-c\">–</td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td></tr><tr><th class=\"a-l\" scope=\"row\">Country <span class=\"m\">×</span> Heuristic <span class=\"m\">×</span> Objective FE</th><td class=\"a-c\">–</td><td class=\"a-c\">–</td><td class=\"a-c\"><span class=\"m\">✓</span></td></tr><tr><th class=\"a-l\" scope=\"row\">Observations</th><td class=\"a-c\">12,600</td><td class=\"a-c\">12,600</td><td class=\"a-c\">12,600</td></tr><tr><th class=\"a-l\" scope=\"row\"><math><msup><mi>R</mi><mn class=\"tml-med-pad\">2</mn></msup></math></th><td class=\"a-c\">0.099</td><td class=\"a-c\">0.099</td><td class=\"a-c\">0.173</td></tr></tbody></table>",
-       "dense": false,
-       "ncols": 4,
-       "numbers": [
-        "1",
-        "2",
-        "3",
-        "0.024",
-        "0.025",
-        "0.025",
-        "0.005",
-        "0.005",
-        "0.005",
-        "0.004",
-        "0.005",
-        "0.007",
-        "0.008",
-        "0.001",
-        "0.001",
-        "12,600",
-        "12,600",
-        "12,600",
-        "0.099",
-        "0.099",
-        "0.173"
-       ],
-       "src": "tables/h1m_h1rf_ecological.tex",
-       "src_sha": "f90eee0a5bab5f772df4517e95b4abe92451b58c2fcdd38f788e1a867d50f8ca",
-       "cells": "Dependent variable: D(Adoption)  (1) (2) (3) Objective importance × Historical effectiveness +0.024*** +0.025*** +0.025***  (0.005) (0.005) (0.005) Historical effectiveness +0.004 +0.005   (0.007) (0.008)  Objective importance +0.001    (0.001)   Investor FE ✓ – – Investor × Objective FE – ✓ ✓ Country × Heuristic × Objective FE – – ✓ Observations 12,600 12,600 12,600 R² 0.099 0.099 0.173"
-      }
-     ],
-     "landscape": false,
-     "caption_src": "Heuristic Adoption and Historical Effectiveness: Reduced Form",
-     "note_src_sha": "7b9825491a2da57b8d1a9b5899a2150ba4bdb65cafb3614554af328f55ab0daf"
-    }
-   ]
-  },
-  {
-   "id": "table/F14",
-   "kind": "table",
-   "kind_word": "Table",
-   "number": "F14",
-   "label": "tab:adoption_ecological_by_objective",
-   "labels": [
-    "tab:adoption_ecological_by_objective"
-   ],
-   "url": "/table/F14/",
-   "title_html": "Heuristic Adoption and Historical Effectiveness: Reduced Form by Objective",
-   "title": "Heuristic Adoption and Historical Effectiveness: Reduced Form by Objective",
-   "section": "F",
-   "subsection": null,
-   "pages": [
-    66
-   ],
-   "page_labels": [
-    "65"
-   ],
-   "pdf_href": "/pdf/#page=67",
-   "questions": [],
-   "n_panels": 0,
-   "wide": false,
-   "main_refs": [],
-   "cited_in": [],
-   "group": {
-    "key": "5.4.1",
-    "rule": "inherits from table F13"
-   },
-   "prev": "table/F13",
-   "next": "table/F15",
-   "suggest": [
-    "table/F13",
-    "table/F6",
-    "table/F7",
-    "table/F8"
-   ],
-   "parts": [
-    {
-     "n": 1,
-     "continued": false,
-     "anchor": "table.caption.144",
-     "pdf_page": 66,
-     "page_label": "65",
-     "note_text": "This table repeats the reduced-form adoption analysis of Table F13 separately for each financial objective. In each column, we regress D(Adoption) on the interaction between the importance rating of the objective, standardized within investor across the three financial objectives, and the historical effectiveness of the heuristic for that objective in the country of the investor. Each column uses the full grid of the 600 follow-up respondents and the seven covered heuristics for the corresponding objective (4,200 observations). Investor FE and Country × Heuristic FE refer to the corresponding fixed effects. We cluster standard errors at the country level and report them in parentheses. The wild-cluster bootstrap is not computable under these fixed effects, so we base the stars on the country-clustered standard errors. The interactions for upside and stability remain significant at the 10% level when we instead cluster standard errors at the investor level. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively.",
-     "graphics": [],
-     "panels": [],
-     "tables": [
-      {
-       "letter": "",
-       "heading_html": "",
-       "heading": "",
-       "html": "<table class=\"tbl full\" id=\"t-F14\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"4\" scope=\"colgroup\">Dependent variable: D(Adoption)</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1) Returns</th><th class=\"a-c\" scope=\"col\">(2) Upside</th><th class=\"a-c\" scope=\"col\">(3) Stability</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Objective importance <span class=\"m\">×</span> Historical effectiveness</th><td class=\"a-c\">+0.014***</td><td class=\"a-c\">+0.032***</td><td class=\"a-c\">+0.027***</td></tr><tr><td class=\"a-l\"></td><td class=\"a-c\">(0.004)</td><td class=\"a-c\">(0.007)</td><td class=\"a-c\">(0.005)</td></tr><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Investor FE</th><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td></tr><tr><th class=\"a-l\" scope=\"row\">Country <span class=\"m\">×</span> Heuristic FE</th><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td><td class=\"a-c\"><span class=\"m\">✓</span></td></tr><tr><th class=\"a-l\" scope=\"row\">Observations</th><td class=\"a-c\">4,200</td><td class=\"a-c\">4,200</td><td class=\"a-c\">4,200</td></tr><tr><th class=\"a-l\" scope=\"row\"><math><msup><mi>R</mi><mn class=\"tml-med-pad\">2</mn></msup></math></th><td class=\"a-c\">0.172</td><td class=\"a-c\">0.175</td><td class=\"a-c\">0.174</td></tr></tbody></table>",
-       "dense": false,
-       "ncols": 4,
-       "numbers": [
-        "1",
-        "2",
-        "3",
-        "0.014",
-        "0.032",
-        "0.027",
-        "0.004",
-        "0.007",
-        "0.005",
-        "4,200",
-        "4,200",
-        "4,200",
-        "0.172",
-        "0.175",
-        "0.174"
-       ],
-       "src": "tables/h1m_h1rf_ecological_by_objective.tex",
-       "src_sha": "184bc0840b5637b7832e44baba247b582a6f2c86a48d5158c6473221271cb340",
-       "cells": "Dependent variable: D(Adoption)  (1) Returns (2) Upside (3) Stability Objective importance × Historical effectiveness +0.014*** +0.032*** +0.027***  (0.004) (0.007) (0.005) Investor FE ✓ ✓ ✓ Country × Heuristic FE ✓ ✓ ✓ Observations 4,200 4,200 4,200 R² 0.172 0.175 0.174"
-      }
-     ],
-     "landscape": false,
-     "caption_src": "Heuristic Adoption and Historical Effectiveness: Reduced Form by Objective",
-     "note_src_sha": "d6caabccbf15b77859187c4623730b2beb9daeb92fc3d1da2d7a45f1fe3f0e51"
-    }
-   ]
-  },
-  {
-   "id": "table/F15",
-   "kind": "table",
-   "kind_word": "Table",
-   "number": "F15",
+   "number": "F10",
    "label": "tab:choice_performance_placebo",
    "labels": [
     "tab:choice_performance_placebo"
    ],
-   "url": "/table/F15/",
+   "url": "/table/F10/",
    "title_html": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives?",
    "title": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives?",
    "section": "F",
    "subsection": null,
    "pages": [
-    67
+    60
    ],
    "page_labels": [
-    "66"
+    "59"
    ],
-   "pdf_href": "/pdf/#page=68",
+   "pdf_href": "/pdf/#page=61",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -7871,32 +7056,59 @@
      "title": "Do Adopted Heuristics Deliver on the Objectives Investors Prioritize?"
     },
     {
+     "label": "tab:choice_performance_oos",
+     "text": "Table 8",
+     "title": "Do Adopted Heuristics Deliver? Out-of-Sample Evidence"
+    },
+    {
      "label": "tab:jkp7_characteristics",
      "text": "Table 5",
      "title": "Mapping Heuristics to Firm Characteristics"
     }
    ],
-   "cited_in": [],
+   "cited_in": [
+    {
+     "ctx": "body",
+     "panel": "A",
+     "paragraph": "Results",
+     "heading": {
+      "number": "5.4.3",
+      "title": "Do Chosen Heuristics Deliver on Investors’ Priorities?",
+      "title_html": "Do Chosen Heuristics Deliver on Investors’ Priorities?"
+     },
+     "float": null
+    },
+    {
+     "ctx": "footnote",
+     "panel": "B",
+     "paragraph": "",
+     "heading": {
+      "number": "5.5",
+      "title": "Subsequent Effectiveness",
+      "title_html": "Subsequent Effectiveness"
+     },
+     "float": null
+    }
+   ],
    "group": {
     "key": "5.4.3",
-    "rule": "refers to tab:choice_performance"
+    "rule": "cited (body)"
    },
-   "prev": "table/F14",
-   "next": "table/F16",
+   "prev": "table/F9",
+   "next": "table/F11",
    "suggest": [
-    "table/F16",
-    "table/F17",
+    "table/F11",
     "table/F9",
-    "table/F19"
+    "figure/F3"
    ],
    "parts": [
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.145",
-     "pdf_page": 67,
-     "page_label": "66",
-     "note_text": "This table repeats the analysis of Table 7 of the main paper on the objectives investors do not prioritize. An objective counts as non-prioritized if the investor rates it strictly below her own average across the three financial objectives. The adopted heuristics of each investor are those we identify in her interview among the seven covered by archival data (Table 5 of the main paper). The row Adopted heuristics reports the delivery of these heuristics on the non-prioritized objectives in the country of the investor. It averages over investors, in the column Overall after first averaging the non-prioritized objectives of each investor so that each investor enters once, and in the other columns over the investors for whom that objective is non-prioritized. The design is otherwise identical to Table 7 of the main paper. The two benchmark rows replace the adopted rule set of each investor with an equally sized random draw from (i) the covered heuristics she does not adopt (Alternative heuristics) and (ii) all seven covered heuristics (Randomly selected heuristics). These two rows report means across 10,000 draws, with standard deviations across draws in parentheses, and their p-values are the one-sided fraction of draws that deliver at least as much as the adopted set. The sample comprises the 427 follow-up respondents who adopt at least one covered heuristic and have at least one non-prioritized financial objective, excluding adopters of four or more of the seven. The columns Returns, Upside, and Stability use 184, 255, and 146 of them, respectively. Table F16 reports the average-stock and JKP-factor-based portfolio benchmarks, with the same adopted-heuristics row. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively, referring to the p-values in the brackets.",
+     "anchor": "table.caption.138",
+     "pdf_page": 60,
+     "page_label": "59",
+     "note_text": "This table repeats the analyses of Tables 7 and 8 of the main paper on objectives investors do not prioritize. An objective is non-prioritized if its importance rating is strictly below the investor’s own average across the three financial objectives. Adopted heuristics are those identified in her interview among the seven covered by archival data (Table 5 of the main paper). Panel A uses historical effectiveness over July 2015 through June 2025. Panel B uses portfolio sorts from September through November 2025, with outcomes realized from October through December 2025. In Panel B, CAPM betas are fixed at their estimates over September 2015 through August 2025. We standardize delivery within objective across the seventy heuristic–country pairs separately for each panel. The row Adopted heuristics reports delivery on non-prioritized objectives in the investor’s country. The column Overall first averages across each investor’s non-prioritized objectives and then across investors; the other columns average across investors for whom the corresponding objective is non-prioritized. The two benchmarks replace the adopted set with an equally sized random draw from covered heuristics she does not adopt (Alternative heuristics) or all seven covered heuristics (Randomly selected heuristics). Each benchmark reports the mean across 10,000 draws, with the standard deviation across draws in parentheses. Bracketed one-sided p-values report the fraction of draws that deliver at least as much as the adopted set. Both panels use the same 427 follow-up respondents who adopt one to three covered heuristics and have at least one non-prioritized financial objective. The returns, upside, and stability columns include 184, 255, and 146 of them, respectively. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively, using unrounded p-values.",
      "graphics": [],
      "panels": [],
      "tables": [
@@ -7904,7 +7116,7 @@
        "letter": "",
        "heading_html": "",
        "heading": "",
-       "html": "<table class=\"tbl full\" id=\"t-F15\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">−0.100</td><td class=\"a-c\">−0.078</td><td class=\"a-c\">−0.127</td><td class=\"a-c\">−0.091</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Alternative heuristics</th><td class=\"a-c\">−0.026</td><td class=\"a-c\">−0.124</td><td class=\"a-c\">+0.016</td><td class=\"a-c\">+0.017</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.029)</td><td class=\"a-c\">(0.055)</td><td class=\"a-c\">(0.044)</td><td class=\"a-c\">(0.061)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> alternative heuristics)</th><td class=\"a-c\">[0.994]</td><td class=\"a-c\">[0.195]</td><td class=\"a-c\">[0.999]</td><td class=\"a-c\">[0.962]</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected heuristics</th><td class=\"a-c\">−0.050</td><td class=\"a-c\">−0.140</td><td class=\"a-c\">−0.014</td><td class=\"a-c\">−0.007</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.032)</td><td class=\"a-c\">(0.057)</td><td class=\"a-c\">(0.047)</td><td class=\"a-c\">(0.063)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected heuristics)</th><td class=\"a-c\">[0.942]</td><td class=\"a-c\">[0.135]</td><td class=\"a-c\">[0.991]</td><td class=\"a-c\">[0.906]</td></tr></tbody></table>",
+       "html": "<table class=\"tbl full\" id=\"t-F10\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"row\"><em>Panel A: Historical Performance</em></th></tr><tr><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">−0.100</td><td class=\"a-c\">−0.078</td><td class=\"a-c\">−0.127</td><td class=\"a-c\">−0.091</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Alternative heuristics</th><td class=\"a-c\">−0.026</td><td class=\"a-c\">−0.124</td><td class=\"a-c\">+0.016</td><td class=\"a-c\">+0.017</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.029)</td><td class=\"a-c\">(0.055)</td><td class=\"a-c\">(0.044)</td><td class=\"a-c\">(0.061)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> alternative heuristics)</th><td class=\"a-c\">[0.994]</td><td class=\"a-c\">[0.195]</td><td class=\"a-c\">[0.999]</td><td class=\"a-c\">[0.962]</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected heuristics</th><td class=\"a-c\">−0.050</td><td class=\"a-c\">−0.140</td><td class=\"a-c\">−0.014</td><td class=\"a-c\">−0.007</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.032)</td><td class=\"a-c\">(0.057)</td><td class=\"a-c\">(0.047)</td><td class=\"a-c\">(0.063)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected heuristics)</th><td class=\"a-c\">[0.942]</td><td class=\"a-c\">[0.135]</td><td class=\"a-c\">[0.991]</td><td class=\"a-c\">[0.906]</td></tr><tr class=\"rule bg1 ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"row\"><em>Panel B: Out-of-Sample Performance</em></th></tr><tr><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">−0.033</td><td class=\"a-c\">−0.082</td><td class=\"a-c\">+0.062</td><td class=\"a-c\">−0.137</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Alternative heuristics</th><td class=\"a-c\">+0.015</td><td class=\"a-c\">−0.030</td><td class=\"a-c\">+0.050</td><td class=\"a-c\">+0.046</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.028)</td><td class=\"a-c\">(0.047)</td><td class=\"a-c\">(0.043)</td><td class=\"a-c\">(0.059)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> alternative heuristics)</th><td class=\"a-c\">[0.955]</td><td class=\"a-c\">[0.864]</td><td class=\"a-c\">[0.390]</td><td class=\"a-c\">[0.999]</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected heuristics</th><td class=\"a-c\">+0.008</td><td class=\"a-c\">−0.044</td><td class=\"a-c\">+0.055</td><td class=\"a-c\">+0.009</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.030)</td><td class=\"a-c\">(0.048)</td><td class=\"a-c\">(0.046)</td><td class=\"a-c\">(0.062)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected heuristics)</th><td class=\"a-c\">[0.919]</td><td class=\"a-c\">[0.777]</td><td class=\"a-c\">[0.446]</td><td class=\"a-c\">[0.991]</td></tr></tbody></table>",
        "dense": false,
        "ncols": 5,
        "numbers": [
@@ -7939,183 +7151,7 @@
         "0.942",
         "0.135",
         "0.991",
-        "0.906"
-       ],
-       "src": "tables/h1m_h2_choice_performance_placebo.tex",
-       "src_sha": "14591acb842abc5c5f6e3a16c70dd8481ee27a3ce86e2063c81cb65843b282f9",
-       "cells": "Delivery, in standard deviations from the average heuristic–country pair  Overall Returns Upside Stability  (1) (2) (3) (4) Adopted heuristics -0.100 -0.078 -0.127 -0.091 Alternative heuristics -0.026 -0.124 +0.016 +0.017 Standard deviation across draws (0.029) (0.055) (0.044) (0.061) p(Adopted ≤ alternative heuristics) [0.994] [0.195] [0.999] [0.962] Randomly selected heuristics -0.050 -0.140 -0.014 -0.007 Standard deviation across draws (0.032) (0.057) (0.047) (0.063) p(Adopted ≤ randomly selected heuristics) [0.942] [0.135] [0.991] [0.906]"
-      }
-     ],
-     "landscape": false,
-     "caption_src": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives?",
-     "note_src_sha": "5968ecb77ffb2f55925940ebd60e90eb4f154f494cf195b0017c102f814dc356"
-    }
-   ]
-  },
-  {
-   "id": "table/F16",
-   "kind": "table",
-   "kind_word": "Table",
-   "number": "F16",
-   "label": "tab:choice_performance_placebo_extra",
-   "labels": [
-    "tab:choice_performance_placebo_extra"
-   ],
-   "url": "/table/F16/",
-   "title_html": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Average Stock and JKP-Factor Benchmarks",
-   "title": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Average Stock and JKP-Factor Benchmarks",
-   "section": "F",
-   "subsection": null,
-   "pages": [
-    68
-   ],
-   "page_labels": [
-    "67"
-   ],
-   "pdf_href": "/pdf/#page=69",
-   "questions": [],
-   "n_panels": 0,
-   "wide": false,
-   "main_refs": [],
-   "cited_in": [],
-   "group": {
-    "key": "5.4.3",
-    "rule": "inherits from table F15"
-   },
-   "prev": "table/F15",
-   "next": "table/F17",
-   "suggest": [
-    "table/F9",
-    "table/F15",
-    "table/F18",
-    "table/F17"
-   ],
-   "parts": [
-    {
-     "n": 1,
-     "continued": false,
-     "anchor": "table.caption.146",
-     "pdf_page": 68,
-     "page_label": "67",
-     "note_text": "This table reports two additional benchmarks for Table F15, using historical effectiveness over July 2015 through June 2025, the ten years preceding our interviews. An objective counts as non-prioritized if the investor rates it strictly below her own average across the three financial objectives. The row Adopted heuristics repeats that of Table F15, with the same sample, non-prioritized objectives, adopted heuristics, aggregation, and standardization. The row Average stock reports the delivery of random stock sorting. Its long–short performance is zero in expectation before standardization, and we standardize it with the same within-objective means and standard deviations as heuristic effectiveness. This benchmark is a constant, so it has no standard deviation. Its one-sided p-value tests whether the adopted heuristics deliver more, using a wild-cluster bootstrap by country (Webb six-point weights, 9,999 replications). The row Randomly selected JKP-factor-based portfolios replaces the adopted set of each investor with an equally sized random draw from the 153 factors of Jensen, Kelly, and Pedersen (2023) that are computable in her country, each in its published long–short direction and standardized with the same within-objective means and standard deviations as heuristic effectiveness. This row reports the mean across 10,000 draws, with the standard deviation across draws in parentheses, and its p-value is the one-sided fraction of draws that deliver at least as much as the adopted set. The sample comprises the 427 follow-up respondents of Table F15, and the columns Returns, Upside, and Stability use 184, 255, and 146 of them, respectively. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively, referring to the p-values in the brackets.",
-     "graphics": [],
-     "panels": [],
-     "tables": [
-      {
-       "letter": "",
-       "heading_html": "",
-       "heading": "",
-       "html": "<table class=\"tbl full\" id=\"t-F16\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">−0.100</td><td class=\"a-c\">−0.078</td><td class=\"a-c\">−0.127</td><td class=\"a-c\">−0.091</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Average stock</th><td class=\"a-c\">+0.043</td><td class=\"a-c\">−0.617</td><td class=\"a-c\">+0.842</td><td class=\"a-c\">−0.649</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> average stock)</th><td class=\"a-c\">[0.967]</td><td class=\"a-c\">[0.015]**</td><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.000]***</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected JKP-factor-based portfolios</th><td class=\"a-c\">+0.084</td><td class=\"a-c\">−0.235</td><td class=\"a-c\">+0.526</td><td class=\"a-c\">−0.355</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.035)</td><td class=\"a-c\">(0.064)</td><td class=\"a-c\">(0.052)</td><td class=\"a-c\">(0.063)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected JKP factors)</th><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.007]***</td><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.000]***</td></tr></tbody></table>",
-       "dense": false,
-       "ncols": 5,
-       "numbers": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "-0.100",
-        "-0.078",
-        "-0.127",
-        "-0.091",
-        "0.043",
-        "-0.617",
-        "0.842",
-        "-0.649",
-        "0.967",
-        "0.015",
-        "1.000",
-        "0.000",
-        "0.084",
-        "-0.235",
-        "0.526",
-        "-0.355",
-        "0.035",
-        "0.064",
-        "0.052",
-        "0.063",
-        "1.000",
-        "0.007",
-        "1.000",
-        "0.000"
-       ],
-       "src": "tables/h1m_h2_choice_performance_placebo_additional_benchmarks.tex",
-       "src_sha": "2b5e88b8d8bb02b6292eb5ef6f92bcb404f3b289110d74f2a8b932b4718a86a9",
-       "cells": "Delivery, in standard deviations from the average heuristic–country pair  Overall Returns Upside Stability  (1) (2) (3) (4) Adopted heuristics -0.100 -0.078 -0.127 -0.091 Average stock +0.043 -0.617 +0.842 -0.649 p(Adopted ≤ average stock) [0.967] [0.015]** [1.000] [0.000]*** Randomly selected JKP-factor-based portfolios +0.084 -0.235 +0.526 -0.355 Standard deviation across draws (0.035) (0.064) (0.052) (0.063) p(Adopted ≤ randomly selected JKP factors) [1.000] [0.007]*** [1.000] [0.000]***"
-      }
-     ],
-     "landscape": false,
-     "caption_src": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Average Stock and JKP-Factor Benchmarks",
-     "note_src_sha": "f632d8194d94ec2e20ea8706edfa763df38c9cb14077a565f50cf6c1f56ea816"
-    }
-   ]
-  },
-  {
-   "id": "table/F17",
-   "kind": "table",
-   "kind_word": "Table",
-   "number": "F17",
-   "label": "tab:choice_performance_oos_placebo",
-   "labels": [
-    "tab:choice_performance_oos_placebo"
-   ],
-   "url": "/table/F17/",
-   "title_html": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Out-of-Sample Evidence",
-   "title": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Out-of-Sample Evidence",
-   "section": "F",
-   "subsection": null,
-   "pages": [
-    69
-   ],
-   "page_labels": [
-    "68"
-   ],
-   "pdf_href": "/pdf/#page=70",
-   "questions": [],
-   "n_panels": 0,
-   "wide": false,
-   "main_refs": [
-    {
-     "label": "tab:choice_performance_oos",
-     "text": "Table 8",
-     "title": "Do Adopted Heuristics Deliver? Out-of-Sample Evidence"
-    }
-   ],
-   "cited_in": [],
-   "group": {
-    "key": "5.5",
-    "rule": "refers to tab:choice_performance_oos"
-   },
-   "prev": "table/F16",
-   "next": "table/F18",
-   "suggest": [
-    "table/F18",
-    "table/F10",
-    "table/F15",
-    "table/F11"
-   ],
-   "parts": [
-    {
-     "n": 1,
-     "continued": false,
-     "anchor": "table.caption.147",
-     "pdf_page": 69,
-     "page_label": "68",
-     "note_text": "This table repeats the out-of-sample analysis of Table 8 of the main paper on the objectives investors do not prioritize. We recompute delivery on outcomes realized after our interviews. The out-of-sample period covers portfolio sorts from September through November 2025, and we measure delivery over the month following each sort, so that all outcomes fall between October and December 2025. Because that period is too short to estimate a market beta, we calculate the CAPM alpha for the returns objective with the market beta fixed at its estimate from the preceding ten years (September 2015 through August 2025). We standardize each outcome within objective across the seventy heuristic–country pairs, recomputed on the out-of-sample window. An objective counts as non-prioritized if the investor rates it strictly below her own average across the three financial objectives. The adopted heuristics, the aggregation, and the samples are identical to Table F15. The two benchmark rows replace the adopted rule set of each investor with an equally sized random draw from (i) the covered heuristics she does not adopt (Alternative heuristics) and (ii) all seven covered heuristics (Randomly selected heuristics). These two rows report means across 10,000 draws, with standard deviations across draws in parentheses, and their p-values are the one-sided fraction of draws that deliver at least as much as the adopted set. Table F18 reports the average-stock and JKP-factor-based portfolio benchmarks, with the same adopted-heuristics row. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively, referring to the p-values in the brackets.",
-     "graphics": [],
-     "panels": [],
-     "tables": [
-      {
-       "letter": "",
-       "heading_html": "",
-       "heading": "",
-       "html": "<table class=\"tbl full\" id=\"t-F17\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">−0.033</td><td class=\"a-c\">−0.082</td><td class=\"a-c\">+0.062</td><td class=\"a-c\">−0.137</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Alternative heuristics</th><td class=\"a-c\">+0.015</td><td class=\"a-c\">−0.030</td><td class=\"a-c\">+0.050</td><td class=\"a-c\">+0.046</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.028)</td><td class=\"a-c\">(0.047)</td><td class=\"a-c\">(0.043)</td><td class=\"a-c\">(0.059)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> alternative heuristics)</th><td class=\"a-c\">[0.955]</td><td class=\"a-c\">[0.864]</td><td class=\"a-c\">[0.390]</td><td class=\"a-c\">[0.999]</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected heuristics</th><td class=\"a-c\">+0.008</td><td class=\"a-c\">−0.044</td><td class=\"a-c\">+0.055</td><td class=\"a-c\">+0.009</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.030)</td><td class=\"a-c\">(0.048)</td><td class=\"a-c\">(0.046)</td><td class=\"a-c\">(0.062)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected heuristics)</th><td class=\"a-c\">[0.919]</td><td class=\"a-c\">[0.777]</td><td class=\"a-c\">[0.446]</td><td class=\"a-c\">[0.991]</td></tr></tbody></table>",
-       "dense": false,
-       "ncols": 5,
-       "numbers": [
-        "1",
-        "2",
-        "3",
-        "4",
+        "0.906",
         "-0.033",
         "-0.082",
         "0.062",
@@ -8145,135 +7181,38 @@
         "0.446",
         "0.991"
        ],
-       "src": "tables/h1m_h2_choice_performance_oos_placebo.tex",
-       "src_sha": "40c21af8ac778a2dda70ad7f6fb6423cae0547f42b81369deb1253b2bbaaceb4",
-       "cells": "Delivery, in standard deviations from the average heuristic–country pair  Overall Returns Upside Stability  (1) (2) (3) (4) Adopted heuristics -0.033 -0.082 +0.062 -0.137 Alternative heuristics +0.015 -0.030 +0.050 +0.046 Standard deviation across draws (0.028) (0.047) (0.043) (0.059) p(Adopted ≤ alternative heuristics) [0.955] [0.864] [0.390] [0.999] Randomly selected heuristics +0.008 -0.044 +0.055 +0.009 Standard deviation across draws (0.030) (0.048) (0.046) (0.062) p(Adopted ≤ randomly selected heuristics) [0.919] [0.777] [0.446] [0.991]"
+       "src": "tables/h1m_h2_choice_performance_placebo_combined.tex",
+       "src_sha": "a28c37599362616cc6ef222f3becaf50d177544da9bc3136ce0d7d91df3aa9b9",
+       "cells": "Delivery, in standard deviations from the average heuristic–country pair  Overall Returns Upside Stability  (1) (2) (3) (4) Panel A: Historical Performance Adopted heuristics -0.100 -0.078 -0.127 -0.091 Alternative heuristics -0.026 -0.124 +0.016 +0.017 Standard deviation across draws (0.029) (0.055) (0.044) (0.061) p(Adopted ≤ alternative heuristics) [0.994] [0.195] [0.999] [0.962] Randomly selected heuristics -0.050 -0.140 -0.014 -0.007 Standard deviation across draws (0.032) (0.057) (0.047) (0.063) p(Adopted ≤ randomly selected heuristics) [0.942] [0.135] [0.991] [0.906] Panel B: Out-of-Sample Performance Adopted heuristics -0.033 -0.082 +0.062 -0.137 Alternative heuristics +0.015 -0.030 +0.050 +0.046 Standard deviation across draws (0.028) (0.047) (0.043) (0.059) p(Adopted ≤ alternative heuristics) [0.955] [0.864] [0.390] [0.999] Randomly selected heuristics +0.008 -0.044 +0.055 +0.009 Standard deviation across draws (0.030) (0.048) (0.046) (0.062) p(Adopted ≤ randomly selected heuristics) [0.919] [0.777] [0.446] [0.991]"
       }
      ],
      "landscape": false,
-     "caption_src": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Out-of-Sample Evidence",
-     "note_src_sha": "3095383dd79ef9ec356a05cafc8b33764eedd94321f44136fa2c60444e864b53"
+     "caption_src": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives?",
+     "note_src_sha": "b2a04008b4e33ba532a1a347efc658a25573c36d5cb03ff75e637195b5052e3d"
     }
    ]
   },
   {
-   "id": "table/F18",
+   "id": "table/F11",
    "kind": "table",
    "kind_word": "Table",
-   "number": "F18",
-   "label": "tab:choice_performance_oos_placebo_extra",
-   "labels": [
-    "tab:choice_performance_oos_placebo_extra"
-   ],
-   "url": "/table/F18/",
-   "title_html": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Average Stock and JKP-Factor Benchmarks: Out-of-Sample Evidence",
-   "title": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Average Stock and JKP-Factor Benchmarks: Out-of-Sample Evidence",
-   "section": "F",
-   "subsection": null,
-   "pages": [
-    70
-   ],
-   "page_labels": [
-    "69"
-   ],
-   "pdf_href": "/pdf/#page=71",
-   "questions": [],
-   "n_panels": 0,
-   "wide": false,
-   "main_refs": [],
-   "cited_in": [],
-   "group": {
-    "key": "5.5",
-    "rule": "inherits from table F17"
-   },
-   "prev": "table/F17",
-   "next": "table/F19",
-   "suggest": [
-    "table/F10",
-    "table/F17",
-    "table/F16",
-    "table/F9"
-   ],
-   "parts": [
-    {
-     "n": 1,
-     "continued": false,
-     "anchor": "table.caption.148",
-     "pdf_page": 70,
-     "page_label": "69",
-     "note_text": "This table reports two additional benchmarks for Table F17, using out-of-sample delivery. The out-of-sample period covers portfolio sorts from September through November 2025, and we measure delivery over the month following each sort, so that all outcomes fall between October and December 2025. We calculate the CAPM alpha for the returns objective with the market beta fixed at its estimate from September 2015 through August 2025. An objective counts as non-prioritized if the investor rates it strictly below her own average across the three financial objectives. The row Adopted heuristics repeats that of Table F17, with the same sample, non-prioritized objectives, adopted heuristics, aggregation, and standardization. The row Average stock reports the delivery of random stock sorting. Its long–short performance is zero in expectation before standardization, and we standardize it with the same within-objective means and standard deviations as heuristic effectiveness. This benchmark is a constant, so it has no standard deviation. Its one-sided p-value tests whether the adopted heuristics deliver more, using a wild-cluster bootstrap by country (Webb six-point weights, 9,999 replications). The row Randomly selected JKP-factor-based portfolios replaces the adopted set of each investor with an equally sized random draw from the 153 factors of Jensen, Kelly, and Pedersen (2023) that are computable in her country, each in its published long–short direction and standardized with the same within-objective means and standard deviations as heuristic effectiveness. This row reports the mean across 10,000 draws, with the standard deviation across draws in parentheses, and its p-value is the one-sided fraction of draws that deliver at least as much as the adopted set. The sample comprises the 427 follow-up respondents of Table F17, and the columns Returns, Upside, and Stability use 184, 255, and 146 of them, respectively. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively, referring to the p-values in the brackets.",
-     "graphics": [],
-     "panels": [],
-     "tables": [
-      {
-       "letter": "",
-       "heading_html": "",
-       "heading": "",
-       "html": "<table class=\"tbl full\" id=\"t-F18\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule\"><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">−0.033</td><td class=\"a-c\">−0.082</td><td class=\"a-c\">+0.062</td><td class=\"a-c\">−0.137</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Average stock</th><td class=\"a-c\">+0.096</td><td class=\"a-c\">−0.263</td><td class=\"a-c\">+0.699</td><td class=\"a-c\">−0.600</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> average stock)</th><td class=\"a-c\">[0.969]</td><td class=\"a-c\">[0.141]</td><td class=\"a-c\">[0.999]</td><td class=\"a-c\">[0.002]***</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Randomly selected JKP-factor-based portfolios</th><td class=\"a-c\">+0.119</td><td class=\"a-c\">−0.084</td><td class=\"a-c\">+0.532</td><td class=\"a-c\">−0.402</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.034)</td><td class=\"a-c\">(0.061)</td><td class=\"a-c\">(0.052)</td><td class=\"a-c\">(0.060)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> randomly selected JKP factors)</th><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.494]</td><td class=\"a-c\">[1.000]</td><td class=\"a-c\">[0.000]***</td></tr></tbody></table>",
-       "dense": false,
-       "ncols": 5,
-       "numbers": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "-0.033",
-        "-0.082",
-        "0.062",
-        "-0.137",
-        "0.096",
-        "-0.263",
-        "0.699",
-        "-0.600",
-        "0.969",
-        "0.141",
-        "0.999",
-        "0.002",
-        "0.119",
-        "-0.084",
-        "0.532",
-        "-0.402",
-        "0.034",
-        "0.061",
-        "0.052",
-        "0.060",
-        "1.000",
-        "0.494",
-        "1.000",
-        "0.000"
-       ],
-       "src": "tables/h1m_h2_choice_performance_oos_placebo_additional_benchmarks.tex",
-       "src_sha": "f91ff7fce6c15af9a400363a72680ffabf30acdee4f393bc9be608b39f745f69",
-       "cells": "Delivery, in standard deviations from the average heuristic–country pair  Overall Returns Upside Stability  (1) (2) (3) (4) Adopted heuristics -0.033 -0.082 +0.062 -0.137 Average stock +0.096 -0.263 +0.699 -0.600 p(Adopted ≤ average stock) [0.969] [0.141] [0.999] [0.002]*** Randomly selected JKP-factor-based portfolios +0.119 -0.084 +0.532 -0.402 Standard deviation across draws (0.034) (0.061) (0.052) (0.060) p(Adopted ≤ randomly selected JKP factors) [1.000] [0.494] [1.000] [0.000]***"
-      }
-     ],
-     "landscape": false,
-     "caption_src": "Do Adopted Heuristics Deliver on Non-Prioritized Objectives? Average Stock and JKP-Factor Benchmarks: Out-of-Sample Evidence",
-     "note_src_sha": "bfb2017702d7b3997e8fec59c31d3e3c4feae8133c2015082dd7b7ab389ffc72"
-    }
-   ]
-  },
-  {
-   "id": "table/F19",
-   "kind": "table",
-   "kind_word": "Table",
-   "number": "F19",
+   "number": "F11",
    "label": "tab:choice_performance_aware_combined",
    "labels": [
     "tab:choice_performance_aware_combined"
    ],
-   "url": "/table/F19/",
+   "url": "/table/F11/",
    "title_html": "Do Adopted Heuristics Deliver? Awareness-Restricted Alternatives",
    "title": "Do Adopted Heuristics Deliver? Awareness-Restricted Alternatives",
    "section": "F",
    "subsection": null,
    "pages": [
-    71
+    61
    ],
    "page_labels": [
-    "70"
+    "60"
    ],
-   "pdf_href": "/pdf/#page=72",
+   "pdf_href": "/pdf/#page=62",
    "questions": [],
    "n_panels": 0,
    "wide": false,
@@ -8289,26 +7228,47 @@
      "title": "Do Adopted Heuristics Deliver? Out-of-Sample Evidence"
     }
    ],
-   "cited_in": [],
+   "cited_in": [
+    {
+     "ctx": "footnote",
+     "panel": "A",
+     "paragraph": "Benchmarks",
+     "heading": {
+      "number": "5.4.3",
+      "title": "Do Chosen Heuristics Deliver on Investors’ Priorities?",
+      "title_html": "Do Chosen Heuristics Deliver on Investors’ Priorities?"
+     },
+     "float": null
+    },
+    {
+     "ctx": "footnote",
+     "panel": "B",
+     "paragraph": "",
+     "heading": {
+      "number": "5.5",
+      "title": "Subsequent Effectiveness",
+      "title_html": "Subsequent Effectiveness"
+     },
+     "float": null
+    }
+   ],
    "group": {
-    "key": "zz",
-    "rule": "no main-paper link"
+    "key": "5.4.3",
+    "rule": "cited (footnote)"
    },
-   "prev": "table/F18",
+   "prev": "table/F10",
    "next": "references",
    "suggest": [
-    "table/F15",
-    "table/F17",
-    "table/F11",
-    "table/F16"
+    "table/F10",
+    "table/F9"
    ],
    "parts": [
     {
      "n": 1,
      "continued": false,
-     "anchor": "table.caption.149",
-     "pdf_page": 71,
-     "page_label": "70",
+     "anchor": "table.caption.139",
+     "pdf_page": 61,
+     "page_label": "60",
      "note_text": "This table repeats the comparisons of Tables 7 and 8 of the main paper with the alternative-heuristics benchmark restricted to approaches each investor reports being aware of in the follow-up survey. The adopted set consists of the investor’s interview-recorded heuristics among the seven covered by archival data. The row “Alternative heuristics” replaces this set with an equally sized set drawn randomly, without replacement, from covered heuristics not adopted in the interview that the investor reports having heard of in the follow-up survey. Previously used alternatives remain eligible. We evaluate both sets in the investor’s country on her prioritized objectives, defined as objectives rated strictly above her own average importance across returns, upside, and stability. The “Overall” column first averages performance across each investor’s prioritized objectives and then across investors; the other columns average across investors who prioritize the corresponding objective. Panel A uses historical performance from July 2015 through June 2025. Panel B uses performance from October through December 2025, with CAPM betas estimated over September 2015 through August 2025 and held fixed. Returns use CAPM alpha, upside uses the top-1% hit-rate spread, and stability uses the sign-reversed total return-volatility spread. We standardize performance within objective across the seventy heuristic–country pairs, separately for each panel. Each benchmark reports the mean across 10,000 draws, with the standard deviation across draws in parentheses. Bracketed one-sided p-values give the fractions of draws that perform at least as well as the adopted set. Both panels use the same 360 investors, retaining adopters of one to three covered heuristics who prioritize at least one financial objective and have enough known alternatives for an equally sized draw. The returns, upside, and stability columns include 178, 129, and 221 investors, respectively; these subsamples overlap. Statistical significance at the 10%, 5%, and 1% levels is denoted by *, **, and ***, respectively. p-values are displayed to three decimals; stars use unrounded values.",
      "graphics": [],
      "panels": [],
@@ -8317,7 +7277,7 @@
        "letter": "",
        "heading_html": "",
        "heading": "",
-       "html": "<table class=\"tbl full\" id=\"t-F19\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"row\"><em>Panel A: Historical Performance</em></th></tr><tr><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">+0.133</td><td class=\"a-c\">−0.023</td><td class=\"a-c\">+0.168</td><td class=\"a-c\">+0.200</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Alternative heuristics</th><td class=\"a-c\">−0.043</td><td class=\"a-c\">−0.156</td><td class=\"a-c\">+0.008</td><td class=\"a-c\">+0.028</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.030)</td><td class=\"a-c\">(0.044)</td><td class=\"a-c\">(0.052)</td><td class=\"a-c\">(0.046)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> alternative heuristics)</th><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.001]***</td><td class=\"a-c\">[0.001]***</td><td class=\"a-c\">[0.000]***</td></tr><tr class=\"rule bg1 ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"row\"><em>Panel B: Out-of-Sample Performance</em></th></tr><tr><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">+0.161</td><td class=\"a-c\">+0.063</td><td class=\"a-c\">+0.341</td><td class=\"a-c\">+0.132</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Alternative heuristics</th><td class=\"a-c\">−0.001</td><td class=\"a-c\">−0.123</td><td class=\"a-c\">+0.061</td><td class=\"a-c\">+0.063</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.026)</td><td class=\"a-c\">(0.039)</td><td class=\"a-c\">(0.052)</td><td class=\"a-c\">(0.041)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> alternative heuristics)</th><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.051]*</td></tr></tbody></table>",
+       "html": "<table class=\"tbl full\" id=\"t-F11\"><thead><tr class=\"ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"colgroup\">Delivery, in standard deviations from the average heuristic–country pair</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">Overall</th><th class=\"a-c\" scope=\"col\">Returns</th><th class=\"a-c\" scope=\"col\">Upside</th><th class=\"a-c\" scope=\"col\">Stability</th></tr><tr><th class=\"a-l\" scope=\"col\"></th><th class=\"a-c\" scope=\"col\">(1)</th><th class=\"a-c\" scope=\"col\">(2)</th><th class=\"a-c\" scope=\"col\">(3)</th><th class=\"a-c\" scope=\"col\">(4)</th></tr></thead><tbody><tr class=\"rule ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"row\"><em>Panel A: Historical Performance</em></th></tr><tr><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">+0.133</td><td class=\"a-c\">−0.023</td><td class=\"a-c\">+0.168</td><td class=\"a-c\">+0.200</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Alternative heuristics</th><td class=\"a-c\">−0.043</td><td class=\"a-c\">−0.156</td><td class=\"a-c\">+0.008</td><td class=\"a-c\">+0.028</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.030)</td><td class=\"a-c\">(0.044)</td><td class=\"a-c\">(0.052)</td><td class=\"a-c\">(0.046)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> alternative heuristics)</th><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.001]***</td><td class=\"a-c\">[0.001]***</td><td class=\"a-c\">[0.000]***</td></tr><tr class=\"rule bg1 ag05\"><th class=\"a-l\" colspan=\"5\" scope=\"row\"><em>Panel B: Out-of-Sample Performance</em></th></tr><tr><th class=\"a-l\" scope=\"row\">Adopted heuristics</th><td class=\"a-c\">+0.161</td><td class=\"a-c\">+0.063</td><td class=\"a-c\">+0.341</td><td class=\"a-c\">+0.132</td></tr><tr class=\"bg1\"><th class=\"a-l\" scope=\"row\">Alternative heuristics</th><td class=\"a-c\">−0.001</td><td class=\"a-c\">−0.123</td><td class=\"a-c\">+0.061</td><td class=\"a-c\">+0.063</td></tr><tr><th class=\"a-l ind1\" scope=\"row\">Standard deviation across draws</th><td class=\"a-c\">(0.026)</td><td class=\"a-c\">(0.039)</td><td class=\"a-c\">(0.052)</td><td class=\"a-c\">(0.041)</td></tr><tr><th class=\"a-l ind1\" scope=\"row\"><math><mi>p</mi></math>(Adopted <span class=\"m\">≤</span> alternative heuristics)</th><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.000]***</td><td class=\"a-c\">[0.051]*</td></tr></tbody></table>",
        "dense": false,
        "ncols": 5,
        "numbers": [
